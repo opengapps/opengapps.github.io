@@ -58,7 +58,7 @@ a h1 {
 }
 
 .wrapper {
-  width:860px;
+  width:800px;
   margin:0 auto;
 }
 
@@ -192,7 +192,7 @@ footer {
   bottom:50px;
 }
 
-@media print, screen and (max-width: 960px) {
+@media print, screen and (max-width: 840px) {
 
   div.wrapper {
     width:auto;
@@ -226,7 +226,7 @@ footer {
   }
 }
 
-@media print, screen and (max-width: 720px) {
+@media print, screen and (max-width: 660px) {
   body {
     word-wrap:break-word;
   }
