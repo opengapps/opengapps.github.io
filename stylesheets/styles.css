@@ -263,6 +263,7 @@ footer {
   padding:50px;
   background-color: #FFF;
   box-shadow: 0 7px 10px -5px #888888 inset;
+  overflow: auto;
 }
 
 #open{
