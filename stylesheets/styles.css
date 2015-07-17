@@ -302,3 +302,23 @@ footer {
   display:block;
   text-align:center;
 }
+
+#version{
+  font-size:16px;
+
+  background: #E0F2F1;
+  background: -moz-linear-gradient(top, #E0F2F1 0%, #B2DFDB 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#E0F2F1), color-stop(100%,#B2DFDB));
+  background: -webkit-linear-gradient(top, #E0F2F1 0%,#B2DFDB 100%);
+  background: -o-linear-gradient(top, #E0F2F1 0%,#B2DFDB 100%);
+  background: -ms-linear-gradient(top, #E0F2F1 0%,#B2DFDB 100%);
+  background: linear-gradient(top, #E0F2F1 0%,#B2DFDB 100%);
+
+  border-radius:5px;
+  border:1px solid #009688;
+  box-shadow:inset #fff 0 1px 0, inset rgba(0,0,0,0.03) 0 -1px 0;
+
+  color:#222;
+  display:block;
+  text-align:center;
+}
