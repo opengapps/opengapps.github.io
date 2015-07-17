@@ -68,7 +68,7 @@
                         </li>
                     </ul><br>
                     <form action="#" id="DownloadForm" name="DownloadForm">
-                        <em>Select below to download the latest:</em>
+                        <center><em>Select below to download the latest:</em></center>
                         <h2><div id="github-latest"></div></h2>
                         <table>
                             <tr>
@@ -266,11 +266,11 @@
             $.githubLatest(username, reponame, function(data) {
                 var latest = data.data; // JSON Parsing
 
-                var output = $('<dl/>');
+                var output = $('<a id="release" href="https://github.com/opengapps/'+ reponame +'/releases/latest">');
                 target.empty().append(output);
                 $(latest).each(function() {
-                    output.append('<dt>' + this.name + '</dt>');
-                    output.append('<input type="hidden" name="date" value="' + this.tag_name +'">');
+                    output.append(this.name);
+                    output.append('</a><input type="hidden" name="date" value="' + this.tag_name +'">');
                  });
                 if(autoDownload){
                     downloadSubmit();

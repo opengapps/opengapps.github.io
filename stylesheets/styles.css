@@ -322,3 +322,10 @@ footer {
   display:block;
   text-align:center;
 }
+
+#release{
+  font-weight:700;
+  font-size:18px;
+  display:block;
+  text-align:center;
+}
