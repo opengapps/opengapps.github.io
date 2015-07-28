@@ -1,183 +1,314 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta content="chrome=1" http-equiv="X-UA-Compatible">
-        <meta name="theme-color" content="#009688">
-        <title>
-            The Open GApps Project
-        </title>
-        <link href="stylesheets/styles.css" rel="stylesheet">
-        <link href="stylesheets/github-light.css" rel="stylesheet">
-        <meta content="width=device-width, initial-scale=1, user-scalable=no" name="viewport">
-        <!--[if lt IE 9]>
-        <script src="//html5shiv.googlecode.com/svn/trunk/html5.js" type="text/javascript">></script>
-        <![endif]-->
-        <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
-        <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
-        <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
-        <link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
-        <link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
-        <link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
-        <link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
-        <link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
-        <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
-        <link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
-        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-        <link rel="manifest" href="/manifest.json">
-        <meta name="msapplication-TileColor" content="#009688">
-        <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
-        <link href="http://www.feedcombine.com/rss/5733/open-gapps-releases.xml" rel="alternate" title="Open GApps Releases" type="application/atom+xml" />
-    </head>
-    <body>
-        <div id="logo">
-            <div id="open">
-                <i>Open</i>
+<head>
+    <title>
+        The Open GApps Project
+    </title>
+    <link rel="stylesheet" type="text/css" href="//storage.googleapis.com/code.getmdl.io/1.0.1/material.teal-red.min.css" />
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/icon?family=Material+Icons" />
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Roboto:300,400,500,700" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/styles.css" />
+    <script type="text/javascript" src="//storage.googleapis.com/code.getmdl.io/1.0.1/material.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script type="text/javascript" src="javascripts/attrchange.js"></script>
+    <script type="text/javascript" src="javascripts/scale.fix.js"></script>
+    <!--[if lt IE 9]>
+    <script type="text/javascript" src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link rel="apple-touch-icon" type="image/png" sizes="57x57" href="/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" type="image/png" sizes="60x60" href="/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" type="image/png" sizes="72x72" href="/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" type="image/png" sizes="76x76" href="/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" type="image/png" sizes="114x114" href="/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" type="image/png" sizes="120x120" href="/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" type="image/png" sizes="144x144" href="/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" type="image/png" sizes="152x152" href="/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" type="image/png" sizes="180x180" href="/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+    <meta charset="utf-8">
+    <meta content="chrome=1" http-equiv="X-UA-Compatible">
+    <meta name="theme-color" content="#009688">
+    <meta name="msapplication-TileColor" content="#009688">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="http://www.feedcombine.com/rss/5733/open-gapps-releases.xml" rel="alternate" title="Open GApps Releases" type="application/atom+xml" />
+</head>
+
+<body class="mdl-demo mdl-color--grey-100 mdl-color-text--grey-700 mdl-base">
+    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header mdl-layout--fixed-tabs">
+        <header class="mdl-layout__header mdl-layout__header--scroll">
+            <div class="mdl-layout--large-screen-only mdl-layout__header-row"></div>
+            <div class="onlysmallscreen">
+                <div class="mdl-layout__header-row"></div>
             </div>
-            <div id="gapps">
-                <b><i>GApps</i></b>
+            <div class="mdl-layout__header-row">
+                <!-- Title -->
+                <img id="logoimage" src="logo.svg" />
             </div>
-        </div>
-        <div class="container">
-            <div class="wrapper">
-                <header>
-                    <ul>
-                        <li>
-                            <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-                                <input name="cmd" type="hidden" value="_s-xclick"> <input name="encrypted" type="hidden" value="-----BEGIN PKCS7-----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-----END PKCS7-----"> <a href='#' onclick='this.parentNode.submit(); return false;'>Support by <strong>Donations</strong></a>
-                            </form>
-                        </li>
-                        <li>
-                            <a href="https://github.com/opengapps/opengapps">Develop on <strong>GitHub</strong></a>
-                        </li>
-                        <li>
-                            <a href="http://forum.xda-developers.com/android/software/Open-GApps-for-Android-5.1-5.0-4.4-t3098071/">Discuss on <strong>XDA Forum</strong></a>
-                        </li>
-                    </ul>
-                    <ul>
-                        <li>
-                            <a href="https://github.com/opengapps/opengapps/wiki">Manual on <strong>Wiki</strong></a>
-                        </li>
-                        <li>
-                            <a href="javascript:window.open('https://www.pushbullet.com/channel-popup?tag=opengapps',document.body.clientHeight,'toolbar=no,status=no,menubar=no,width=700,height=600,top='+screen.height/2-300+',left='+screen.width/2-350)">Follow on <strong>Pushbullet</strong></a>
-                        </li>
-                        <li>
-                            <a href="https://twitter.com/opengapps">Changelog on <strong>Twitter</strong></a>
-                        </li>
-                    </ul><br>
-                    <form action="#" id="DownloadForm" name="DownloadForm">
-                        <center><em>Select below to download the latest:</em></center>
-                        <h2><div id="github-latest"></div></h2>
-                        <table>
-                            <tr>
-                                <td>
-                                    <strong>Platform</strong>:
-                                </td>
-                                <td>
-                                    <strong>Android</strong>:
-                                </td>
-                                <td>
-                                    <a href="https://github.com/opengapps/opengapps/wiki/Package-Comparison"><strong>Variant</strong></a>:
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <input checked id="arm" name="arch" type="radio" value="arm">arm
-                                </td>
-                                <td>
-                                    <input id="4.4" name="api" type="radio" value="4.4"><a href="https://github.com/opengapps/opengapps/wiki/Notes-for-Android-4.4">4.4</a>
-                                </td>
-                                <td>
-                                    <input id="aroma" name="variant" type="radio" value="aroma"><a href="https://github.com/opengapps/opengapps/wiki/Aroma-Package">aroma</a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <input id="arm64" name="arch" type="radio" value="arm64">arm64
-                                </td>
-                                <td>
-                                    <input id="5.0" name="api" type="radio" value="5.0"><a href="https://github.com/opengapps/opengapps/wiki/Notes-for-Android-5.0">5.0</a>
-                                </td>
-                                <td>
-                                    <input checked id="stock" name="variant" type="radio" value="stock"><a href="https://github.com/opengapps/opengapps/wiki/Stock-Package">stock</a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <input id="x86" name="arch" type="radio" value="x86"><a href="https://github.com/opengapps/opengapps/wiki/Notes-for-Android-x86">x86</a>
-                                </td>
-                                <td>
-                                    <input checked id="5.1" name="api" type="radio" value="5.1">5.1
-                                </td>
-                                <td>
-                                    <input id="full" name="variant" type="radio" value="full"><a href="https://github.com/opengapps/opengapps/wiki/Full-Package">full</a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <input disabled id="x86_64" name="arch" type="radio" value="x86_64"><em>x86_64</em>
-                                </td>
-                                <td>
-                                </td>
-                                <td>
-                                    <input id="mini" name="variant" type="radio" value="mini"><a href="https://github.com/opengapps/opengapps/wiki/Mini-Package">mini</a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td colspan="2" rowspan="4" style="text-align:center;">
-                                    <a href="javascript:this.downloadSubmit()">
-                                    <div id="download">
-                                            Download
-                                    </div></a>
-                                    <br>
-                                    <a href="javascript:this.versionSubmit()">
-                                    <div id="version">
-                                            Version Information
-                                    </div></a>
-                                </td>
-                                <td>
-                                    <input id="micro" name="variant" type="radio" value="micro"><a href="https://github.com/opengapps/opengapps/wiki/Micro-Package">micro</a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <input id="nano" name="variant" type="radio" value="nano"><a href="https://github.com/opengapps/opengapps/wiki/Nano-Package">nano</a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <input id="pico" name="variant" type="radio" value="pico"><a href="https://github.com/opengapps/opengapps/wiki/Pico-Package">pico</a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <input id="fornexus" name="variant" type="radio" value="fornexus"><a href="https://github.com/opengapps/opengapps/wiki/For-Nexus-Package">for nexus</a>
-                                </td>
-                            </tr>
-                        </table>
+            <div class="mdl-layout--large-screen-only mdl-layout__header-row">
+                <div class="mdl-layout-spacer"></div>
+                <nav class="mdl-navigation">
+                    <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                        <input name="cmd" type="hidden" value="_s-xclick">
+                        <input name="encrypted" type="hidden" value="-----BEGIN PKCS7-----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-----END PKCS7-----"><a class="mdl-navigation__link link" href='#' onclick='this.parentNode.submit(); return false;'>Donate</strong></a>
                     </form>
-                    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js" type="text/javascript">></script>
-                    <!-- Open GApps -->
-                    <ins class="adsbygoogle"
-                        style="display:block"
-                        data-ad-client="ca-pub-9489060368971640"
-                        data-ad-slot="6646806677"
-                        data-ad-format="auto"></ins>
-                    <script type="text/javascript">
-                    (adsbygoogle = window.adsbygoogle || []).push({});
-                    </script>
-                </header>
-                <section>
-                    <h2>
-                        About Open GApps
-                    </h2>
-                    <p>
-                        Open GApps is a Google Apps package developed by writing buildscripts which allow for the automated creation of new up-to-date packages automatically.
-                    <br>
-                        The development process is completely open-source and the goal is to have multiple contributors involved, to secure and reinforce the sustainability of Open GApps development.
-                    </p>
+                    <a class="mdl-navigation__link link" href="https://github.com/opengapps/opengapps">GitHub</a>
+                    <a class="mdl-navigation__link link" href="http://forum.xda-developers.com/android/software/Open-GApps-for-Android-5.1-5.0-4.4-t3098071">XDA Forum</a>
+                    <a class="mdl-navigation__link link" href="https://github.com/opengapps/opengapps/wiki">Wiki</a>
+                    <a class="mdl-navigation__link link" href="javascript:window.open('https://www.pushbullet.com/channel-popup?tag=opengapps',document.body.clientHeight,'toolbar=no,status=no,menubar=no,width=700,height=600,top='+screen.height/2-300+',left='+screen.width/2-350)">Pushbullet</a>
+                    <a class="mdl-navigation__link link" href="https://twitter.com/opengapps">Twitter</a>
+                </nav>
+            </div>
+            <div class="onlysmallscreen">
+                <div class="mdl-layout__header-row"></div>
+            </div>
+            <!-- Tabs -->
+            <div class="mdl-layout__tab-bar mdl-js-ripple-effect mdl-color--primary-dark mdl-shadow--2dp reset-tab">
+                <a href="#downloadsection" class="mdl-layout__tab is-active tab">Download</a>
+                <a href="#aboutsection" class="mdl-layout__tab tab">About</a>
+            </div>
+        </header>
+        <div class="mdl-layout__drawer">
+            <span class="mdl-layout-title">Links</span>
+            <nav class="mdl-navigation">
+                <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                    <input name="cmd" type="hidden" value="_s-xclick">
+                    <input name="encrypted" type="hidden" value="-----BEGIN PKCS7----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-----END PKCS7-----"> <a class="mdl-navigation__link" href='#' onclick='this.parentNode.submit(); return false;'>Support by <strong>Donation</strong></a>
+                </form>
+                <a class="mdl-navigation__link" href="https://github.com/opengapps/opengapps">Source on <strong>GitHub</strong></a>
+                <a class="mdl-navigation__link" href="http://forum.xda-developers.com/android/software/Open-GApps-for-Android-5.1-5.0-4.4-t3098071">Discuss on <strong>XDA Forum</strong></a>
+                <a class="mdl-navigation__link" href="https://github.com/opengapps/opengapps/wiki">Manual on <strong>Wiki</strong></a>
+                <a class="mdl-navigation__link" href="javascript:window.open('https://www.pushbullet.com/channel-popup?tag=opengapps',document.body.clientHeight,'toolbar=no,status=no,menubar=no,width=700,height=600,top='+screen.height/2-300+',left='+screen.width/2-350)">Follow via <strong>Pushbullet</strong></a>
+                <a class="mdl-navigation__link" href="https://twitter.com/opengapps">Changelog on <strong>Twitter</strong></a>
+            </nav>
+        </div>
+        <main class="mdl-layout__content">
+            <section class="mdl-layout__tab-panel is-active" id="downloadsection">
+                <div class="page-content">
+                    <div class="container">
+                        <div class="advertisement">
+                            <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js" type="text/javascript"></script>
+                            <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-9489060368971640" data-ad-slot="6646806677" data-ad-format="auto"></ins>
+                            <script type="text/javascript">
+                                (adsbygoogle = window.adsbygoogle || []).push({});
+                            </script>
+                        </div>
+                        <div class="dform">
+                            <form id="DownloadForm" name="DownloadForm">
+                                <table class="mdl-data-table mdl-js-data-table mdl-shadow--2dp">
+                                    <tr>
+                                        <td class="mdl-data-table__cell--non-numeric">
+                                            <span id="tplatform"><strong>Platform</strong>:</span>
+                                        </td>
+                                        <td>
+                                            <span id="tandroid"><strong>Android</strong>:</span>
+                                        </td>
+                                        <td class="mdl-data-table__cell--non-numeric">
+                                            <span id="tvariant"><a href="https://github.com/opengapps/opengapps/wiki/Package-Comparison"><strong>Variant</strong></a>:</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="mdl-data-table__cell--non-numeric">
+                                            <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="arm" id="larm">
+                                                <input checked id="arm" name="arch" type="radio" value="arm" class="mdl-radio__button" />
+                                                <span class="mdl-radio__label">arm</span>
+                                            </label>
+                                        </td>
+                                        <td>
+                                            <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="4.4" id="l4.4">
+                                                <input id="4.4" name="api" type="radio" value="4.4" class="mdl-radio__button" />
+                                                <a href="https://github.com/opengapps/opengapps/wiki/Notes-for-Android-4.4">
+                                                    <span class="mdl-radio__label">4.4</span>
+                                                </a>
+                                            </label>
+                                        </td>
+                                        <td class="mdl-data-table__cell--non-numeric">
+                                            <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="aroma" id="laroma">
+                                                <input id="aroma" name="variant" type="radio" value="aroma" class="mdl-radio__button" />
+                                                <a href="https://github.com/opengapps/opengapps/wiki/Aroma-Package">
+                                                    <span class="mdl-radio__label">aroma</span>
+                                                </a>
+                                            </label>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="mdl-data-table__cell--non-numeric">
+                                            <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="arm64" id="larm64">
+                                                <input id="arm64" name="arch" type="radio" value="arm64" class="mdl-radio__button" />
+                                                <span class="mdl-radio__label">arm64</span>
+                                            </label>
+                                        </td>
+                                        <td>
+                                            <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="5.0" id="l5.0">
+                                                <input id="5.0" name="api" type="radio" value="5.0" class="mdl-radio__button" />
+                                                <a href="https://github.com/opengapps/opengapps/wiki/Notes-for-Android-5.0">
+                                                    <span class="mdl-radio__label">5.0</span>
+                                                </a>
+                                            </label>
+                                        </td>
+                                        <td class="mdl-data-table__cell--non-numeric">
+                                            <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="stock" id="lstock">
+                                                <input checked id="stock" name="variant" type="radio" value="stock" class="mdl-radio__button" />
+                                                <a href="https://github.com/opengapps/opengapps/wiki/Stock-Package">
+                                                    <span class="mdl-radio__label">stock</span>
+                                                </a>
+                                            </label>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="mdl-data-table__cell--non-numeric">
+                                            <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="x86" id="lx86">
+                                                <input id="x86" name="arch" type="radio" value="x86" class="mdl-radio__button" />
+                                                <a href="https://github.com/opengapps/opengapps/wiki/Notes-for-Android-x86">
+                                                    <span class="mdl-radio__label">x86</span>
+                                                </a>
+                                            </label>
+                                        </td>
+                                        <td>
+                                            <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="5.1" id="l5.1">
+                                                <input checked id="5.1" name="api" type="radio" value="5.1" class="mdl-radio__button" />
+                                                <span class="mdl-radio__label">5.1</span>
+                                            </label>
+                                        </td>
+                                        <td class="mdl-data-table__cell--non-numeric">
+                                            <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="full" id="lfull">
+                                                <input id="full" name="variant" type="radio" value="full" class="mdl-radio__button" />
+                                                <a href="https://github.com/opengapps/opengapps/wiki/Full-Package">
+                                                    <span class="mdl-radio__label">full</span>
+                                                </a>
+                                            </label>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="mdl-data-table__cell--non-numeric">
+                                            <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="x86_64" id="lx86_64">
+                                                <input disabled id="x86_64" name="arch" type="radio" value="x86_64" class="mdl-radio__button" />
+                                                <span class="mdl-radio__label"><em>x86_64</em></span>
+                                            </label>
+                                        </td>
+                                        <td>
+                                        </td>
+                                        <td class="mdl-data-table__cell--non-numeric">
+                                            <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="mini" id="lmini">
+                                                <input id="mini" name="variant" type="radio" value="mini" class="mdl-radio__button" />
+                                                <a href="https://github.com/opengapps/opengapps/wiki/Mini-Package">
+                                                    <span class="mdl-radio__label">mini</span></a>
+                                            </label>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                        <td></td>
+                                        <td class="mdl-data-table__cell--non-numeric">
+                                            <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="micro" id="lmicro">
+                                                <input id="micro" name="variant" type="radio" value="micro" class="mdl-radio__button" />
+                                                <a href="https://github.com/opengapps/opengapps/wiki/Micro-Package">
+                                                    <span class="mdl-radio__label">micro</span>
+                                                </a>
+                                            </label>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                        <td></td>
+                                        <td class="mdl-data-table__cell--non-numeric">
+                                            <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="nano" id="lnano">
+                                                <input id="nano" name="variant" type="radio" value="nano" class="mdl-radio__button" />
+                                                <a href="https://github.com/opengapps/opengapps/wiki/Nano-Package">
+                                                    <span class="mdl-radio__label">nano</span>
+                                                </a>
+                                            </label>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                        <td></td>
+                                        <td class="mdl-data-table__cell--non-numeric">
+                                            <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="pico" id="lpico">
+                                                <input id="pico" name="variant" type="radio" value="pico" class="mdl-radio__button" />
+                                                <a href="https://github.com/opengapps/opengapps/wiki/Pico-Package">
+                                                    <span class="mdl-radio__label">pico</span>
+                                                </a>
+                                            </label>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                        <td></td>
+                                        <td class="mdl-data-table__cell--non-numeric">
+                                            <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="fornexus" id="lfornexus">
+                                                <input id="fornexus" name="variant" type="radio" value="fornexus" class="mdl-radio__button" />
+                                                <a href="https://github.com/opengapps/opengapps/wiki/For-Nexus-Package">
+                                                    <span class="mdl-radio__label">for nexus</span>
+                                                </a>
+                                            </label>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </form>
+                            <div class="downloadbuttons">
+                                <div id="github-latest" class="mdl-progress mdl-js-progress mdl-progress__indeterminate progress-demo"></div>
+                                <button id="bdownload" class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored" onclick="javascript:downloadSubmit();" disabled>
+                                    <i class="material-icons">file_download</i>
+                                </button>
+                                <hr>
+                                <button id="bversion" class="mdl-button mdl-js-button mdl-button--accent" onclick="javascript:versionSubmit();" disabled>Version Information</button>
+                            </div>
+                            <!-- Tooltips -->
+                            <span class="mdl-tooltip mdl-tooltip--large" for="tplatform">
+								If you don't know your platform, choose <em>arm</em>
+							</span>
+                            <span class="mdl-tooltip mdl-tooltip--large" for="lx86">
+								<em>x86</em> still misses some packages in <em>stock</em> and <em>full</em>
+							</span>
+                            <span class="mdl-tooltip mdl-tooltip--large" for="l4.4">
+								In <em>stock</em> and <em>full</em> on <em>4.4</em> some applications are installed on /data/ instead of /system/
+							</span>
+                            <span class="mdl-tooltip mdl-tooltip--large" for="laroma">
+								Graphical installer of the <em>stock</em> package, allows to select which applications to install
+							</span>
+                            <span class="mdl-tooltip mdl-tooltip--large" for="lstock">
+								Recommended package for recent devices,  includes all the Google Apps that come standard on Nexus devices.
+							</span>
+                            <span class="mdl-tooltip mdl-tooltip--large" for="lfull">
+								Similar to <em>stock</em>, but does not replace the AOSP-applications for Browser, Camera, Email, Gallery, Launcher, Keyboard, SMS App, Pico TTS and WebView.
+							</span>
+                            <span class="mdl-tooltip mdl-tooltip--large" for="lmini">
+								Smaller set of Google apps: the most popular applications plus extra functionality that is not available from the Play Store.
+							</span>
+                            <span class="mdl-tooltip mdl-tooltip--large" for="lmicro">
+								Limited set of Google apps: Gmail, Calendar, Google Now plus extra functionality that is not available from the Play Store.
+							</span>
+                            <span class="mdl-tooltip mdl-tooltip--large" for="lnano">
+								Minimal installation, but including the extra functionality that is not available from the Play Store.
+							</span>
+                            <span class="mdl-tooltip mdl-tooltip--large" for="lpico">
+								The bare minimum to get Google Play functionality.
+							</span>
+                            <span class="mdl-tooltip mdl-tooltip--large" for="lfornexus">
+							<strong>Caution!</strong> this package is a special variant of the regular <em>stock</em> package, intended to only be used on Google's Nexus devices, with the 'normal' stock Android firmware installed.
+							</span>
+                            <span class="mdl-tooltip mdl-tooltip--large" for="bdownload">
+							Download selected Open GApps package
+							</span>
+                            <span class="mdl-tooltip mdl-tooltip--large" for="bversion">
+							Version information of the applications that are used for this package
+							</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="mdl-layout__tab-panel" id="aboutsection">
+                <div class="page-content">
+                    <section id="about">
+                        <p>
+                            Open GApps is a Google Apps package developed by writing buildscripts which allow for the automated creation of new up-to-date packages automatically.
+                            <br> The development process is completely open-source and the goal is to have multiple contributors involved, to secure and reinforce the sustainability of Open GApps development.
+                        </p>
                         Some highlights about the characteristics of Open GApps:
                         <ul>
                             <li>All platforms and and all android versions are supported</li>
@@ -189,24 +320,27 @@
                             <li>We offer several variations from a Google Stock Package (based on what Google ships on Nexus devices) to smaller, minimalist packages. An AROMA package that will let you graphically select exactly what to install, and a 'for nexus' package that can be installed on a vendor's native firmware</li>
                             <li>All packages can be customized to your individual preferences using our <a href="https://github.com/opengapps/opengapps/wiki/Advanced-Features-and-Options">exclusive Advanced Features and Options</a></li>
                         </ul>
-                    <p>
-                        The latest download can be chosen using the widget on this page.
-                    <br>
-                        Builds are generated every (European) night automatically (if there are any changes).
-                    </p>
-                    <p>
-                        Arm and arm64 platforms are fully supported. <a href="https://github.com/opengapps/opengapps/wiki/Notes-for-Android-x86">x86</a> still misses some packages in full and stock. x86_64 is currently not included in the daily builds.
-                    </p>
-                </section>
-                <footer>
-                    <p>
-                        Copyright © <script type="text/javascript">var d = new Date();document.write(d.getFullYear())</script><a href="https://github.com/opengapps">The Open GApps Team</a>
-                    </p>
-                </footer>
+                        <p>
+                            The latest download can be chosen using the widget on this page.
+                            <br> Builds are generated every (European) night automatically (if there are any changes).
+                        </p>
+                        <p>
+                            Arm and arm64 platforms are fully supported. <a href="https://github.com/opengapps/opengapps/wiki/Notes-for-Android-x86">x86</a> still misses some packages in full and stock. x86_64 is currently not included in the daily builds.
+                        </p>
+                    </section>
+                </div>
+            </section>
+        </main>
+        <footer class="mdl-mini-footer">
+            <div class="mdl-mini-footer--left-section">
+                <div class="mdl-logo">Copyright ©
+                    <script type="text/javascript">
+                        var d = new Date();
+                        document.write(d.getFullYear())
+                    </script><a href="https://github.com/orgs/opengapps/people">The Open GApps Team</a></div>
             </div>
-        </div>
-    <script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
-    <script src="javascripts/scale.fix.js" type="text/javascript">></script>
+        </footer>
+    </div>
     <script type="text/javascript">
         var archs = ["arm", "arm64", "x86", "x86_64"];
         var apis = ["4.4", "5.0", "5.1"];
@@ -225,207 +359,227 @@
         var variant = getUrlParameter('variant');
         var download = getUrlParameter('download');
 
+        var year;
+        var month;
+        var day;
+        var date;
+
         var autoDownload = false;
         var autoAllowArch = true;
         var autoAllowApi = true;
         var autoAllowVariant = true;
 
-        if($.inArray(arch, archs) == -1){
+        if ($.inArray(arch, archs) == -1) {
             autoAllowArch = false;
             arch = "arm";
         }
-        if($.inArray(api, eval(arch+"_apis")) == -1){
+        if ($.inArray(api, eval(arch + "_apis")) == -1) {
             autoAllowApi = false;
             api = "5.1";
         }
-        if($.inArray(variant, eval(arch+"_variants")) == -1){
+        if ($.inArray(variant, eval(arch + "_variants")) == -1) {
             autoAllowVariant = false;
             variant = "stock";
         }
-        $("input:radio[id='"+arch+"']").attr("checked",true);
-        $("input:radio[id='"+api+"']").attr("checked",true);
-        $("input:radio[id='"+variant+"']").attr("checked",true);
+        $("input:radio[id='" + arch + "']").attr("checked", true);
+        $("input:radio[id='" + api + "']").attr("checked", true);
+        $("input:radio[id='" + variant + "']").attr("checked", true);
 
         //We do this before the auto-assignments, to prevent future conflicts
-        if(download =="true"){
-            if(autoAllowArch && autoAllowApi && autoAllowVariant){
+        if (download == "true") {
+            if (autoAllowArch && autoAllowApi && autoAllowVariant) {
                 var autoDownload = true;
-            }else{
+            } else {
                 alert("Auto Download requested, but refused because of missing or broken parameter(s)!");
             }
         }
 
         jQuery.githubLatest = function(username, reponame, callback) {
-            jQuery.getJSON('https://api.github.com/repos/'+username+'/'+reponame+'/releases/latest?callback=?',callback)
+            jQuery.getJSON('https://api.github.com/repos/' + username + '/' + reponame + '/releases/latest?callback=?', callback)
         }
 
-        jQuery.fn.loadLatest = function(username, reponame) {
-            this.html("<span style='font-size: small'>Querying GitHub for latest " + reponame +" release...</span>");
-
-            var target = this;
+        jQuery.loadLatest = function(username, reponame) {
             $.githubLatest(username, reponame, function(data) {
                 var latest = data.data; // JSON Parsing
-
-                var output = $('<a id="release" href="https://github.com/opengapps/'+ reponame +'/releases/latest">');
-                target.empty().append(output);
                 $(latest).each(function() {
-                    output.append(this.name);
-                    output.append('</a><input type="hidden" name="date" value="' + this.tag_name +'">');
-                 });
-                if(autoDownload){
+                    releasename = this.name.split(" ");
+                    year = releasename.pop();
+                    month = releasename.pop();
+                    day = releasename.pop();
+                    date = this.tag_name;
+                });
+                $.updateRelease();
+                if (autoDownload) {
                     downloadSubmit();
+                    autoDownload = false;
                 }
             });
         }
 
-        function getUrlParameter(sParam)
-        {
+        function getUrlParameter(sParam) {
             var sPageURL = window.location.search.substring(1);
             var sURLVariables = sPageURL.split('&');
-            for (var i = 0; i < sURLVariables.length; i++)
-            {
+            for (var i = 0; i < sURLVariables.length; i++) {
                 var sParameterName = sURLVariables[i].split('=');
-                if (sParameterName[0] == sParam)
-                {
+                if (sParameterName[0] == sParam) {
                     return sParameterName[1];
                 }
             }
         }
 
-        function downloadSubmit() {
+        function validateDownloadForm() {
             var form = document.getElementById('DownloadForm');
-    	    for(var i = 0; i < form.arch.length; i++)
-    	    {
-                    if(form.arch[i].checked)
-                    {
-                        var arch = form.arch[i].value;
-                    }
+            for (var i = 0; i < form.arch.length; i++) {
+                if (form.arch[i].checked) {
+                    var arch = form.arch[i].value;
                 }
-                if(typeof arch=="undefined"){
-                    alert("No architecture platform selected!");
-                    return;
+            }
+            if (typeof arch == "undefined") {
+                return false;
+            }
+            for (var i = 0; i < form.api.length; i++) {
+                if (form.api[i].checked) {
+                    var api = form.api[i].value;
                 }
-    	    for(var i = 0; i < form.api.length; i++)
-    	    {
-                    if(form.api[i].checked)
-                    {
-                        var api = form.api[i].value;
-                    }
-                }
-                if(typeof api=="undefined"){
-                    alert("No android version selected!");
-                    return;
-                }
-    	    for(var i = 0; i < form.variant.length; i++)
-    	    {
-                if(form.variant[i].checked)
-                {
+            }
+            if (typeof api == "undefined") {
+                return false;
+            }
+            for (var i = 0; i < form.variant.length; i++) {
+                if (form.variant[i].checked) {
                     var variant = form.variant[i].value;
                 }
             }
-            if(typeof variant=="undefined"){
-                alert("No Open GApps variant selected!");
-                return;
+            if (typeof variant == "undefined") {
+                return false;
             }
-            var date = this.DownloadForm.date.value;
-            if(typeof date=="undefined"){
-                alert("Querying for the latest version from GitHub failed!");
-                return;
+            if (typeof date == "undefined") {;
+                return false;
             }
-            window.location = "https://github.com/opengapps/"+arch+"/releases/download/"+date+"/open_gapps-"+arch+"-"+api+"-"+variant+"-"+date+".zip";
+            return true;
+        }
+
+        function downloadSubmit() {
+            if (validateDownloadForm()) {
+                window.location = "https://github.com/opengapps/" + arch + "/releases/download/" + date + "/open_gapps-" + arch + "-" + api + "-" + variant + "-" + date + ".zip", "_parent";
+            }
+        }
+
+        jQuery.updateButtons = function() {
+            arch = $("input:radio[name='arch']:checked").attr("value");
+            api = $("input:radio[name='api']:checked").attr("value");
+            variant = $("input:radio[name='variant']:checked").attr("value");
+            if (!$("input:radio[name='arch']:checked").val()) {
+                for (i = 0; i < variants.length; i++) {
+                    document.querySelector('input[id="' + apis[i] + '"]').parentElement.MaterialRadio.disable();
+                    document.querySelector('input[id="' + apis[i] + '"]').parentElement.MaterialRadio.uncheck();
+                }
+                document.querySelector('button[id="bdownload"]').MaterialButton.disable();
+                document.querySelector('button[id="bversion"]').MaterialButton.disable();
+            } else {
+                for (i = 0; i < apis.length; i++) {
+                    document.querySelector('input[id="' + apis[i] + '"]').parentElement.MaterialRadio.disable();
+                }
+                var archapis = eval(arch + "_apis");
+                for (i = 0; i < archapis.length; i++) {
+                    document.querySelector('input[id="' + archapis[i] + '"]').parentElement.MaterialRadio.enable();
+                }
+                if ($.inArray(api, archapis) == -1) {
+                    document.querySelector('input[id="' + api + '"]').parentElement.MaterialRadio.uncheck();
+                    document.querySelector('button[id="bdownload"]').MaterialButton.disable();
+                    document.querySelector('button[id="bversion"]').MaterialButton.disable();
+                }
+            }
+            if (!$("input:radio[name='api']:checked").val()) {
+                for (i = 0; i < variants.length; i++) {
+                    document.querySelector('input[id="' + variants[i] + '"]').parentElement.MaterialRadio.disable();
+                    document.querySelector('input[id="' + variants[i] + '"]').parentElement.MaterialRadio.uncheck();
+                }
+                document.querySelector('button[id="bdownload"]').MaterialButton.disable();
+            } else {
+                document.querySelector('button[id="bversion"]').MaterialButton.enable();
+                for (i = 0; i < variants.length; i++) {
+                    document.querySelector('input[id="' + variants[i] + '"]').parentElement.MaterialRadio.disable();
+                }
+                var archvariants = eval(arch + "_variants");
+                for (i = 0; i < archvariants.length; i++) {
+                    document.querySelector('input[id="' + archvariants[i] + '"]').parentElement.MaterialRadio.enable();
+                }
+                if ($.inArray(variant, archvariants) == -1 && variant != null) {
+                    document.querySelector('input[id="' + variant + '"]').parentElement.MaterialRadio.uncheck();
+                }
+            }
+            $.updateRelease();
         }
 
         function versionSubmit() {
             var form = document.getElementById('DownloadForm');
-    	    for(var i = 0; i < form.arch.length; i++)
-    	    {
-                    if(form.arch[i].checked)
-                    {
-                        var arch = form.arch[i].value;
-                    }
+            for (var i = 0; i < form.arch.length; i++) {
+                if (form.arch[i].checked) {
+                    var arch = form.arch[i].value;
                 }
-                if(typeof arch=="undefined"){
-                    alert("No architecture platform selected!");
-                    return;
-                }
-    	    for(var i = 0; i < form.api.length; i++)
-    	    {
-                    if(form.api[i].checked)
-                    {
-                        var api = form.api[i].value;
-                    }
-                }
-                if(typeof api=="undefined"){
-                    alert("No android version selected!");
-                    return;
-                }
-            var date = this.DownloadForm.date.value;
-            if(typeof date=="undefined"){
-                alert("Querying for the latest version from GitHub failed!");
+            }
+            if (typeof arch == "undefined") {
                 return;
             }
-            window.location = "https://github.com/opengapps/"+arch+"/releases/download/"+date+"/versions-"+arch+"-"+api+"-"+date+".txt";
-        }
-
-        function queryRelease() {
-            var arch = $("input:radio[name='arch']:checked").attr("value");
-            $("#github-latest").loadLatest("opengapps",arch);
-        }
-
-        $(function() {
-            queryRelease();
-        });
-
-        $("input:radio[name=arch]").change(function(){
-            queryRelease();
-        });
-
-        $("input:radio").change(function(){
-            var arch = $("input:radio[name='arch']:checked").attr("value");
-            var api = $("input:radio[name='api']:checked").attr("value");
-            var variant = $("input:radio[name='variant']:checked").attr("value");
-            if (!$("input:radio[name='arch']:checked").val()){
-                for (i = 0; i < variants.length; i++) {
-                    $("input:radio[id='"+apis[i]+"']").attr("disabled",true);
-                    $("input:radio[id='"+apis[i]+"']").attr("checked",false);
-                }
-            }else{
-                for (i = 0; i < apis.length; i++) {
-                    $("input:radio[id='"+apis[i]+"']").attr("disabled",true);
-                }
-                var archapis=eval(arch+"_apis");
-                for (i = 0; i < archapis.length; i++) {
-                    $("input:radio[id='"+archapis[i]+"']").attr("disabled",false);
-                }
-                if ($.inArray(api, archapis) == -1){
-                    $("input:radio[value='"+api+"']").attr("checked",false);
+            for (var i = 0; i < form.api.length; i++) {
+                if (form.api[i].checked) {
+                    var api = form.api[i].value;
                 }
             }
-            if (!$("input:radio[name='api']:checked").val()){
-                for (i = 0; i < variants.length; i++) {
-                    $("input:radio[id='"+variants[i]+"']").attr("disabled",true);
-                    $("input:radio[id='"+variants[i]+"']").attr("checked",false);
-                }
-            }else{
-                for (i = 0; i < variants.length; i++) {
-                    $("input:radio[id='"+variants[i]+"']").attr("disabled",true);
-                }
-                var archvariants=eval(arch+"_variants");
-                for (i = 0; i < archvariants.length; i++) {
-                    $("input:radio[id='"+archvariants[i]+"']").attr("disabled",false);
-                }
-                if ($.inArray(variant, archvariants) == -1){
-                    $("input:radio[value='"+variant+"']").attr("checked",false);
-                }
+            if (typeof api == "undefined") {
+                return;
             }
+            if (typeof date == "undefined") {
+                return;
+            }
+            window.location = "https://github.com/opengapps/" + arch + "/releases/download/" + date + "/versions-" + arch + "-" + api + "-" + date + ".txt";
+        }
+
+        jQuery.queryRelease = function() {
+            var arch = $("input:radio[name='arch']:checked").attr("value");
+            $.loadLatest("opengapps", arch);
+        }
+
+        jQuery.updateRelease = function() {
+            if (validateDownloadForm()) {
+                document.querySelector('button[id="bdownload"]').MaterialButton.enable();
+                document.querySelector('button[id="bversion"]').MaterialButton.enable();
+                $("#github-latest").html("<h5>" + arch + " " + api + " " + variant + " of " + day + " " + month + " " + year + "</h5>");
+            } else {
+                document.querySelector('button[id="bdownload"]').MaterialButton.disable();
+                $("#github-latest").html("<h5>No package selected</h5>");
+            }
+        }
+
+        $("input:radio[name=arch]").change(function() {
+            $.queryRelease();
         });
 
-        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+        $("input:radio").change(function() {
+            $.updateButtons();
+        });
+
+        $(document).ready(function() {
+            setTimeout(
+                function() {
+                    $.queryRelease();
+                }, 1000);
+        });
+
+        (function(i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function() {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
         ga('create', 'UA-63785067-1', 'auto');
         ga('send', 'pageview');
-        </script>
-    </body>
+    </script>
+</body>
 </html>
