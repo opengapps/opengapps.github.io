@@ -4,11 +4,11 @@
     <title>
         The Open GApps Project
     </title>
-    <link rel="stylesheet" type="text/css" href="https://storage.googleapis.com/code.getmdl.io/1.0.1/material.teal-red.min.css" />
+    <link rel="stylesheet" type="text/css" href="https://storage.googleapis.com/code.getmdl.io/1.0.2/material.teal-red.min.css" />
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" />
     <link rel="stylesheet" type="text/css" href="stylesheets/styles.css" />
-    <script type="text/javascript" src="https://storage.googleapis.com/code.getmdl.io/1.0.1/material.min.js"></script>
+    <script type="text/javascript" src="https://storage.googleapis.com/code.getmdl.io/1.0.2/material.min.js"></script>
     <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
     <!--[if lt IE 9]>
     <script type="text/javascript" src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -341,7 +341,7 @@
                     <script type="text/javascript">
                         var d = new Date();
                         document.write(d.getFullYear())
-                    </script><a href="https://github.com/orgs/opengapps/people">The Open GApps Team</a></div>
+                    </script><a href="https://github.com/orgs/opengapps/people"> The Open GApps Team</a></div>
             </div>
         </footer>
     </div>
@@ -432,6 +432,7 @@
         }
 
         function validateDownloadForm() {
+            componentHandler.upgradeDom();
             var form = document.getElementById('DownloadForm');
             for (var i = 0; i < form.arch.length; i++) {
                 if (form.arch[i].checked) {
@@ -557,9 +558,11 @@
                 document.querySelector('button[id="bmd5"]').MaterialButton.enable();
                 document.querySelector('button[id="bversion"]').MaterialButton.enable();
                 $("#github-latest").removeClass("mdl-progress mdl-js-progress mdl-progress__indeterminate progress-demo is-upgraded");
+                $("#github-latest").removeAttr("data-upgraded");
                 $("#github-latest").html("<h5>" + arch + " " + api + " " + variant + " " + day + " " + month + " " + year + "</h5>");
             } else {
                 $("#github-latest").removeClass("mdl-progress mdl-js-progress mdl-progress__indeterminate progress-demo is-upgraded");
+                $("#github-latest").removeAttr("data-upgraded");
                 document.querySelector('button[id="bdownload"]').MaterialButton.disable();
                 document.querySelector('button[id="bmd5"]').MaterialButton.disable();
                 $("#github-latest").html("<h5>No package selected</h5>");
@@ -575,10 +578,7 @@
         });
 
         $(document).ready(function() {
-            setTimeout(
-                function() {
-                    $.queryRelease();
-                }, 1000);
+            $.queryRelease();
         });
 
         (function(i, s, o, g, r, a, m) {
