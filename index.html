@@ -4,36 +4,34 @@
     <title>
         The Open GApps Project
     </title>
-    <link rel="stylesheet" type="text/css" href="//storage.googleapis.com/code.getmdl.io/1.0.1/material.teal-red.min.css" />
-    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/icon?family=Material+Icons" />
-    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Roboto:300,400,500,700" />
+    <link rel="stylesheet" type="text/css" href="https://storage.googleapis.com/code.getmdl.io/1.0.1/material.teal-red.min.css" />
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" />
     <link rel="stylesheet" type="text/css" href="stylesheets/styles.css" />
-    <script type="text/javascript" src="//storage.googleapis.com/code.getmdl.io/1.0.1/material.min.js"></script>
-    <script type="text/javascript" src="//code.jquery.com/jquery-2.1.4.min.js"></script>
-    <script type="text/javascript" src="javascripts/attrchange.js"></script>
-    <script type="text/javascript" src="javascripts/scale.fix.js"></script>
+    <script type="text/javascript" src="https://storage.googleapis.com/code.getmdl.io/1.0.1/material.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
     <!--[if lt IE 9]>
     <script type="text/javascript" src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
-    <link rel="apple-touch-icon" type="image/png" sizes="57x57" href="/apple-icon-57x57.png">
-    <link rel="apple-touch-icon" type="image/png" sizes="60x60" href="/apple-icon-60x60.png">
-    <link rel="apple-touch-icon" type="image/png" sizes="72x72" href="/apple-icon-72x72.png">
-    <link rel="apple-touch-icon" type="image/png" sizes="76x76" href="/apple-icon-76x76.png">
-    <link rel="apple-touch-icon" type="image/png" sizes="114x114" href="/apple-icon-114x114.png">
-    <link rel="apple-touch-icon" type="image/png" sizes="120x120" href="/apple-icon-120x120.png">
-    <link rel="apple-touch-icon" type="image/png" sizes="144x144" href="/apple-icon-144x144.png">
-    <link rel="apple-touch-icon" type="image/png" sizes="152x152" href="/apple-icon-152x152.png">
-    <link rel="apple-touch-icon" type="image/png" sizes="180x180" href="/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192" href="/android-icon-192x192.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="apple-touch-icon" type="image/png" sizes="57x57" href="/images/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" type="image/png" sizes="60x60" href="/images/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" type="image/png" sizes="72x72" href="/images/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" type="image/png" sizes="76x76" href="/images/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" type="image/png" sizes="114x114" href="/images/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" type="image/png" sizes="120x120" href="/images/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" type="image/png" sizes="144x144" href="/images/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" type="image/png" sizes="152x152" href="/images/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" type="image/png" sizes="180x180" href="/images/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/images/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/images/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
     <link rel="manifest" href="/manifest.json">
     <meta charset="utf-8">
     <meta content="chrome=1" http-equiv="X-UA-Compatible">
     <meta name="theme-color" content="#009688">
     <meta name="msapplication-TileColor" content="#009688">
-    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="msapplication-TileImage" content="/images/ms-icon-144x144.png">
     <meta name="apple-mobile-web-app-title" content="Open GApps">
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -49,7 +47,7 @@
             </div>
             <div class="mdl-layout__header-row">
                 <!-- Title -->
-                <img id="logoimage" src="logo.svg" />
+                <img id="logoimage" src="/images/logo.svg" />
             </div>
             <div class="mdl-layout--large-screen-only mdl-layout__header-row">
                 <div class="mdl-layout-spacer"></div>
@@ -259,6 +257,7 @@
                                 </button>
                                 <hr>
                                 <button id="bversion" class="mdl-button mdl-js-button mdl-button--accent" onclick="javascript:versionSubmit();" disabled>Version Information</button>
+                                <button id="bmd5" class="mdl-button mdl-js-button mdl-button--accent" onclick="javascript:md5Submit();" disabled>MD5 Checksum</button>
                             </div>
                             <!-- Tooltips -->
                             <span class="mdl-tooltip mdl-tooltip--large" for="tplatform">
@@ -299,6 +298,9 @@
 							</span>
                             <span class="mdl-tooltip mdl-tooltip--large" for="bversion">
 							Detailed version information of the applications that are used for this specific platform architecture and android version
+							</span>
+                            <span class="mdl-tooltip mdl-tooltip--large" for="bmd5">
+							Download a md5 checksum file that can be used to verify the integrity of the downloaded package.
 							</span>
                         </div>
                     </div>
@@ -467,6 +469,12 @@
             }
         }
 
+        function md5Submit() {
+            if (validateDownloadForm()) {
+                window.location = "https://github.com/opengapps/" + arch + "/releases/download/" + date + "/open_gapps-" + arch + "-" + api + "-" + variant + "-" + date + ".zip.md5", "_parent";
+            }
+        }
+
         jQuery.updateButtons = function() {
             arch = $("input:radio[name='arch']:checked").attr("value");
             api = $("input:radio[name='api']:checked").attr("value");
@@ -546,12 +554,14 @@
         jQuery.updateRelease = function() {
             if (validateDownloadForm()) {
                 document.querySelector('button[id="bdownload"]').MaterialButton.enable();
+                document.querySelector('button[id="bmd5"]').MaterialButton.enable();
                 document.querySelector('button[id="bversion"]').MaterialButton.enable();
                 $("#github-latest").removeClass("mdl-progress mdl-js-progress mdl-progress__indeterminate progress-demo is-upgraded");
                 $("#github-latest").html("<h5>" + arch + " " + api + " " + variant + " " + day + " " + month + " " + year + "</h5>");
             } else {
                 $("#github-latest").removeClass("mdl-progress mdl-js-progress mdl-progress__indeterminate progress-demo is-upgraded");
                 document.querySelector('button[id="bdownload"]').MaterialButton.disable();
+                document.querySelector('button[id="bmd5"]').MaterialButton.disable();
                 $("#github-latest").html("<h5>No package selected</h5>");
             }
         }
