@@ -390,6 +390,8 @@
         var autoAllowApi = true;
         var autoAllowVariant = true;
 
+        var adsPushed = false;
+
         if ($.inArray(arch, archs) == -1) {
             autoAllowArch = false;
             arch = "arm";
@@ -454,7 +456,10 @@
 
         function validateDownloadForm() {
             componentHandler.upgradeDom();
-            (adsbygoogle = window.adsbygoogle || []).push({});
+            if(!adsPushed){
+                (adsbygoogle = window.adsbygoogle || []).push({});
+                adsPushed = true;
+            }
             var form = document.getElementById('DownloadForm');
             for (var i = 0; i < form.arch.length; i++) {
                 if (form.arch[i].checked) {
