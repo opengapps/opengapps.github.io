@@ -14,6 +14,7 @@
     <script type="text/javascript" src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
     <script async type="text/javascript" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <script type="text/javascript" type="text/javascript" src="//s3.amazonaws.com/cc.silktide.com/cookieconsent.latest.min.js"></script>
     <link rel="apple-touch-icon" type="image/png" sizes="57x57" href="/images/apple-icon-57x57.png">
     <link rel="apple-touch-icon" type="image/png" sizes="60x60" href="/images/apple-icon-60x60.png">
     <link rel="apple-touch-icon" type="image/png" sizes="72x72" href="/images/apple-icon-72x72.png">
@@ -458,6 +459,7 @@
             componentHandler.upgradeDom();
             if(!adsPushed){
                 (adsbygoogle = window.adsbygoogle || []).push({});
+                window.cookieconsent_options = {"message":"We use cookies to  share information about your use of our site with our advertising and analytics partner.","dismiss":"Got it!","learnMore":"More info","link":"https://www.google.com/intl/en/policies/privacy/partners/","theme":"dark-bottom"};
                 adsPushed = true;
             }
             var form = document.getElementById('DownloadForm');
