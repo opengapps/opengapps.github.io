@@ -38,7 +38,7 @@
    "density": "4.0"
   }
  ],
- "start_url": "index.html",
+ "start_url": "/",
  "display": "minimal-ui",
  "orientation": "portrait",
  "theme_color": "#009688"

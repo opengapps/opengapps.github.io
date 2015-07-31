@@ -5,16 +5,13 @@
         The Open GApps Project
     </title>
     <link rel="stylesheet" type="text/css" href="https://storage.googleapis.com/code.getmdl.io/1.0.2/material.teal-red.min.css" />
-    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
-    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" />
     <link rel="stylesheet" type="text/css" href="stylesheets/styles.css" />
     <script type="text/javascript" src="https://storage.googleapis.com/code.getmdl.io/1.0.2/material.min.js"></script>
-    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
     <!--[if lt IE 9]>
     <script type="text/javascript" src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
     <script async type="text/javascript" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-    <script type="text/javascript" type="text/javascript" src="//s3.amazonaws.com/cc.silktide.com/cookieconsent.latest.min.js"></script>
+    <script async type="text/javascript" type="text/javascript" src="//s3.amazonaws.com/cc.silktide.com/cookieconsent.latest.min.js"></script>
     <link rel="apple-touch-icon" type="image/png" sizes="57x57" href="/images/apple-icon-57x57.png">
     <link rel="apple-touch-icon" type="image/png" sizes="60x60" href="/images/apple-icon-60x60.png">
     <link rel="apple-touch-icon" type="image/png" sizes="72x72" href="/images/apple-icon-72x72.png">
@@ -39,7 +36,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="http://www.feedcombine.com/rss/5733/open-gapps-releases.xml" rel="alternate" title="Open GApps Releases" type="application/atom+xml" />
 </head>
-
 <body class="mdl-demo mdl-color--grey-100 mdl-color-text--grey-700 mdl-base">
     <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header mdl-layout--fixed-tabs">
         <header class="mdl-layout__header mdl-layout__header--scroll">
@@ -363,6 +359,8 @@
     <span class="mdl-tooltip mdl-tooltip--large" for="twitterlink">
     Changelog on Twitter
     </span>
+    <!-- JQuery should not block loading the page -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
     <script type="text/javascript">
         var archs = ["arm", "arm64", "x86", "x86_64"];
         var apis = ["4.4", "5.0", "5.1"];
@@ -626,5 +624,8 @@
         ga('create', 'UA-63785067-1', 'auto');
         ga('send', 'pageview');
     </script>
+    <!-- Fonts should not block loading the page -->
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" />
 </body>
 </html>
