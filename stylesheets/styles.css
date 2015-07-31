@@ -1,101 +1,126 @@
 body {
-    font-family: Roboto;
+font-family:Roboto;
 }
+
 a {
-    color: #009688;
-    text-decoration: none;
+color:#009688;
+text-decoration:none;
 }
+
 table {
-    width: 100%;
-    border-collapse: collapse;
-    position: relative;
+width:100%;
+border-collapse:collapse;
+position:relative;
 }
+
 img {
-    max-width: 100%;
+max-width:100%;
 }
+
 .mdl-demo:not(.is-small-screen) .container {
-    max-width: 900px;
-    margin: 0 auto;
+max-width:900px;
+margin:0 auto;
 }
+
 .mdl-demo:not(.is-small-screen) .advertisement {
-    width: 400px;
-    float: right;
-    margin-top: 10px;
-    margin-bottom: 10px;
+width:400px;
+float:right;
+margin-top:10px;
+margin-bottom:10px;
 }
+
 .mdl-demo:not(.is-small-screen) .dform {
-    max-width: 400px;
-    float: left;
+max-width:400px;
+float:left
 }
+
 .mdl-demo .is-small-screen .container {
-    width: 100%;
+width:100%;
 }
+
 .mdl-demo .is-small-screen .advertisement {
-    float: none;
-    margin: 0 auto;
-    margin-top: 10px;
-    margin-bottom: 10px;
+float:none;
+margin:0 auto;
+margin-top:10px;
+margin-bottom:10px;
 }
+
 .mdl-demo .is-small-screen .dform {
-    float: none;
-    margin: 0 auto;
+float:none;
+margin:0 auto;
 }
+
 .mdl-layout:not(.is-small-screen) .onlysmallscreen .mdl-layout__header-row {
-    display: none;
+display:none;
 }
+
 #about {
-    width: auto;
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 10px;
+width:auto;
+max-width:800px;
+margin:0 auto;
+padding:10px;
 }
-#aboutsection{
-    padding: 15px;
+
+#aboutsection {
+padding:15px;
 }
-#downloadsection{
-    padding: 15px;
+
+#downloadsection {
+padding:15px;
 }
+
 .mdl-demo .is-small-screen #downloadsection {
-	padding:0;
+padding:0;
 }
+
 .downloadbuttons {
-    max-width: 400px;
-    text-align: right;
-    vertical-align: middle;
+max-width:400px;
+text-align:right;
+vertical-align:middle;
 }
+
 #github-latest {
-    width: 80%;
-    text-align: center;
-    display: inline-block;
-    margin: 0;
-    padding: 0;
+width:80%;
+text-align:center;
+display:inline-block;
+margin:0;
+padding:0;
 }
+
 #bdownload {
-    display: inline-block;
-    text-align: right;
+display:inline-block;
+text-align:right;
 }
+
 #bmd5 {
-    float: right;
+float:right;
 }
+
 #bversion {
-    float: left;
+float:left;
 }
+
 #logoimage {
-    width: 250px;
-    height: auto;
+width:250px;
+height:auto;
 }
+
 .mdl-demo .mdl-layout__tab-bar-button {
-    display: none;
+display:none;
 }
+
 .mdl-demo .mdl-layout:not(.is-small-screen) .mdl-layout__drawer-button {
-    display: none;
+display:none;
 }
+
 .mdl-layout__content {
-    flex-shrink: 0;
+flex-shrink:0;
 }
+
 .link {
-    opacity: 0.7;
+opacity:.7;
 }
+
 .link:hover {
-    opacity: 1;
+opacity:1;
 }
