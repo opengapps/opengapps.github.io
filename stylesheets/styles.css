@@ -94,10 +94,14 @@ text-align:right;
 
 #bmd5 {
 float:right;
+margin-bottom: 8px;
+margin-right: 8px;
 }
 
 #bversion {
 float:left;
+margin-bottom: 8px;
+margin-left: 8px;
 }
 
 #logoimage {
