@@ -365,10 +365,12 @@ jQuery.updateButtons=function(){
   componentHandler.upgradeDom();
   if(!adsPushed){(adsbygoogle=window.adsbygoogle||[]).push({});window.cookieconsent_options={"message":"We use cookies to  share information about your use of our site with our advertising and analytics partner.","dismiss":"Got it!","learnMore":"More info","link":"https://www.google.com/intl/en/policies/privacy/partners/","theme":"dark-bottom"};adsPushed=true;}
   arch=$("input:radio[name='arch']:checked").attr("value");api=$("input:radio[name='api']:checked").attr("value");variant=$("input:radio[name='variant']:checked").attr("value");;
-  if(getBox(arch)){for(i=0;i<apis.length;i++){toggleBox(apis[i],false);}for(var k in packages[arch]['apis']){toggleBox(k,true);}if(packages[arch]['apis'][api]===undefined&&api!=null){uncheckBox(api);}
+  if(getBox(arch)){for(i=0;i<apis.length;i++){toggleBox(apis[i],false);}for(var k in packages[arch]['apis']){toggleBox(k,true);}
   }else{for(i=0;i<apis.length;i++){toggleBox(apis[i],false);}}
-  if(getBox(api)){if(packages[arch]!=undefined){toggleButton("bversion",true);}for(i=0;i<variants.length;i++){toggleBox(variants[i],false);}for(var k in packages[arch]['apis'][api]){toggleBox(k,true);}if(packages[arch]['apis'][api][variant]===undefined&&variant!=null){uncheckBox(variant);}
-  }else{for(i=0;i<variants.length;i++){toggleBox(variants[i]);}toggleButton("bversion",false);}updateForm();}
+  if(packages[arch]['apis'][api]===undefined&&api!=null){uncheckBox(api);}
+  if(getBox(api)){if(packages[arch]!=undefined){toggleButton("bversion",true);}for(i=0;i<variants.length;i++){toggleBox(variants[i],false);}for(var k in packages[arch]['apis'][api]){toggleBox(k,true);}
+  }else{for(i=0;i<variants.length;i++){toggleBox(variants[i]);}toggleButton("bversion",false);}
+  if(variant!=null&&(packages[arch]['apis'][api]===undefined||packages[arch]['apis'][api][variant]===undefined)){uncheckBox(variant);}updateForm();}
 jQuery.githubLatest=function(username,reponame,callback){jQuery.getJSON('https://api.github.com/repos/'+username+'/'+reponame+'/releases/latest?callback=?',callback)}
 jQuery.loadLatest=function(username,reponame){
   $.githubLatest(username,reponame,function(data){var latest=data.data;$(latest).each(function(){if(this.name!==undefined){
