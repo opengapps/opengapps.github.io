@@ -7,6 +7,10 @@ color:#009688;
 text-decoration:none;
 }
 
+.mdl-menu__item {
+text-align:right;
+}
+
 table {
 width:100%;
 border-collapse:collapse;
@@ -89,7 +93,7 @@ padding:0;
 
 #bdownload {
 vertical-align:top;
-margin-top: 8px;
+margin-top:8px;
 display:inline-block;
 text-align:right;
 }

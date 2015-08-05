@@ -41,7 +41,6 @@ The Open GApps Project
         <header class="mdl-layout__header mdl-layout__header--scroll">
             <div class="mdl-layout__header-row"></div>
             <div class="mdl-layout__header-row">
-                <!-- Title -->
                 <img id="logoimage" src="/images/logo.svg" />
             </div>
             <div class="mdl-layout__header-row mdl-cell--hide-phone mdl-cell--hide-tablet">
@@ -55,12 +54,18 @@ The Open GApps Project
                     <a class="mdl-navigation__link link" id="githublink" href="https://github.com/opengapps/opengapps">GitHub</a>
                     <a class="mdl-navigation__link link" id="xdalink" href="http://forum.xda-developers.com/android/software/Open-GApps-for-Android-5.1-5.0-4.4-t3098071">XDA Forum</a>
                     <a class="mdl-navigation__link link" id="wikilink" href="https://github.com/opengapps/opengapps/wiki">Wiki</a>
-                    <a class="mdl-navigation__link link" id="pushbulletlink" href="javascript:window.open('https://www.pushbullet.com/channel-popup?tag=opengapps',document.body.clientHeight,'toolbar=no,status=no,menubar=no,width=700,height=600,top='+screen.height/2-300+',left='+screen.width/2-350)">Pushbullet</a>
+                    <a class="mdl-navigation__link link" id="pushbulletlink" href="#">Pushbullet</a>
+                    <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="pushbulletlink">
+                      <a href="javascript:window.open('https://www.pushbullet.com/channel-popup?tag=opengapps',document.body.clientHeight,'toolbar=no,status=no,menubar=no,width=700,height=460,top='+screen.height/2-230+',left='+screen.width/2-350)"><li class="mdl-menu__item">All Releases</li></a>
+                      <a href="javascript:window.open('https://www.pushbullet.com/channel-popup?tag=opengappsarm',document.body.clientHeight,'toolbar=no,status=no,menubar=no,width=700,height=460,top='+screen.height/2-230+',left='+screen.width/2-350)"><li class="mdl-menu__item">ARM Releases</li></a>
+                      <a href="javascript:window.open('https://www.pushbullet.com/channel-popup?tag=opengappsarm64',document.body.clientHeight,'toolbar=no,status=no,menubar=no,width=700,height=460,top='+screen.height/2-230+',left='+screen.width/2-350)"><li class="mdl-menu__item">ARM64 Releases</li></a>
+                      <a href="javascript:window.open('https://www.pushbullet.com/channel-popup?tag=opengappsx86',document.body.clientHeight,'toolbar=no,status=no,menubar=no,width=700,height=460,top='+screen.height/2-230+',left='+screen.width/2-350)"><li class="mdl-menu__item">x86 Releases</li></a>
+                      <li disabled class="mdl-menu__item">x86_64 Releases</li>
+                    </ul>
                     <a class="mdl-navigation__link link" id="twitterlink" href="https://twitter.com/opengapps">Twitter</a>
                 </nav>
             </div>
             <div class="mdl-layout__header-row mdl-cell--hide-desktop"></div>
-            <!-- Tabs -->
             <div class="mdl-layout__tab-bar mdl-js-ripple-effect mdl-color--primary-dark mdl-shadow--2dp reset-tab">
                 <a href="#downloadsection" class="mdl-layout__tab is-active tab">Download</a>
                 <a href="#aboutsection" class="mdl-layout__tab tab">About</a>
@@ -77,7 +82,11 @@ The Open GApps Project
                 <a class="mdl-navigation__link" href="https://github.com/opengapps/opengapps" target="_blank">Source on <strong>GitHub</strong></a>
                 <a class="mdl-navigation__link" href="http://forum.xda-developers.com/android/software/Open-GApps-for-Android-5.1-5.0-4.4-t3098071" target="_blank">Discuss on <strong>XDA Forum</strong></a>
                 <a class="mdl-navigation__link" href="https://github.com/opengapps/opengapps/wiki" target="_blank">Manual on <strong>Wiki</strong></a>
-                <a class="mdl-navigation__link" href="https://www.pushbullet.com/channel-popup?tag=opengapps" target="_blank">Follow via <strong>Pushbullet</strong></a>
+                <a class="mdl-navigation__link" href="https://www.pushbullet.com/channel-popup?tag=opengapps" target="_blank">All via <strong>Pushbullet</strong></a>
+                <a class="mdl-navigation__link" href="https://www.pushbullet.com/channel-popup?tag=opengappsarm" target="_blank">ARM via <strong>Pushbullet</strong></a>
+                <a class="mdl-navigation__link" href="https://www.pushbullet.com/channel-popup?tag=opengappsarm64" target="_blank">ARM64 via <strong>Pushbullet</strong></a>
+                <a class="mdl-navigation__link" href="https://www.pushbullet.com/channel-popup?tag=opengappsx86" target="_blank">x86 via <strong>Pushbullet</strong></a>
+                <a class="mdl-navigation__link" href="#"><strike>x86_64 via <strong>Pushbullet</strong></strike></a>
                 <a class="mdl-navigation__link" href="https://twitter.com/opengapps" target="_blank">Changelog on <strong>Twitter</strong></a>
             </nav>
         </div>
@@ -106,7 +115,7 @@ The Open GApps Project
                                         <td class="mdl-data-table__cell--non-numeric">
                                             <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="arm" id="larm">
                                                 <input checked id="arm" name="arch" type="radio" value="arm" class="mdl-radio__button" />
-                                                <span class="mdl-radio__label">arm</span>
+                                                <span class="mdl-radio__label">ARM</span>
                                             </label>
                                         </td>
                                         <td>
@@ -126,7 +135,7 @@ The Open GApps Project
                                         <td class="mdl-data-table__cell--non-numeric">
                                             <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="arm64" id="larm64">
                                                 <input id="arm64" name="arch" type="radio" value="arm64" class="mdl-radio__button" />
-                                                <span class="mdl-radio__label">arm64</span>
+                                                <span class="mdl-radio__label">ARM64</span>
                                             </label>
                                         </td>
                                         <td>
@@ -256,7 +265,7 @@ The Open GApps Project
                             <br> Builds are generated every (European) night automatically (if there are any changes).
                         </p>
                         <p>
-                            Arm and arm64 platforms are fully supported. <a href="https://github.com/opengapps/opengapps/wiki/Notes-for-Android-x86">x86</a> still misses some packages in full and stock. x86_64 is currently not included in the daily builds.
+                            ARM and ARM64 platforms are fully supported. <a href="https://github.com/opengapps/opengapps/wiki/Notes-for-Android-x86">x86</a> still misses some packages in full and stock. x86_64 is currently not included in the daily builds.
                         </p>
                     </section>
                 </div>
@@ -268,13 +277,13 @@ The Open GApps Project
                 <script type="text/javascript">
                 var d = new Date();
                 document.write(d.getFullYear())
-                </script><a href="https://github.com/orgs/opengapps/people"> The Open GApps Team</a></div>
+                </script> <a href="https://github.com/orgs/opengapps/people">The Open GApps Team</a></div>
             </div>
         </footer>
     </div>
 <!-- Tooltips -->
 <span class="mdl-tooltip mdl-tooltip--large" for="tplatform">
-    If you don't know your platform, choose <em>arm</em>
+    If you don't know your platform, choose <em>ARM</em>
 </span>
 <span class="mdl-tooltip mdl-tooltip--large" for="lx86">
     <em>x86</em> still misses some packages in <em>stock</em> and <em>full</em>
