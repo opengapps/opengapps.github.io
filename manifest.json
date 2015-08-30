@@ -39,7 +39,7 @@
    "density": "4.0"
   }
  ],
- "start_url": "/",
+ "start_url": "/?app=true",
  "display": "standalone",
  "orientation": "portrait",
  "theme_color": "#009688"
