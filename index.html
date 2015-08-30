@@ -182,10 +182,14 @@ The Open GApps Project
                                         <td class="mdl-data-table__cell--non-numeric">
                                             <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="x86_64" id="lx86_64">
                                                 <input disabled id="x86_64" name="arch" type="radio" value="x86_64" class="mdl-radio__button" />
-                                                <span class="mdl-radio__label"><em>x86_64</em></span>
+                                                <span class="mdl-radio__label">x86_64</span>
                                             </label>
                                         </td>
                                         <td>
+                                            <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="6.0" id="6.0">
+                                                <input disabled id="6.0" name="api" type="radio" value="6.0" class="mdl-radio__button" />
+                                                <span class="mdl-radio__label">6.0</span>
+                                            </label>
                                         </td>
                                         <td class="mdl-data-table__cell--non-numeric">
                                             <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="mini" id="lmini">
@@ -352,7 +356,7 @@ The Open GApps Project
 <!-- JQuery should not block loading the page -->
 <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
 <script type="text/javascript">
-var archs=["arm","arm64","x86","x86_64"];var apis=["4.4","5.0","5.1"];var variants=["aroma","stock","full","mini","micro","nano","pico","fornexus"];var packages={};
+var archs=["arm","arm64","x86","x86_64"];var apis=["4.4","5.0","5.1","6.0"];var variants=["aroma","stock","full","mini","micro","nano","pico","fornexus"];var packages={};
 var arch=getUrlParameter("arch");var api=getUrlParameter("api");var variant=getUrlParameter("variant");var download=getUrlParameter("download");
 var autoDownload=false;var autoAllowArch=true;var autoAllowApi=true;var autoAllowVariant=true;var adsPushed=false;
 if($.inArray(arch,archs)==-1){autoAllowArch=false;arch="arm";}if($.inArray(api,apis)==-1){autoAllowApi=false;api="5.1";}if($.inArray(variant,variants)==-1){autoAllowVariant=false;variant="stock";}
