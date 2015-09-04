@@ -228,16 +228,6 @@ The Open GApps Project
                                             </label>
                                         </td>
                                     </tr>
-                                    <tr>
-                                        <td></td>
-                                        <td></td>
-                                        <td class="mdl-data-table__cell--non-numeric">
-                                            <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="fornexus" id="lfornexus">
-                                                <input id="fornexus" name="variant" type="radio" value="fornexus" class="mdl-radio__button" />
-                                                <span class="mdl-radio__label"><a href="https://github.com/opengapps/opengapps/wiki/For-Nexus-Package">for nexus</a></span>
-                                            </label>
-                                        </td>
-                                    </tr>
                                 </table>
                             </form>
                             <div class="downloadbuttons">
@@ -268,7 +258,8 @@ The Open GApps Project
                             <li>Strong compression, which allows for relatively small downloads of even the most complete packages</li>
                             <li>Automatic Backup: It is not necessary to re-flash Open GApps or modules when you flash a ROM update. Most ROMs support this function</li>
                             <li>All installers measure your device's system partition size and will notify you, before making any changes, if it finds any problems</li>
-                            <li>We offer several variations from a Google Stock Package (based on what Google ships on Nexus devices) to smaller, minimalist packages. An AROMA package that will let you graphically select exactly what to install, and a 'for nexus' package that can be installed on a vendor's native firmware</li>
+                            <li>We offer several variations from a Google Stock Package (based on what Google ships on Nexus devices) to smaller, minimalist packages and an AROMA package that allows graphically selection of what to install</li>
+                            <li>A special 'Stock ROM' mode that allows to update the Google Apps on Stock ROMs that conform to the original Google Nexus filesystem structure</li>
                             <li>All packages can be customized to your individual preferences using our <a href="https://github.com/opengapps/opengapps/wiki/Advanced-Features-and-Options">exclusive Advanced Features and Options</a></li>
                         </ul>
                         <p>
@@ -323,9 +314,6 @@ The Open GApps Project
 <span class="mdl-tooltip mdl-tooltip--large" for="lpico">
     The bare minimum to get Google Play functionality.
 </span>
-<span class="mdl-tooltip mdl-tooltip--large" for="lfornexus">
-    <strong>Caution!</strong> this package is a special variant of the regular <em>stock</em> package, intended to only be used on Google's Nexus devices, with the 'normal' stock Android firmware installed.
-</span>
 <span class="mdl-tooltip mdl-tooltip--large" for="bdownload">
     Download selected Open GApps package
 </span>
@@ -356,7 +344,7 @@ The Open GApps Project
 <!-- JQuery should not block loading the page -->
 <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
 <script type="text/javascript">
-var archs=["arm","arm64","x86","x86_64"];var apis=["4.4","5.0","5.1","6.0"];var variants=["aroma","stock","full","mini","micro","nano","pico","fornexus"];var packages={};
+var archs=["arm","arm64","x86","x86_64"];var apis=["4.4","5.0","5.1","6.0"];var variants=["aroma","stock","full","mini","micro","nano","pico"];var packages={};
 var arch=getUrlParameter("arch");var api=getUrlParameter("api");var variant=getUrlParameter("variant");var download=getUrlParameter("download");
 var autoDownload=false;var autoAllowArch=true;var autoAllowApi=true;var autoAllowVariant=true;var adsPushed=false;
 if($.inArray(arch,archs)==-1){autoAllowArch=false;arch="arm";}if($.inArray(api,apis)==-1){autoAllowApi=false;api="5.1";}if($.inArray(variant,variants)==-1){autoAllowVariant=false;variant="stock";}
