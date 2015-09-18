@@ -381,7 +381,7 @@ function uncheckBox(id){document.querySelector('input[id="'+id+'"]').parentEleme
 function toggleBox(id,e){if(e){document.querySelector('input[id="'+id+'"]').parentElement.MaterialRadio.enable();}else{document.querySelector('input[id="'+id+'"]').parentElement.MaterialRadio.disable();}}
 jQuery.updateButtons=function(){
   componentHandler.upgradeDom();
-  if(!adsPushed){(adsbygoogle=window.adsbygoogle||[]).push({});window.cookieconsent_options={"message":"We use cookies to  share information about your use of our site with our advertising and analytics partner.","dismiss":"Got it!","learnMore":"More info","link":"https://www.google.com/intl/en/policies/privacy/partners/","theme":"dark-bottom"};adsPushed=true;}
+  if(!adsPushed){$(".adsbygoogle").each(function(){(adsbygoogle=window.adsbygoogle||[]).push({});});window.cookieconsent_options={"message":"We use cookies to  share information about your use of our site with our advertising and analytics partner.","dismiss":"Got it!","learnMore":"More info","link":"https://www.google.com/intl/en/policies/privacy/partners/","theme":"dark-bottom"};adsPushed=true;}
   arch=$("input:radio[name='arch']:checked").attr("value");api=$("input:radio[name='api']:checked").attr("value");variant=$("input:radio[name='variant']:checked").attr("value");;
   if(getBox(arch)){for(i=0;i<apis.length;i++){toggleBox(apis[i],false);}for(var k in packages[arch]['apis']){toggleBox(k,true);}
   }else{for(i=0;i<apis.length;i++){toggleBox(apis[i],false);}}
