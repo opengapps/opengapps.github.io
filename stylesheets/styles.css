@@ -50,16 +50,18 @@ max-width:400px;
 text-align:right;
 vertical-align:middle;}
 #github-latest{
-width:80%;
+width:70%;
 text-align:center;
 display:inline-block;
 margin:0;
 padding:0;}
 #bdownload{
 vertical-align:top;
-margin-top:8px;
+margin-top:16px;
 display:inline-block;
-text-align:right;}
+text-align:right;
+margin-right:16px;
+margin-left:16px;}
 #bmd5{
 float:right;
 margin-bottom: 8px;
@@ -83,3 +85,11 @@ opacity:.8;}
 opacity:1;}
 .tab:hover{
 color:rgba(255,255,255,0.85);}
+.footer-advertisment-container{
+width:auto;
+float:right;
+}
+.mdl-demo .is-small-screen .footer-advertisment-container{
+width: 100%;
+float: left;
+}
