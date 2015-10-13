@@ -157,9 +157,9 @@ The Open GApps Project
                                             </label>
                                         </td>
                                         <td class="mdl-data-table__cell--non-numeric">
-                                            <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="stock" id="lstock">
-                                                <input checked id="stock" name="variant" type="radio" value="stock" class="mdl-radio__button" />
-                                                <span class="mdl-radio__label"><a href="https://github.com/opengapps/opengapps/wiki/Stock-Package">stock</a></span>
+                                            <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="super" id="lsuper">
+                                                <input checked id="super" name="variant" type="radio" value="super" class="mdl-radio__button" />
+                                                <span class="mdl-radio__label"><a href="https://github.com/opengapps/opengapps/wiki/Super-Package">super</a></span>
                                             </label>
                                         </td>
                                     </tr>
@@ -177,9 +177,9 @@ The Open GApps Project
                                             </label>
                                         </td>
                                         <td class="mdl-data-table__cell--non-numeric">
-                                            <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="full" id="lfull">
-                                                <input id="full" name="variant" type="radio" value="full" class="mdl-radio__button" />
-                                                <span class="mdl-radio__label"><a href="https://github.com/opengapps/opengapps/wiki/Full-Package">full</a></span>
+                                            <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="stock" id="lstock">
+                                                <input checked id="stock" name="variant" type="radio" value="stock" class="mdl-radio__button" />
+                                                <span class="mdl-radio__label"><a href="https://github.com/opengapps/opengapps/wiki/Stock-Package">stock</a></span>
                                             </label>
                                         </td>
                                     </tr>
@@ -196,6 +196,16 @@ The Open GApps Project
                                                 <span class="mdl-radio__label">6.0</span>
                                             </label>
                                         </td>
+                                        <td class="mdl-data-table__cell--non-numeric">
+                                            <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="full" id="lfull">
+                                                <input id="full" name="variant" type="radio" value="full" class="mdl-radio__button" />
+                                                <span class="mdl-radio__label"><a href="https://github.com/opengapps/opengapps/wiki/Full-Package">full</a></span>
+                                            </label>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                        <td></td>
                                         <td class="mdl-data-table__cell--non-numeric">
                                             <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="mini" id="lmini">
                                                 <input id="mini" name="variant" type="radio" value="mini" class="mdl-radio__button" />
@@ -269,8 +279,8 @@ The Open GApps Project
                             <li>Strong compression, which allows for relatively small downloads of even the most complete packages</li>
                             <li>Automatic Backup: It is not necessary to re-flash Open GApps or modules when you flash a ROM update. Most ROMs support this function</li>
                             <li>All installers measure your device's system partition size and will notify you, before making any changes, if it finds any problems</li>
-                            <li>We offer several variations from a Google Stock Package (based on what Google ships on Nexus devices) to smaller, minimalist packages and an AROMA package that allows graphically selection of what to install</li>
-                            <li>A special 'Stock ROM' mode that allows to update the Google Apps on Stock ROMs that conform to the original Google Nexus filesystem structure</li>
+                            <li>We offer several variations from a Google Super Package (based on all packages that ever shipped on a Google device), to a Stock package that equals the set of applications found on the most current Nexus flagship, to smaller, minimalist packages and an AROMA package that allows graphically selection of what to install</li>
+                            <li>A special 'for Stock ROM' mode that allows to update the Google Apps on Stock ROMs that conform to the original Google Nexus filesystem structure</li>
                             <li>All packages can be customized to your individual preferences using our <a href="https://github.com/opengapps/opengapps/wiki/Advanced-Features-and-Options">exclusive Advanced Features and Options</a></li>
                         </ul>
                         <p>
@@ -322,11 +332,14 @@ The Open GApps Project
 <span class="mdl-tooltip mdl-tooltip--large" for="laroma">
     Graphical installer of the <em>stock</em> package, allows to select which applications to install
 </span>
+<span class="mdl-tooltip mdl-tooltip--large" for="lsuper">
+    For those who want to have all Google Applications, includes all Google Apps that were ever shipped on a Google device.
+</span>
 <span class="mdl-tooltip mdl-tooltip--large" for="lstock">
-    Recommended package for recent devices,  includes all the Google Apps that come standard on Nexus devices.
+    Recommended package for recent devices, includes all Google Apps that come standard on the latest flagship Nexus device.
 </span>
 <span class="mdl-tooltip mdl-tooltip--large" for="lfull">
-    Similar to <em>stock</em>, but does not replace the AOSP-applications for Browser, Camera, Email, Gallery, Launcher, Keyboard, SMS App, Pico TTS and WebView.
+    Very similar to <em>stock</em>, but does not replace the AOSP-applications for Browser, Camera, Email, Gallery, Launcher, Keyboard, SMS App, Pico TTS and WebView.
 </span>
 <span class="mdl-tooltip mdl-tooltip--large" for="lmini">
     Smaller set of Google apps: the most popular applications plus extra functionality that is not available from the Play Store.
@@ -373,7 +386,7 @@ The Open GApps Project
 <!-- JQuery should not block loading the page -->
 <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
 <script type="text/javascript">
-var archs=["arm","arm64","x86","x86_64"];var apis=["4.4","5.0","5.1","6.0"];var variants=["aroma","stock","full","mini","micro","nano","pico"];var packages={};
+var archs=["arm","arm64","x86","x86_64"];var apis=["4.4","5.0","5.1","6.0"];var variants=["aroma","super","stock","full","mini","micro","nano","pico"];var packages={};
 var arch=getUrlParameter("arch");var api=getUrlParameter("api");var variant=getUrlParameter("variant");var download=getUrlParameter("download");
 var autoDownload=false;var autoAllowArch=true;var autoAllowApi=true;var autoAllowVariant=true;var adsPushed=false;
 if($.inArray(arch,archs)==-1){autoAllowArch=false;arch="arm";}if($.inArray(api,apis)==-1){autoAllowApi=false;api="5.1";}if($.inArray(variant,variants)==-1){autoAllowVariant=false;variant="stock";}
