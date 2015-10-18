@@ -251,6 +251,7 @@ The Open GApps Project
                                 <button id="bdownload" class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored" onclick="javascript:downloadSubmit();" disabled>
                                     <i class="material-icons">file_download</i>
                                 </button>
+                                <button id="olderversions" class="mdl-button mdl-js-button mdl-button--accent" onclick="javascript:olderversionSubmit();" disabled>Older versions</button>
                                 <hr>
                                 <button id="bversion" class="mdl-button mdl-js-button mdl-button--accent" onclick="javascript:versionSubmit();" disabled>Version Information</button>
                                 <button id="bmd5" class="mdl-button mdl-js-button mdl-button--accent" onclick="javascript:md5Submit();" disabled>MD5 Checksum</button>
@@ -359,6 +360,9 @@ The Open GApps Project
 <span class="mdl-tooltip mdl-tooltip--large" for="bversion">
     Detailed version information of the applications that are used for this specific platform architecture and android version
 </span>
+<span class="mdl-tooltip mdl-tooltip--large" for="olderversions">
+    Find and download older opengapps versions on github
+</span>
 <span class="mdl-tooltip mdl-tooltip--large" for="bmd5">
     Download a md5 checksum file that can be used by the Android device's recovery to verify the integrity of the downloaded package.
 </span>
@@ -396,6 +400,7 @@ function getUrlParameter(sParam){var sPageURL=window.location.search.substring(1
 function downloadSubmit(){if(updateForm()=="package"){window.location="https://github.com/opengapps/"+arch+"/releases/download/"+packages[arch]['date']+"/open_gapps-"+arch+"-"+api+"-"+variant+"-"+packages[arch]['date']+".zip","_parent";}}
 function md5Submit(){if(updateForm()=="package"){window.location="https://github.com/opengapps/"+arch+"/releases/download/"+packages[arch]['date']+"/open_gapps-"+arch+"-"+api+"-"+variant+"-"+packages[arch]['date']+".zip.md5","_parent";}}
 function versionSubmit(){if(updateForm()=="version"||updateForm()=="package"){window.location="https://github.com/opengapps/"+arch+"/releases/download/"+packages[arch]['date']+"/versions-"+arch+"-"+api+"-"+packages[arch]['date']+".txt";}}
+function olderversionSubmit(){window.location="https://github.com/opengapps/opengapps/releases";}
 function updateForm(){
   toggleButton("bdownload",false);toggleButton("bmd5",false);var form=document.getElementById('DownloadForm');
   for(var i=0;i<form.arch.length;i++){if(form.arch[i].checked){var arch=form.arch[i].value;}}
