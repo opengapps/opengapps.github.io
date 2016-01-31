@@ -1,0 +1,8 @@
+[Adblock Plus 2.0]
+! Checksum: sydoHUwkEQmb7eZ2NwYvyQ
+! Version: 1
+! Title: Open GApps
+! Expires: 180 days
+! Homepage: http://opengapps.org
+@@||opengapps.org/$document
+@@||*.opengapps.org/$document
