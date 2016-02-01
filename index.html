@@ -28,6 +28,7 @@ img{max-width:100%}
 .mdl-demo .is-small-screen .advertisement{float:none;margin:0 auto;margin-top:10px;margin-bottom:10px}
 .mdl-demo .is-small-screen .dform{float:none;width:319px;margin:0 auto}
 .mdl-layout:not(.is-small-screen) .onlysmallscreen .mdl-layout__header-row{display:none}
+.mdl-layout__header-row .mdl-navigation__link{padding:12px}
 #aboutsection{width:auto;max-width:800px;margin:0 auto;padding:15px}
 #downloadsection{padding:15px}
 .mdl-demo .is-small-screen #downloadsection{padding:0}
@@ -35,7 +36,8 @@ img{max-width:100%}
 #github-latest{float:left;display:inline-block;padding-left:16px}
 #github-progressbar{width:200px}
 #bdownload{vertical-align:top;display:inline-block;float:right;transform:translate(-24px,4px)}
-#logoimage{width:250px;height:auto}
+#logoimage{width:200px;height:auto;transform:translateY(18px)}
+.is-small-screen #logoimage{transform:translateY(11px)}
 .mdl-demo .mdl-layout__tab-bar-button{display:none}
 .mdl-demo .mdl-layout:not(.is-small-screen) .mdl-layout__drawer-button{display:none}
 .mdl-layout__content{flex-shrink:0}
@@ -59,7 +61,8 @@ ins a:hover{text-decoration:underline;}
 #donaterectangle{width:100px;height:50px;line-height:60px;background-color:#999999;border-radius:10px;margin:0 auto}
 #donaterectangle:hover{background-color:#757575}
 .mdl-snackbar{min-width:initial;max-width:initial}
-@media screen and (min-width:480px){.mdl-snackbar--active{transform:translateX(-50%)/*fix broken MDL*/} }
+@media screen and (min-width:480px){.mdl-snackbar--active{transform:translateX(-50%)} .mdl-snackbar__action{min-width:100px} }/*fix broken MDL*/
+@media screen and (max-width:821px){.mdl-snackbar--active{transform:translateX(0);left:0;width:100%} }/*fix broken MDL*/
 </style>
 <link rel="apple-touch-icon" type="image/png" sizes="57x57" href="/images/apple-icon-57x57.png">
 <link rel="apple-touch-icon" type="image/png" sizes="60x60" href="/images/apple-icon-60x60.png">
