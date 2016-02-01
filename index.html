@@ -1,17 +1,16 @@
 <!doctype html>
 <html><head>
 <title>The Open GApps Project</title>
-<link rel="stylesheet" type="text/css" href="https://storage.googleapis.com/code.getmdl.io/1.0.6/material.teal-red.min.css" />
+<link rel="stylesheet" type="text/css" href="https://storage.googleapis.com/code.getmdl.io/1.1.0/material.teal-red.min.css" />
 <!--Preload for fancy browsers-->
 <link rel="preload" href="https://fonts.googleapis.com/icon?family=Material+Icons" as="style" />
 <link rel="preload" href="https://fonts.googleapis.com/css?family=Roboto:400,400italic,500,700" as="style" />
 <link rel="preload" href="https://code.jquery.com/jquery-2.2.0.min.js" as="script" />
-<script async type="text/javascript" src="https://storage.googleapis.com/code.getmdl.io/1.0.6/material.min.js"></script>
+<script async type="text/javascript" src="https://storage.googleapis.com/code.getmdl.io/1.1.0/material.min.js"></script>
 <!--[if lt IE 9]>
 <script type="text/javascript" src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 <![endif]-->
 <script async type="text/javascript" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<script async type="text/javascript" type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/1.0.9/cookieconsent.min.js"></script>
 <style>
 body{font-family:Roboto}
 a{color:#009688;text-decoration:none}
@@ -59,6 +58,8 @@ ins a:hover{text-decoration:underline;}
 #donatebox{max-width:100%;border:0px;text-align:center;padding:10px}
 #donaterectangle{width:100px;height:50px;line-height:60px;background-color:#999999;border-radius:10px;margin:0 auto}
 #donaterectangle:hover{background-color:#757575}
+.mdl-snackbar{min-width:initial;max-width:initial}
+@media screen and (min-width:480px){.mdl-snackbar--active{transform:translateX(-50%)/*fix broken MDL*/} }
 </style>
 <link rel="apple-touch-icon" type="image/png" sizes="57x57" href="/images/apple-icon-57x57.png">
 <link rel="apple-touch-icon" type="image/png" sizes="60x60" href="/images/apple-icon-60x60.png">
@@ -283,6 +284,7 @@ ins a:hover{text-decoration:underline;}
 <span class="mdl-tooltip mdl-tooltip--large" for="pushbulletlink">Follow via Pushbullet</span>
 <span class="mdl-tooltip mdl-tooltip--large" for="twitterlink">Changelog on Twitter</span>
 <span class="mdl-tooltip mdl-tooltip--large" for="googlepluslink">Weblog on Google+</span>
+<div aria-live="assertive" aria-atomic="true" aria-relevant="text" class="mdl-snackbar mdl-js-snackbar"><div class="mdl-snackbar__text"></div><button type="button" class="mdl-snackbar__action"></button></div>
 <!-- JQuery should not block loading the page -->
 <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
 <script type="text/javascript">
@@ -312,9 +314,11 @@ function toggleButton(id,e){if(e){document.querySelector('button[id="'+id+'"]').
 function getBox(id){return $('input:radio[id="'+id+'"]:checked').val();}
 function uncheckBox(id){document.querySelector('input[id="'+id+'"]').parentElement.MaterialRadio.uncheck();}
 function toggleBox(id,e){if(e){document.querySelector('input[id="'+id+'"]').parentElement.MaterialRadio.enable();}else{document.querySelector('input[id="'+id+'"]').parentElement.MaterialRadio.disable();}}
+function setCookie(n,v,e){var d=new Date();d.setTime(d.getTime()+(e*86400000));var x="expires="+d.toUTCString();document.cookie=n+"="+v+"; "+x;}
+function getCookie(n){var v=n+"=";var a=document.cookie.split(';');for(var i=0;i<a.length;i++){var c=a[i];while(c.charAt(0)==' ')c=c.substring(1);if(c.indexOf(v)==0)return c.substring(v.length,c.length);}return "";}
 jQuery.updateButtons=function(){
  componentHandler.upgradeDom();var k;
- if(!adsPushed){$(".adsbygoogle").each(function(){(adsbygoogle=window.adsbygoogle||[]).push({});});window.cookieconsent_options={"message":"We use cookies to share information about your use of our site with our advertising and analytics partner.","dismiss":"Got it!","learnMore":"More info","link":"https://www.google.com/intl/en/policies/privacy/partners/","theme":"dark-bottom"};adsPushed=true;}
+ if(!adsPushed){$(".adsbygoogle").each(function(){(adsbygoogle=window.adsbygoogle||[]).push({});});if(getCookie("c")!="y"){var d={message:'We use cookies to share information about your use of our site with our advertising and analytics partner',actionHandler:function(event){setCookie("c","y",365);document.querySelector('.mdl-js-snackbar').MaterialSnackbar.cleanup_();},actionText:'Got it!',timeout: 60000};document.querySelector('.mdl-js-snackbar').MaterialSnackbar.showSnackbar(d);};adsPushed=true;}
  arch=$("input:radio[name='arch']:checked").attr("value");api=$("input:radio[name='api']:checked").attr("value");variant=$("input:radio[name='variant']:checked").attr("value");
  if(getBox(arch)){for(i=0;i<apis.length;i++){toggleButton("bolder",true);$("#bolderlink").attr("href","https://github.com/opengapps/"+arch+"/releases/");toggleBox(apis[i],false);}for(k in packages[arch].apis){toggleBox(k,true);}
  }else{for(i=0;i<apis.length;i++){toggleBox(apis[i],false);}toggleButton("bolder",false);$("#bolderlink").attr("href","#");}
