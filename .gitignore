@@ -1,4 +1,9 @@
+#Jekyll
 _site/
 .sass-cache/
 .jekyll-metadata
 .directory
+
+#Temporary editor files
+*.bak
+*~

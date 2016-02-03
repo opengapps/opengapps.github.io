@@ -6,13 +6,13 @@ ga: Google Apps
 org: OpenGApps.org
 aimg: ../images/apple-icon-
 gfont: https://fonts.googleapis.com
+jquery: https://code.jquery.com/jquery-2.2.0.min.js
 mdl: https://storage.googleapis.com/code.getmdl.io/1.1.0
 pushbulletpop: ",document.body.clientHeight,'toolbar=no,status=no,menubar=no,width=700,height=460,top='+screen.height/2-230+',left='+screen.width/2-350)"
 
 social:
-    google: https://plus.google.com/+OpengappsOrg
-    twitter: https://twitter.com/opengapps
-    pushbullet: https://www.pushbullet.com/channel-popup?tag=
-    github: https://github.com/opengapps/opengapps
-    xda: http://forum.xda-developers.com/android/software/Open-GApps-t3098071
-
+ google: https://plus.google.com/+OpengappsOrg
+ twitter: https://twitter.com/opengapps
+ pushbullet: https://www.pushbullet.com/channel-popup?tag=
+ github: https://github.com/opengapps/opengapps
+ xda: http://forum.xda-developers.com/android/software/Open-GApps-t3098071

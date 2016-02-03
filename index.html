@@ -1,103 +1,103 @@
 ---
 layout: default
 ---
- <main class="mdl-layout__content">
-  <section class="mdl-layout__tab-panel is-active" id="downloadsection">
-   <div class="container">
-    <div class="advertisement"><div class="mdl-typography--caption-color-contrast" id="adlabelheader">Advertisement</div><ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-9489060368971640" data-ad-slot="6646806677" data-ad-format="auto"></ins></div>
-    <div class="dform mdl-shadow--2dp">
-     <form id="DownloadForm" name="DownloadForm">
-      <table id="table-platform" class="mdl-data-table mdl-js-data-table">
-       <thead><tr><th class="mdl-data-table__cell--non-numeric"><span id="tplatform"><strong>Platform</strong>:</span></th></tr></thead>
+<main class="mdl-layout__content">
+ <section class="mdl-layout__tab-panel is-active" id="downloadsection">
+  <div class="container">
+   <div class="advertisement"><div class="mdl-typography--caption-color-contrast" id="adlabelheader">Advertisement</div><ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-9489060368971640" data-ad-slot="6646806677" data-ad-format="auto"></ins></div>
+   <div class="dform mdl-shadow--2dp">
+    <form id="DownloadForm" name="DownloadForm">
+     <table id="table-platform" class="mdl-data-table mdl-js-data-table">
+      <thead><tr><th class="mdl-data-table__cell--non-numeric"><span id="tplatform"><strong>Platform</strong>:</span></th></tr></thead>
+      <tbody>
+       <tr><td class="mdl-data-table__cell--non-numeric"><label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="arm" id="larm">
+        <input checked id="arm" name="arch" type="radio" value="arm" class="mdl-radio__button" />
+        <span class="mdl-radio__label">ARM</span>
+       </label></td></tr>
+       <tr><td class="mdl-data-table__cell--non-numeric"><label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="arm64" id="larm64">
+        <input id="arm64" name="arch" type="radio" value="arm64" class="mdl-radio__button" />
+        <span class="mdl-radio__label">ARM64</span>
+       </label></td></tr>
+       <tr><td class="mdl-data-table__cell--non-numeric"><label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="x86" id="lx86">
+        <input id="x86" name="arch" type="radio" value="x86" class="mdl-radio__button" />
+        <span class="mdl-radio__label"><a href="{{site.social.github}}/wiki/Notes-for-Android-x86">x86</a></span>
+       </label></td></tr>
+       <tr><td class="mdl-data-table__cell--non-numeric"><label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="x86_64" id="lx86_64">
+        <input disabled id="x86_64" name="arch" type="radio" value="x86_64" class="mdl-radio__button" />
+        <span class="mdl-radio__label">x86_64</span>
+       </label></td></tr>
+      </tbody>
+     </table>
+     <table id="table-android" class="mdl-data-table mdl-js-data-table">
+      <thead><tr><th class="mdl-data-table__cell--non-numeric"><span id="tandroid"><strong>Android</strong>:</span></th></tr></thead>
        <tbody>
-        <tr><td class="mdl-data-table__cell--non-numeric"><label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="arm" id="larm">
-         <input checked id="arm" name="arch" type="radio" value="arm" class="mdl-radio__button" />
-         <span class="mdl-radio__label">ARM</span>
-        </label></td></tr>
-        <tr><td class="mdl-data-table__cell--non-numeric"><label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="arm64" id="larm64">
-         <input id="arm64" name="arch" type="radio" value="arm64" class="mdl-radio__button" />
-         <span class="mdl-radio__label">ARM64</span>
-        </label></td></tr>
-        <tr><td class="mdl-data-table__cell--non-numeric"><label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="x86" id="lx86">
-         <input id="x86" name="arch" type="radio" value="x86" class="mdl-radio__button" />
-         <span class="mdl-radio__label"><a href="{{site.social.github}}/wiki/Notes-for-Android-x86">x86</a></span>
-        </label></td></tr>
-        <tr><td class="mdl-data-table__cell--non-numeric"><label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="x86_64" id="lx86_64">
-         <input disabled id="x86_64" name="arch" type="radio" value="x86_64" class="mdl-radio__button" />
-         <span class="mdl-radio__label">x86_64</span>
-        </label></td></tr>
-       </tbody>
-      </table>
-      <table id="table-android" class="mdl-data-table mdl-js-data-table">
-       <thead><tr><th class="mdl-data-table__cell--non-numeric"><span id="tandroid"><strong>Android</strong>:</span></th></tr></thead>
-        <tbody>
-        <tr><td class="mdl-data-table__cell--non-numeric"><label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="4.4" id="l4.4">
-         <input id="4.4" name="api" type="radio" value="4.4" class="mdl-radio__button" />
-         <span class="mdl-radio__label"><a href="{{site.social.github}}/wiki/Notes-for-Android-4.4">4.4</a></span>
-        </label></td></tr>
-        <tr><td class="mdl-data-table__cell--non-numeric"><label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="5.0" id="l5.0">
-         <input id="5.0" name="api" type="radio" value="5.0" class="mdl-radio__button" />
-         <span class="mdl-radio__label"><a href="{{site.social.github}}/wiki/Notes-for-Android-5.0">5.0</a></span>
-        </label></td></tr>
-        <tr><td class="mdl-data-table__cell--non-numeric"><label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="5.1" id="l5.1">
-         <input checked id="5.1" name="api" type="radio" value="5.1" class="mdl-radio__button" />
-         <span class="mdl-radio__label">5.1</span>
-        </label></td></tr>
-        <tr><td class="mdl-data-table__cell--non-numeric"><label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="6.0" id="l6.0">
-         <input disabled id="6.0" name="api" type="radio" value="6.0" class="mdl-radio__button" />
-         <span class="mdl-radio__label"><a href="{{site.social.github}}/wiki/Notes-for-Android-6.0">6.0</a></span>
-        </label></td></tr>
-       </tbody>
-      </table>
-      <table id="table-variant" class="mdl-data-table mdl-js-data-table">
-       <thead><tr><th class="mdl-data-table__cell--non-numeric"><span id="tvariant"><a href="{{site.social.github}}/wiki/Package-Comparison"><strong>Variant</strong></a>:</span></th></tr></thead>
-       <tbody>
-        <tr><td class="mdl-data-table__cell--non-numeric"><label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="aroma" id="laroma">
-         <input id="aroma" name="variant" type="radio" value="aroma" class="mdl-radio__button" />
-         <span class="mdl-radio__label"><a href="{{site.social.github}}/wiki/Aroma-Package">aroma</a></span>
-        </label></td></tr>
-        <tr><td class="mdl-data-table__cell--non-numeric"><label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="super" id="lsuper">
-         <input checked id="super" name="variant" type="radio" value="super" class="mdl-radio__button" />
-         <span class="mdl-radio__label"><a href="{{site.social.github}}/wiki/Super-Package">super</a></span>
-        </label></td></tr>
-        <tr><td class="mdl-data-table__cell--non-numeric"><label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="stock" id="lstock">
-         <input checked id="stock" name="variant" type="radio" value="stock" class="mdl-radio__button" />
-         <span class="mdl-radio__label"><a href="{{site.social.github}}/wiki/Stock-Package">stock</a></span>
-        </label></td></tr>
-        <tr><td class="mdl-data-table__cell--non-numeric"><label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="full" id="lfull">
-         <input id="full" name="variant" type="radio" value="full" class="mdl-radio__button" />
-         <span class="mdl-radio__label"><a href="{{site.social.github}}/wiki/Full-Package">full</a></span>
-        </label></td></tr>
-        <tr><td class="mdl-data-table__cell--non-numeric"><label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="mini" id="lmini">
-         <input id="mini" name="variant" type="radio" value="mini" class="mdl-radio__button" />
-         <span class="mdl-radio__label"><a href="{{site.social.github}}/wiki/Mini-Package">mini</a></span>
-        </label></td></tr>
-        <tr><td class="mdl-data-table__cell--non-numeric"><label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="micro" id="lmicro">
-         <input id="micro" name="variant" type="radio" value="micro" class="mdl-radio__button" />
-         <span class="mdl-radio__label"><a href="{{site.social.github}}/wiki/Micro-Package">micro</a></span>
-        </label></td></tr>
-        <tr><td class="mdl-data-table__cell--non-numeric"><label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="nano" id="lnano">
-         <input id="nano" name="variant" type="radio" value="nano" class="mdl-radio__button" />
-         <span class="mdl-radio__label"><a href="{{site.social.github}}/wiki/Nano-Package">nano</a></span>
-        </label></td></tr>
-        <tr><td class="mdl-data-table__cell--non-numeric"><label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="pico" id="lpico">
-         <input id="pico" name="variant" type="radio" value="pico" class="mdl-radio__button" />
-         <span class="mdl-radio__label"><a href="{{site.social.github}}/wiki/Pico-Package">pico</a></span>
-        </label></td></tr>
-       </tbody>
-      </table>
-     </form>
-     <div class="downloadbuttons">
-      <button id="bdownload" class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored" onclick="javascript:downloadSubmit();" disabled><i class="material-icons">file_download</i></button>
-      <div id="github-latest"><div id="github-progressbar" class="mdl-progress mdl-js-progress mdl-progress__indeterminate progress-demo"></div><span class="mdl-typography--caption-color-contrast">querying GitHub API...</span></div>
-      <button id="bversion" class="mdl-button mdl-js-button mdl-button--accent" onclick="javascript:versionSubmit();" disabled>Version Information</button><br />
-      <button id="bmd5" class="mdl-button mdl-js-button mdl-button--accent" onclick="javascript:md5Submit();" disabled>MD5 Checksum</button><br />
-      <a id="bolderlink"><button id="bolder" class="mdl-button mdl-js-button mdl-button--accent" disabled>Older Releases</button></a>
-     </div>
+       <tr><td class="mdl-data-table__cell--non-numeric"><label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="4.4" id="l4.4">
+        <input id="4.4" name="api" type="radio" value="4.4" class="mdl-radio__button" />
+        <span class="mdl-radio__label"><a href="{{site.social.github}}/wiki/Notes-for-Android-4.4">4.4</a></span>
+       </label></td></tr>
+       <tr><td class="mdl-data-table__cell--non-numeric"><label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="5.0" id="l5.0">
+        <input id="5.0" name="api" type="radio" value="5.0" class="mdl-radio__button" />
+        <span class="mdl-radio__label"><a href="{{site.social.github}}/wiki/Notes-for-Android-5.0">5.0</a></span>
+       </label></td></tr>
+       <tr><td class="mdl-data-table__cell--non-numeric"><label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="5.1" id="l5.1">
+        <input checked id="5.1" name="api" type="radio" value="5.1" class="mdl-radio__button" />
+        <span class="mdl-radio__label">5.1</span>
+       </label></td></tr>
+       <tr><td class="mdl-data-table__cell--non-numeric"><label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="6.0" id="l6.0">
+        <input disabled id="6.0" name="api" type="radio" value="6.0" class="mdl-radio__button" />
+        <span class="mdl-radio__label"><a href="{{site.social.github}}/wiki/Notes-for-Android-6.0">6.0</a></span>
+       </label></td></tr>
+      </tbody>
+     </table>
+     <table id="table-variant" class="mdl-data-table mdl-js-data-table">
+      <thead><tr><th class="mdl-data-table__cell--non-numeric"><span id="tvariant"><a href="{{site.social.github}}/wiki/Package-Comparison"><strong>Variant</strong></a>:</span></th></tr></thead>
+      <tbody>
+       <tr><td class="mdl-data-table__cell--non-numeric"><label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="aroma" id="laroma">
+        <input id="aroma" name="variant" type="radio" value="aroma" class="mdl-radio__button" />
+        <span class="mdl-radio__label"><a href="{{site.social.github}}/wiki/Aroma-Package">aroma</a></span>
+       </label></td></tr>
+       <tr><td class="mdl-data-table__cell--non-numeric"><label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="super" id="lsuper">
+        <input checked id="super" name="variant" type="radio" value="super" class="mdl-radio__button" />
+        <span class="mdl-radio__label"><a href="{{site.social.github}}/wiki/Super-Package">super</a></span>
+       </label></td></tr>
+       <tr><td class="mdl-data-table__cell--non-numeric"><label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="stock" id="lstock">
+        <input checked id="stock" name="variant" type="radio" value="stock" class="mdl-radio__button" />
+        <span class="mdl-radio__label"><a href="{{site.social.github}}/wiki/Stock-Package">stock</a></span>
+       </label></td></tr>
+       <tr><td class="mdl-data-table__cell--non-numeric"><label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="full" id="lfull">
+        <input id="full" name="variant" type="radio" value="full" class="mdl-radio__button" />
+        <span class="mdl-radio__label"><a href="{{site.social.github}}/wiki/Full-Package">full</a></span>
+       </label></td></tr>
+       <tr><td class="mdl-data-table__cell--non-numeric"><label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="mini" id="lmini">
+        <input id="mini" name="variant" type="radio" value="mini" class="mdl-radio__button" />
+        <span class="mdl-radio__label"><a href="{{site.social.github}}/wiki/Mini-Package">mini</a></span>
+       </label></td></tr>
+       <tr><td class="mdl-data-table__cell--non-numeric"><label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="micro" id="lmicro">
+        <input id="micro" name="variant" type="radio" value="micro" class="mdl-radio__button" />
+        <span class="mdl-radio__label"><a href="{{site.social.github}}/wiki/Micro-Package">micro</a></span>
+       </label></td></tr>
+       <tr><td class="mdl-data-table__cell--non-numeric"><label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="nano" id="lnano">
+        <input id="nano" name="variant" type="radio" value="nano" class="mdl-radio__button" />
+        <span class="mdl-radio__label"><a href="{{site.social.github}}/wiki/Nano-Package">nano</a></span>
+       </label></td></tr>
+       <tr><td class="mdl-data-table__cell--non-numeric"><label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="pico" id="lpico">
+        <input id="pico" name="variant" type="radio" value="pico" class="mdl-radio__button" />
+        <span class="mdl-radio__label"><a href="{{site.social.github}}/wiki/Pico-Package">pico</a></span>
+       </label></td></tr>
+      </tbody>
+     </table>
+    </form>
+    <div class="downloadbuttons">
+     <button id="bdownload" class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored" onclick="javascript:downloadSubmit();" disabled><i class="material-icons">file_download</i></button>
+     <div id="github-latest"><div id="github-progressbar" class="mdl-progress mdl-js-progress mdl-progress__indeterminate progress-demo"></div><span class="mdl-typography--caption-color-contrast">querying GitHub API...</span></div>
+     <button id="bversion" class="mdl-button mdl-js-button mdl-button--accent" onclick="javascript:versionSubmit();" disabled>Version Information</button><br />
+     <button id="bmd5" class="mdl-button mdl-js-button mdl-button--accent" onclick="javascript:md5Submit();" disabled>MD5 Checksum</button><br />
+     <a id="bolderlink"><button id="bolder" class="mdl-button mdl-js-button mdl-button--accent" disabled>Older Releases</button></a>
     </div>
-    <div class="footer-advertisement-container"><div class="advertisement"><div class="mdl-typography--caption-color-contrast" id="adlabelfooter">Advertisement</div><ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-9489060368971640" data-ad-slot="2525609473" data-ad-format="auto"></ins></div></div>
    </div>
-  </section>
-  <section class="mdl-layout__tab-panel" id="aboutsection">{% capture about %}{% include about.md %}{% endcapture %}{{about | markdownify}}</section>
- </main>
+   <div class="footer-advertisement-container"><div class="advertisement"><div class="mdl-typography--caption-color-contrast" id="adlabelfooter">Advertisement</div><ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-9489060368971640" data-ad-slot="2525609473" data-ad-format="auto"></ins></div></div>
+  </div>
+ </section>
+ <section class="mdl-layout__tab-panel" id="aboutsection">{% capture about %}{% include about.md %}{% endcapture %}{{about | markdownify}}</section>
+</main>
 {% include tooltips.html %}
