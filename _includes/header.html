@@ -1,0 +1,69 @@
+<header class="mdl-layout__header mdl-layout__header--scroll">
+   <div class="mdl-layout__header-row"></div>
+   <div class="mdl-layout__header-row"><img id="logoimage" src="/images/logo.svg" /></div>
+   <div class="mdl-layout__header-row mdl-cell--hide-phone mdl-cell--hide-tablet">
+    <div class="mdl-layout-spacer"></div>
+    <nav class="mdl-navigation">
+     <a class="mdl-navigation__link link" id="donatelink" href="#" onclick="$('#paypal').submit(); return false;">Donate</strong></a>
+     <a class="mdl-navigation__link link" id="githublink" href="{{site.social.github}}">GitHub</a>
+     <a class="mdl-navigation__link link" id="xdalink" href="{{site.social.xda}}">XDA Forum</a>
+     <a class="mdl-navigation__link link" id="wikilink" href="{{site.social.github}}/wiki">Wiki</a>
+     <a class="mdl-navigation__link link" id="pushbulletlink" href="#">Pushbullet</a>
+     <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" data-mdl-for="pushbulletlink">
+      <a href="javascript:window.open('{{site.social.pushbullet}}opengapps'{{site.pushbulletpop}}"><li class="mdl-menu__item">All Releases</li></a>
+      <a href="javascript:window.open('{{site.social.pushbullet}}opengappsarm'{{site.pushbulletpop}}"><li class="mdl-menu__item">ARM Releases</li></a>
+      <a href="javascript:window.open('{{site.social.pushbullet}}opengappsarm64'{{site.pushbulletpop}}"><li class="mdl-menu__item">ARM64 Releases</li></a>
+      <a href="javascript:window.open('{{site.social.pushbullet}}opengappsx86'{{site.pushbulletpop}}"><li class="mdl-menu__item">x86 Releases</li></a>
+      <li disabled class="mdl-menu__item">x86_64 Releases</li>
+     </ul>
+     <a class="mdl-navigation__link link" id="twitterlink" href="{{site.social.twitter}}">Twitter</a>
+     <a class="mdl-navigation__link link" id="googlepluslink" href="https://plus.google.com/+OpengappsOrg/posts">Google+</a>
+    </nav>
+   </div>
+   <div class="mdl-layout__header-row mdl-cell--hide-desktop"></div>
+   <div class="mdl-layout__tab-bar mdl-js-ripple-effect mdl-color--primary-dark mdl-shadow--2dp reset-tab">
+     <a href="#downloadsection" class="mdl-layout__tab is-active tab">Download</a>
+     <a href="#aboutsection" class="mdl-layout__tab tab">About</a>
+   </div>
+ </header>
+ 
+ <div class="mdl-layout__drawer">
+   <span class="mdl-layout-title">Links</span>
+   <nav class="mdl-navigation">
+     <a class="mdl-navigation__link" href="#" onclick="$('#paypal').submit(); return false;">Support by <strong>Donation</strong></a>
+     <a class="mdl-navigation__link" href="{{site.social.github}}" target="_blank">Source on <strong>GitHub</strong></a>
+     <a class="mdl-navigation__link" href="{{site.social.xda}}" target="_blank">Community on <strong>XDA Forum</strong></a>
+     <a class="mdl-navigation__link" href="{{site.social.github}}/wiki" target="_blank">Manual on <strong>Wiki</strong></a>
+     <!-- sub menu only visible when clicked on the link above -->
+     <a id="pushbulletdrawer" class="mdl-navigation__link" href="#">Follow via <strong>Pushbullet</strong></a>
+     <ul class="mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect" data-mdl-for="pushbulletdrawer">
+       <a href="{{site.social.pushbullet}}opengapps" target="_blank"><li class="mdl-menu__item">All releases</li></a>
+       <a href="{{site.social.pushbullet}}opengappsarm" target="_blank"><li class="mdl-menu__item">ARM Releases</li></a>
+       <a href="{{site.social.pushbullet}}opengappsarm64" target="_blank"><li class="mdl-menu__item">ARM64 Releases</li></a>
+       <a href="{{site.social.pushbullet}}opengappsx86" target="_blank"><li class="mdl-menu__item">x86 Releases</li></a>
+       <a href="#"><li disabled class="mdl-menu__item">x86_64 Releases</li></a>
+     </ul>
+     <a class="mdl-navigation__link" href="{{site.social.twitter}}" target="_blank">Changelog on <strong>Twitter</strong></a>
+     <a class="mdl-navigation__link" href="{{site.social.google}}" target="_blank">Weblog on <strong>Google+</strong></a>
+   </nav>
+ </div>
+ 
+ <div class="mdl-layout__drawer">
+   <span class="mdl-layout-title">Links</span>
+   <nav class="mdl-navigation">
+     <a class="mdl-navigation__link" href="#" onclick="$('#paypal').submit(); return false;">Support by <strong>Donation</strong></a>
+     <a class="mdl-navigation__link" href="{{site.social.github}}" target="_blank">Source on <strong>GitHub</strong></a>
+     <a class="mdl-navigation__link" href="{{site.social.xda}}" target="_blank">Community on <strong>XDA Forum</strong></a>
+     <a class="mdl-navigation__link" href="{{site.social.github}}/wiki" target="_blank">Manual on <strong>Wiki</strong></a>
+     <!-- sub menu only visible when clicked on the link above -->
+     <a id="pushbulletdrawer" class="mdl-navigation__link" href="#">Follow via <strong>Pushbullet</strong></a>
+     <ul class="mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect" data-mdl-for="pushbulletdrawer">
+       <a href="{{site.social.pushbullet}}opengapps" target="_blank"><li class="mdl-menu__item">All releases</li></a>
+       <a href="{{site.social.pushbullet}}opengappsarm" target="_blank"><li class="mdl-menu__item">ARM Releases</li></a>
+       <a href="{{site.social.pushbullet}}opengappsarm64" target="_blank"><li class="mdl-menu__item">ARM64 Releases</li></a>
+       <a href="{{site.social.pushbullet}}opengappsx86" target="_blank"><li class="mdl-menu__item">x86 Releases</li></a>
+       <a href="#"><li disabled class="mdl-menu__item">x86_64 Releases</li></a>
+     </ul>
+     <a class="mdl-navigation__link" href="{{site.social.twitter}}" target="_blank">Changelog on <strong>Twitter</strong></a>
+     <a class="mdl-navigation__link" href="{{site.social.google}}" target="_blank">Weblog on <strong>Google+</strong></a>
+</nav></div>

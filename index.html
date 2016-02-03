@@ -1,146 +1,6 @@
-<!doctype html>
-<html><head>
-<title>The Open GApps Project</title>
-<link rel="stylesheet" type="text/css" href="https://storage.googleapis.com/code.getmdl.io/1.1.0/material.teal-red.min.css" />
-<!--Preload for fancy browsers-->
-<link rel="preload" href="https://fonts.googleapis.com/icon?family=Material+Icons" as="style" />
-<link rel="preload" href="https://fonts.googleapis.com/css?family=Roboto:400,400italic,500,700" as="style" />
-<link rel="preload" href="https://code.jquery.com/jquery-2.2.0.min.js" as="script" />
-<script async type="text/javascript" src="https://storage.googleapis.com/code.getmdl.io/1.1.0/material.min.js"></script>
-<!--[if lt IE 9]>
-<script type="text/javascript" src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-<![endif]-->
-<script async type="text/javascript" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<style>
-body{font-family:Roboto}
-a{color:#009688;text-decoration:none}
-.mdl-menu__item{text-align:right}
-table{width:100%;border-collapse:collapse;position:relative}
-#table-platform td,#table-platform th,#table-variant td,#table-variant th{padding-left:10px;padding-right:10px}
-#table-platform td,#table-android td,#table-variant td{border-bottom:0px}
-#table-platform th,#table-android th,#table-variant th{text-align:center}
-#table-platform,#table-android,#table-variant{border:0px}
-img{max-width:100%}
-.mdl-demo:not(.is-small-screen) .container{max-width:900px;margin:0 auto}
-.mdl-demo:not(.is-small-screen) .advertisement{width:400px;max-width:100%;float:right;margin-top:10px;margin-bottom:10px}
-.mdl-demo:not(.is-small-screen) .dform{width:319px;float:left}
-.mdl-demo .is-small-screen .container{width:100%}
-.mdl-demo .is-small-screen .advertisement{float:none;margin:0 auto;margin-top:10px;margin-bottom:10px}
-.mdl-demo .is-small-screen .dform{float:none;width:319px;margin:0 auto}
-.mdl-layout:not(.is-small-screen) .onlysmallscreen .mdl-layout__header-row{display:none}
-.mdl-layout__header-row .mdl-navigation__link{padding:12px}
-#aboutsection{width:auto;max-width:800px;margin:0 auto;padding:15px}
-#downloadsection{padding:15px}
-.mdl-demo .is-small-screen #downloadsection{padding:0}
-.downloadbuttons{width:100%;max-width:400px}
-#github-latest{float:left;display:inline-block;padding-left:16px}
-#github-progressbar{width:200px}
-#bdownload{vertical-align:top;display:inline-block;float:right;transform:translate(-24px,4px)}
-#logoimage{width:200px;height:auto;transform:translateY(18px)}
-.is-small-screen #logoimage{transform:translateY(11px)}
-.mdl-demo .mdl-layout__tab-bar-button{display:none}
-.mdl-demo .mdl-layout:not(.is-small-screen) .mdl-layout__drawer-button{display:none}
-.mdl-layout__content{flex-shrink:0}
-.link {opacity:.8}
-.link:hover{opacity:1}
-.tab:hover{color:rgba(255,255,255,0.85)}
-.footer-advertisement-container{width:auto;float:right}
-.mdl-demo .is-small-screen .footer-advertisement-container{width:100%;float:left}
-#table-platform{float:left;width:35%}
-#table-android{float:left;width:35%}
-#table-variant{float:left;width:30%}
-.dform{background-color:white}
-footer{margin-top:16px}
-hr{margin:0;padding:0;clear:both}
-#buttons-align{overflow:hidden}
-.mdl-layout:not(.is-small-screen) #adlabelfooter, .mdl-layout:not(.is-small-screen) #adlabelheader{text-align:center;font-style:italic}
-.mdl-demo .is-small-screen #adlabelfooter, .mdl-demo .is-small-screen #adlabelheader{display:none}
-ins{text-decoration:none}
-ins a:hover{text-decoration:underline;}
-#donatebox{max-width:100%;border:0px;text-align:center;padding:10px}
-#donaterectangle{width:100px;height:50px;line-height:60px;background-color:#999999;border-radius:10px;margin:0 auto}
-#donaterectangle:hover{background-color:#757575}
-.mdl-snackbar{min-width:initial;max-width:initial}
-@media screen and (min-width:480px){.mdl-snackbar--active{transform:translateX(-50%)} .mdl-snackbar__action{min-width:100px} }/*fix broken MDL*/
-@media screen and (max-width:821px){.mdl-snackbar--active{transform:translateX(0);left:0;width:100%} }/*fix broken MDL*/
-</style>
-<link rel="apple-touch-icon" type="image/png" sizes="57x57" href="/images/apple-icon-57x57.png">
-<link rel="apple-touch-icon" type="image/png" sizes="60x60" href="/images/apple-icon-60x60.png">
-<link rel="apple-touch-icon" type="image/png" sizes="72x72" href="/images/apple-icon-72x72.png">
-<link rel="apple-touch-icon" type="image/png" sizes="76x76" href="/images/apple-icon-76x76.png">
-<link rel="apple-touch-icon" type="image/png" sizes="114x114" href="/images/apple-icon-114x114.png">
-<link rel="apple-touch-icon" type="image/png" sizes="120x120" href="/images/apple-icon-120x120.png">
-<link rel="apple-touch-icon" type="image/png" sizes="144x144" href="/images/apple-icon-144x144.png">
-<link rel="apple-touch-icon" type="image/png" sizes="152x152" href="/images/apple-icon-152x152.png">
-<link rel="apple-touch-icon" type="image/png" sizes="180x180" href="/images/apple-icon-180x180.png">
-<link rel="icon" type="image/png" sizes="192x192" href="/images/android-icon-192x192.png">
-<link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="96x96" href="/images/favicon-96x96.png">
-<link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
-<link rel="manifest" href="/manifest.json">
-<meta charset="utf-8">
-<meta content="chrome=1" http-equiv="X-UA-Compatible">
-<meta name="theme-color" content="#009688">
-<meta name="msapplication-TileColor" content="#009688">
-<meta name="msapplication-TileImage" content="/images/ms-icon-144x144.png">
-<meta name="apple-mobile-web-app-title" content="Open GApps">
-<meta name="mobile-web-app-capable" content="yes">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="keywords" content="open gapps, opengapps, android, daily, arm, arm64, x86, x86_64, 4.4, 5.0, 5.1, 6.0, aroma">
-<meta name="description" content="Open GApps is a Google Apps package developed by writing open source buildscripts. All Android versions and platforms supported.">
-<link href="http://mix.chimpfeedr.com/5b110-OpenGApps" rel="alternate" title="Open GApps Releases" type="application/atom+xml" />
-<link rel="publisher" href="https://plus.google.com/+OpengappsOrg">
-<script type="text/javascript">(function(i,s,o,g,r,a,m){i["GoogleAnalyticsObject"]=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments);},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m);})(window,document,"script","//www.google-analytics.com/analytics.js","ga");ga("create","UA-63785067-1","auto");ga("send","pageview");</script>
-</head><body class="mdl-demo mdl-color--grey-100 mdl-color-text--grey-700 mdl-base">
-<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header mdl-layout--fixed-tabs mdl-layout--overlay-drawer-button">
- <header class="mdl-layout__header mdl-layout__header--scroll">
-   <div class="mdl-layout__header-row"></div>
-   <div class="mdl-layout__header-row"><img id="logoimage" src="/images/logo.svg" /></div>
-   <div class="mdl-layout__header-row mdl-cell--hide-phone mdl-cell--hide-tablet">
-    <div class="mdl-layout-spacer"></div>
-    <nav class="mdl-navigation">
-     <a class="mdl-navigation__link link" id="donatelink" href="#" onclick="$('#paypal').submit(); return false;">Donate</strong></a>
-     <a class="mdl-navigation__link link" id="githublink" href="https://github.com/opengapps/opengapps">GitHub</a>
-     <a class="mdl-navigation__link link" id="xdalink" href="http://forum.xda-developers.com/android/software/Open-GApps-t3098071">XDA Forum</a>
-     <a class="mdl-navigation__link link" id="wikilink" href="https://github.com/opengapps/opengapps/wiki">Wiki</a>
-     <a class="mdl-navigation__link link" id="pushbulletlink" href="#">Pushbullet</a>
-     <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" data-mdl-for="pushbulletlink">
-      <a href="javascript:window.open('https://www.pushbullet.com/channel-popup?tag=opengapps',document.body.clientHeight,'toolbar=no,status=no,menubar=no,width=700,height=460,top='+screen.height/2-230+',left='+screen.width/2-350)"><li class="mdl-menu__item">All Releases</li></a>
-      <a href="javascript:window.open('https://www.pushbullet.com/channel-popup?tag=opengappsarm',document.body.clientHeight,'toolbar=no,status=no,menubar=no,width=700,height=460,top='+screen.height/2-230+',left='+screen.width/2-350)"><li class="mdl-menu__item">ARM Releases</li></a>
-      <a href="javascript:window.open('https://www.pushbullet.com/channel-popup?tag=opengappsarm64',document.body.clientHeight,'toolbar=no,status=no,menubar=no,width=700,height=460,top='+screen.height/2-230+',left='+screen.width/2-350)"><li class="mdl-menu__item">ARM64 Releases</li></a>
-      <a href="javascript:window.open('https://www.pushbullet.com/channel-popup?tag=opengappsx86',document.body.clientHeight,'toolbar=no,status=no,menubar=no,width=700,height=460,top='+screen.height/2-230+',left='+screen.width/2-350)"><li class="mdl-menu__item">x86 Releases</li></a>
-      <li disabled class="mdl-menu__item">x86_64 Releases</li>
-     </ul>
-     <a class="mdl-navigation__link link" id="twitterlink" href="https://twitter.com/opengapps">Twitter</a>
-     <a class="mdl-navigation__link link" id="googlepluslink" href="https://plus.google.com/+OpengappsOrg/posts">Google+</a>
-    </nav>
-   </div>
-   <div class="mdl-layout__header-row mdl-cell--hide-desktop"></div>
-   <div class="mdl-layout__tab-bar mdl-js-ripple-effect mdl-color--primary-dark mdl-shadow--2dp reset-tab">
-     <a href="#downloadsection" class="mdl-layout__tab is-active tab">Download</a>
-     <a href="#aboutsection" class="mdl-layout__tab tab">About</a>
-   </div>
- </header>
- <div class="mdl-layout__drawer">
-   <span class="mdl-layout-title">Links</span>
-   <nav class="mdl-navigation">
-     <a class="mdl-navigation__link" href="#" onclick="$('#paypal').submit(); return false;">Support by <strong>Donation</strong></a>
-     <a class="mdl-navigation__link" href="https://github.com/opengapps/opengapps" target="_blank">Source on <strong>GitHub</strong></a>
-     <a class="mdl-navigation__link" href="http://forum.xda-developers.com/android/software/Open-GApps-t3098071" target="_blank">Community on <strong>XDA Forum</strong></a>
-     <a class="mdl-navigation__link" href="https://github.com/opengapps/opengapps/wiki" target="_blank">Manual on <strong>Wiki</strong></a>
-     <!-- sub menu only visible when clicked on the link above -->
-     <a id="pushbulletdrawer" class="mdl-navigation__link" href="#">Follow via <strong>Pushbullet</strong></a>
-     <ul class="mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect" data-mdl-for="pushbulletdrawer">
-       <a href="https://www.pushbullet.com/channel-popup?tag=opengapps" target="_blank"><li class="mdl-menu__item">All releases</li></a>
-       <a href="https://www.pushbullet.com/channel-popup?tag=opengappsarm" target="_blank"><li class="mdl-menu__item">ARM Releases</li></a>
-       <a href="https://www.pushbullet.com/channel-popup?tag=opengappsarm64" target="_blank"><li class="mdl-menu__item">ARM64 Releases</li></a>
-       <a href="https://www.pushbullet.com/channel-popup?tag=opengappsx86" target="_blank"><li class="mdl-menu__item">x86 Releases</li></a>
-       <a href="#"><li disabled class="mdl-menu__item">x86_64 Releases</li></a>
-     </ul>
-     <a class="mdl-navigation__link" href="https://twitter.com/opengapps" target="_blank">Changelog on <strong>Twitter</strong></a>
-     <a class="mdl-navigation__link" href="https://plus.google.com/+OpengappsOrg/posts" target="_blank">Weblog on <strong>Google+</strong></a>
-   </nav>
- </div>
+---
+layout: default
+---
  <main class="mdl-layout__content">
   <section class="mdl-layout__tab-panel is-active" id="downloadsection">
    <div class="container">
@@ -160,7 +20,7 @@ ins a:hover{text-decoration:underline;}
         </label></td></tr>
         <tr><td class="mdl-data-table__cell--non-numeric"><label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="x86" id="lx86">
          <input id="x86" name="arch" type="radio" value="x86" class="mdl-radio__button" />
-         <span class="mdl-radio__label"><a href="https://github.com/opengapps/opengapps/wiki/Notes-for-Android-x86">x86</a></span>
+         <span class="mdl-radio__label"><a href="{{site.social.github}}/wiki/Notes-for-Android-x86">x86</a></span>
         </label></td></tr>
         <tr><td class="mdl-data-table__cell--non-numeric"><label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="x86_64" id="lx86_64">
          <input disabled id="x86_64" name="arch" type="radio" value="x86_64" class="mdl-radio__button" />
@@ -173,11 +33,11 @@ ins a:hover{text-decoration:underline;}
         <tbody>
         <tr><td class="mdl-data-table__cell--non-numeric"><label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="4.4" id="l4.4">
          <input id="4.4" name="api" type="radio" value="4.4" class="mdl-radio__button" />
-         <span class="mdl-radio__label"><a href="https://github.com/opengapps/opengapps/wiki/Notes-for-Android-4.4">4.4</a></span>
+         <span class="mdl-radio__label"><a href="{{site.social.github}}/wiki/Notes-for-Android-4.4">4.4</a></span>
         </label></td></tr>
         <tr><td class="mdl-data-table__cell--non-numeric"><label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="5.0" id="l5.0">
          <input id="5.0" name="api" type="radio" value="5.0" class="mdl-radio__button" />
-         <span class="mdl-radio__label"><a href="https://github.com/opengapps/opengapps/wiki/Notes-for-Android-5.0">5.0</a></span>
+         <span class="mdl-radio__label"><a href="{{site.social.github}}/wiki/Notes-for-Android-5.0">5.0</a></span>
         </label></td></tr>
         <tr><td class="mdl-data-table__cell--non-numeric"><label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="5.1" id="l5.1">
          <input checked id="5.1" name="api" type="radio" value="5.1" class="mdl-radio__button" />
@@ -185,44 +45,44 @@ ins a:hover{text-decoration:underline;}
         </label></td></tr>
         <tr><td class="mdl-data-table__cell--non-numeric"><label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="6.0" id="l6.0">
          <input disabled id="6.0" name="api" type="radio" value="6.0" class="mdl-radio__button" />
-         <span class="mdl-radio__label"><a href="https://github.com/opengapps/opengapps/wiki/Notes-for-Android-6.0">6.0</a></span>
+         <span class="mdl-radio__label"><a href="{{site.social.github}}/wiki/Notes-for-Android-6.0">6.0</a></span>
         </label></td></tr>
        </tbody>
       </table>
       <table id="table-variant" class="mdl-data-table mdl-js-data-table">
-       <thead><tr><th class="mdl-data-table__cell--non-numeric"><span id="tvariant"><a href="https://github.com/opengapps/opengapps/wiki/Package-Comparison"><strong>Variant</strong></a>:</span></th></tr></thead>
+       <thead><tr><th class="mdl-data-table__cell--non-numeric"><span id="tvariant"><a href="{{site.social.github}}/wiki/Package-Comparison"><strong>Variant</strong></a>:</span></th></tr></thead>
        <tbody>
         <tr><td class="mdl-data-table__cell--non-numeric"><label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="aroma" id="laroma">
          <input id="aroma" name="variant" type="radio" value="aroma" class="mdl-radio__button" />
-         <span class="mdl-radio__label"><a href="https://github.com/opengapps/opengapps/wiki/Aroma-Package">aroma</a></span>
+         <span class="mdl-radio__label"><a href="{{site.social.github}}/wiki/Aroma-Package">aroma</a></span>
         </label></td></tr>
         <tr><td class="mdl-data-table__cell--non-numeric"><label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="super" id="lsuper">
          <input checked id="super" name="variant" type="radio" value="super" class="mdl-radio__button" />
-         <span class="mdl-radio__label"><a href="https://github.com/opengapps/opengapps/wiki/Super-Package">super</a></span>
+         <span class="mdl-radio__label"><a href="{{site.social.github}}/wiki/Super-Package">super</a></span>
         </label></td></tr>
         <tr><td class="mdl-data-table__cell--non-numeric"><label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="stock" id="lstock">
          <input checked id="stock" name="variant" type="radio" value="stock" class="mdl-radio__button" />
-         <span class="mdl-radio__label"><a href="https://github.com/opengapps/opengapps/wiki/Stock-Package">stock</a></span>
+         <span class="mdl-radio__label"><a href="{{site.social.github}}/wiki/Stock-Package">stock</a></span>
         </label></td></tr>
         <tr><td class="mdl-data-table__cell--non-numeric"><label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="full" id="lfull">
          <input id="full" name="variant" type="radio" value="full" class="mdl-radio__button" />
-         <span class="mdl-radio__label"><a href="https://github.com/opengapps/opengapps/wiki/Full-Package">full</a></span>
+         <span class="mdl-radio__label"><a href="{{site.social.github}}/wiki/Full-Package">full</a></span>
         </label></td></tr>
         <tr><td class="mdl-data-table__cell--non-numeric"><label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="mini" id="lmini">
          <input id="mini" name="variant" type="radio" value="mini" class="mdl-radio__button" />
-         <span class="mdl-radio__label"><a href="https://github.com/opengapps/opengapps/wiki/Mini-Package">mini</a></span>
+         <span class="mdl-radio__label"><a href="{{site.social.github}}/wiki/Mini-Package">mini</a></span>
         </label></td></tr>
         <tr><td class="mdl-data-table__cell--non-numeric"><label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="micro" id="lmicro">
          <input id="micro" name="variant" type="radio" value="micro" class="mdl-radio__button" />
-         <span class="mdl-radio__label"><a href="https://github.com/opengapps/opengapps/wiki/Micro-Package">micro</a></span>
+         <span class="mdl-radio__label"><a href="{{site.social.github}}/wiki/Micro-Package">micro</a></span>
         </label></td></tr>
         <tr><td class="mdl-data-table__cell--non-numeric"><label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="nano" id="lnano">
          <input id="nano" name="variant" type="radio" value="nano" class="mdl-radio__button" />
-         <span class="mdl-radio__label"><a href="https://github.com/opengapps/opengapps/wiki/Nano-Package">nano</a></span>
+         <span class="mdl-radio__label"><a href="{{site.social.github}}/wiki/Nano-Package">nano</a></span>
         </label></td></tr>
         <tr><td class="mdl-data-table__cell--non-numeric"><label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="pico" id="lpico">
          <input id="pico" name="variant" type="radio" value="pico" class="mdl-radio__button" />
-         <span class="mdl-radio__label"><a href="https://github.com/opengapps/opengapps/wiki/Pico-Package">pico</a></span>
+         <span class="mdl-radio__label"><a href="{{site.social.github}}/wiki/Pico-Package">pico</a></span>
         </label></td></tr>
        </tbody>
       </table>
@@ -238,113 +98,6 @@ ins a:hover{text-decoration:underline;}
     <div class="footer-advertisement-container"><div class="advertisement"><div class="mdl-typography--caption-color-contrast" id="adlabelfooter">Advertisement</div><ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-9489060368971640" data-ad-slot="2525609473" data-ad-format="auto"></ins></div></div>
    </div>
   </section>
-  <section class="mdl-layout__tab-panel" id="aboutsection">
-   <p>The Open GApps Project is an open-source effort to script the automatic generation of up-to-date Google Apps packages.<br />On OpenGApps.org you can find more information about the project effort and also pre-built Google Apps packages generated by the OpenGApps.org buildbot.</p>
-   Some highlights about the characteristics of the Open GApps packages:
-   <ul>
-    <li>All platforms and and all android versions are supported</li>
-    <li>DPI-optimized support for <strong>all</strong> Google packages (unlike all other GApps)</li>
-    <li>Frequently updated Google Apps: Packages are updated every (European) night (if there are any updated Google Apps available)</li>
-    <li>Strong compression, allowing for relatively small downloads of even the most complete packages</li>
-    <li>Automatic Backup: It is not necessary to re-flash Open GApps or modules when you flash a ROM update. Most ROMs support this function</li>
-    <li>The installer checks your device's capabilities, like the system partition size. It will notify you, before making any changes, if it finds any problems</li>
-    <li>Several package variations, from a Google Super Package (based on all applications that ever shipped on a Google device), to a Stock package that equals the set of applications found on the most current and complete Nexus, to smaller, minimalist packages and an AROMA package that allows graphically selection of what to install</li>
-    <li>A special 'for Stock ROM' installation mode that allows to update the Google Apps on Stock ROMs that conform to the original Google Nexus filesystem structure</li>
-    <li>All package installations can be customized to your individual preferences using our <a href="https://github.com/opengapps/opengapps/wiki/Advanced-Features-and-Options">exclusive Advanced Features and Options</a></li>
-   </ul>
-  </section>
+  <section class="mdl-layout__tab-panel" id="aboutsection">{% capture about %}{% include about.md %}{% endcapture %}{{about | markdownify}}</section>
  </main>
- <footer class="mdl-mini-footer">
-  <div class="mdl-mini-footer--left-section">
-  <div class="mdl-logo">Copyright © 2015-<script type="text/javascript">var d=new Date();document.write(d.getFullYear())</script> <a href="https://github.com/orgs/opengapps/people">The Open GApps Team</a></div></div>
-  </footer>
-</div>
-<!-- Tooltips -->
-<span class="mdl-tooltip mdl-tooltip--large" for="tplatform">If you don't know your platform, choose <em>ARM</em></span>
-<span class="mdl-tooltip mdl-tooltip--large" for="larm"><em>ARM</em> is the most popular 32-bit platform for mobile devices</span>
-<span class="mdl-tooltip mdl-tooltip--large" for="larm64"><em>ARM64</em> is a new 64-bit platform and available on a small set of new mobile devices</span>
-<span class="mdl-tooltip mdl-tooltip--large" for="lx86"><em>x86</em> is a less common platform, but used on e.g. the Zenfone.</span>
-<span class="mdl-tooltip mdl-tooltip--large" for="lx86_64"><em>x86_64</em> builds will be provided the very moment a compatible device will be released</span>
-<span class="mdl-tooltip mdl-tooltip--large" for="tandroid">In Settings →About →Android version you can find the major version of your installed Android operating system</span>
-<span class="mdl-tooltip mdl-tooltip--large" for="l4.4">In <em>stock</em> and <em>full</em> on <em>4.4</em> some applications are installed on /data/ instead of /system/</span>
-<span class="mdl-tooltip mdl-tooltip--large" for="l6.0"><em>6.0</em> needs a ROM with a patch to grant the Google Apps the proper permissions</span>
-<span class="mdl-tooltip mdl-tooltip--large" for="laroma">Graphical installer of the <em>super</em> package, allows to select which applications to install</span>
-<span class="mdl-tooltip mdl-tooltip--large" for="lsuper">For those who want to have all Google Applications, includes all Google Apps that were ever shipped on a Google device.</span>
-<span class="mdl-tooltip mdl-tooltip--large" for="lstock">Recommended package for recent devices, includes all Google Apps that come standard on the latest Nexus device.</span>
-<span class="mdl-tooltip mdl-tooltip--large" for="lfull">Very similar to <em>stock</em>, but does not replace the AOSP-applications for Browser, Camera, Email, Gallery, Launcher, Keyboard, SMS App, Pico TTS and WebView.</span>
-<span class="mdl-tooltip mdl-tooltip--large" for="lmini">Smaller set of Google apps: the most popular applications plus extra functionality that is not available from the Play Store.</span>
-<span class="mdl-tooltip mdl-tooltip--large" for="lmicro">Limited set of Google apps: Gmail, Calendar, Google Now plus extra functionality that is not available from the Play Store.</span>
-<span class="mdl-tooltip mdl-tooltip--large" for="lnano">Minimal installation, but including the extra functionality that is not available from the Play Store.</span>
-<span class="mdl-tooltip mdl-tooltip--large" for="lpico">The bare minimum to get Google Play functionality.</span>
-<span class="mdl-tooltip mdl-tooltip--large" for="bdownload">Download selected Open GApps package</span>
-<span class="mdl-tooltip mdl-tooltip--large" for="bversion">Detailed version information of the applications that are used for this specific platform architecture and android version</span>
-<span class="mdl-tooltip mdl-tooltip--large" for="bmd5">Download a md5 checksum file that can be used by the Android device's recovery to verify the integrity of the downloaded package.</span>
-<span class="mdl-tooltip mdl-tooltip--large" for="bolder">List all older releases for this platform architecture.</span>
-<span class="mdl-tooltip mdl-tooltip--large" for="donatelink">Support by Donation</span>
-<span class="mdl-tooltip mdl-tooltip--large" for="githublink">Source on GitHub</span>
-<span class="mdl-tooltip mdl-tooltip--large" for="xdalink">Community on XDA Forum</span>
-<span class="mdl-tooltip mdl-tooltip--large" for="wikilink">Manual on Wiki</span>
-<span class="mdl-tooltip mdl-tooltip--large" for="pushbulletlink">Follow via Pushbullet</span>
-<span class="mdl-tooltip mdl-tooltip--large" for="twitterlink">Changelog on Twitter</span>
-<span class="mdl-tooltip mdl-tooltip--large" for="googlepluslink">Weblog on Google+</span>
-<div aria-live="assertive" aria-atomic="true" aria-relevant="text" class="mdl-snackbar mdl-js-snackbar"><div class="mdl-snackbar__text"></div><button type="button" class="mdl-snackbar__action"></button></div>
-<!-- JQuery should not block loading the page -->
-<script type="text/javascript" src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
-<script type="text/javascript">
-var archs=["arm","arm64","x86","x86_64"];var apis=["4.4","5.0","5.1","6.0"];var variants=["aroma","super","stock","full","mini","micro","nano","pico"];var packages={};
-var arch=getUrlParameter("arch");var api=getUrlParameter("api");var variant=getUrlParameter("variant");var download=getUrlParameter("download");
-var autoDownload=false;var autoAllowArch=true;var autoAllowApi=true;var autoAllowVariant=true;var adsPushed=false;
-if($.inArray(arch,archs)==-1){autoAllowArch=false;arch="arm";}if($.inArray(api,apis)==-1){autoAllowApi=false;api="5.1";}if($.inArray(variant,variants)==-1){autoAllowVariant=false;variant="stock";}
-$("input:radio[id='"+arch+"']").attr("checked",true);$("input:radio[id='"+api+"']").attr("checked",true);$("input:radio[id='"+variant+"']").attr("checked",true);
-if(download=="true"){if(autoAllowArch&&autoAllowApi&&autoAllowVariant){autoDownload=true;}else{alert("Auto Download requested, but refused because of missing or broken parameter(s)!");}}
-function getUrlParameter(sParam){"use strict";var sPageURL=window.location.search.substring(1);var sURLVariables=sPageURL.split('&');for(var i=0;i<sURLVariables.length;i++){var sParameterName=sURLVariables[i].split('=');if(sParameterName[0]==sParam){return sParameterName[1];}}}
-function downloadURL(u){var l=document.createElement('a');l.style="visibility:hidden";l.download="";l.href=u;document.body.appendChild(l);l.click();document.body.removeChild(l);}
-function downloadSubmit(){if(updateForm()=="variant"){downloadURL("https://github.com/opengapps/"+arch+"/releases/download/"+packages[arch].date+"/open_gapps-"+arch+"-"+api+"-"+variant+"-"+packages[arch].date+".zip");}}
-function md5Submit(){if(updateForm()=="variant"){downloadURL("https://github.com/opengapps/"+arch+"/releases/download/"+packages[arch].date+"/open_gapps-"+arch+"-"+api+"-"+variant+"-"+packages[arch].date+".zip.md5");}}
-function versionSubmit(){if(updateForm()=="api"||updateForm()=="variant"){downloadURL("https://github.com/opengapps/"+arch+"/releases/download/"+packages[arch].date+"/versions-"+arch+"-"+api+"-"+packages[arch].date+".txt");}}
-function updateForm(){
- toggleButton("bdownload",false);toggleButton("bmd5",false);var form=document.getElementById('DownloadForm');
- arch=undefined;for(var i=0;i<form.arch.length;i++){if(form.arch[i].checked){arch=form.arch[i].value;}}
- if(arch===undefined||packages[arch].date===undefined){return;}
- $("#github-progressbar").removeClass("mdl-progress mdl-js-progress mdl-progress__indeterminate progress-demo is-upgraded");$("#github-progressbar").removeAttr("data-upgraded");
- api=undefined;for(i=0; i<form.api.length;i++){if(form.api[i].checked){api=form.api[i].value;}}
- if (api===undefined){$("#github-latest").html("<span class=\"mdl-typography--subhead-color-contrast\">No Android selected</span>");return "arch";}
- variant=undefined;for (i=0; i<form.variant.length;i++){if(form.variant[i].checked){variant=form.variant[i].value;}}
- if (variant===undefined){$("#github-latest").html("<span class=\"mdl-typography--subhead-color-contrast\">No Variant selected</span>");return "api";}
- toggleButton("bdownload",true);toggleButton("bmd5",true);$("#github-latest").html("<span class=\"mdl-typography--headline\">"+packages[arch].day+" "+packages[arch].month+" "+packages[arch].year+"</span><br /><span class=\"mdl-typography--subhead\">Size: "+Math.round((packages[arch].apis[api][variant].size/1024/1024)*100)/100+" MiB</span>");
- return "variant";}
-function toggleButton(id,e){if(e){document.querySelector('button[id="'+id+'"]').MaterialButton.enable();}else{document.querySelector('button[id="'+id+'"]').MaterialButton.disable();}}
-function getBox(id){return $('input:radio[id="'+id+'"]:checked').val();}
-function uncheckBox(id){document.querySelector('input[id="'+id+'"]').parentElement.MaterialRadio.uncheck();}
-function toggleBox(id,e){if(e){document.querySelector('input[id="'+id+'"]').parentElement.MaterialRadio.enable();}else{document.querySelector('input[id="'+id+'"]').parentElement.MaterialRadio.disable();}}
-function setCookie(n,v,e){var d=new Date();d.setTime(d.getTime()+(e*86400000));var x="expires="+d.toUTCString();document.cookie=n+"="+v+"; "+x;}
-function getCookie(n){var v=n+"=";var a=document.cookie.split(';');for(var i=0;i<a.length;i++){var c=a[i];while(c.charAt(0)==' ')c=c.substring(1);if(c.indexOf(v)==0)return c.substring(v.length,c.length);}return "";}
-jQuery.updateButtons=function(){
- componentHandler.upgradeDom();var k;
- if(!adsPushed){$(".adsbygoogle").each(function(){(adsbygoogle=window.adsbygoogle||[]).push({});});if(getCookie("c")!="y"){var d={message:'We use cookies to share information about your use of our site with our advertising and analytics partner',actionHandler:function(event){setCookie("c","y",365);document.querySelector('.mdl-js-snackbar').MaterialSnackbar.cleanup_();},actionText:'Got it!',timeout: 60000};document.querySelector('.mdl-js-snackbar').MaterialSnackbar.showSnackbar(d);};adsPushed=true;}
- arch=$("input:radio[name='arch']:checked").attr("value");api=$("input:radio[name='api']:checked").attr("value");variant=$("input:radio[name='variant']:checked").attr("value");
- if(getBox(arch)){for(i=0;i<apis.length;i++){toggleButton("bolder",true);$("#bolderlink").attr("href","https://github.com/opengapps/"+arch+"/releases/");toggleBox(apis[i],false);}for(k in packages[arch].apis){toggleBox(k,true);}
- }else{for(i=0;i<apis.length;i++){toggleBox(apis[i],false);}toggleButton("bolder",false);$("#bolderlink").attr("href","#");}
- if(api!==undefined&&packages[arch].apis[api]===undefined){uncheckBox(api);}
- if(getBox(api)){if(packages[arch]!==undefined){toggleButton("bversion",true);}for(i=0;i<variants.length;i++){toggleBox(variants[i],false);}for(k in packages[arch].apis[api]){toggleBox(k,true);}
- }else{for(i=0;i<variants.length;i++){toggleBox(variants[i],false);}toggleButton("bversion",false);}
- if(variant!==undefined&&(packages[arch].apis[api]===undefined||packages[arch].apis[api][variant]===undefined)){uncheckBox(variant);}updateForm();};
-jQuery.githubLatest=function(username,reponame,callback){jQuery.getJSON('https://api.github.com/repos/'+username+'/'+reponame+'/releases/latest?callback=?',callback);};
-jQuery.loadLatest=function(username,reponame){
- $.githubLatest(username,reponame,function(data){var latest=data.data;$(latest).each(function(){if(this.name!==undefined){
-  if(packages[reponame]===undefined){releasename=this.name.split(" ");packages[reponame]={"apis":{},"date":this.tag_name,"year":releasename.pop(),"month":releasename.pop(),"day":releasename.pop()};}
-  for(var i=0;i<this.assets.length;i++){if(this.assets[i].name.substr(this.assets[i].name.length-4)==".zip"){var p=this.assets[i].name.split("-");if(packages[p[1]].apis[p[2]]===undefined){packages[p[1]].apis[p[2]]={};}packages[p[1]].apis[p[2]][p[3]]={"size":this.assets[i].size};}}}});
- if(packages[reponame].date!==undefined){$.updateButtons();if(autoDownload){downloadSubmit();autoDownload=false;}}});};
-jQuery.queryRelease=function(){arch=$("input:radio[name='arch']:checked").attr("value");$.loadLatest("opengapps", arch);};
-$("input:radio[name=arch]").change(function(){$.queryRelease();});$("input:radio[name=api],input:radio[name=variant]").change(function(){$.updateButtons();});$(document).ready(function(){$.queryRelease();});
-(function(i,s,o,g,r,a,m){i.GoogleAnalyticsObject=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments);},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m);})(window,document,"script","//www.google-analytics.com/analytics.js","ga");ga("create","UA-63785067-1","auto");ga("send","pageview");
-window.onload=function(){setTimeout(function(){var ad=document.querySelector("ins.adsbygoogle");if(ad && ad.innerHTML.replace(/\s/g,"").length===0){ad.style.cssText='display:block !important';ad.innerHTML='<div id="donatebox"><div id="donatetitle" class="mdl-typography--display-1"><a href="#" onclick="$(\'#paypal\', parent.document).submit(); return false;">Please Donate!</a></div><br /><div id="donatebody" class="mdl-typography--body-1">You blocked the advertisements, that is OK.<br />But please consider a donation to the project instead!</div><br /><a href="#" onclick="$(\'#paypal\', parent.document).submit(); return false;"><div id="donaterectangle"><i class="material-icons" style="color:#f5f5f5">card_giftcard</i></div></a><br /><div id="donatecaption" class="mdl-typography--caption-color-contrast">The advertisement revenue supports the projects\' efforts.<br />Can\'t donate? <a href="abp:subscribe?location=http%3A%2F%2Fopengapps.org%2Fopengapps.org.abp.txt&amp;title=Open%20GApps">Please unblock our ads!</a></div></div>';}},2000);};
-</script>
-<!--Fonts should not block loading the page-->
-<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
-<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:400,400italic,500,700" />
-<form id="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
- <input name="cmd" type="hidden" value="_s-xclick">
- <input name="encrypted" type="hidden" value="-----BEGIN PKCS7-----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-----END PKCS7-----">
-</form>
-</body></html>
+{% include tooltips.html %}

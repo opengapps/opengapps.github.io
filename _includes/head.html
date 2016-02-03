@@ -1,0 +1,92 @@
+<head>
+<title>{% if page.title %}{{page.title}}{% else %}{{site.title}}{% endif %}</title>
+<link rel="stylesheet" type="text/css" href="{{site.mdl}}/material.teal-red.min.css" />
+<!--Preload for fancy browsers-->
+<link rel="preload" href="{{site.gfont}}/icon?family=Material+Icons" as="style" />
+<link rel="preload" href="{{site.gfont}}/css?family=Roboto:400,400italic,500,700" as="style" />
+<link rel="preload" href="https://code.jquery.com/jquery-2.2.0.min.js" as="script" />
+<script async type="text/javascript" src="{{site.mdl}}/material.min.js"></script>
+<!--[if lt IE 9]>
+<script type="text/javascript" src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<script async type="text/javascript" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<style>
+body{font-family:Roboto}
+a{color:#009688;text-decoration:none}
+.mdl-menu__item{text-align:right}
+table{width:100%;border-collapse:collapse;position:relative}
+#table-platform td,#table-platform th,#table-variant td,#table-variant th{padding-left:10px;padding-right:10px}
+#table-platform td,#table-android td,#table-variant td{border-bottom:0px}
+#table-platform th,#table-android th,#table-variant th{text-align:center}
+#table-platform,#table-android,#table-variant{border:0px}
+img{max-width:100%}
+.mdl-demo:not(.is-small-screen) .container{max-width:900px;margin:0 auto}
+.mdl-demo:not(.is-small-screen) .advertisement{width:400px;max-width:100%;float:right;margin-top:10px;margin-bottom:10px}
+.mdl-demo:not(.is-small-screen) .dform{width:319px;float:left}
+.mdl-demo .is-small-screen .container{width:100%}
+.mdl-demo .is-small-screen .advertisement{float:none;margin:0 auto;margin-top:10px;margin-bottom:10px}
+.mdl-demo .is-small-screen .dform{float:none;width:319px;margin:0 auto}
+.mdl-layout:not(.is-small-screen) .onlysmallscreen .mdl-layout__header-row{display:none}
+.mdl-layout__header-row .mdl-navigation__link{padding:12px}
+#aboutsection{width:auto;max-width:800px;margin:0 auto;padding:15px}
+#downloadsection{padding:15px}
+.mdl-demo .is-small-screen #downloadsection{padding:0}
+.downloadbuttons{width:100%;max-width:400px}
+#github-latest{float:left;display:inline-block;padding-left:16px}
+#github-progressbar{width:200px}
+#bdownload{vertical-align:top;display:inline-block;float:right;transform:translate(-24px,4px)}
+#logoimage{width:200px;height:auto;transform:translateY(18px)}
+.is-small-screen #logoimage{transform:translateY(11px)}
+.mdl-demo .mdl-layout__tab-bar-button{display:none}
+.mdl-demo .mdl-layout:not(.is-small-screen) .mdl-layout__drawer-button{display:none}
+.mdl-layout__content{flex-shrink:0}
+.link {opacity:.8}
+.link:hover{opacity:1}
+.tab:hover{color:rgba(255,255,255,0.85)}
+.footer-advertisement-container{width:auto;float:right}
+.mdl-demo .is-small-screen .footer-advertisement-container{width:100%;float:left}
+#table-platform{float:left;width:35%}
+#table-android{float:left;width:35%}
+#table-variant{float:left;width:30%}
+.dform{background-color:white}
+footer{margin-top:16px}
+hr{margin:0;padding:0;clear:both}
+#buttons-align{overflow:hidden}
+.mdl-layout:not(.is-small-screen) #adlabelfooter, .mdl-layout:not(.is-small-screen) #adlabelheader{text-align:center;font-style:italic}
+.mdl-demo .is-small-screen #adlabelfooter, .mdl-demo .is-small-screen #adlabelheader{display:none}
+ins{text-decoration:none}
+ins a:hover{text-decoration:underline;}
+#donatebox{max-width:100%;border:0px;text-align:center;padding:10px}
+#donaterectangle{width:100px;height:50px;line-height:60px;background-color:#999999;border-radius:10px;margin:0 auto}
+#donaterectangle:hover{background-color:#757575}
+.mdl-snackbar{min-width:initial;max-width:initial}
+@media screen and (min-width:480px){.mdl-snackbar--active{transform:translateX(-50%)} .mdl-snackbar__action{min-width:100px} }/*fix broken MDL*/
+@media screen and (max-width:821px){.mdl-snackbar--active{transform:translateX(0);left:0;width:100%} }/*fix broken MDL*/
+</style>
+<link rel="apple-touch-icon" type="image/png" sizes="57x57" href="{{site.aimg}}57x57.png">
+<link rel="apple-touch-icon" type="image/png" sizes="60x60" href="{{site.aimg}}60x60.png">
+<link rel="apple-touch-icon" type="image/png" sizes="72x72" href="{{site.aimg}}72x72.png">
+<link rel="apple-touch-icon" type="image/png" sizes="76x76" href="{{site.aimg}}76x76.png">
+<link rel="apple-touch-icon" type="image/png" sizes="114x114" href="{{site.aimg}}114x114.png">
+<link rel="apple-touch-icon" type="image/png" sizes="120x120" href="{{site.aimg}}120x120.png">
+<link rel="apple-touch-icon" type="image/png" sizes="144x144" href="{{site.aimg}}144x144.png">
+<link rel="apple-touch-icon" type="image/png" sizes="152x152" href="{{site.aimg}}152x152.png">
+<link rel="apple-touch-icon" type="image/png" sizes="180x180" href="{{site.aimg}}180x180.png">
+<link rel="icon" type="image/png" sizes="192x192" href="../images/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="../images/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="../images/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="../images/favicon-16x16.png">
+<link rel="manifest" href="../manifest.json">
+<meta charset="utf-8">
+<meta content="chrome=1" http-equiv="X-UA-Compatible">
+<meta name="theme-color" content="#009688">
+<meta name="msapplication-TileColor" content="#009688">
+<meta name="msapplication-TileImage" content="../images/ms-icon-144x144.png">
+<meta name="apple-mobile-web-app-title" content="Open GApps">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="keywords" content="{{site.keywords}}">
+<meta name="description" content="{{site.description}}">
+<link href="http://mix.chimpfeedr.com/5b110-OpenGApps" rel="alternate" title="Open GApps Releases" type="application/atom+xml" />
+<link rel="publisher" href="{{site.social.google}}">
+<script type="text/javascript">(function(i,s,o,g,r,a,m){i["GoogleAnalyticsObject"]=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments);},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m);})(window,document,"script","//www.google-analytics.com/analytics.js","ga");ga("create","UA-63785067-1","auto");ga("send","pageview");</script></head>
