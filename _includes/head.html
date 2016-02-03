@@ -13,49 +13,42 @@
 <style>
 body{font-family:Roboto}
 a{color:#009688;text-decoration:none}
-.mdl-menu__item{text-align:right}
-table{width:100%;border-collapse:collapse;position:relative}
-#table-platform td,#table-platform th,#table-variant td,#table-variant th{padding-left:10px;padding-right:10px}
-#table-platform td,#table-android td,#table-variant td{border-bottom:0px}
-#table-platform th,#table-android th,#table-variant th{text-align:center}
-#table-platform,#table-android,#table-variant{border:0px}
 img{max-width:100%}
-.mdl-demo:not(.is-small-screen) .container{max-width:900px;margin:0 auto}
-.mdl-demo:not(.is-small-screen) .advertisement{width:400px;max-width:100%;float:right;margin-top:10px;margin-bottom:10px}
-.mdl-demo:not(.is-small-screen) .dform{width:319px;float:left}
-.mdl-demo .is-small-screen .container{width:100%}
-.mdl-demo .is-small-screen .advertisement{float:none;margin:0 auto;margin-top:10px;margin-bottom:10px}
-.mdl-demo .is-small-screen .dform{float:none;width:319px;margin:0 auto}
-.mdl-layout:not(.is-small-screen) .onlysmallscreen .mdl-layout__header-row{display:none}
+.dt{border:0px}
+.dt td{border-bottom:0px}
+.dt th{text-align:center}
+.do{float:left;width:35%}
+#ta{float:left;width:30%}
+#tp td,#tp th,#tv td,#tv th{padding-left:10px;padding-right:10px}
+:not(.is-small-screen) .container{max-width:900px;margin:0 auto}
+:not(.is-small-screen) .advertisement{width:400px;max-width:100%;float:right;margin-top:10px;margin-bottom:10px}
+:not(.is-small-screen) .dform{width:319px;float:left}
+.footer-advertisement-container{width:auto;float:right}
+.is-small-screen .container,.is-small-screen .footer-advertisement-container{width:100%;float:left}
+.is-small-screen .advertisement{float:none;margin:10px auto 10px}
+.is-small-screen .dform{float:none;width:319px;margin:0 auto}
+.mdl-layout:not(.is-small-screen) .onlysmallscreen .mdl-layout__header-row,.mdl-layout:not(.is-small-screen) .mdl-layout__drawer-button{display:none}
+.mdl-layout__content{flex-shrink:0}
 .mdl-layout__header-row .mdl-navigation__link{padding:12px}
-#aboutsection{width:auto;max-width:800px;margin:0 auto;padding:15px}
+.mdl-menu__item{text-align:right}
+.link{opacity:.8}
+.link:hover{opacity:1}
+.tab:hover{color:rgba(255,255,255,0.85)}
+#logoimage{width:200px;height:auto;transform:translateY(18px)}
+.is-small-screen #logoimage{transform:translateY(11px)}
 #downloadsection{padding:15px}
-.mdl-demo .is-small-screen #downloadsection{padding:0}
+.is-small-screen #downloadsection{padding:0}
+.dform{background-color:white}
 .downloadbuttons{width:100%;max-width:400px}
 #github-latest{float:left;display:inline-block;padding-left:16px}
 #github-progressbar{width:200px}
 #bdownload{vertical-align:top;display:inline-block;float:right;transform:translate(-24px,4px)}
-#logoimage{width:200px;height:auto;transform:translateY(18px)}
-.is-small-screen #logoimage{transform:translateY(11px)}
-.mdl-demo .mdl-layout__tab-bar-button{display:none}
-.mdl-demo .mdl-layout:not(.is-small-screen) .mdl-layout__drawer-button{display:none}
-.mdl-layout__content{flex-shrink:0}
-.link {opacity:.8}
-.link:hover{opacity:1}
-.tab:hover{color:rgba(255,255,255,0.85)}
-.footer-advertisement-container{width:auto;float:right}
-.mdl-demo .is-small-screen .footer-advertisement-container{width:100%;float:left}
-#table-platform{float:left;width:35%}
-#table-android{float:left;width:35%}
-#table-variant{float:left;width:30%}
-.dform{background-color:white}
+#aboutsection{max-width:800px;margin:0 auto;padding:15px}
 footer{margin-top:16px}
-hr{margin:0;padding:0;clear:both}
-#buttons-align{overflow:hidden}
-.mdl-layout:not(.is-small-screen) #adlabelfooter, .mdl-layout:not(.is-small-screen) #adlabelheader{text-align:center;font-style:italic}
-.mdl-demo .is-small-screen #adlabelfooter, .mdl-demo .is-small-screen #adlabelheader{display:none}
+.mdl-layout:not(.is-small-screen) #adlabelfooter,.mdl-layout:not(.is-small-screen) #adlabelheader{text-align:center;font-style:italic}
+.is-small-screen #adlabelfooter,.is-small-screen #adlabelheader,.mdl-layout__tab-bar-button{display:none}
 ins{text-decoration:none}
-ins a:hover{text-decoration:underline;}
+ins a:hover{text-decoration:underline}
 #donatebox{max-width:100%;border:0px;text-align:center;padding:10px}
 #donaterectangle{width:100px;height:50px;line-height:60px;background-color:#999999;border-radius:10px;margin:0 auto}
 #donaterectangle:hover{background-color:#757575}
