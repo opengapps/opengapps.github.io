@@ -11,14 +11,14 @@
 <script type="text/javascript">
 var archs=["arm","arm64","x86","x86_64"];var apis=["4.4","5.0","5.1","6.0"];var variants=["aroma","super","stock","full","mini","micro","nano","pico"];var packages={};
 var arch=getUrlParameter("arch");var api=getUrlParameter("api");var variant=getUrlParameter("variant");var download=getUrlParameter("download");
-var autoDownload=false;var autoAllowArch=true;var autoAllowApi=true;var autoAllowVariant=true;var adsPushed=false;
+var autoDownload=false;var autoAllowArch=true;var autoAllowApi=true;var autoAllowVariant=true;var adsPushed=false;var durl;
 if($.inArray(arch,archs)==-1){autoAllowArch=false;arch="arm";}if($.inArray(api,apis)==-1){autoAllowApi=false;api="5.1";}if($.inArray(variant,variants)==-1){autoAllowVariant=false;variant="stock";}
 $("input:radio[id='"+arch+"']").attr("checked",true);$("input:radio[id='"+api+"']").attr("checked",true);$("input:radio[id='"+variant+"']").attr("checked",true);
 if(download=="true"){if(autoAllowArch&&autoAllowApi&&autoAllowVariant){autoDownload=true;}else{alert("Auto Download requested, but refused because of missing or broken parameter(s)!");}}
 function getUrlParameter(sParam){"use strict";var sPageURL=window.location.search.substring(1);var sURLVariables=sPageURL.split('&');for(var i=0;i<sURLVariables.length;i++){var sParameterName=sURLVariables[i].split('=');if(sParameterName[0]==sParam){return sParameterName[1];}}}
 function downloadURL(u){var l=document.createElement('a');l.style="visibility:hidden";l.download="";l.href=u;document.body.appendChild(l);l.click();document.body.removeChild(l);}
-function downloadSubmit(){if(updateForm()=="variant"){downloadURL("https://github.com/opengapps/"+arch+"/releases/download/"+packages[arch].date+"/open_gapps-"+arch+"-"+api+"-"+variant+"-"+packages[arch].date+".zip");}}
-function md5Submit(){if(updateForm()=="variant"){downloadURL("https://github.com/opengapps/"+arch+"/releases/download/"+packages[arch].date+"/open_gapps-"+arch+"-"+api+"-"+variant+"-"+packages[arch].date+".zip.md5");}}
+function downloadSubmit(){if(updateForm()=="variant"){downloadURL(durl);}}
+function md5Submit(){if(updateForm()=="variant"){downloadURL(durl+".zip.md5");}}
 function versionSubmit(){if(updateForm()=="api"||updateForm()=="variant"){downloadURL("https://github.com/opengapps/"+arch+"/releases/download/"+packages[arch].date+"/versions-"+arch+"-"+api+"-"+packages[arch].date+".txt");}}
 function updateForm(){
  toggleButton("bdownload",false);toggleButton("bmd5",false);var form=document.getElementById('DownloadForm');
@@ -26,10 +26,10 @@ function updateForm(){
  if(arch===undefined||packages[arch].date===undefined){return;}
  $("#github-progressbar").removeClass("mdl-progress mdl-js-progress mdl-progress__indeterminate progress-demo is-upgraded");$("#github-progressbar").removeAttr("data-upgraded");
  api=undefined;for(i=0; i<form.api.length;i++){if(form.api[i].checked){api=form.api[i].value;}}
- if (api===undefined){$("#github-latest").html("<span class=\"mdl-typography--subhead-color-contrast\">No Android selected</span>");return "arch";}
+ if (api===undefined){$("#github-latest").html('<span class="mdl-typography--subhead-color-contrast">No Android selected</span>');return "arch";}
  variant=undefined;for (i=0; i<form.variant.length;i++){if(form.variant[i].checked){variant=form.variant[i].value;}}
- if (variant===undefined){$("#github-latest").html("<span class=\"mdl-typography--subhead-color-contrast\">No Variant selected</span>");return "api";}
- toggleButton("bdownload",true);toggleButton("bmd5",true);$("#github-latest").html("<span class=\"mdl-typography--headline\">"+packages[arch].day+" "+packages[arch].month+" "+packages[arch].year+"</span><br /><span class=\"mdl-typography--subhead\">Size: "+Math.round((packages[arch].apis[api][variant].size/1024/1024)*100)/100+" MiB</span>");
+ if (variant===undefined){$("#github-latest").html('<span class="mdl-typography--subhead-color-contrast">No Variant selected</span>');return "api";}
+ toggleButton("bdownload",true);toggleButton("bmd5",true);durl="https://github.com/opengapps/"+arch+"/releases/download/"+packages[arch].date+"/open_gapps-"+arch+"-"+api+"-"+variant+"-"+packages[arch].date+".zip";$("#github-latest").html('<span class="mdl-typography--headline">'+packages[arch].day+' '+packages[arch].month+' '+packages[arch].year+'</span><br /><span class="mdl-typography--subhead">Size: '+Math.round((packages[arch].apis[api][variant].size/1024/1024)*100)/100+' MiB</span>');
  return "variant";}
 function toggleButton(id,e){if(e){document.querySelector('button[id="'+id+'"]').MaterialButton.enable();}else{document.querySelector('button[id="'+id+'"]').MaterialButton.disable();}}
 function getBox(id){return $('input:radio[id="'+id+'"]:checked').val();}
