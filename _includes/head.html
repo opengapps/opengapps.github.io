@@ -50,8 +50,11 @@ footer{margin-top:16px}
 #donatebox{text-decoration:none}
 #donatebox a:hover{text-decoration:underline}
 #donatebox{max-width:100%;border:0px;text-align:center;padding:10px}
+.is-small-screen #donatebox{max-height:100px;padding:0 0 5px}
+#donatebody{width:330px;display:inline-block}
 #donaterectangle{width:100px;height:50px;line-height:60px;background-color:#999999;border-radius:10px;margin:0 auto}
 #donaterectangle:hover{background-color:#757575}
+.is-small-screen #donatespace, .is-small-screen #donaterectangle, .is-small-screen #donatecaption{visibility:hidden}
 .mdl-snackbar{min-width:initial;max-width:initial}
 @media screen and (min-width:480px){.mdl-snackbar--active{transform:translateX(-50%)} .mdl-snackbar__action{min-width:100px} }/*fix broken MDL*/
 @media screen and (max-width:821px){.mdl-snackbar--active{transform:translateX(0);left:0;width:100%} }/*fix broken MDL*/
