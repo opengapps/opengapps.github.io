@@ -17,9 +17,9 @@ $("input:radio[id='"+arch+"']").attr("checked",true);$("input:radio[id='"+api+"'
 if(download=="true"){if(autoAllowArch&&autoAllowApi&&autoAllowVariant){autoDownload=true;}else{alert("Auto Download requested, but refused because of missing or broken parameter(s)!");}}
 function getUrlParameter(sParam){"use strict";var sPageURL=window.location.search.substring(1);var sURLVariables=sPageURL.split('&');for(var i=0;i<sURLVariables.length;i++){var sParameterName=sURLVariables[i].split('=');if(sParameterName[0]==sParam){return sParameterName[1];}}}
 function downloadURL(u){location.replace(u);}
-function downloadSubmit(){if(updateForm()=="variant"){downloadURL(durl);}}
-function md5Submit(){if(updateForm()=="variant"){downloadURL(durl+".md5");}}
-function versionSubmit(){if(updateForm()=="api"||updateForm()=="variant"){downloadURL("https://github.com/opengapps/"+arch+"/releases/download/"+packages[arch].date+"/versions-"+arch+"-"+api+"-"+packages[arch].date+".txt");}}
+function downloadSubmit(){if(updateForm()=="variant"){ga('send','event','GApps','download',arch+"-"+api+"-"+variant);downloadURL(durl);}}
+function md5Submit(){if(updateForm()=="variant"){ga('send','event','MD5','download',arch+"-"+api+"-"+variant);downloadURL(durl+".md5");}}
+function versionSubmit(){if(updateForm()=="api"||updateForm()=="variant"){ga('send','event','MD5','download',arch+"-"+api);downloadURL("https://github.com/opengapps/"+arch+"/releases/download/"+packages[arch].date+"/versions-"+arch+"-"+api+"-"+packages[arch].date+".txt");}}
 function updateForm(){
  toggleButton("bdownload",false);toggleButton("bmd5",false);var form=document.getElementById('DownloadForm');
  arch=undefined;for(var i=0;i<form.arch.length;i++){if(form.arch[i].checked){arch=form.arch[i].value;}}
@@ -38,11 +38,12 @@ function toggleBox(id,e){if(e){document.querySelector('input[id="'+id+'"]').pare
 function setCookie(n,v,e){var d=new Date();d.setTime(d.getTime()+(e*86400000));var x="expires="+d.toUTCString();document.cookie=n+"="+v+"; "+x;}
 function getCookie(n){var v=n+"=";var a=document.cookie.split(';');for(var i=0;i<a.length;i++){var c=a[i];while(c.charAt(0)==' ')c=c.substring(1);if(c.indexOf(v)==0)return c.substring(v.length,c.length);}return "";}
 function donate(){var ads=document.querySelectorAll("ins.adsbygoogle");if(ads[0]&&ads[0].innerHTML.replace(/\s/g,"").length===0){ads[0].parentElement.style.cssText='display:block !important';ads[0].parentElement.innerHTML='<div id="donatebox"><div id="donatetitle" class="mdl-typography--display-1"><a href="#" onclick="$(\'#paypal\', parent.document).submit(); return false;">Please Donate!</a></div><br /><div id="donatebody" class="mdl-typography--body-1">You blocked the advertisements, that is OK. But please consider a <a href="#" onclick="$(\'#paypal\', parent.document).submit(); return false;">donation</a> to the project instead!</div><div id="donatespace"><br /></div><a href="#" onclick="$(\'#paypal\', parent.document).submit(); return false;"><div id="donaterectangle"><i class="material-icons" style="color:#f5f5f5">card_giftcard</i></div></a><br /><div id="donatecaption" class="mdl-typography--caption-color-contrast">The advertisement revenue supports the projects\' efforts. Can\'t donate? <a href="abp:subscribe?location=http%3A%2F%2Fopengapps.org%2Fopengapps.org.abp.txt&amp;title=Open%20GApps">Please unblock our ads!</a></div></div>';ga('send','event','Ads','view','Donate');}else{ga('send','event','Ads','view','AdSenseTop')}}
+var trackOutboundLink=function(url){ga('send','event','outbound','click',url,{'transport':'beacon','hitCallback':function(){document.location=url;}});}
 jQuery.updateButtons=function(){
  componentHandler.upgradeDom();var k;
  if(!adsPushed){$(".adsbygoogle").each(function(){try{(adsbygoogle=window.adsbygoogle||[]).push({});}catch(e){donate()}});if(getCookie("c")!="y"){var d={message:'We use cookies to share information about your use of our site with our advertising and analytics partner',actionHandler:function(event){setCookie("c","y",365);document.querySelector('.mdl-js-snackbar').MaterialSnackbar.cleanup_();},actionText:'Got it!',timeout: 60000};document.querySelector('.mdl-js-snackbar').MaterialSnackbar.showSnackbar(d);};adsPushed=true;}
  arch=$("input:radio[name='arch']:checked").attr("value");api=$("input:radio[name='api']:checked").attr("value");variant=$("input:radio[name='variant']:checked").attr("value");
- if(getBox(arch)){for(i=0;i<apis.length;i++){toggleButton("bolder",true);$("#bolderlink").attr("href","https://github.com/opengapps/"+arch+"/releases/");toggleBox(apis[i],false);}for(k in packages[arch].apis){toggleBox(k,true);}
+ if(getBox(arch)){for(i=0;i<apis.length;i++){toggleButton("bolder",true);oldurl="https://github.com/opengapps/"+arch+"/releases/";$("#bolderlink").attr("href",oldurl);$("#bolderlink").attr("onclick","trackOutboundLink('"+oldurl+"');return false;");toggleBox(apis[i],false);}for(k in packages[arch].apis){toggleBox(k,true);}
  }else{for(i=0;i<apis.length;i++){toggleBox(apis[i],false);}toggleButton("bolder",false);$("#bolderlink").attr("href","#");}
  if(api!==undefined&&packages[arch].apis[api]===undefined){uncheckBox(api);}
  if(getBox(api)){if(packages[arch]!==undefined){toggleButton("bversion",true);}for(i=0;i<variants.length;i++){toggleBox(variants[i],false);}for(k in packages[arch].apis[api]){toggleBox(k,true);}
