@@ -32,20 +32,8 @@ function setButtonEnable(id,enable){var el=document.getElementById(id);if(typeof
 function setBoxEnable(id,enable){var el=document.getElementById(id).parentElement;if(typeof el.MaterialRadio==='object'){el.MaterialRadio[(!!enable)?'enable':'disable']();}}
 function setBoxCheck(id,check){var el=document.getElementById(id).parentElement;if(typeof el.MaterialRadio==='object'){el.MaterialRadio[!!check?'check':'uncheck']();}}
 
-function validateAds(){
-  var ads=document.getElementsByClassName('adsbygoogle');
-  for(var i=0;i<ads.length;i++){
-    var ad=ads[i];
-    if (ad.innerHTML.trim().length===0){
-      var adPel=ad.parentElement;
-      adPel.style.cssText='display:block !important';
-      adPel.innerHTML='<div id="donatebox"><div id="donatetitle" class="mdl-typography--display-1"><a href="#" onclick="$(\'#paypal\', parent.document).submit(); return false;">Please Donate!</a></div><br /><div id="donatebody" class="mdl-typography--body-1">It\'s OK that you blocked the ads, but please consider <a href="#" onclick="$(\'#paypal\', parent.document).submit(); return false;">donating</a> to the project instead!</div><div id="donatespace"><br /></div><a href="#" onclick="$(\'#paypal\', parent.document).submit(); return false;"><div id="donaterectangle"><i class="material-icons" style="color:#f5f5f5">card_giftcard</i></div></a><br /><div id="donatecaption" class="mdl-typography--caption-color-contrast">Ad revenue supports the projects\' efforts.<br>Can\'t donate? <a href="abp:subscribe?location=http%3A%2F%2Fopengapps.org%2Fopengapps.org.abp.txt&amp;title=Open%20GApps">Please unblock our ads!</a></div></div>';
-      ga('send','event','Ads','view','Donate');
-      return;
-    }
-  }
-  ga('send','event','Ads','view','AdSenseTop');
-}
+function setBlock(el,c,t){el.style.cssText='display:block !important';el.innerHTML=c;ga('send','event','Ads','view',t);}
+function validateBlock(){var ads=document.querySelectorAll("ins.adsbygoogle");var ord=[0,1];ord.sort(function(){return 0.5-Math.random()});if(ads[ord[0]]&&ads[ord[0]].innerHTML.replace(/\s/g,"").length===0){setBlock(ads[ord[0]].parentElement,'<div id="donatebox"><div id="donatetitle" class="mdl-typography--display-1"><a href="#" onclick="$(\'#paypal\', parent.document).submit(); return false;" title="The project is supported by donations and advertisements">Please Donate!</a></div><br /><div id="donatebody" class="mdl-typography--body-1">You blocked the advertisements, that is OK. But please consider a <a href="#" onclick="$(\'#paypal\', parent.document).submit(); return false;">donation</a> to the project instead!</div><div id="donatespace"><br /></div><a href="#" onclick="$(\'#paypal\', parent.document).submit(); return false;"><div id="donaterectangle"><i class="material-icons" style="color:#f5f5f5">card_giftcard</i></div></a><br /><div id="donatecaption" class="mdl-typography--caption-color-contrast">The advertisement revenue supports the projects\' efforts. Can\'t donate? <a href="abp:subscribe?location=http%3A%2F%2Fopengapps.org%2Fopengapps.org.abp.txt&amp;title=Open%20GApps" title="Add opengapps.org to your Adblocker\'s whitelist">Please unblock our ads!</a></div></div>','Donate');}else{ga('send','event','Ads','view','AdSenseHeader');}if(ads[ord[1]]&&ads[ord[1]].innerHTML.replace(/\s/g,"").length===0){setBlock(ads[ord[1]].parentElement,'<div id="sebox"><img src="images/se.png" alt="Download SE File Explorer" title="Download SE File Explorer to copy Open GApps to your mobile device" /></div>','SEFileExplorer');}else{ga('send','event','Ads','view','AdSenseFooter');}}var trackOutboundLink=function(url){ga('send','event','outbound','click',url,{'transport':'beacon','hitCallback':function(){document.location=url;}});}
 
 function validateForm(){
   var form=document.getElementById('DownloadForm');
@@ -130,7 +118,7 @@ document.addEventListener('DOMContentLoaded',function(){
   (function(i,s,o,g,r,a,m){i.GoogleAnalyticsObject=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments);};i[r].l=1*new Date();a=s.createElement(o);m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m);})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
   ga('create','UA-63785067-1','auto');
   ga('send','pageview','/');
-  for(var iAd=0;iAd<document.getElementsByClassName('adsbygoogle').length;iAd++){try{(window.adsbygoogle||[]).push({});}catch(e){validateAds();break;}}
+  for(var iAd=0;iAd<document.getElementsByClassName('adsbygoogle').length;iAd++){try{(window.adsbygoogle||[]).push({});}catch(e){validateBlock();break;}}
   if(getCookie('c')!=='y'){(window.componentHandler||{upgradeDom:function(){}}).upgradeDom();var snackbar=document.getElementsByClassName('mdl-js-snackbar')[0].MaterialSnackbar;snackbar.showSnackbar({message:'We use cookies to share information about your use of our site with our advertising and analytics partner',actionHandler:function(){setCookie('c','y',365);snackbar.cleanup_();},actionText:'Got it!',timeout:60000});}
 
   document.getElementById('bversion').addEventListener('click',versionSubmit);
@@ -152,5 +140,5 @@ document.addEventListener('DOMContentLoaded',function(){
   }
 
   queryRelease();
-  setTimeout(validateAds,2000);
+  setTimeout(validateBlock,2000);
 });
