@@ -7,7 +7,7 @@ org: OpenGApps.org
 aimg: ../images/apple-icon-
 gfont: https://fonts.googleapis.com
 jquery: https://code.jquery.com/jquery-2.2.1.min.js
-mdl: https://storage.googleapis.com/code.getmdl.io/1.1.1
+mdl: https://storage.googleapis.com/code.getmdl.io/1.1.2
 pushbulletpop: ",document.body.clientHeight,'toolbar=no,status=no,menubar=no,width=700,height=460,top='+screen.height/2-230+',left='+screen.width/2-350)"
 
 social:
