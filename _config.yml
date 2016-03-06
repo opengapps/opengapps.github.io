@@ -4,7 +4,9 @@ description: Open GApps is a Google Apps package developed by writing open sourc
 keywords: open gapps, opengapps, android, daily, arm, arm64, x86, x86_64, 4.4, 5.0, 5.1, 6.0, aroma
 ga: Google Apps
 org: OpenGApps.org
-aimg: ../images/apple-icon-
+img: /images/
+apimg: /images/apple-icon-
+animg: \/images\/android-icon-
 gfont: https://fonts.googleapis.com
 jquery: https://code.jquery.com/jquery-2.2.1.min.js
 mdl: https://storage.googleapis.com/code.getmdl.io/1.1.2
