@@ -3,11 +3,11 @@ The Open GApps Project is an open-source effort to script the automatic generati
 Some highlights about the characteristics of the Open GApps packages:
 
 - All platforms and and all Android versions are supported
-- DPI-optimized support for **all** Google packages (unlike all other GApps)
-- Frequently updated {{site.ga}}: Packages are updated every (European) night (if there are any updated {{site.ga}} available)
+- DPI-optimized support for **all** Google packages (unlike other GApps)
+- Frequently updated {{site.ga}}: The pre-built {{site.org}} packages are updated every (European) night (if there are any updated {{site.ga}} available)
 - Strong compression, allowing for relatively small downloads of even the most complete packages
-- Automatic Backup: It is not necessary to re-flash Open GApps or modules when you flash a ROM update. Most ROMs support this function
+- Automatic backup: It is not necessary to re-flash {{site.ga}} when you flash a ROM update. Most ROMs support this (addon.d) function
 - The installer checks your device's capabilities, like the system partition size. It will notify you, before making any changes, if it finds any problems
-- Several package variations, from a Google Super Package (based on all applications that ever shipped on a Google device), to a Stock package that equals the set of applications found on the most current and complete Nexus, to smaller, minimalist packages and an AROMA package that allows graphically selection of what to install
+- Several package variations, from a Google Super Package (includes all applications that ever shipped on a Google device), to a Stock package that equals the set of applications found on the most current and complete Nexus, to smaller, minimalist packages and an AROMA package that allows graphically selection of what to install
 - A special 'for Stock ROM' installation mode that allows to update the {{site.ga}} on Stock ROMs that conform to the original Google Nexus filesystem structure
 - All package installations can be customized to your individual preferences using our [exclusive Advanced Features and Options](https://github.com/opengapps/opengapps/wiki/Advanced-Features-and-Options)
