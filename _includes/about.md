@@ -11,3 +11,7 @@ Some highlights about the characteristics of the Open GApps packages:
 - Several package variations, from a Google Super Package (includes all applications that ever shipped on a Google device), to a Stock package that equals the set of applications found on the most current and complete Nexus, to smaller, minimalist packages and an AROMA package that allows graphically selection of what to install
 - A special 'for Stock ROM' installation mode that allows to update the {{site.ga}} on Stock ROMs that conform to the original Google Nexus filesystem structure
 - All package installations can be customized to your individual preferences using our [exclusive Advanced Features and Options](https://github.com/opengapps/opengapps/wiki/Advanced-Features-and-Options)
+
+Take note that Open GApps does not provide you with any license for Google's APKs included in the package.
+The Open GApps packages merely provide a convenient way to sideload APKs to your device.
+It is your own responsibility to obtain the proper permissions by e.g. buying an [OHA](http://www.openhandsetalliance.com)-licensed device with pre-installed Google Apps and/or acquiring the applications from [Google's Play Store](https://play.google.com/store).
