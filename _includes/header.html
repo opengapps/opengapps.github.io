@@ -4,7 +4,7 @@
  <div class="mdl-layout__header-row mdl-cell--hide-phone mdl-cell--hide-tablet">
  <div class="mdl-layout-spacer"></div>
  <nav class="mdl-navigation">
-  <a class="mdl-navigation__link link" id="donatelink" href="#" onclick="$('#paypal').submit(); return false;">Donate</strong></a>
+  <a class="mdl-navigation__link link" id="donatelink" href="#" onclick="window.paypal();return false;">Donate</strong></a>
   <a class="mdl-navigation__link link" id="githublink" href="{{site.social.github}}">GitHub</a>
   <a class="mdl-navigation__link link" id="xdalink" href="{{site.social.xda}}">XDA Forum</a>
   <a class="mdl-navigation__link link" id="wikilink" href="{{site.social.github}}/wiki">Wiki</a>
@@ -27,7 +27,7 @@
 </div>
 </header>
 <div class="mdl-layout__drawer"><span class="mdl-layout-title">Links</span><nav class="mdl-navigation">
- <a class="mdl-navigation__link" href="#" onclick="$('#paypal').submit(); return false;">Support by <strong>Donation</strong></a>
+ <a class="mdl-navigation__link" href="#" onclick="window.paypal();return false;">Support by <strong>Donation</strong></a>
  <a class="mdl-navigation__link" href="{{site.social.github}}">Source on <strong>GitHub</strong></a>
  <a class="mdl-navigation__link" href="{{site.social.xda}}">Community on <strong>XDA Forum</strong></a>
  <a class="mdl-navigation__link" href="{{site.social.github}}/wiki">Manual on <strong>Wiki</strong></a>
