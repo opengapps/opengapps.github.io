@@ -15,3 +15,5 @@ Some highlights about the characteristics of the Open GApps packages:
 Take note that Open GApps does not provide you with any license for Google's APKs included in the package.
 The Open GApps packages merely provide a convenient way to sideload APKs to your device.
 It is your own responsibility to obtain the proper permissions by e.g. buying an [OHA](http://www.openhandsetalliance.com)-licensed device with pre-installed Google Apps and/or acquiring the applications from [Google's Play Store](https://play.google.com/store).
+
+The pre-built packages from {{site.org}} are provided ONLY as courtesy by {{site.org}} without warranty of ANY kind, under the terms that they can be freely used for personal use only, and are not allowed to be mirrored to the public other than {{site.org}}.
