@@ -4,17 +4,15 @@
  <div class="mdl-layout-spacer"></div>
  <nav class="mdl-navigation">
   <a class="mdl-navigation__link link mdl-navigation__link--icon mdl-layout--large-screen-only" id="donatelink" href="#" onclick="window.paypal();return false;"><i class="material-icons">card_giftcard</i> Donate</strong></a>
-  <a class="mdl-navigation__link link mdl-navigation__link--icon mdl-layout--large-screen-only" id="githublink" href="{{site.social.github}}"><i class="material-icons">code</i> GitHub</a>
+  {% for nav_item in site.data.nav.social %}
+      <a class="mdl-navigation__link link mdl-navigation__link--icon mdl-layout--large-screen-only" id="{{nav_item.name|downcase|append:'link'}}" href="{{nav_item.link}}"><i class="material-icons">{{nav_item.icon}}</i> {{nav_item.name}}</a>
+  {% endfor %}
   <a class="mdl-navigation__link link mdl-navigation__link--icon mdl-layout--large-screen-only" id="pushbulletlink" href="#"><i class="material-icons">notifications</i> Pushbullet</a>
   <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect mdl-layout--large-screen-only" data-mdl-for="pushbulletlink">
-   <a href="{{site.social.pushbullet}}opengapps"><li class="mdl-menu__item">All Releases</li></a>
-   <a href="{{site.social.pushbullet}}opengappsarm"><li class="mdl-menu__item">ARM Releases</li></a>
-   <a href="{{site.social.pushbullet}}opengappsarm64"><li class="mdl-menu__item">ARM64 Releases</li></a>
-   <a href="{{site.social.pushbullet}}opengappsx86"><li class="mdl-menu__item">x86 Releases</li></a>
-   <a href="{{site.social.pushbullet}}opengappsx86_64"><li class="mdl-menu__item">x86_64 Releases</li></a>
+    {% for nav_item in site.data.nav.pushbullet %}
+    <a href="{{site.pushbullet|append:{{nav_item.tag}}"><li class="mdl-menu__item">{{nav_item.name}} releases</li></a>
+    {% endfor %}
   </ul>
-  <a class="mdl-navigation__link link mdl-navigation__link--icon mdl-layout--large-screen-only" id="twitterlink" href="{{site.social.twitter}}"><i class="material-icons">whatshot</i> Twitter</a>
-  <a class="mdl-navigation__link link mdl-navigation__link--icon mdl-layout--large-screen-only" id="googlepluslink" href="https://plus.google.com/+OpengappsOrg/posts"><i class="material-icons">plus_one</i> Google+</a>
  </nav>
 </div>
 <div class="mdl-layout__tab-bar mdl-js-ripple-effect mdl-color--primary-dark mdl-shadow--2dp reset-tab">
@@ -25,15 +23,13 @@
 </header>
 <div class="mdl-layout__drawer"><span class="mdl-layout-title">Navigation</span><nav class="mdl-navigation">
  <a class="mdl-navigation__link mdl-navigation__link--icon" href="#" onclick="window.paypal();return false;"><i class="material-icons">card_giftcard</i> Support by <strong>Donation</strong></a>
- <a class="mdl-navigation__link mdl-navigation__link--icon" href="{{site.social.github}}"><i class="material-icons">code</i> Source on <strong>GitHub</strong></a>
+ {% for nav_item in site.data.nav.social %}
+     <a class="mdl-navigation__link mdl-navigation__link--icon" id="{{nav_item.name|downcase|append:'link'}}" href="{{nav_item.link}}"><i class="material-icons">{{nav_item.icon}}</i> {{nav_item.long_name}}</a>
+ {% endfor %}
  <a id="pushbulletdrawer" class="mdl-navigation__link mdl-navigation__link--icon" href="#"><i class="material-icons">notifications</i> Follow via <strong>Pushbullet</strong></a>
  <ul class="mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect" data-mdl-for="pushbulletdrawer">
-  <a href="{{site.social.pushbullet}}opengapps"><li class="mdl-menu__item">All releases</li></a>
-  <a href="{{site.social.pushbullet}}opengappsarm"><li class="mdl-menu__item">ARM Releases</li></a>
-  <a href="{{site.social.pushbullet}}opengappsarm64"><li class="mdl-menu__item">ARM64 Releases</li></a>
-  <a href="{{site.social.pushbullet}}opengappsx86"><li class="mdl-menu__item">x86 Releases</li></a>
-  <a href="{{site.social.pushbullet}}opengappsx86_64"><li class="mdl-menu__item">x86_64 Releases</li></a>
+  {% for nav_item in site.data.nav.pushbullet %}
+  <a href="{{site.pushbullet|append:{{nav_item.tag}}"><li class="mdl-menu__item">{{nav_item.name}} releases</li></a>
+  {% endfor %}
  </ul>
- <a class="mdl-navigation__link mdl-navigation__link--icon" href="{{site.social.twitter}}"><i class="material-icons">whatshot</i> Changelog on <strong>Twitter</strong></a>
- <a class="mdl-navigation__link mdl-navigation__link--icon" href="{{site.social.google}}"><i class="material-icons">plus_one</i> Weblog on <strong>Google+</strong></a>
 </nav></div>

@@ -1,0 +1,25 @@
+social:
+  - name: Twitter
+    long_name: Changelog on <strong>Twitter</strong>
+    link: https://twitter.com/opengapps
+    icon: whatshot
+  - name: GitHub
+    long_name: Source on <strong>GitHub</strong>
+    link: https://github.com/opengapps/opengapps
+    icon: code
+  - name: Google+
+    long_name: Weblog on <strong>Google+</strong>
+    link: https://google.com/+OpengappsOrg
+    icon: plus_one
+
+pushbullet:
+  - name: All
+    tag: opengapps
+  - name: ARM
+    tag: opengappsarm
+  - name: ARM64
+    tag: opengappsarm64
+  - name: x86
+    tag: opengappsx86
+  - name: x86_64
+    tag: opengappsx86_64

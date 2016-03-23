@@ -2,20 +2,19 @@
 title: The Open GApps Project
 description: Open GApps is a Google Apps package developed by writing open source buildscripts. All Android versions and platforms supported.
 keywords: open gapps, opengapps, android, daily, arm, arm64, x86, x86_64, 4.4, 5.0, 5.1, 6.0, aroma
+
+# Libraries
+gfont: https://fonts.googleapis.com
+jquery: https://code.jquery.com/jquery-2.2.2.min.js
+mdl: https://storage.googleapis.com/code.getmdl.io/1.1.3
+pushbullet: https://www.pushbullet.com/channel-popup?tag=
+
+# Variables/Resouces
 ga: Google Apps
 org: OpenGApps.org
 img: /images/
 apimg: /images/apple-icon-
 animg: \/images\/android-icon-
-gfont: https://fonts.googleapis.com
-jquery: https://code.jquery.com/jquery-2.2.2.min.js
-mdl: https://storage.googleapis.com/code.getmdl.io/1.1.3
-
-social:
- google: https://plus.google.com/+OpengappsOrg
- twitter: https://twitter.com/opengapps
- pushbullet: https://www.pushbullet.com/channel-popup?tag=
- github: https://github.com/opengapps/opengapps
 color: '#009688'
 
 support:
