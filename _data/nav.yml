@@ -1,12 +1,13 @@
-social:
-  - name: Twitter
-    long_name: Changelog on <strong>Twitter</strong>
-    link: https://twitter.com/opengapps
-    icon: whatshot
+social1:
   - name: GitHub
     long_name: Source on <strong>GitHub</strong>
     link: https://github.com/opengapps/opengapps
     icon: code
+social2:
+  - name: Twitter
+    long_name: Changelog on <strong>Twitter</strong>
+    link: https://twitter.com/opengapps
+    icon: whatshot
   - name: Google+
     long_name: Weblog on <strong>Google+</strong>
     link: https://google.com/+OpengappsOrg

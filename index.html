@@ -13,7 +13,7 @@ layout: default
     {% for table in site.data.table.arch %}
     <tr><td class="mdl-data-table__cell--non-numeric"><label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="{{table.name}}" id="{{table.name|prepend:'l'}}">
      <input {% if table.checked == true %}{{ 'checked' }}{% endif %} id="{{table.name}}" name="arch" type="radio" value="{{table.name}}" class="mdl-radio__button" />
-     <span class="mdl-radio__label">{% if table.url %}<a href="{{site.support.wiki|append:{{table.url}}">{{table.name}}</a>{% else %}{{table.name}}{% endif %}</span>
+     <span class="mdl-radio__label">{% if table.url %}<a href="{{site.support.wiki|append:{{table.url}}">{{table.humanname}}</a>{% else %}{{table.humanname}}{% endif %}</span>
     </label></td></tr>
     {% endfor %}
     </tbody>

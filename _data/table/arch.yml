@@ -1,7 +1,11 @@
 - name: arm
+  humanname: ARM
   url: '/Notes-for-Android-ARM'
   checked: true
 - name: arm64
+  humanname: ARM64
 - name: x86
+  humanname: x86
   url: '/Notes-for-Android-x86'
 - name: x86_64
+  humanname: x86_64
