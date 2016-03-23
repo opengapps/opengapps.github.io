@@ -1,11 +1,11 @@
 <head>
 <title>{% if page.title %}{{page.title}}{% else %}{{site.title}}{% endif %}</title>
-<link rel="stylesheet" type="text/css" href="{{site.mdl}}/material.teal-red.min.css" />
+<link rel="stylesheet" type="text/css" href="{{site.mdl|append:'/material.teal-red.min.css'}}" />
 <!--Preload for fancy browsers-->
-<link rel="preload" href="{{site.gfont}}/icon?family=Material+Icons" as="style" />
-<link rel="preload" href="{{site.gfont}}/css?family=Roboto:400,400italic,500,700" as="style" />
+<link rel="preload" href="{{site.gfont|append:'/icon?family=Material+Icons'}}" as="style" />
+<link rel="preload" href="{{site.gfont|append:'/css?family=Roboto:400,400italic,500,700'}}" as="style" />
 <link rel="preload" href="{{site.jquery}}" as="script" />
-<script type="text/javascript" src="{{site.mdl}}/material.min.js"></script>
+<script type="text/javascript" src="{{site.mdl|append:'/material.min.js'}}"></script>
 <!--[if lt IE 9]>
 <script type="text/javascript" src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 <![endif]-->
@@ -57,30 +57,30 @@ footer{position:absolute;bottom:0;right:0;left:0;white-space:nowrap}
 @media screen and (max-width:805px){.mdl-snackbar--active{transform:translateX(0);left:0;min-width:100%}}
 @media screen and (min-width:806px){.mdl-snackbar--active{min-width:806px}}
 </style>
-<link rel="apple-touch-icon" type="image/png" sizes="57x57" href="{{site.apimg}}57x57.png">
-<link rel="apple-touch-icon" type="image/png" sizes="60x60" href="{{site.apimg}}60x60.png">
-<link rel="apple-touch-icon" type="image/png" sizes="72x72" href="{{site.apimg}}72x72.png">
-<link rel="apple-touch-icon" type="image/png" sizes="76x76" href="{{site.apimg}}76x76.png">
-<link rel="apple-touch-icon" type="image/png" sizes="114x114" href="{{site.apimg}}114x114.png">
-<link rel="apple-touch-icon" type="image/png" sizes="120x120" href="{{site.apimg}}120x120.png">
-<link rel="apple-touch-icon" type="image/png" sizes="144x144" href="{{site.apimg}}144x144.png">
-<link rel="apple-touch-icon" type="image/png" sizes="152x152" href="{{site.apimg}}152x152.png">
-<link rel="apple-touch-icon" type="image/png" sizes="180x180" href="{{site.apimg}}180x180.png">
-<link rel="icon" type="image/png" sizes="192x192" href="{{site.img}}android-icon-192x192.png">
-<link rel="icon" type="image/png" sizes="32x32" href="{{site.img}}favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="96x96" href="{{site.img}}favicon-96x96.png">
-<link rel="icon" type="image/png" sizes="16x16" href="{{site.img}}favicon-16x16.png">
+<link rel="apple-touch-icon" type="image/png" sizes="57x57" href="{{site.apimg|append:'57x57.png'}}">
+<link rel="apple-touch-icon" type="image/png" sizes="60x60" href="{{site.apimg|append:'60x60.png'}}">
+<link rel="apple-touch-icon" type="image/png" sizes="72x72" href="{{site.apimg|append:'72x72.png'}}">
+<link rel="apple-touch-icon" type="image/png" sizes="76x76" href="{{site.apimg|append:'76x76.png'}}">
+<link rel="apple-touch-icon" type="image/png" sizes="114x114" href="{{site.apimg|append:'114x114.png'}}">
+<link rel="apple-touch-icon" type="image/png" sizes="120x120" href="{{site.apimg|append:'120x120.png'}}">
+<link rel="apple-touch-icon" type="image/png" sizes="144x144" href="{{site.apimg|append:'144x144.png'}}">
+<link rel="apple-touch-icon" type="image/png" sizes="152x152" href="{{site.apimg|append:'152x152.png'}}">
+<link rel="apple-touch-icon" type="image/png" sizes="180x180" href="{{site.apimg|append:'180x180.png'}}">
+<link rel="icon" type="image/png" sizes="192x192" href="{{site.img|append:'android-icon-192x192.png'}}">
+<link rel="icon" type="image/png" sizes="32x32" href="{{site.img|append:'favicon-32x32.png'}}">
+<link rel="icon" type="image/png" sizes="96x96" href="{{site.img|append:'favicon-96x96.png'}}">
+<link rel="icon" type="image/png" sizes="16x16" href="{{site.img|append:'favicon-16x16.png'}}">
 <link rel="manifest" href="/manifest.json">
 <meta charset="utf-8">
 <meta content="chrome=1" http-equiv="X-UA-Compatible">
-<meta name="theme-color" content="#009688">
-<meta name="msapplication-TileColor" content="#009688">
-<meta name="msapplication-TileImage" content="{{site.img}}ms-icon-144x144.png">
+<meta name="theme-color" content="{{site.color}}">
+<meta name="msapplication-TileColor" content="{{site.color}}">
+<meta name="msapplication-TileImage" content="{{site.img|append:'ms-icon-144x144.png'}}">
 <meta name="apple-mobile-web-app-title" content="Open GApps">
 <meta name="mobile-web-app-capable" content="yes">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="keywords" content="{{site.keywords}}">
 <meta name="description" content="{{site.description}}">
 <link href="http://mix.chimpfeedr.com/5b110-OpenGApps" rel="alternate" title="{{site.org}} Releases" type="application/atom+xml" />
-<link rel="publisher" href="{{site.social.google}}">
+<link rel="publisher" href="https://plus.google.com/+OpengappsOrg">
 </head>

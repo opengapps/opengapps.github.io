@@ -1,0 +1,17 @@
+- name: aroma
+  url: /Aroma-Package
+- name: super
+  url: /Super-Package
+- name: stock
+  url: /Stock-Package
+  checked: true
+- name: full
+  url: /Full-Package
+- name: mini
+  url: /Mini-Package
+- name: micro
+  url: /Micro-Package
+- name: nano
+  url: /Nano-Package
+- name: pico
+  url: /Pico-Package
