@@ -35,9 +35,11 @@
 - tag: bdownload
   info: Download selected Open GApps package
 - tag: bversion
-  info: Detailed version information of the applications that are used for this specific platform architecture and android version
+  info: Buildlog with version information of the applications and libraries used during the creation of the selected package
 - tag: bmd5
-  info: Download a md5 checksum file that can be used by the Android device's recovery to verify the integrity of the downloaded package
+  info: Download a md5 checksum file that can be used by the Android device's recovery to verify the integrity of the selected package
+- tag: breport
+  info: Detailed version information of the applications used for the daily build of the selected platform architecture and android version
 - tag: bolder
   info: List all older releases for this platform architecture
 - tag: donatelink
