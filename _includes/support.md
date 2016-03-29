@@ -6,6 +6,9 @@ A list of the various support channels available for the {{site.org}} packages:
 * [XDA Forum Open GApps Development Thread]({{site.support.xdadev}})
 * [Open GApps Gitter Chat]({{site.support.gitter}})
 
+#### Download Speed
+If you experience slow downloads it is best to contact [GitHub Support](https://github.com/contact) so that they can take appropriate measures. Don't forget to include necessary information they may need to find the cause of the problem; e.g. the download URL, your ISP, your location and time & date.
+
 #### Questions
 If you have any questions check out the [Open GApps Wiki]({{site.support.wiki}}), especially the [FAQ]({{site.support.faq}}) answers most questions.
 If you can't find the answer to your question use the [XDA Q&A Thread]({{site.support.xdaqa}}) or join us on [Gitter]({{site.support.gitter}}) to receive support. *Don't forget to add at least the Open GApps installer debug log and if experiencing Force Closures also include a logcat*.
