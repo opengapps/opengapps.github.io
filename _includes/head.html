@@ -1,62 +1,12 @@
-<head>
 <title>{% if page.title %}{{page.title}}{% else %}{{site.title}}{% endif %}</title>
 <link rel="stylesheet" type="text/css" href="{{site.mdl|append:'/material.teal-red.min.css'}}" />
 <!--Preload for fancy browsers-->
 <link rel="preload" href="{{site.gfont|append:'/icon?family=Material+Icons'}}" as="style" />
 <link rel="preload" href="{{site.gfont|append:'/css?family=Roboto:400,400italic,500,700'}}" as="style" />
-<link rel="preload" href="{{site.jquery}}" as="script" />
 <script type="text/javascript" src="{{site.mdl|append:'/material.min.js'}}"></script>
 <!--[if lt IE 9]>
 <script type="text/javascript" src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 <![endif]-->
-<script async type="text/javascript" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<style>
-body{font-family:Roboto}
-a{color:#009688;text-decoration:none}
-img{max-width:100%}
-.dt{border:0px;float:left;width:110px}
-.dt td{border-bottom:0px}
-.dt th{text-align:center}
-#tp td,#tp th,#tv td,#tv th{padding-left:10px;padding-right:0}
-:not(.is-small-screen) .container{text-align:center;max-width:800px;margin:0 auto}
-:not(.is-small-screen) .advertisement{width:330px;max-width:100%;float:right;margin-top:10px;margin-bottom:10px}
-:not(.is-small-screen) .dform{width:330px;float:left}
-.footer-advertisement-container{width:auto;float:right}
-.is-small-screen .container,.is-small-screen .footer-container{max-width:1024px;width:100%;float:left}
-.is-small-screen .advertisement{float:none;margin:10px auto 10px;width:inherit}
-.is-small-screen .dform{display:inline-block;float:none;width:330px;margin:0 auto}
-.mdl-layout__content{flex-shrink:0}
-.mdl-menu__item{text-align:right}
-.link{opacity:.8}
-.link:hover{opacity:1}
-.tab:hover{color:rgba(255,255,255,0.85)}
-#logoimage{position:absolute;padding:15px}
-.is-small-screen #logoimage{padding:5px}
-.mdl-layout__obfuscator.is-visible, .mdl-layout__drawer{position:fixed}
-#wrapper{min-height:100%;position:relative}
-#content{display:block;padding-bottom:130px}
-#downloadsection{padding:30px}
-.is-small-screen #downloadsection{padding:10px 0 30px 0}
-.dform{background-color:white}
-.downloadbuttons{text-align:left;width:100%;max-width:400px}
-#github-latest{display:inline-block;padding-left:16px}
-#github-progressbar{width:200px}
-#bdownload{vertical-align:top;float:right;transform:translate(-24px,4px)}
-.mdsection{max-width:800px;margin:0 auto;padding:30px}
-footer{position:absolute;bottom:0;right:0;left:0;white-space:nowrap}
-.mdl-layout:not(.is-small-screen) #adlabelfooter,.mdl-layout:not(.is-small-screen) #adlabelheader{text-align:center;font-style:italic}
-.is-small-screen #adlabelfooter,.is-small-screen #adlabelheader,.mdl-layout__tab-bar-button{display:none}
-#donatebox a:hover{text-decoration:underline}
-#donatebox{text-decoration:none;border:0px;text-align:center;padding:10px 0 10px 0}
-.is-small-screen #topa #donatebox{padding:0 0 5px}
-#donatebody{display:inline-block}
-#donaterectangle{width:100px;height:50px;line-height:60px;background-color:#999999;border-radius:10px;margin:0 auto}
-#donaterectangle:hover{background-color:#757575}
-.is-small-screen #topa #donatespace, .is-small-screen #topa #donaterectangle, .is-small-screen #topa #donatecaption{display:none}
-.mdl-radio.is-disabled .mdl-radio__label a,fieldset[disabled] .mdl-radio .mdl-radio__label a{color:inherit;cursor:default}
-@media screen and (max-width:805px){.mdl-snackbar--active{transform:translateX(0);left:0;min-width:100%}}
-@media screen and (min-width:806px){.mdl-snackbar--active{min-width:806px}}
-</style>
 <link rel="apple-touch-icon" type="image/png" sizes="57x57" href="{{site.apimg|append:'57x57.png'}}">
 <link rel="apple-touch-icon" type="image/png" sizes="60x60" href="{{site.apimg|append:'60x60.png'}}">
 <link rel="apple-touch-icon" type="image/png" sizes="72x72" href="{{site.apimg|append:'72x72.png'}}">
@@ -81,6 +31,4 @@ footer{position:absolute;bottom:0;right:0;left:0;white-space:nowrap}
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="keywords" content="{{site.keywords}}">
 <meta name="description" content="{{site.description}}">
-<link href="http://mix.chimpfeedr.com/5b110-OpenGApps" rel="alternate" title="{{site.org}} Releases" type="application/atom+xml" />
 <link rel="publisher" href="https://plus.google.com/+OpengappsOrg">
-</head>

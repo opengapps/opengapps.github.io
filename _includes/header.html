@@ -1,29 +1,13 @@
 <header class="mdl-layout__header mdl-layout__header--scroll">
- <div class="mdl-layout__header-row"><img id="logoimage" src="{{site.img|append:'logo.svg'}}" alt="Open GApps logo" /></div>
+ <div class="mdl-layout__header-row"><a id="logolink" href="/"><img id="logoimage" src="{{site.img|append:'logo.svg'}}" alt="Open GApps logo" /></a></div>
  <div class="mdl-layout__header-row" id="toplinks">
  <div class="mdl-layout-spacer"></div>
  <nav class="mdl-navigation">
-  <a class="mdl-navigation__link link mdl-navigation__link--icon mdl-layout--large-screen-only" id="donatelink" href="#" onclick="window.paypal();return false;"><i class="material-icons">euro_symbol</i> Donate</strong></a>
-  {% for nav_item in site.data.nav.social1 %}<a class="mdl-navigation__link link mdl-navigation__link--icon mdl-layout--large-screen-only" id="{{nav_item.name|downcase|append:'link'}}" href="{{nav_item.link}}"><i class="material-icons">{{nav_item.icon}}</i> {{nav_item.name}}</a>{% endfor %}
+  {% for navitem in site.data.nav.nav1 %}<a class="mdl-navigation__link link mdl-navigation__link--icon mdl-layout--large-screen-only" id="{{navitem.name|downcase|append:'link'}}" href="{{navitem.link}}" {% if navitem.onclick %} onclick="{{navitem.onclick}}"{% endif %}>{{navitem.customicon}}<i class="material-icons">{{navitem.icon}}</i> {{navitem.name}}</a>{% endfor %}
   <a class="mdl-navigation__link link mdl-navigation__link--icon mdl-layout--large-screen-only" id="pushbulletlink" href="#"><i class="material-icons">notifications</i> Pushbullet</a>
   <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect mdl-layout--large-screen-only" data-mdl-for="pushbulletlink">
-   {% for nav_item in site.data.nav.pushbullet %}<a href="{{site.pushbullet|append:{{nav_item.tag}}"><li class="mdl-menu__item">{{nav_item.name}} Releases</li></a>{% endfor %}
+   {% for navitem in site.data.nav.pushbullet %}<a href="{{site.pushbullet|append:{{navitem.tag}}"><li class="mdl-menu__item">{{navitem.name}} Releases</li></a>{% endfor %}
   </ul>
-  {% for nav_item in site.data.nav.social2 %}<a class="mdl-navigation__link link mdl-navigation__link--icon mdl-layout--large-screen-only" id="{{nav_item.name|downcase|append:'link'}}" href="{{nav_item.link}}"><i class="material-icons">{{nav_item.icon}}</i> {{nav_item.name}}</a>{% endfor %}
+  {% for navitem in site.data.nav.nav2 %}<a class="mdl-navigation__link link mdl-navigation__link--icon mdl-layout--large-screen-only" id="{{navitem.name|downcase|append:'link'}}" href="{{navitem.link}}" {% if navitem.onclick %} onclick="{{navitem.onclick}}"{% endif %}>{{navitem.customicon}}<i class="material-icons">{{navitem.icon}}</i> {{navitem.name}}</a>{% endfor %}
  </nav>
 </div>
-<div class="mdl-layout__tab-bar mdl-js-ripple-effect mdl-color--primary-dark mdl-shadow--2dp reset-tab">
- <a href="#downloadsection" class="mdl-layout__tab is-active tab">Download</a>
- <a href="#supportsection" class="mdl-layout__tab tab">Support</a>
- <a href="#aboutsection" class="mdl-layout__tab tab">About</a>
-</div>
-</header>
-<div class="mdl-layout__drawer"><span class="mdl-layout-title">Navigation</span><nav class="mdl-navigation">
- <a class="mdl-navigation__link mdl-navigation__link--icon" href="#" onclick="window.paypal();return false;"><i class="material-icons">euro_symbol</i> Support by <strong>Donation</strong></a>
- {% for nav_item in site.data.nav.social1 %}<a class="mdl-navigation__link mdl-navigation__link--icon" id="{{nav_item.name|downcase|append:'link'}}" href="{{nav_item.link}}"><i class="material-icons">{{nav_item.icon}}</i> {{nav_item.long_name}}</a>{% endfor %}
- <a id="pushbulletdrawer" class="mdl-navigation__link mdl-navigation__link--icon" href="#"><i class="material-icons">notifications</i> Follow via <strong>Pushbullet</strong></a>
- <ul class="mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect" data-mdl-for="pushbulletdrawer">
-  {% for nav_item in site.data.nav.pushbullet %}<a href="{{site.pushbullet|append:{{nav_item.tag}}"><li class="mdl-menu__item">{{nav_item.name}} Releases</li></a>{% endfor %}
- </ul>
- {% for nav_item in site.data.nav.social2 %}<a class="mdl-navigation__link mdl-navigation__link--icon" id="{{nav_item.name|downcase|append:'link'}}" href="{{nav_item.link}}"><i class="material-icons">{{nav_item.icon}}</i> {{nav_item.long_name}}</a>{% endfor %}
-</nav></div>

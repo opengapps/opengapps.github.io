@@ -2,4 +2,11 @@
   <div class="mdl-mini-footer--left-section">
   <div class="mdl-logo">Copyright © 2015-{{site.time|date: '%Y'}} <a href="https://github.com/orgs/opengapps/people">The Open GApps Team</a>
   <div class="mdl-typography--caption-color-contrast" style="white-space: nowrap">Android is a trademark of Google Inc</div></div></div>
+  <div class="mdl-mini-footer__right-section mdl-layout--large-screen-only">
+  {% for navitem in site.data.nav.footerlinks %}
+  <a id="{{navitem.name|downcase|append:'link'}}" href="{{navitem.link}}"><button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored">
+  <i>{{navitem.customicon}}</i>
+  </button></a>
+  {% endfor %}
+  </div>
 </footer>

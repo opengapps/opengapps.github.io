@@ -1,58 +1,69 @@
-- tag: tplatform
-  info: If you don't know your platform, choose <em>ARM</em>
-- tag: larm
-  info: <em>ARM</em> is the most popular 32-bit platform for mobile devices
-- tag: larm64
-  info: <em>ARM64</em> is a new 64-bit platform and available on a small set of new mobile devices
-- tag: lx86
-  info: <em>x86</em> is a less common mobile platform, but used on e.g. the Zenfone
-- tag: lx86_64
-  info: <em>x86_64</em> has temporarily only limited availability, i.e. only <em>5.0+5.1 pico-full</em>, because of missing APKs
-- tag: tandroid
-  info: In Settings →About →Android version you can find the major version of your installed Android operating system
-- tag: l4.4
-  info: In <em>stock</em> and <em>full</em> on <em>4.4</em> some applications are installed on /data/ instead of /system/
-- tag: l6.0
-  info: <em>6.0</em> needs a ROM with a patch to grant the Google Apps the proper permissions
-- tag: tvariant
-  info: The set of applications differs per variant, click for an overview
-- tag: laroma
-  info: Graphical installer of the <em>super</em> package, allows to select which applications to install
-- tag: lsuper
-  info: For those who want everything, includes all Google Apps that were ever shipped on a Google device
-- tag: lstock
-  info: Recommended package for recent devices, includes all Google Apps that come standard on the latest Nexus device
-- tag: lfull
-  info: Very similar to <em>stock</em>, but does not replace non-Google stock-applications
-- tag: lmini
-  info: 'Smaller set of Google Apps: the most popular applications plus extra functionality that is not available from the Play Store'
-- tag: lmicro
-  info: 'Limited set of Google Apps: Gmail, Calendar, Google Now plus extra functionality that is not available from the Play Store'
-- tag: lnano
-  info: Minimal installation, but including the extra functionality that is not available from the Play Store
-- tag: lpico
-  info: The bare minimum to get Google Play functionality
-- tag: bdownload
-  info: Download selected Open GApps package
-- tag: bversion
-  info: Buildlog with version information of the applications and libraries used during the creation of the selected package
-- tag: bmd5
-  info: Download a md5 checksum file that can be used by the Android device's recovery to verify the integrity of the selected package
-- tag: breport
-  info: Detailed version information of the applications used for the daily build of the selected platform architecture and android version
-- tag: bolder
-  info: List all older releases for this platform architecture
-- tag: donatelink
-  info: Support by Donation
-- tag: githublink
-  info: Source on GitHub
-- tag: xdalink
-  info: Community on XDA Forum
-- tag: wikilink
-  info: Manual on Wiki
-- tag: pushbulletlink
-  info: Follow via Pushbullet
-- tag: twitterlink
-  info: Changelog on Twitter
-- tag: google+link
-  info: Weblog on Google+
+common:
+  - tag: homelink
+    info: OpenGApps.org Home
+  - tag: donatelink
+    info: Support by Donation
+  - tag: githublink
+    info: Source on GitHub
+  - tag: xdalink
+    info: Community on XDA Forum
+  - tag: wikilink
+    info: Manual on Wiki
+  - tag: pushbulletlink
+    info: Follow via Pushbullet
+  - tag: changeloglink
+    info: Changelog on Twitter
+  - tag: bloglink
+    info: Open GApps Blog
+  - tag: facebooklink
+    info: Open GApps on Facebook
+  - tag: google+link
+    info: Open GApps on Google+
+  - tag: twitterlink
+    info: Open GApps on Twitter
+
+home:
+  - tag: tplatform
+    info: If you don't know your platform, choose <em>ARM</em>
+  - tag: larm
+    info: <em>ARM</em> is the most popular 32-bit platform for mobile devices
+  - tag: larm64
+    info: <em>ARM64</em> is a new 64-bit platform and available on a small set of new mobile devices
+  - tag: lx86
+    info: <em>x86</em> is a less common mobile platform, but used on e.g. the Zenfone
+  - tag: lx86_64
+    info: <em>x86_64</em> has temporarily only limited availability, i.e. only <em>5.0+5.1 pico-full</em>, because of missing APKs
+  - tag: tandroid
+    info: In Settings →About →Android version you can find the major version of your installed Android operating system
+  - tag: l4.4
+    info: In <em>stock</em> and <em>full</em> on <em>4.4</em> some applications are installed on /data/ instead of /system/
+  - tag: l6.0
+    info: <em>6.0</em> needs a ROM with a patch to grant the Google Apps the proper permissions
+  - tag: tvariant
+    info: The set of applications differs per variant, click for an overview
+  - tag: laroma
+    info: Graphical installer of the <em>super</em> package, allows to select which applications to install
+  - tag: lsuper
+    info: For those who want everything, includes all Google Apps that were ever shipped on a Google device
+  - tag: lstock
+    info: Recommended package for recent devices, includes all Google Apps that come standard on the latest Nexus device
+  - tag: lfull
+    info: Very similar to <em>stock</em>, but does not replace non-Google stock-applications
+  - tag: lmini
+    info: 'Smaller set of Google Apps: the most popular applications plus extra functionality that is not available from the Play Store'
+  - tag: lmicro
+    info: 'Limited set of Google Apps: Gmail, Calendar, Google Now plus extra functionality that is not available from the Play Store'
+  - tag: lnano
+    info: Minimal installation, but including the extra functionality that is not available from the Play Store
+  - tag: lpico
+    info: The bare minimum to get Google Play functionality
+  - tag: bdownload
+    info: Download selected Open GApps package
+  - tag: bversion
+    info: Buildlog with version information of the applications and libraries used during the creation of the selected package
+  - tag: bmd5
+    info: Download a md5 checksum file that can be used by the Android device's recovery to verify the integrity of the selected package
+  - tag: breport
+    info: Detailed version information of the applications used for the daily build of the selected platform architecture and android version
+  - tag: bolder
+    info: List all older releases for this platform architecture

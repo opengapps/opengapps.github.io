@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+{% include head.html %}
+<link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.blogurl | prepend: site.url }}" />
+<link href="{{ '/feed.xml' | prepend: site.blogurl | prepend: site.url }}" rel="alternate" title="{{site.title}} Blog" type="application/atom+xml" />
+<link rel="stylesheet" href="{{ '/css/blog.css' | prepend: site.baseurl }}" />
+</head>
+<body class="mdl-color--grey-100 mdl-base">
+ <div class="wrapper mdl-layout mdl-js-layout mdl-layout--fixed-header mdl-layout--overlay-drawer-button mdl-layout--no-desktop-drawer-button">
+  {% include header.html %}
+  {% include drawer.html %}
+  <main class="mdl-layout__content">
+   <div class="page-content">
+   {{ content }}
+   </div>
+  {% include footer.html %}
+  </main>
+ </div>
+<script type="text/javascript">{% include blogscripts.js %}{% include commonscripts.js %}</script>
+<!--Fonts should not block loading the page-->
+<link rel="stylesheet" type="text/css" href="{{site.gfont|append:'/icon?family=Material+Icons'}}" />
+<link rel="stylesheet" type="text/css" href="{{site.gfont|append:'/css?family=Roboto:400,400italic,500,700'}}" />
+{% include paypal.html %}
+</body></html>

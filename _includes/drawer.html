@@ -1,0 +1,9 @@
+</header>
+<div class="mdl-layout__drawer"><span class="mdl-layout-title">Navigation</span><nav class="mdl-navigation">
+ {% for navitem in site.data.nav.nav1 %}<a class="mdl-navigation__link mdl-navigation__link--icon" id="{{navitem.name|downcase|append:'link'}}" href="{{navitem.link}}"><i class="material-icons">{{navitem.icon}}</i> {{navitem.long_name}}</a>{% endfor %}
+ <a id="pushbulletdrawer" class="mdl-navigation__link mdl-navigation__link--icon" href="#"><i class="material-icons">notifications</i> Follow via <strong>Pushbullet</strong></a>
+ <ul class="mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect" data-mdl-for="pushbulletdrawer">
+  {% for navitem in site.data.nav.pushbullet %}<a href="{{site.pushbullet|append:{{navitem.tag}}"><li class="mdl-menu__item">{{navitem.name}} Releases</li></a>{% endfor %}
+ </ul>
+ {% for navitem in site.data.nav.nav2 %}<a class="mdl-navigation__link mdl-navigation__link--icon" id="{{navitem.name|downcase|append:'link'}}" href="{{navitem.link}}">{{navitem.customicon}}<i class="material-icons">{{navitem.icon}}</i> {{navitem.long_name}}</a>{% endfor %}
+</nav></div>

@@ -1,0 +1,55 @@
+---
+layout: blog
+---
+<div class="home">
+  <div class="post-list">
+    {% for post in paginator.posts %}
+	<div class="article mdl-shadow--2dp">
+	  <div class="content-limit article-center">
+	  <div class="post-header">
+      <p class="post-meta mdl-color-text--grey-700 mdl-typography--subhead">{{ post.date | date: "%b %-d, %Y" | upcase }}{% if post.author %} - by {{ post.author }}{% endif %}</p>
+      <p class="post-title mdl-typography--display-3">{{ post.title }}</p>
+	  </div>
+      <div class="post-content mdl-color-text--grey-700">
+      {{post.content}}
+	  <div class="gradientback"></div>
+      </div>
+	  </div>
+	  <div class="post-hr">
+	  <a class="readmorebutton mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" href="{{ post.url | prepend: site.baseurl }}">
+        Read more
+      </a>
+	  </div>
+    </div>
+    {% endfor %}
+	{% if paginator.total_pages > 1 %}
+    <div class="pagination">
+    {% if paginator.previous_page %}
+      <a href="{{ paginator.previous_page_path | prepend: site.baseurl }}" class="previous"><button class="mdl-button mdl-js-button mdl-button--icon"><i class="material-icons">arrow_back</i></button></a>
+    {% else %}
+      <span class="previous"><button class="mdl-button mdl-js-button mdl-button--icon" disabled><i class="material-icons">arrow_back</i></button></span>
+    {% endif %}
+	<div class="paginator-align">
+    {% for page in (1..paginator.total_pages) %}
+    {% if page == paginator.page %}
+      <span class="mdl-typography--headline">{{ page }}</span>
+    {% elsif page == 1 %}
+      <a href="{{ '/' | prepend: site.blogurl | replace: '//', '/' }}" class="mdl-typography--headline">{{ page }}</a>
+    {% else %}
+      <a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}" class="mdl-typography--headline">{{ page }}</a>
+    {% endif %}
+    {% endfor %}
+	</div>
+    {% if paginator.next_page %}
+      <a href="{{ paginator.next_page_path | prepend: site.baseurl }}" class="next"><button class="mdl-button mdl-js-button mdl-button--icon"><i class="material-icons">arrow_forward</i></button></a>
+    {% else %}
+      <span class="next"><button class="mdl-button mdl-js-button mdl-button--icon" disabled><i class="material-icons">arrow_forward</i></button></span>
+    {% endif %}
+    </div>
+	{% endif %}
+  </div>
+  <br />
+  <p class="feed-subscribe"><a href="{{ '/feed.xml' | prepend: site.blogurl }}"><i class="material-icons">rss_feed</i>RSS</a> <a href="{{ site.pushbullet | append:'opengappsblog' }}"><i class="material-icons">notifications</i>Pushbullet</a></p>
+</div>
+{% for tooltip in site.data.tooltips.common %}<span class="mdl-tooltip mdl-tooltip--large" for="{{tooltip.tag}}">{{tooltip.info}}</span>{% endfor %}
+{% for tooltip in site.data.tooltips.blog %}<span class="mdl-tooltip mdl-tooltip--large" for="{{tooltip.tag}}">{{tooltip.info}}</span>{% endfor %}

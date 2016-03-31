@@ -1,0 +1,18 @@
+---
+layout: blog
+---
+<div class="home">
+<div class="article mdl-shadow--2dp">
+<div class="article-center">
+<div class="post-header">
+<p class="post-meta mdl-color-text--grey-700 mdl-typography--subhead">{{ page.date | date: "%b %-d, %Y" | upcase }}{% if page.author %} - by {{ page.author }}{% endif %}</p>
+<p class="post-title  mdl-typography--display-3">{{ page.title }}</p>
+</div>
+<div class="post-content mdl-color-text--grey-700">
+{{ content }}
+</div>
+</div>
+</div>
+</div>
+<a onclick="goBack()" href=""><button class="mdl-button mdl-js-button mdl-button--icon"><i class="material-icons">arrow_back</i></button></a>
+<script>{% include postscripts.js %}</script>

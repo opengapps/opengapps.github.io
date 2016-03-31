@@ -16,6 +16,14 @@ img: /images/
 apimg: /images/apple-icon-
 animg: \/images\/android-icon-
 color: '#009688'
+paginate: 5
+paginate_path: /blog/page/:num
+blogurl: /blog
+blogimg: /blog/images/
+permalink: /blog/post/:year/:month/:day/:title/
+
+#gems
+gems: [jekyll-paginate]
 
 support:
  faq: https://github.com/opengapps/opengapps/wiki/FAQ

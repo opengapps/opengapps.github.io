@@ -1,0 +1,151 @@
+---
+---
+@charset "utf-8";
+@import "syntax";
+html,body {
+margin:0;
+padding:0;
+height:100%;
+font-family:"Roboto";
+}
+.wrapper {
+min-height:100%;
+position:relative;
+}
+.page-content {
+text-align:center;
+padding:0 10px 140px 10px;
+}
+footer{position:absolute;bottom:0;right:0;left:0;white-space:nowrap;}
+#logolink{position:absolute;}
+.mdl-layout__content{flex-shrink:0;}
+.mdl-menu__item{text-align:right}
+.mdl-layout__obfuscator.is-visible, .mdl-layout__drawer{position:fixed}
+code, tt {
+padding: 1px 3px;
+font-family: Inconsolata, monospace, sans-serif;
+font-size: 0.85em;
+white-space: pre-wrap;
+border: #E3EDF3 1px solid;
+background: #F7FAFB;
+border-radius: 2px;
+}
+pre {
+-moz-box-sizing: border-box;
+box-sizing: border-box;
+margin: 0 0 1.75em 0;
+border: #E3EDF3 1px solid;
+width: 100%;
+padding: 10px;
+font-family: Inconsolata, monospace, sans-serif;
+font-size: 0.9em;
+white-space: pre;
+overflow: auto;
+background: #F7FAFB;
+border-radius: 3px;
+}
+pre code, tt {
+font-size: inherit;
+white-space: -moz-pre-wrap;
+white-space: pre-wrap;
+background: transparent;
+border: none;
+padding: 0;
+}
+/*CSS for article page also for index.html*/
+.article{
+width:auto;
+max-width:750px;
+background-color: white;
+margin:30px auto 30px;
+text-align:left;
+display:block;
+position:relative;
+}
+/*Margin for content of article. This is necessary to keep the respect the max-width.*/
+.article-center{
+padding:30px 70px 30px 70px;
+}
+p{margin:0;}
+/*CSS for smaller screens.*/
+.mdl-layout.is-small-screen .article-center{
+padding: 30px 20px 30px 20px;
+}
+h2{margin:0 0 50px 0;font-size:45px;}
+.home{
+}
+.readmorebutton{
+margin:8px;
+}
+.post-hr{
+border-top: 1px solid rgba(0,0,0,.1);
+}
+/*This is the limit of articles on the main page(index.html). Also the margins prevent the wrong cut of content.*/
+.content-limit{
+max-height:400px;
+overflow:hidden;
+padding:30px 70px 0 70px;
+}
+.article{
+overflow:hidden;
+}
+/*Prevent the wrong cut of content on smaller screens.*/
+.mdl-layout.is-small-screen .content-limit{
+padding: 30px 20px 0 20px;
+}
+.gradientback{
+position:absolute;
+top:360px;
+left:0px;
+width:100%;
+height:70px;
+background: -moz-linear-gradient(top,  rgba(255,255,255,0) 0%, rgba(255,255,255,1) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,0)), color-stop(100%,rgba(255,255,255,1))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  rgba(255,255,255,0) 0%,rgba(255,255,255,1) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  rgba(255,255,255,0) 0%,rgba(255,255,255,1) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  rgba(255,255,255,0) 0%,rgba(255,255,255,1) 100%); /* IE10+ */
+background: linear-gradient(to bottom,  rgba(255,255,255,0) 0%,rgba(255,255,255,1) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
+}
+.post-meta{
+margin:0;
+}
+.post-title{
+margin:0;
+}
+.post-header{
+margin-bottom:50px;
+}
+.post-content{
+}
+.paginator-align{
+vertical-align:middle;
+display:inline-block;
+}
+.mdl-layout:not(.is-small-screen) .onlysmallscreen .mdl-layout__header-row,.mdl-layout:not(.is-small-screen) .mdl-layout__drawer-button{display:none}
+::-moz-selection {
+    background: #D6EDFF;
+}
+::selection {
+    background: #D6EDFF;
+}
+a{text-decoration:none;}
+.page-content a, footer a{
+color:{{ site.color }};
+}
+.blog-image{
+display:inline-block;
+width: 300px;
+height: auto;
+}
+.blog-image-center{
+margin:0 auto;
+display:block;
+}
+i{vertical-align:middle;}
+.rss-subscribe i{vertical-align:text-bottom;}
+#logoimage{position:absolute;padding:15px}
+.is-small-screen #logoimage{padding:5px}
+.link{opacity:.8}
+.link:hover{opacity:1}
+.mdl-mini-footer__social-btn{background-color:initial;color:{{site.color}}}
