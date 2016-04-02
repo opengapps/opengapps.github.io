@@ -44,4 +44,5 @@ footer{position:absolute;bottom:0;right:0;left:0;white-space:nowrap}
 .mdl-radio.is-disabled .mdl-radio__label a,fieldset[disabled] .mdl-radio .mdl-radio__label a{color:inherit;cursor:default}
 @media screen and (max-width:805px){.mdl-snackbar--active{transform:translateX(0);left:0;min-width:100%}}
 @media screen and (min-width:806px){.mdl-snackbar--active{min-width:806px}}
+a.external-wiki-link i.material-icons{font-size: 14px;}
 </style>
