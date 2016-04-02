@@ -20,4 +20,6 @@ Another interesting graph is the set of Android versions that are chosen. *5.1* 
 
 Our final graph is the set of variants chosen. The discontinued *fornexus* variant is left out of the graph since its functionality is now embedded into the other variants (and it had less than 1% anyway). As you can see the *stock* package is the most popular, probably helped by being the default choice when visiting [opengapps.org](http://opengapps.org) without any preset parameters. But all packages have quite some serious share, which shows that there is demand for all the flavours. Not shown in the graph, but important to notice, is that the variant preference varies by Android version. E.g. the devices with *Android 4.4* tend to have a small `/system/` partition, resulting in the smaller packages being more popular. While for *5.1* the larger packages like *stock* and *aroma* are popular choices.﻿
 
-<a href="{{ site.url | prepend: site.blogimg }}variants.png" target="_blank">![variants]({{ site.url | prepend: site.blogimg }}variants.png){: .blog-image}</a><a href="{{ site.url | prepend: site.blogimg }}architectures.png" target="_blank">![architectures]({{ site.url | prepend: site.blogimg }}architectures.png){: .blog-image}</a><a href="{{ site.url | prepend: site.blogimg }}apiversions.png" target="_blank">![apiversions]({{ site.url | prepend: site.blogimg }}apiversions.png){: .blog-image}</a>
+![variants]({{ site.blogimg }}variants.png)
+![architectures]({{ site.blogimg }}architectures.png)
+![apiversions]({{ site.blogimg }}apiversions.png)
