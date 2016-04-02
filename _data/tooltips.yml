@@ -24,7 +24,7 @@ common:
 
 home:
   - tag: tplatform
-    info: If you don't know your platform, choose <em>ARM</em>
+    info: CPU Architecture; If you don't know your platform, choose <em>ARM</em>
   - tag: larm
     info: <em>ARM</em> is the most popular 32-bit platform for mobile devices
   - tag: larm64
@@ -34,13 +34,13 @@ home:
   - tag: lx86_64
     info: <em>x86_64</em> has temporarily only limited availability, i.e. only <em>5.0+5.1 pico-full</em>, because of missing APKs
   - tag: tandroid
-    info: In Settings →About →Android version you can find the major version of your installed Android operating system
+    info: Android Version; In <em>Settings→About→Android version</em> you can find the major version of your installed Android OS
   - tag: l4.4
     info: In <em>stock</em> and <em>full</em> on <em>4.4</em> some applications are installed on /data/ instead of /system/
   - tag: l6.0
     info: <em>6.0</em> needs a ROM with a patch to grant the Google Apps the proper permissions
   - tag: tvariant
-    info: The set of applications differs per variant, click for an overview
+    info: Package Variant; The set of applications differs per variant, <em>click for a comparison-table</em>
   - tag: laroma
     info: Graphical installer of the <em>super</em> package, allows to select which applications to install
   - tag: lsuper
