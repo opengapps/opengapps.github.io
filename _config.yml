@@ -7,9 +7,9 @@ timezone: Europe/Amsterdam
 
 # Libraries
 gfont: https://fonts.googleapis.com
-jquery: https://code.jquery.com/jquery-2.2.2.min.js
 mdl: https://storage.googleapis.com/code.getmdl.io/1.1.3
 pushbullet: https://www.pushbullet.com/channel-popup?tag=
+ads: //pagead2.googlesyndication.com/pagead/js/adsbygoogle.js
 
 # Variables/Resouces
 ga: Google Apps
