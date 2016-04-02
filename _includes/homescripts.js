@@ -10,7 +10,7 @@ function getCookie(key){key+='=';var cs=document.cookie.split(';');for(var i=0;i
 function setCookie(key,value,days){var d=new Date();d.setTime(d.getTime()+(days*24*60*60*1000));document.cookie=key+"="+value+"; expires="+d.toUTCString();}
 var isApp=getUrlParam('app')==='true';
 function redirectToFile(eventCategory,eventLabel,filename){gaEvent(eventCategory,'download',eventLabel,function(){location.assign('https://github.com/opengapps/'+arch+'/releases/download/'+packages[arch].dateTag+'/'+filename);},1000);}
-function redirectToUrl(targetUrl){gaEventOutbound(targetUrl,function(){var d=true;if(isApp&&targetUrl!='{{site.url}}/')){d=!window.open(targetUrl,'_blank');}if(d){location.assign(targetUrl);}});}
+function redirectToUrl(targetUrl){gaEventOutbound(targetUrl,function(){var d=true;if(isApp){d=!window.open(targetUrl,'_blank');}if(d){location.assign(targetUrl);}});}
 function downloadSubmit(){var v=validateForm();if(v==='ok'){redirectToFile('GApps',arch+'-'+api+'-'+variant,'open_gapps-'+arch+'-'+api+'-'+variant+'-'+packages[arch].dateTag+'.zip');}}
 function versionSubmit(){var v=validateForm();if(v==='ok'){redirectToFile('Version',arch+'-'+api+'-'+variant,'open_gapps-'+arch+'-'+api+'-'+variant+'-'+packages[arch].dateTag+'.versionlog.txt');}}
 function md5Submit(){var v=validateForm();if(v==='ok'){redirectToFile('MD5',arch+'-'+api+'-'+variant,'open_gapps-'+arch+'-'+api+'-'+variant+'-'+packages[arch].dateTag+'.zip.md5');}}
