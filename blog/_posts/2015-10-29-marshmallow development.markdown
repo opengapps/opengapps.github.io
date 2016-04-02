@@ -4,11 +4,16 @@ title:  "Marshmallow development"
 date:   2015-10-29
 author: mfonville
 ---
-Finally a post about Marshmallow.
+<div style="float: right">
+<img align="right" src="{{ site.blogimg }}marshmallow_logo.png" alt="Marshmallow" />
+</div>
+Finally a post about Marshmallow!
 
+#### No builds yet
 Most important information first: we don't provide any stable builds for Marshmallow yet, in the cause of that is because Marshmallow poses a couple of challenges that have not been properly resolved yet.
 We only want to offer pre-built Open GApps packages when these issues are resolved.
 
+#### Challenges
 So, what are these challenges you ask?
 We will highlight a few:
 * Marshmallow comes with several new core applications. Our scripts had to be updated to package and install these applications too. This has been done and implemented already in our code.
@@ -20,6 +25,8 @@ We will highlight a few:
 * The real solution would be to patches in the AOSP ROMs to also automatically grant permissions to Google Apps too, or e.g. use an init script that can interact with the Android Shell to perform the granting of the permissions automatically.
 * But we reasoned that we are not alone in this problem. So we are waiting for some of the 'good' vendors that play nice with open source, like Sony, to release the source code of their changes to AOSP and to check how they chose to work around this problem. Because also they don't have access to Google's platform key, but they do have to bundle these Google Apps with their ROM.
 
+#### GApps devs
 The very nice thing about these problems though, is that it gives more unity to the GApps devs community and most of us are working together and sharing our knowledge and progress. So kudos to dankoman, benzo and others for their efforts.
 
+#### Track progress
 For further information, please keep an eye on our [XDA thread](http://forum.xda-developers.com/android/software/Open-GApps-t3098071) and our [GitHub](https://github.com/opengapps/opengapps). If you are Android ROM dev and want to help on the ROM-related tweaks, please drop a note on the GitHub issue.﻿
