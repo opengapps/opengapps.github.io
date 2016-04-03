@@ -22,7 +22,6 @@ a.wikilink i.material-icons{font-size:12px;vertical-align:middle}
 #logolink{position:absolute;padding:15px}
 .is-small-screen #logolink{padding:5px}
 .mdl-layout__obfuscator.is-visible, .mdl-layout__drawer{position:fixed}
-#wrapper{min-height:100%;position:relative}
 #content{display:block;padding-bottom:130px}
 #downloadsection{padding:30px}
 .is-small-screen #downloadsection{padding:10px 0 30px 0}

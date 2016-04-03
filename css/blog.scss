@@ -2,26 +2,26 @@
 ---
 @charset "utf-8";
 @import "syntax";
-html,body {
-margin:0;
-padding:0;
-height:100%;
-font-family:"Roboto";
-}
-.wrapper {
-min-height:100%;
-position:relative;
-}
-.page-content {
-text-align:center;
-padding:0 10px 140px 10px;
-}
+body{font-family:"Roboto";}
+img{max-width:100%}
+#content{display:block;padding-bottom:130px}
 .mdl-mini-footer{position:absolute;bottom:0;right:0;left:0;white-space:nowrap;max-height:96px}
 @media screen and (max-width:532px){.mdl-mini-footer{padding:16px}}
-#logolink{position:absolute;}
+#logolink{position:absolute;padding:15px}
+.is-small-screen #logolink{padding:5px}
 .mdl-layout__content{flex-shrink:0;}
-.mdl-menu__item{text-align:right}
+.mdl-menu .mdl-menu__item{text-align:right}
 .mdl-layout__obfuscator.is-visible, .mdl-layout__drawer{position:fixed}
+.mdl-layout:not(.is-small-screen) .onlysmallscreen .mdl-layout__header-row,.mdl-layout:not(.is-small-screen) .mdl-layout__drawer-button{display:none}
+a{text-decoration:none;}
+.mdl-layout__content a, footer a{
+color:{{ site.color }};
+text-align:center;
+}
+i{vertical-align:middle;}
+.link{opacity:.8}
+.link:hover{opacity:1}
+.mdl-mini-footer__social-btn{background-color:initial;color:{{site.color}}}
 code, tt {
 padding: 1px 3px;
 font-family: Inconsolata, monospace, sans-serif;
@@ -54,29 +54,23 @@ border: none;
 padding: 0;
 }
 /*CSS for article page also for index.html*/
-.article{
+.mdl-card{
+margin: 20px auto;
 width:auto;
 max-width:750px;
-background-color: white;
-margin:30px auto 30px;
-text-align:left;
-display:block;
-position:relative;
 }
-/*Margin for content of article. This is necessary to keep the respect the max-width.*/
-.article-center{
-padding:30px 70px 30px 70px;
+.mdl-card .postdate{
+margin-right: 16px;
 }
-p{margin:0;}
-/*CSS for smaller screens.*/
-.mdl-layout.is-small-screen .article-center{
-padding: 30px 20px 30px 20px;
+.mdl-card img{
+margin: 10px;
 }
-h2{margin:0 0 50px 0;font-size:45px;}
-.home{
+.mdl-card .mdl-card__supporting-text{
+padding-right: 16px;
+width:auto;
 }
-.readmorebutton{
-margin:8px;
+.mdl-card__actions .mdl-button{
+overflow:initial;
 }
 .post-hr{
 border-top: 1px solid rgba(0,0,0,.1);
@@ -85,18 +79,10 @@ border-top: 1px solid rgba(0,0,0,.1);
 .content-limit{
 max-height:400px;
 overflow:hidden;
-padding:30px 70px 0 70px;
-}
-.article{
-overflow:hidden;
-}
-/*Prevent the wrong cut of content on smaller screens.*/
-.mdl-layout.is-small-screen .content-limit{
-padding: 30px 20px 0 20px;
 }
 .gradientback{
 position:absolute;
-top:360px;
+top:459px;
 left:0px;
 width:100%;
 height:70px;
@@ -108,45 +94,12 @@ background: -ms-linear-gradient(top,  rgba(255,255,255,0) 0%,rgba(255,255,255,1)
 background: linear-gradient(to bottom,  rgba(255,255,255,0) 0%,rgba(255,255,255,1) 100%); /* W3C */
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
 }
-.post-meta{
-margin:0;
-}
-.post-title{
-margin:0;
-}
-.post-header{
-margin-bottom:50px;
-}
-.post-content{
+.pagination{
+text-align:center;
+margin:16px;
+display:block;
 }
 .paginator-align{
 vertical-align:middle;
 display:inline-block;
 }
-.mdl-layout:not(.is-small-screen) .onlysmallscreen .mdl-layout__header-row,.mdl-layout:not(.is-small-screen) .mdl-layout__drawer-button{display:none}
-::-moz-selection {
-    background: #D6EDFF;
-}
-::selection {
-    background: #D6EDFF;
-}
-a{text-decoration:none;}
-.page-content a, footer a{
-color:{{ site.color }};
-}
-.blog-image{
-display:inline-block;
-width: 300px;
-height: auto;
-}
-.blog-image-center{
-margin:0 auto;
-display:block;
-}
-i{vertical-align:middle;}
-.rss-subscribe i{vertical-align:text-bottom;}
-#logoimage{position:absolute;padding:15px}
-.is-small-screen #logoimage{padding:5px}
-.link{opacity:.8}
-.link:hover{opacity:1}
-.mdl-mini-footer__social-btn{background-color:initial;color:{{site.color}}}

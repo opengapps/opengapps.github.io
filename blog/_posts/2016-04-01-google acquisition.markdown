@@ -6,8 +6,6 @@ author: mfonville
 ---
 _**For any readers visiting this post on or after April 2, check the post date before continuing :)**_
 
-<br/><br/>
-
 <div style="float: right">
 <img align="right" src="{{ site.blogimg }}aprilfoolslogo.svg" alt="Google Open Google Apps Logo?" />
 </div>

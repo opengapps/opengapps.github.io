@@ -1,22 +1,18 @@
 ---
 layout: blog
 ---
-<div class="home">
-<div class="article mdl-shadow--2dp">
-<div class="article-center">
-<div class="post-header">
-<p class="post-meta mdl-color-text--grey-700 mdl-typography--subhead">{{ page.date | date: "%b %-d, %Y" | upcase }}{% if page.author %} - by {{ page.author }}{% endif %}</p>
-<p class="post-title  mdl-typography--display-3">{{ page.title }}</p>
-</div>
-<div class="post-content mdl-color-text--grey-700">
-{{ content }}
-</div>
+<div class="mdl-card mdl-shadow--2dp">
+ <div class="mdl-card__title mdl-typography--display-1">{{ page.title }}</div>
+ <span class="postdate mdl-color-text--grey-700 mdl-typography--subhead-color-contrast mdl-typography--text-right"><i class="material-icons">date_range</i> {{ page.date | date: "%b %-d, %Y" | upcase }}{% if page.author %} - by {{ page.author }}{% endif %}</span>
+ <div class="mdl-card__supporting-text mdl-typography--text-justify mdl-color-text--grey-700">
+ {{ content }}
 <br />
 <div id="disqus_thread" class="mdl-card" style="width:auto" />
 <script>
 var disqus_config = function () {
 this.page.url = '{{ page.url | replace:'index.html','' | prepend: site.blogurl | prepend: site.url }}';
 this.page.identifier = '{{ page.id }}';
+this.page.title = '{{ page.title }}';
 };
 (function(){var d=document,s=d.createElement('script');
 s.src='//opengapps.disqus.com/embed.js';
@@ -27,5 +23,5 @@ s.setAttribute('data-timestamp',+new Date());
 </div>
 </div>
 </div>
-<a onclick="goBack()" href=""><button class="mdl-button mdl-js-button mdl-button--icon"><i class="material-icons">arrow_back</i></button></a>
+<div class="pagination"><a onclick="goBack()" href="#" class="mdl-button mdl-js-button mdl-button--icon"><i class="material-icons">arrow_back</i></a></div>
 <script>{% include postscripts.js %}</script>

@@ -5,26 +5,23 @@ title: "The Open GApps Project Blog"
 <div class="home">
   <div class="post-list">
   {% for post in paginator.posts %}
-    <div class="article mdl-shadow--2dp">
-      <div class="content-limit article-center">
-      <div class="post-header">
-        <p class="post-meta mdl-color-text--grey-700 mdl-typography--subhead">{{ post.date | date: "%b %-d, %Y" | upcase }}{% if post.author %} - by {{ post.author }}{% endif %}</p>
-        <p class="post-title mdl-typography--display-3">{{ post.title }}</p>
-      </div>
-      <div class="post-content mdl-color-text--grey-700">
+    <div class="mdl-card mdl-shadow--2dp">
+      <div class="mdl-card__title mdl-typography--display-1">{{ post.title }}</div>
+      <span class="postdate mdl-color-text--grey-700 mdl-typography--subhead-color-contrast mdl-typography--text-right"><i class="material-icons">date_range</i> {{ post.date | date: "%b %-d, %Y" | upcase }}{% if post.author %} - by {{ post.author }}{% endif %}</span>
+      <div class="content-limit mdl-card__supporting-text mdl-typography--text-justify mdl-color-text--grey-700">
         {{ post.content }}
-        <div class="gradientback"></div>
-        </div>
       </div>
-      <div class="post-hr"><a class="readmorebutton mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" href="{{ post.url | prepend: site.baseurl }}">Read more</a></div>
+      <div class="gradientback"></div>
+      <div class="post-hr"><div class="mdl-card__actions mdl-typography--text-left"><a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" href="{{ post.url | prepend: site.baseurl }}">Read more &nbsp; <span class="material-icons mdl-badge mdl-badge--overlap disqus-comment-count" style="text-align:right" data-disqus-identifier="{{ post.id }}" data-badge="?">comment</span></a></div>
     </div>
+  </div>
   {% endfor %}
-  {% if paginator.total_pages > 1 %}
-    <div class="pagination">
+  <div class="pagination">
+    {% if paginator.total_pages > 1 %}
       {% if paginator.previous_page %}
-        <a href="{{ paginator.previous_page_path | prepend: site.baseurl }}" class="previous"><button class="mdl-button mdl-js-button mdl-button--icon"><i class="material-icons">arrow_back</i></button></a>
+        <a href="{{ paginator.previous_page_path | prepend: site.baseurl }}"><button class="mdl-button mdl-js-button mdl-button--icon"><i class="material-icons">arrow_back</i></button></a>
       {% else %}
-        <span class="previous"><button class="mdl-button mdl-js-button mdl-button--icon" disabled><i class="material-icons">arrow_back</i></button></span>
+        <span><button class="mdl-button mdl-js-button mdl-button--icon" disabled><i class="material-icons">arrow_back</i></button></span>
       {% endif %}
       <div class="paginator-align">
         {% for page in (1..paginator.total_pages) %}
@@ -38,15 +35,14 @@ title: "The Open GApps Project Blog"
         {% endfor %}
       </div>
       {% if paginator.next_page %}
-        <a href="{{ paginator.next_page_path | prepend: site.baseurl }}" class="next"><button class="mdl-button mdl-js-button mdl-button--icon"><i class="material-icons">arrow_forward</i></button></a>
+        <a href="{{ paginator.next_page_path | prepend: site.baseurl }}"><button class="mdl-button mdl-js-button mdl-button--icon"><i class="material-icons">arrow_forward</i></button></a>
       {% else %}
-        <span class="next"><button class="mdl-button mdl-js-button mdl-button--icon" disabled><i class="material-icons">arrow_forward</i></button></span>
+        <span><button class="mdl-button mdl-js-button mdl-button--icon" disabled><i class="material-icons">arrow_forward</i></button></span>
       {% endif %}
-    </div>
-  {% endif %}
+      <br />
+    {% endif %}
+    <p class="feed-subscribe"><a href="{{ '/feed.xml' | prepend: site.blogurl }}"><i class="material-icons">rss_feed</i>RSS</a> <a href="{{ site.pushbullet | append:'opengappsblog' }}"><i class="material-icons">notifications</i>Pushbullet</a></p>
   </div>
-  <br />
-  <p class="feed-subscribe"><a href="{{ '/feed.xml' | prepend: site.blogurl }}"><i class="material-icons">rss_feed</i>RSS</a> <a href="{{ site.pushbullet | append:'opengappsblog' }}"><i class="material-icons">notifications</i>Pushbullet</a></p>
 </div>
 {% for tooltip in site.data.tooltips.common %}<span class="mdl-tooltip mdl-tooltip--large" for="{{tooltip.tag}}">{{tooltip.info}}</span>{% endfor %}
 {% for tooltip in site.data.tooltips.blog %}<span class="mdl-tooltip mdl-tooltip--large" for="{{tooltip.tag}}">{{tooltip.info}}</span>{% endfor %}

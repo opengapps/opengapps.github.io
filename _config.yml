@@ -18,18 +18,26 @@ img: /images/
 apimg: /images/apple-icon-
 animg: \/images\/android-icon-
 color: '#009688'
-paginate: 5
-paginate_path: /blog/page/:num
+
+# Blog
 blogurl: /blog
 blogimg: /blog/images/
+paginate: 5
+paginate_path: /blog/page/:num
 permalink: /blog/post/:year/:month/:day/:title/
+disqus: opengapps.disqus.com
 
-#gems
+# Gems
 gems: [jekyll-paginate]
 
+# Support
 support:
  faq: https://github.com/opengapps/opengapps/wiki/FAQ
  wiki: https://github.com/opengapps/opengapps/wiki
  xdaqa: http://forum.xda-developers.com/showthread.php?t=3124506
  xdadev: http://forum.xda-developers.com/android/software/Open-GApps-t3098071
  gitter: https://gitter.im/opengapps/general
+
+# SASS
+sass:
+ style: compressed
