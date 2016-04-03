@@ -4,18 +4,18 @@ a{color:#009688;text-decoration:none}
 img{max-width:100%}
 .dt{border:0px;float:left;width:110px}
 .dt td{border-bottom:0px}
-.dt th{text-align:center}
+.dt th{text-align:center !important}
 #tp td,#tp th,#tv td,#tv th{padding-left:10px;padding-right:0}
 a.wikilink i.material-icons{font-size:12px;vertical-align:middle}
 :not(.is-small-screen) .container{text-align:center;max-width:800px;margin:0 auto}
-:not(.is-small-screen) .advertisement{width:336px;max-width:100%;float:right;margin-top:10px;margin-bottom:10px}
+:not(.is-small-screen) .advertisement{width:336px;max-width:100%;float:right;margin:10px 0}
 :not(.is-small-screen) .dform{width:330px;float:left}
-.footer-advertisement-container{width:auto;float:right}
+.footer-container{float:right;display:flex;flex-direction:column}
 .is-small-screen .container,.is-small-screen .footer-container{max-width:1024px;width:100%;float:left}
-.is-small-screen .advertisement{float:none;margin:10px auto 10px;width:inherit}
+.is-small-screen .advertisement{float:none;margin:10px auto;width:inherit}
 .is-small-screen .dform{display:inline-block;float:none;width:330px;margin:0 auto}
 .mdl-layout__content{flex-shrink:0}
-.mdl-menu__item{text-align:right}
+.mdl-menu .mdl-menu__item{text-align:right}
 .link{opacity:.8}
 .link:hover{opacity:1}
 .tab:hover{color:rgba(255,255,255,0.85)}
@@ -34,6 +34,10 @@ a.wikilink i.material-icons{font-size:12px;vertical-align:middle}
 .mdsection{max-width:800px;margin:0 auto;padding:30px}
 .mdl-mini-footer{position:absolute;bottom:0;right:0;left:0;white-space:nowrap;max-height:96px}
 @media screen and (max-width:532px){.mdl-mini-footer{padding:16px}}
+.mdl-card{margin:20px auto;display:inline-block;order:0;min-height:0}
+.post-hr{border-top:1px solid rgba(0,0,0,.1)}
+.is-small-screen .mdl-card{order:9}
+#bota{order:5}
 .mdl-layout:not(.is-small-screen) #adlabelfooter,.mdl-layout:not(.is-small-screen) #adlabelheader{text-align:center;font-style:italic}
 .is-small-screen #adlabelfooter,.is-small-screen #adlabelheader,.mdl-layout__tab-bar-button{display:none}
 #donatebox a:hover{text-decoration:underline}

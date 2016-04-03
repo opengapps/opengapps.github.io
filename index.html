@@ -50,7 +50,14 @@ layout: home
    <a id="bolderlink"><button id="bolder" class="mdl-button mdl-js-button mdl-button--accent" disabled>Older Releases</button></a>
   </div>
  </div>
- <div class="footer-container"><div id="bota" class="advertisement"><div class="mdl-typography--caption-color-contrast" id="adlabelfooter">Advertisement</div><ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-9489060368971640" data-ad-slot="2525609473" data-ad-format="auto"></ins></div></div>
+ <div class="footer-container">
+  {% assign blog = site.posts.first %}
+  <div class="mdl-card mdl-shadow--2dp"><div class="mdl-card__title mdl-typography--title">Open GApps News</div>
+   <div class="mdl-card__supporting-text mdl-typography--text-justify">Latest blog post:<br/><a href="{{ blog.url }}"><span class="mdl-typography--title">{{ blog.title }}</span></a></div>
+   <div class="post-hr"><div class="mdl-card__actions mdl-typography--text-left"><a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" href="{{ site.blogurl }}">Visit Blog</a></div></div>
+  </div><br />
+  <div id="bota" class="advertisement"><div class="mdl-typography--caption-color-contrast" id="adlabelfooter">Advertisement</div><ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-9489060368971640" data-ad-slot="2525609473" data-ad-format="auto"></ins></div>
+ </div>
 </div>
 </section>
 <section class="mdl-layout__tab-panel mdsection" id="supportsection">{% capture support %}{% include support.md %}{% endcapture %}{{support | markdownify}}</section>
