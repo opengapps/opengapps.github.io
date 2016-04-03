@@ -32,7 +32,8 @@ a.wikilink i.material-icons{font-size:12px;vertical-align:middle}
 #github-progressbar{width:200px}
 #bdownload{vertical-align:top;float:right;transform:translate(-24px,4px)}
 .mdsection{max-width:800px;margin:0 auto;padding:30px}
-footer{position:absolute;bottom:0;right:0;left:0;white-space:nowrap}
+.mdl-mini-footer{position:absolute;bottom:0;right:0;left:0;white-space:nowrap;max-height:96px}
+@media screen and (max-width:532px){.mdl-mini-footer{padding:16px}}
 .mdl-layout:not(.is-small-screen) #adlabelfooter,.mdl-layout:not(.is-small-screen) #adlabelheader{text-align:center;font-style:italic}
 .is-small-screen #adlabelfooter,.is-small-screen #adlabelheader,.mdl-layout__tab-bar-button{display:none}
 #donatebox a:hover{text-decoration:underline}

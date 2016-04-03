@@ -16,7 +16,8 @@ position:relative;
 text-align:center;
 padding:0 10px 140px 10px;
 }
-footer{position:absolute;bottom:0;right:0;left:0;white-space:nowrap;}
+.mdl-mini-footer{position:absolute;bottom:0;right:0;left:0;white-space:nowrap;max-height:96px}
+@media screen and (max-width:532px){.mdl-mini-footer{padding:16px}}
 #logolink{position:absolute;}
 .mdl-layout__content{flex-shrink:0;}
 .mdl-menu__item{text-align:right}
