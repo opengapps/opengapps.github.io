@@ -4,8 +4,8 @@ title:  "It ain't no fun to play with Toybox (yet)"
 date:   2016-01-11
 author: mfonville
 ---
-<div style="float: right">
-<img align="right" src="{{ site.blogimg }}toybox.jpg" alt="Toybox" />
+<div markdown='1'>
+![Toybox]({{ site.blogimg }}toybox.jpg)
 </div>
 The title might sound cryptic to most readers, but for most GApps developers 2016 did start with a lot of bug reports from CM Recovery users. Reports with errors like “I got error 255” while we don't have such error code specified ourselves, or “mount failed with error 1”. Cause of all this trouble is a new command line tool called Toybox and the decision of Cyanogenmod that the Christmas holidays were the perfect moment to embed it in their recovery instead of Busybox.
 

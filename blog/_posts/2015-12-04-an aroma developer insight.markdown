@@ -4,8 +4,8 @@ title:  "An AROMA developer insight"
 date:   2015-12-04
 author: raulx222
 ---
-<div style="float: right">
-<img align="right" src="{{ site.blogimg }}developer.png" alt="Developer" />
+<div markdown='1'>
+![Developer]({{ site.blogimg }}developer.png)
 </div>
 AROMA Open Gapps (previously known as AROMA LP-GAPPS) was created at the beginning of 2015. What triggered its creation, you ask?
 

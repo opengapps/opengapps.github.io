@@ -4,8 +4,8 @@ title:  "Marshmallow development"
 date:   2015-10-29
 author: mfonville
 ---
-<div style="float: right">
-<img align="right" src="{{ site.blogimg }}marshmallow_logo.png" alt="Marshmallow" />
+<div markdown='1'>
+![Marshmallow]({{ site.blogimg }}marshmallow_logo.png)
 </div>
 Finally a post about Marshmallow!
 

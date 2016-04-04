@@ -4,8 +4,8 @@ title:  "Marshmallow builds"
 date:   2015-11-17
 author: mfonville
 ---
-<div style="float: right">
-<img align="right" src="{{ site.blogimg }}buildbot.png" alt="Open GApps buildbot" />
+<div markdown='1'>
+![Open GApps buildbot]({{ site.blogimg }}buildbot.png)
 </div>
 Since the 6th of November we are releasing Marshmallow builds. The very first ones were still experimental and broken in some ways, but by now they should be pretty stable.
 

@@ -4,8 +4,8 @@ title:  "The no-mirror policy"
 date:   2016-03-18
 author: mfonville
 ---
-<div style="float: right">
-<img align="right" src="{{ site.blogimg }}questionmirror.jpg" alt="Question Mirror" />
+<div markdown='1'>
+![Question Mirror]({{ site.blogimg }}questionmirror.jpg)
 </div>
 We sometimes get questions asking about mirrors or people uploading the [OpenGApps.org](http://opengapps.org) pre-built packages to mirrors, which violates our license terms. In this post we will try to give some insight behind the rationale of the no-mirror policy of the OpenGApps.org pre-built packages:
 

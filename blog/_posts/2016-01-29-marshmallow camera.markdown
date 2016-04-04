@@ -4,8 +4,8 @@ title:  "Marshmallow Camera"
 date:   2016-01-29
 author: mfonville
 ---
-<div style="float: right">
-<img align="right" src="{{ site.blogimg }}googlecamera.png" alt="Google Camera" />
+<div markdown='1'>
+![Google Camera]({{ site.blogimg }}googlecamera.png)
 </div>
 With Android Marshmallow Google released a new version “3” of their Google Camera app. This version of camera comes pre-bundled with most of their stock Marshmallow ROMs.
 

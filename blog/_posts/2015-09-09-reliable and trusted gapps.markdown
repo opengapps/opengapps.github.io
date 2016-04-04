@@ -4,8 +4,8 @@ title:  "Reliable and Trusted GApps?"
 date:   2015-09-09
 author: mfonville
 ---
-<div style="float: right">
-<img align="right" src="{{ site.blogimg }}fsociety.png" alt="Hackerz" />
+<div markdown='1'>
+![Hackerz]({{ site.blogimg }}fsociety.png)
 </div>
 In normal 'educated' computing practice, no one in their sane mind would download a random executable-file from some unknown person on the internet, grant it all administrator rights to your system and happily keep using the device for banking and other confidential and trusted purposes.
 

@@ -4,8 +4,8 @@ title:  "Multi DPI support"
 date:   2015-10-06
 author: mfonville
 ---
-<div style="float: right">
-<img align="right" src="{{ site.blogimg }}screensizes.jpg" alt="Screens differ" />
+<div markdown='1'>
+![Screens differ]({{ site.blogimg }}screensizes.jpg)
 </div>
 What, not a post about Marshmallow?
 We know that all of you want to hear about Marshmallow and GApps support for it, and yes, we are busy with it. But it is not the time to blog about it yet. So instead, today a small post about one of the unique features of Open GApps: full multi DPI support.

@@ -4,8 +4,8 @@ title:  "Crazy Chrome"
 date:   2015-08-01
 author: mfonville
 ---
-<div style="float: right">
-<img align="right" src="{{ site.blogimg }}crazychrome.png" alt="Crazy Chrome!" />
+<div markdown='1'>
+![Crazy Chrome!]({{ site.blogimg }}crazychrome.png)
 </div>
 Last week was quite a hectic one for the packagers and developers of Open GApps. Google released a new stable branch of Chrome into the Play Store using their own forked 'Crazy Linker'.
 At first this was unknown, so when the new [Chrome got committed to the repository](https://github.com/opengapps/arm/commit/b8f9df7778896e3310a1100fdca1f73a4166f333) suddenly different errors started to appear.
