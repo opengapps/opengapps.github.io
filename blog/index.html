@@ -12,7 +12,7 @@ title: "The Open GApps Project Blog"
         {{ post.content }}
       </div>
       <div class="gradientback"></div>
-      <div class="post-hr"><div class="mdl-card__actions mdl-typography--text-left"><a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" href="{{ post.url | prepend: site.baseurl }}">Read more &nbsp; <span class="material-icons mdl-badge mdl-badge--overlap disqus-comment-count" style="text-align:right" data-disqus-identifier="{{ post.id }}" data-badge="?">comment</span></a></div>
+      <div class="post-hr"><div class="mdl-card__actions mdl-typography--text-left"><a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" href="{{ post.url | prepend: site.baseurl }}?back=true">Read more &nbsp; <span class="material-icons mdl-badge mdl-badge--overlap disqus-comment-count" style="text-align:right" data-disqus-identifier="{{ post.id }}" data-badge="?">comment</span></a></div>
     </div>
   </div>
   {% endfor %}
@@ -39,7 +39,7 @@ title: "The Open GApps Project Blog"
       {% else %}
         <span><button class="mdl-button mdl-js-button mdl-button--icon" disabled><i class="material-icons">arrow_forward</i></button></span>
       {% endif %}
-      <br />
+      <br /><br />
     {% endif %}
     <p class="feed-subscribe"><a href="{{ '/feed.xml' | prepend: site.blogurl }}"><i class="material-icons">rss_feed</i>RSS</a> <a href="{{ site.pushbullet | append:'opengappsblog' }}"><i class="material-icons">notifications</i>Pushbullet</a></p>
   </div>
