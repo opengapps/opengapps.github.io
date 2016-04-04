@@ -10,8 +10,8 @@ title: "The Open GApps Project Blog"
       <span class="postdate mdl-color-text--grey-700 mdl-typography--subhead-color-contrast mdl-typography--text-right"><i class="material-icons">date_range</i> {{ post.date | date: "%b %-d, %Y" | upcase }}{% if post.author %} - by {{ post.author }}{% endif %}</span>
       <div class="content-limit mdl-card__supporting-text mdl-typography--text-justify mdl-color-text--grey-700">
         {{ post.content }}
+        <div class="gradientback"></div>
       </div>
-      <div class="gradientback"></div>
       <div class="post-hr"><div class="mdl-card__actions mdl-typography--text-left"><a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" href="{{ post.url | prepend: site.baseurl }}?back=true">Read more &nbsp; <span class="material-icons mdl-badge mdl-badge--overlap disqus-comment-count" style="text-align:right" data-disqus-identifier="{{ post.id }}" data-badge="?">comment</span></a></div>
     </div>
   </div>
