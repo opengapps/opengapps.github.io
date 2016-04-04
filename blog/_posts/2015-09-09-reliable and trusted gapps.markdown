@@ -27,12 +27,14 @@ In the meantime, we also try to improve our own build process to have more safeg
 
 #### Do-it-yourself!
 As second the good news: a simple cookbook to a safe GApps Package:
+
 * Download a trusted [Google Nexus Image](https://developers.google.com/android/nexus/images) and extract a Google APK from it, or download a trusted Google Application from the Google Play Store.
 * Extract `META-INF/CERT.RSA` from the APK, extract the key that is used for this certificate (e.g. command: `openssl pkcs7 -inform DER -print_certs -text`) and store it in a keystore with the `keytool` command.
 * Download the [Open GApps source from GitHub](https://github.com/opengapps/opengapps) and review the code. Also review the code that is used from third-party tools, like the SignApk.jar and if necessary compile them yourself or choose not to use them.
 * Adapt the Open GApps build process to only let it use the keystore you created earlier.
 * Check if the certificates of the APKs that will be used to build your GApps package all match the keystore you created earlier.
 * Run the `make` command and create your own trusted GApps.
+
 By completing these steps, you have your own trusted GApps package (as long as you trust Google).
 
 #### Track progress
