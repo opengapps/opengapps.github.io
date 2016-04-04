@@ -12,7 +12,6 @@ layout: blog
 var disqus_config = function () {
 this.page.url = '{{ page.url | replace:'index.html','' | prepend: site.blogurl | prepend: site.url }}';
 this.page.identifier = '{{ page.id }}';
-this.page.title = '{{ page.title }}';
 };
 (function(){var d=document,s=d.createElement('script');
 s.src='//opengapps.disqus.com/embed.js';
