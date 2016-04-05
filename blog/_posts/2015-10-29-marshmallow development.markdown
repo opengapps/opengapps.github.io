@@ -16,6 +16,7 @@ We only want to offer pre-built Open GApps packages when these issues are resolv
 #### Challenges
 So, what are these challenges you ask?
 We will highlight a few:
+
 * Marshmallow comes with several new core applications. Our scripts had to be updated to package and install these applications too. This has been done and implemented already in our code.
 * Google's Marshmallow images have for some applications no pre-extracted libraries. They read the libraries from within the APK. For some reason AOSP ROMs do not always accept libraries this way, and still demand pre-extracted libraries. We still don't know why they differ in behaviour, but this is something that should be resolved by the ROMs and consistent behaviour should be defined.
 * Google finally fixed the security mechanisms for apps on `/system/` partition and demands all APKs to be properly signed and verified. This does mean that we cannot remove the libraries from the APK, or it would not pass this verification anymore. In combination with the previous point, this would mean that all libraries would take twice the system space, if they would have to be both within the APK next to being pre-extracted.
