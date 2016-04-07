@@ -7,7 +7,7 @@ nav1:
     long_name: Support by <strong>Donation</strong>
     link: "#"
     onclick: "window.paypal();return false;"
-    icon: euro_symbol
+    icon: favorite
   - name: GitHub
     long_name: Source on <strong>GitHub</strong>
     link: https://github.com/opengapps/opengapps
