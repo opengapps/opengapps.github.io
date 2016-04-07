@@ -22,5 +22,9 @@ s.setAttribute('data-timestamp',+new Date());
 </div>
 </div>
 </div>
-<div class="pagination"><a onclick="goBackToBlog()" href="#" class="mdl-button mdl-js-button mdl-button--icon"><i class="material-icons">arrow_back</i></a></div>
+<div class="pagination">
+ <a onclick="goBackToBlog()" href="#" class="mdl-button mdl-js-button mdl-button--icon"><i class="material-icons">arrow_back</i></a>
+ <br /><br />
+ <p class="feed-subscribe"><a href="{{ '/feed.xml' | prepend: site.blogurl }}"><i class="material-icons">rss_feed</i>RSS</a> <a href="{{ site.pushbullet | append:'opengappsblog' }}"><i class="material-icons">notifications</i>Pushbullet</a></p>
+</div>
 <script type="text/javascript">{% include postscripts.js %}</script>
