@@ -6,7 +6,7 @@ title: "The Open GApps Project Blog"
   <div class="post-list">
   {% for post in paginator.posts %}
     <div class="mdl-card mdl-shadow--2dp">
-      <div class="mdl-card__title mdl-typography--display-1">{{ post.title }}</div>
+      <a href="{{ post.url | prepend: site.baseurl }}?back=true"><div class="mdl-card__title mdl-typography--display-1">{{ post.title }}</div></a>
       <span class="postdate mdl-color-text--grey-700 mdl-typography--subhead-color-contrast mdl-typography--text-right"><i class="material-icons">date_range</i> {{ post.date | date: "%b %-d, %Y" | upcase }}{% if post.author %} - by {{ post.author }}{% endif %}</span>
       <div class="content-limit mdl-card__supporting-text mdl-typography--text-justify mdl-color-text--grey-700">
         {{ post.content }}
