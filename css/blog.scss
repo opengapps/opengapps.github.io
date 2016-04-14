@@ -72,6 +72,9 @@ width:auto;
 .mdl-card__actions .mdl-button{
 overflow:initial;
 }
+.mdl-button .mdl-badge[data-badge]:after{
+right:-10px;
+}
 .post-hr{
 border-top: 1px solid rgba(0,0,0,.1);
 }
