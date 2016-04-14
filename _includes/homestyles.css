@@ -19,7 +19,7 @@ a.wikilink i.material-icons{font-size:12px;vertical-align:middle}
 .link{opacity:.8}
 .link:hover{opacity:1}
 .tab:hover{color:rgba(255,255,255,0.85)}
-#logolink{position:absolute;padding:15px}
+#logolink{position:absolute;padding:15px;top:0}
 .is-small-screen #logolink{padding:5px}
 .mdl-layout__obfuscator.is-visible, .mdl-layout__drawer{position:fixed}
 #content{display:block;padding-bottom:130px}
