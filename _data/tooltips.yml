@@ -46,7 +46,7 @@ home:
   - tag: lsuper
     info: For those who want everything, includes all Google Apps that were ever shipped on a Google device
   - tag: lstock
-    info: Recommended package for recent devices, includes all Google Apps that come standard on the latest Nexus device
+    info: Recommended package for recent devices, includes all Google Apps that come standard on the latest Nexus Phone
   - tag: lfull
     info: Very similar to <em>stock</em>, but does not replace non-Google stock-applications
   - tag: lmini
@@ -57,6 +57,8 @@ home:
     info: Minimal installation, but including the extra functionality that is not available from the Play Store
   - tag: lpico
     info: The bare minimum to get Google Play functionality
+  - tag: ltvstock
+    info: Package for Android TV devices, includes all Google Apps that come standard on the latest Nexus Player
   - tag: github-latest
     info: Date and size of the latest release of the selected package
   - tag: bdownload

@@ -7,7 +7,7 @@
     <tbody>
     {% for table in site.data.table.arch %}
     <tr><td class="mdl-data-table__cell--non-numeric"><label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="{{table.name}}" id="{{table.name|prepend:'l'}}">
-     <input {% if table.checked == true %}{{ 'checked' }}{% endif %} id="{{table.name}}" name="arch" type="radio" value="{{table.name}}" class="mdl-radio__button" />
+     <input {% if table.checked == true %}{{ 'checked' }}{% endif %} {% if table.disabled == true %}{{ 'disabled' }}{% endif %} id="{{table.name}}" name="arch" type="radio" value="{{table.name}}" class="mdl-radio__button" />
      <span class="mdl-radio__label">{% if table.url %}{{table.humanname}}<a class="wikilink" href="{{site.support.wiki|append:{{table.url}}"><i class="material-icons">&#xE895;</i></a>{% else %}{{table.humanname}}{% endif %}</span>
     </label></td></tr>
     {% endfor %}
@@ -18,7 +18,7 @@
      <tbody>
      {% for table in site.data.table.api %}
      <tr><td class="mdl-data-table__cell--non-numeric"><label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="{{table.name}}" id="{{table.name|prepend:'l'}}">
-      <input {% if table.checked == true %}{{ 'checked' }}{% endif %} id="{{table.name}}" name="api" type="radio" value="{{table.name}}" class="mdl-radio__button" />
+      <input {% if table.checked == true %}{{ 'checked' }}{% endif %} {% if table.disabled == true %}{{ 'disabled' }}{% endif %} id="{{table.name}}" name="api" type="radio" value="{{table.name}}" class="mdl-radio__button" />
       <span class="mdl-radio__label">{% if table.url %}{{table.name}}<a class="wikilink" href="{{site.support.wiki|append:{{table.url}}"><i class="material-icons">&#xE895;</i></a>{% else %}{{table.name}}{% endif %}</span>
      </label></td></tr>
      {% endfor %}
@@ -29,7 +29,7 @@
     <tbody>
     {% for table in site.data.table.variant %}
     <tr><td class="mdl-data-table__cell--non-numeric"><label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="{{table.name}}" id="{{table.name|prepend:'l'}}">
-     <input {% if table.checked == true %}{{ 'checked' }}{% endif %} id="{{table.name}}" name="variant" type="radio" value="{{table.name}}" class="mdl-radio__button" />
+     <input {% if table.checked == true %}{{ 'checked' }}{% endif %} {% if table.disabled == true %}{{ 'disabled' }}{% endif %} id="{{table.name}}" name="variant" type="radio" value="{{table.name}}" class="mdl-radio__button" />
      <span class="mdl-radio__label">{{table.name}}<a class="wikilink" href="{{site.support.wiki|append:{{table.url}}"><i class="material-icons">&#xE895;</i></a></span>
     </label></td></tr>
     {% endfor %}
