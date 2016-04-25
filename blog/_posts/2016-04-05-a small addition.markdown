@@ -4,7 +4,6 @@ title:  "A small addition"
 date:   2016-04-05
 author: YashdSaraf
 ---
-
 As [mfonville](https://github.com/mfonville) mentioned in his [Toybox blog post](http://opengapps.org/blog/post/2016/01/11/no-fun-to-play-with-toybox/),
 it was decided to bundle a separate [busybox](https://www.busybox.net/) binary in the Open GApps installer.
 
