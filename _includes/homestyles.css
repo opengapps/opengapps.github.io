@@ -3,9 +3,10 @@ body{font-family:Roboto}
 a{color:#009688;text-decoration:none}
 img{max-width:100%}
 .dt{border:0px;float:left;width:110px}
-.dt td{border-bottom:0px}
+.dt td{border-bottom:0px;height:50px}
 .dt th{text-align:center !important}
 #tp td,#tp th,#tv td,#tv th{padding-left:10px;padding-right:0}
+.mdl-data-table{position:static}
 a.wikilink i.material-icons{font-size:12px;vertical-align:middle}
 :not(.is-small-screen) .container{text-align:center;max-width:800px;margin:0 auto}
 :not(.is-small-screen) .advertisement{width:336px;max-width:100%;float:right;margin:10px 0}
