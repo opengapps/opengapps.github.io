@@ -32,7 +32,7 @@ home:
   - tag: lx86
     info: <em>x86</em> is a less common mobile platform, but used on e.g. the Zenfone
   - tag: lx86_64
-    info: <em>x86_64</em> has temporarily only limited availability, i.e. only <em>5.0+5.1</em>
+    info: <em>x86_64</em> is very uncommon, but used on e.g. some Android emulators
   - tag: tandroid
     info: Android Version; In <em>Settings→About→Android version</em> you can find the major version of your installed Android OS
   - tag: l4.4
