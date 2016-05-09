@@ -7,7 +7,7 @@ author: mfonville
 <div markdown='1'>
 ![Open GApps buildbot]({{ site.blogimg }}buildbot.png)
 </div>
-Since the 6th of November we are releasing Marshmallow builds. The very first ones were still experimental and broken in some ways, but by now they should be pretty stable.
+Since the 6<sup>th</sup> of November we are releasing Marshmallow builds. The very first ones were still experimental and broken in some ways, but by now they should be pretty stable.
 
 #### Permissions issues fixed
 We were lucky that after our last post about Marshmallow challenges [Alex Naidis](https://github.com/TheCrazyLex) did reach out to us and created a patch for ROMs to fix the described permission issues. This patch is now part of CyanogenMod and most ROMs (also the AOSP-based ones) have added it by now. (It is funny to see the growing collection of references from that commit's description to our [Marshmallow tracking bug](https://github.com/opengapps/opengapps/issues/93).)

@@ -13,7 +13,7 @@ AROMA Open Gapps (previously known as AROMA LP-GAPPS) was created at the beginni
 From a simple discussion between two friends about how awesome it would be, if you could only install those GApps that you really want in a simple manner. Because the standard packages (*nano*, *pico*, *mini*, *stock*, etc.) didn't satisfy our needs. This sparked the idea for AROMA LP-GAPPS and [raulx222](https://github.com/raulpetru) started to develop a config for AROMA-Installer and made a package based on PA GApps.
 
 #### Joining Open GApps
-On 1st of June, LP-GAPPS was further integrated with the Open GApps project, a new GApps project that used the same (keyword) install mechanism from the, at that point discontinued, PA GApps. This was a new beginning for LP-GAPPS and the best thing that happened to the project.
+On 1<sup>st</sup> of June, LP-GAPPS was further integrated with the Open GApps project, a new GApps project that used the same (keyword) install mechanism from the, at that point discontinued, PA GApps. This was a new beginning for LP-GAPPS and the best thing that happened to the project.
 
 The main benefit of integration with the Open GApps project is that the AROMA packages were now build everyday containing the latest GApps, compared to the old situation where the packages were the AROMA-scripts had to be repackaged manually every release.
 

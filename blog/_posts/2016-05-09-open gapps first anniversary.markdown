@@ -7,7 +7,7 @@ author: mfonville
 <div markdown='1'>
 ![Android with cake]({{ site.blogimg }}androidbirthdaycake.png)
 </div>
-The very first initial Open GApps’ buildscript was published at May 2nd 2015. That means we can celebrate our first anniversary!
+The very first initial Open GApps’ buildscript was published at May 2<sup>nd</sup> 2015. That means we can celebrate our first anniversary!
 
 #### Start of the project
 At very beginning the project was not yet branded as Open GApps, but released as a very rudimentary prototype of what *could* be done using shell scripts to rebuild a legacy PA GApps package. There was no separation of build-scripts, sources and processed APK storage yet. Neither was the code of the high quality and many errors existed at that point. But we have come a long way. By a lot of testing by the community, feedback and reading through many debug logs most bugs have been squashed.

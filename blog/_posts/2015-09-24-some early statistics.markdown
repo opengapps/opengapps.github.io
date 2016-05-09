@@ -4,7 +4,7 @@ title:  "Some early statistics"
 date:   2015-09-24
 author: mfonville
 ---
-OpenGApps is a relatively young project. If you check our domain information, you'll see we registered [opengapps.org](http://opengapps.org) at June 27th 2015, so that is only 3 months ago!
+OpenGApps is a relatively young project. If you check our domain information, you'll see we registered [opengapps.org](http://opengapps.org) at June 27<sup>th</sup> 2015, so that is only 3 months ago!
 But the project has been received quite well by the community, and each day we keep attracting more people to our website, and more stargazers at GitHub.
 
 Currently we have around 12.000 daily visitors at [opengapps.org](http://opengapps.org), in the weekends even more. Around 45% of those go directly to our website, so probably our loyal group of flashaholics who bookmarked the website :-)
@@ -12,7 +12,7 @@ The other visitors are referred to us from a varied set of Android related websi
 
 Our number of daily downloads is even a little bit higher than the amount of visitors on [opengapps.org](http://opengapps.org), because some users (e.g. those using Pushbullet) directly browse to our releases section on [GitHub](https://github.com/opengapps), without ever going through our website.
 
-We gathered some download statistics over the period of 17th of July to the 23rd of September and created some graphs to give more insight into which packages are most popular.
+We gathered some download statistics over the period of 17<sup>th</sup> of July to the 23<sup>rd</sup> of September and created some graphs to give more insight into which packages are most popular.
 
 First we can have a look at the most popular platforms. Unsurprisingly *ARM* is the most popular, taking around 91.3% market share. But is interesting to see that *ARM64* is already 6.1%, while the  amount of 64 bit devices is relatively limited. With the new set of high end Android devices to be announced this fall we expect this number to increase.
 
