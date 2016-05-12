@@ -30,8 +30,8 @@ a.wikilink i.material-icons{font-size:12px;vertical-align:middle}
 .downloadbuttons{text-align:left;width:100%;max-width:400px}
 #github-latest{display:inline-block;padding-left:16px}
 #github-progressbar{width:200px}
-#bdownload{vertical-align:top;float:right;transform:translate(-24px,4px)}
-#likeus{float:right;position:absolute;transform:translate(252px,588px)}
+#bdownload{vertical-align:top;float:right;transform:translate(-24px,4px);-webkit-transform:translate(-24px,4px);-ms-transform:translate(-24px,4px)}
+#likeus{float:right;position:absolute;transform:translate(252px,588px);-webkit-transform:translate(252px,588px);-ms-transform:translate(252px,588px)}
 #bdownload:hover{background:rgba(255,82,82,0.8)}
 .mdsection{max-width:800px;margin:0 auto;padding:30px}
 .mdl-mini-footer{position:absolute;bottom:0;right:0;left:0;white-space:nowrap;max-height:96px}
@@ -50,6 +50,6 @@ a.wikilink i.material-icons{font-size:12px;vertical-align:middle}
 #donaterectangle:hover{background-color:#757575}
 .is-small-screen #topa #donatespace, .is-small-screen #topa #donaterectangle, .is-small-screen #topa #donatecaption{display:none}
 .mdl-radio.is-disabled .mdl-radio__label a,fieldset[disabled] .mdl-radio .mdl-radio__label a{color:inherit;cursor:default}
-@media screen and (max-width:805px){.mdl-snackbar--active{transform:translateX(0);left:0;min-width:100%}}
+@media screen and (max-width:805px){.mdl-snackbar--active{transform:translateX(0);-webkit-transform:translateX(0);-ms-transform:translateX(0)left:0;min-width:100%}}
 @media screen and (min-width:806px){.mdl-snackbar--active{min-width:806px}}
 </style>
