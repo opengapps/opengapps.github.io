@@ -1,4 +1,5 @@
 <title>{% if page.title %}{{page.title}}{% else %}{{site.title}}{% endif %}</title>
+<meta content="chrome=1" http-equiv="X-UA-Compatible">
 <link rel="stylesheet" type="text/css" href="{{site.mdl|append:'/material.teal-red.min.css'}}" />
 <!--Preload for fancy browsers-->
 <link rel="preload" href="{{site.gfont|append:'/icon?family=Material+Icons'}}" as="style" />
@@ -22,7 +23,6 @@
 <link rel="icon" type="image/png" sizes="16x16" href="{{site.img|append:'favicon-16x16.png'}}">
 <link rel="manifest" href="/manifest.json">
 <meta charset="utf-8">
-<meta content="chrome=1" http-equiv="X-UA-Compatible">
 <meta name="theme-color" content="{{site.color}}">
 <meta name="msapplication-TileColor" content="{{site.color}}">
 <meta name="msapplication-TileImage" content="{{site.img|append:'ms-icon-144x144.png'}}">
