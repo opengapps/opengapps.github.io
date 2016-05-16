@@ -15,4 +15,10 @@ You still need to set Google Dialer as the default Phone app manually, if you re
 
 *Instructions how to set the Google Dialer as default phone app*
 
+If you also want Google Dialer to be able to adjust your ringtone settings, you need to grant it access to your system settings. Otherwise you will receive a toast with a message it is not allowed to change those.
+
+<iframe width="420" height="315" src="https://www.youtube.com/embed/KkmddbxbZ8U" frameborder="0" allowfullscreen></iframe>
+
+*Instructions how to set grant Google Dialer permission to access system settings*
+
 The advisory to regularly flash an updated GApps package to update `DialerFramework` remains intact. It can only receive security updates if you update your Open GApps installation and not via the Play Store. Make sure to update your Open GApps installation at least once a month, after Google’s monthly security updates are added to the Open GApps repository.
