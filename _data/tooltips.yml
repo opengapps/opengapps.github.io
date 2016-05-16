@@ -21,6 +21,8 @@ common:
     info: Open GApps on Google+
   - tag: twitterlink
     info: Open GApps on Twitter
+  - tag: youtubelink
+    info: Open GApps on YouTube
 
 home:
   - tag: tplatform

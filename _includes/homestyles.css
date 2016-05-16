@@ -36,6 +36,7 @@ a.wikilink i.material-icons{font-size:12px;vertical-align:middle}
 .mdsection{max-width:800px;margin:0 auto;padding:30px}
 .mdl-mini-footer{position:absolute;bottom:0;right:0;left:0;white-space:nowrap;max-height:96px}
 @media screen and (max-width:532px){.mdl-mini-footer{padding:16px}}
+.mdl-mini-footer__right-section i{font-size:13.3333px}
 .mdl-card{margin:20px auto;display:inline-block;order:0;min-height:0}
 .post-hr{border-top:1px solid rgba(0,0,0,.1)}
 .is-small-screen .mdl-card{order:9}
