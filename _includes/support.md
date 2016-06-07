@@ -7,7 +7,7 @@ A list of the various support channels available for the {{site.org}} packages:
 * [Open GApps Gitter Chat]({{site.support.gitter}})
 
 #### Download Speed
-If you experience slow downloads it is best to contact [GitHub Support](https://github.com/contact) so that they can take appropriate measures. Don't forget to include necessary information they may need to find the cause of the problem; e.g. the download URL, your ISP, your location and time & date.
+The releases are all hosted using [GitHub's releases functionality](https://help.github.com/articles/about-releases/). GitHub's releases are hosted on Amazon's S3 US-East servers. If you experience slow downloads it is caused by limited connectivity from your ISP to US East. If your downloads are interrupted you can try to us a download manager until your ISP or GitHub/Amazon finds a solution to improve connectivity to your region.
 
 #### Questions
 If you have any questions check out the [Open GApps Wiki]({{site.support.wiki}}), especially the [FAQ]({{site.support.faq}}) answers most questions.
