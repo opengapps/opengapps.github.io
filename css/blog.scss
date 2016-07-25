@@ -56,9 +56,11 @@ padding: 0;
 .mdl-mini-footer__right-section i{font-size:13.3333px}
 /*CSS for article page also for index.html*/
 .mdl-card, .adsbygoogle{
-margin: 20px auto;
 width:auto;
 max-width:750px;
+}
+.mdl-card{
+margin: 20px auto;
 }
 .mdl-card .postdate{
 margin-right: 16px;
