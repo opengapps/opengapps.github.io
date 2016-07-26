@@ -6,7 +6,7 @@
 <head>
 <link rel="preload" href="{{ site.ads }}" as="script" />
 <link rel="preload" href="{{site.url}}/javascript/count.js" as="script" />
-<link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.blogurl | prepend: site.url }}" />
+<link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.url }}" />
 {% include head.html %}
 <link href="{{ '/feed.xml' | prepend: site.blogurl | prepend: site.url }}" rel="alternate" title="{{site.title}} Blog" type="application/atom+xml" />
 <link rel="stylesheet" href="{{ '/css/blog.css' | prepend: site.baseurl }}" />
