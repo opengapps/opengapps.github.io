@@ -8,7 +8,7 @@ author: mfonville
 ![Pokémon Go]({{ site.blogimg }}pokemongo.png)
 </div>
 Because of health issues development on the scripts has been a bit slow recently, sorry for that.
-Nevertheless it was time to blog, so today a small update and a link to the [Pokémon Go APK](https://github.com/pokemonapk/pokemon-go/blob/master/com.nianticlabs.pokemongo-2016072902.apk?raw=true).
+Nevertheless it was time to blog, so today a small update and a link to the [Pokémon Go APK](https://github.com/pokemonapk/pokemon-go/blob/master/com.nianticlabs.pokemongo-2016073000.apk?raw=true).
 
 #### Build system overhaul
 I have still have some major architectural overhauls for the Open GApps build system queued, but I need more time to fix some last issues with it.
@@ -29,7 +29,7 @@ But I hope to include verified commits into our development workflow soon.
 
 #### Pokémon Go
 Pokémon Go is the biggest application hit ever, it seems. Even the devs are messing around with it (we can tell you it uses Google's [protobuf](https://developers.google.com/protocol-buffers/))!
-Unfortunately eligibility is geo-location restricted, but using APKCrawler we could get the APK straight from the Play Store! [**You can download it here**](https://github.com/pokemonapk/pokemon-go/blob/master/com.nianticlabs.pokemongo-2016072902.apk?raw=true)
+Unfortunately eligibility is geo-location restricted, but using APKCrawler we could get the APK straight from the Play Store! [**You can download it here**](https://github.com/pokemonapk/pokemon-go/blob/master/com.nianticlabs.pokemongo-2016073000.apk?raw=true)
 There is only an *arm* version at the moment, so those who have *x86* devices might encounter low performance (or it not working at all).
 Let's hope Nintendo releases a multi-architecture version soon!
 
