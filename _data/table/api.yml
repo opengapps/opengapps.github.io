@@ -6,3 +6,5 @@
 - name: '6.0'
   url: '/Notes-for-Android-6.0'
   checked: true
+- name: '7.0'
+  disabled: true
