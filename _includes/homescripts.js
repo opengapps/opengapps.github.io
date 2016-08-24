@@ -1,4 +1,4 @@
-var archs=['arm','arm64','x86','x86_64'];var apis=['4.4','5.0','5.1','6.0'];var variants=['aroma','super','stock','full','mini','micro','nano','pico'];var packages={};
+var archs=[{% for i in site.data.table.arch %}'{{i.name}}',{% endfor %}];var apis=[{% for i in site.data.table.api %}'{{i.name}}',{% endfor %}];var variants=[{% for i in site.data.table.variant %}'{{i.name}}',{% endfor %}];var packages={};
 Array.prototype.has=function has(o){return this.indexOf(o)!==-1;};Object.prototype.each=function each(key,cb){var test=function(el){if(!!el[key]){cb(el);}};if(typeof this.length==='number'){for(var i=0;i<this.length;i++){test(this[i]);}}else{for(var i in this){if(this.hasOwnProperty(i)){test(this[i]);}}}};
 var storage=window.localStorage;try{storage.setItem('__test_key','__test_val');if(storage.getItem('__test_key')!=='__test_val'){throw 'getItem test failed';}storage.removeItem('__test_key');}catch(e){storage={getItem:function(){return null;},setItem:function(){},removeItem:function(){},};}
 var arch=getUrlParam('arch');var autoAllowArch=archs.has(arch);if(!autoAllowArch){arch=storage.getItem('arch')||'arm';}document.getElementById(arch).checked=true;
