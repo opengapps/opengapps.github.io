@@ -40,9 +40,9 @@ home:
   - tag: l4.4
     info: In <em>stock</em> and <em>full</em> on <em>4.4</em> some applications are installed on /data/ instead of /system/
   - tag: l6.0
-    info: <em>6.0</em> needs a ROM with a patch to grant the Google Apps the proper permissions
+    info: <em>6.0</em> has specific flashing instructions.
   - tag: l7.0
-    info: <em>7.0</em> is beta quality and needs testing. It will require a patched ROM to pass APK v2 signatures.
+    info: <em>7.0</em> is beta quality and needs testing. It might also need ROM patches.
   - tag: tvariant
     info: Package Variant; The set of applications differs per variant, <em>click for a comparison-table</em>
   - tag: laroma
