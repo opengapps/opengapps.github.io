@@ -115,3 +115,4 @@ float: right;
 max-width:50%;
 margin:10px;
 }
+{% for buttoncolor in site.data.nav.footerlinks %}#{{buttoncolor.id}} button:hover{background-color:{{buttoncolor.color}}}{% endfor %}
