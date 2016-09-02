@@ -1,0 +1,25 @@
+---
+layout: post
+title:  "Android 7.0 Nougat"
+date:   2016-09-02
+author: mfonville
+---
+<div markdown='1'>
+![Nougat]({{ site.blogimg }}nougat_logo.png)
+</div>
+A brand new Android release *Nougat* appeared at the end of last month. As Open GApps we quickly got to work and were happy to launch on August 24th our first *7.0* packages, well before any *7.0* AOSP ROMs were available yet.
+
+#### Beta Quality
+One challenge is, when there are no AOSP builds in existence, that it is impossible to test the package. So even though we did do as much as we could, the current builds are beta-quality at best. Until we get stable *7.0* ROMs on a device we can test on, users can experience some glitches that were not caught yet.
+
+#### New Applications
+Android *7.0* brought us some applications and keywords. First of all we got some *Google Android Shared Services* that are now part of the core package. But we also received the new *Google VR Services* and the *Print Service Recommendation* from Google.
+
+#### Webview and Chrome
+Another important change, and giving still some headaches, is the new *Google Webview* behavior. In *7.0* *Google Chrome* and its variants (*Beta, Dev, Canary*) can replace the standard *Google Webview* package as Webview provider. Our developers are currently busy figuring out what patches should be applied to ROMs to allow Webview provider selection on feature-parity with Google’s stock ROMs. When sorted out and patches provided to ROM developers this will probably imply some changes the package selection and logic for *7.0*. i.e. when *Google Chrome* is installed it would be unnecessary to install *Google Webview* too.
+
+#### APK Signature Scheme v2
+Google also decided to introduce a new [APK signature scheme](https://source.android.com/security/apksigning/v2.html) with Nougat. If enforced as described in the documents, this could pose serious issues and limitations for [installing up-to-date GApps packages on *7.0*](https://github.com/opengapps/opengapps/wiki/Notes-for-Android-7.0). It is not clear yet if the strictness from the documentation also applies to all APKs stored on `/system` partition. People already report various success with the (smaller) *7.0* GApps packages on XDA, so it might not as bad as feared. But we will later go through the AOSP source code to get a better understanding of these changes.
+
+#### Support and Questions
+As usual, if you experience any issues with these packages, please report them in our [XDA thread](http://forum.xda-developers.com/android/software/Open-GApps-t3098071) and **don’t forget to attach debug logs and a logcat**!
