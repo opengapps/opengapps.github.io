@@ -15,7 +15,7 @@ img{max-width:100%}
 .mdl-layout:not(.is-small-screen) .onlysmallscreen .mdl-layout__header-row,.mdl-layout:not(.is-small-screen) .mdl-layout__drawer-button{display:none}
 a{text-decoration:none;}
 .mdl-layout__content a, footer a{
-color:{{ site.color }};
+color:{{site.color}};
 text-align:center;
 }
 i{vertical-align:middle;}
