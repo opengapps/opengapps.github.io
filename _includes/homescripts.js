@@ -25,5 +25,44 @@ function validateAds(){var ads=document.getElementsByClassName('adsbygoogle');va
 function validateForm(){var form=document.getElementById('DownloadForm');form.arch.each('checked',function(el){arch=el.value;});if(!archs.has(arch)||packages[arch]===undefined){return 'arch';}storage.setItem('arch',arch);form.api.each('checked',function(el){api=el.value;});if(!apis.has(api)||packages[arch].apis[api]===undefined){return 'api';}storage.setItem('api',api);form.variant.each('checked',function(el){variant=el.value;});if(!variants.has(variant)||packages[arch].apis[api][variant]===undefined){return 'variant';}storage.setItem('variant',variant);return 'ok';}
 function updateButtons(){var v=validateForm();var ch=window.componentHandler;ch.upgradeDom();var info=document.getElementById('github-latest');if(v==='arch'){info.innerHTML='<div id="github-progressbar" class="mdl-progress mdl-js-progress mdl-progress__indeterminate progress-demo"></div><span class="mdl-typography--caption-color-contrast">querying GitHub API...</span>';}else if(v==='api'){info.innerHTML='<span class="mdl-typography--subhead-color-contrast">Select an Android version</span>';}else if(v==='variant'){info.innerHTML='<span class="mdl-typography--subhead-color-contrast">Select a variant</span>';}else{info.innerHTML='<span class="mdl-typography--headline">'+packages[arch].day+' '+packages[arch].month+' '+packages[arch].year+'</span><br><span class="mdl-typography--subhead">Size: '+packages[arch].apis[api][variant].size;}ch.upgradeDom();var hasApi=function(a){return v!=='arch'&&packages[arch].apis.hasOwnProperty(a);};for(var iApi=0;iApi<apis.length;iApi++){setBoxEnable(apis[iApi],hasApi(apis[iApi]));}setBoxCheck(api,hasApi(api));var hasVariant=function(a){return v!=='arch'&&v!=='api'&&packages[arch].apis[api].hasOwnProperty(a);};for(var iVariant=0;iVariant<variants.length;iVariant++){setBoxEnable(variants[iVariant],hasVariant(variants[iVariant]));}setBoxCheck(variant,hasVariant(variant));setButtonEnable('bdownload',v==='ok');setButtonEnable('bversion',v==='ok');setButtonEnable('bmd5',v==='ok');setButtonEnable('breport',v==='ok'||v==='variant');setButtonEnable('bolder',v==='ok'||v==='variant'||v==='api');}
 function queryRelease(){document.getElementById('DownloadForm').arch.each('checked',function(el){arch=el.value;});storage.setItem('arch',arch);delete packages[arch];updateButtons();var httpRequest=new XMLHttpRequest();httpRequest.onreadystatechange=function(){if(httpRequest.readyState===XMLHttpRequest.DONE&&httpRequest.status===200){var data=JSON.parse(httpRequest.responseText);var releaseName=data.name.split(' ');packages[releaseName.shift()]={'apis':{},'dateTag':data.tag_name,'year':releaseName.pop(),'month':releaseName.pop(),'day':releaseName.pop()};for(var i=0;i<data.assets.length;i++){var asset=data.assets[i];if(asset.name.substr(asset.name.length-4,4)!=='.zip'){continue;}var assetName=asset.name.split('-');if(packages[assetName[1]].apis[assetName[2]]===undefined){packages[assetName[1]].apis[assetName[2]]={};}packages[assetName[1]].apis[assetName[2]][assetName[3]]={'size':Math.round(asset.size/1024/1024*100)/100+' MiB'};}updateButtons();if(autoDownload){downloadSubmit();autoDownload=false;}}};httpRequest.open('GET','https://api.github.com/repos/opengapps/'+arch+'/releases/latest?per_page=100');try{httpRequest.send();}catch(e){}}
+function materialTabsNav() {
+    "use strict";
+    this.element_ = document.querySelector(".mdl-layout"), this.element_ && (this.tabLinks = this.element_.querySelectorAll(".mdl-layout__tab"), this.activeLink = null, this.activePage = null, this.init())
+}
+materialTabsNav.prototype.linksMap_ = {}, materialTabsNav.prototype.CssClasses_ = {
+    ACTIVE: "is-active"
+}, materialTabsNav.prototype.init = function() {
+    "use strict";
+    for (var t = 0; t < this.tabLinks.length; t++) this.tabLinks[t].addEventListener("click", this.clickHandler(this.tabLinks[t])), this.linksMap_["#" + this.tabLinks[t].href.split("#")[1]] = this.tabLinks[t];
+    if (this.displaySectionForFragment(window.location.hash.split("/")[0]), "onhashchange" in window) {
+        var s = this;
+        window.onhashchange = function() {
+            s.displaySectionForFragment(window.location.hash.split("/")[0])
+        }
+    }
+}, materialTabsNav.prototype.displaySectionForFragment = function(t) {
+    "use strict";
+    t && this.linksMap_[t] && this.linksMap_[t].click ? this.linksMap_[t].click() : t && "" !== t && "#" !== t || this.displayIndexPage()
+}, materialTabsNav.prototype.displayIndexPage = function() {
+    "use strict";
+    this.activeLink && this.activeLink.classList.remove(this.CssClasses_.ACTIVE), this.activeLink = null, this.activePage && this.activePage.classList.remove(this.CssClasses_.ACTIVE), this.activePage = this.element_.querySelector("#downloadsection"), this.activePage.classList.add(this.CssClasses_.ACTIVE)
+}, materialTabsNav.prototype.clickHandler = function(t) {
+    "use strict";
+    return function(s) {
+        s.preventDefault();
+        var i = this.findPage(t);
+        this.activePage && this.activePage.classList.remove(this.CssClasses_.ACTIVE), this.activeLink && this.activeLink.classList.remove(this.CssClasses_.ACTIVE), this.activePage = i, this.activeLink = t, t.classList.add(this.CssClasses_.ACTIVE), i.classList.add(this.CssClasses_.ACTIVE);
+        var e = window.location.hash.split("/")[0],
+            n = t.href.split("#")[1];
+        return e !== "#" + n && (history.pushState(null, "{{site.title}}", t), document.getElementById("content").scrollTop = 0, ga && ga("send", "pageview", location.pathname + n)), !0
+    }.bind(this)
+}, materialTabsNav.prototype.findPage = function(t) {
+    "use strict";
+    var s = t.href.split("#")[1];
+    return this.element_.querySelector("#" + s)
+}, window.addEventListener("load", function() {
+    "use strict";
+    new materialTabsNav
+});
 document.addEventListener('DOMContentLoaded',function(){window.componentHandler.upgradeDom();try{(adsbygoogle=window.adsbygoogle||[]).push({google_ad_client: "ca-pub-9489060368971640",enable_page_level_ads:true})}catch(e){};for(var iAd=0;iAd<document.getElementsByClassName('adsbygoogle').length;iAd++){try{(window.adsbygoogle||[]).push({});}catch(e){validateAds();break;}}queryRelease();showSnackbar();document.addEventListener('click',function(e){var target=e.target||e.srcElement;var href=target.href;if(target.tagName.toLowerCase()==='a'&&href.toLowerCase().substr(0,4)==='http'){if(target.getAttribute('href')==='#'){e.preventDefault();}else if(target.target==='_blank'||e.ctrlKey||e.shiftKey||e.altKey||e.metaKey||e.button===1){gaEventOutbound(target.href);}else{e.preventDefault();redirectToUrl(target.href);}}});document.getElementById('bdownload').addEventListener('click',downloadSubmit);document.getElementById('bversion').addEventListener('click',versionSubmit);document.getElementById('bmd5').addEventListener('click',md5Submit);document.getElementById('breport').addEventListener('click',reportSubmit);document.getElementById('bolder').addEventListener('click',olderSubmit);var inputs=document.getElementsByTagName('input');for(var iInput=0;iInput<inputs.length;iInput++){var input=inputs[iInput];switch(input.name){case 'arch':input.addEventListener('change',queryRelease);break;case 'api':case 'variant':input.addEventListener('change',updateButtons);break;}}if(isApp){var links=document.getElementsByTagName('a');for(var iLink=0;iLink<links.length;iLink++){var link=links[iLink];if(document.querySelectorAll('[data-mdl-for="'+link.id+'"]').length===0&&link.href!='{{site.url}}/'){link.target='_blank';}else if(link.href=='{{site.url}}/'){link.href='{{site.url}}/?app=true';}}var forms=document.getElementsByTagName('form');for(var iForm=0;iForm<forms.length;iForm++){if(forms[iForm].id!=='DownloadForm'){forms[iForm].target='_blank';}}}});
 window.onload=function(){setTimeout(validateAds,2000);};
