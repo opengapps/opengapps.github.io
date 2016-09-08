@@ -7,7 +7,7 @@ timezone: Europe/Amsterdam
 
 # Libraries
 gfont: https://fonts.googleapis.com
-mdl: https://storage.googleapis.com/code.getmdl.io/1.2.0
+mdl: https://storage.googleapis.com/code.getmdl.io/1.2.1
 mdlcolor: teal-red
 pushbullet: https://www.pushbullet.com/channel-popup?tag=
 ads: //pagead2.googlesyndication.com/pagead/js/adsbygoogle.js
