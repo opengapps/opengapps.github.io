@@ -8,7 +8,7 @@ timezone: Europe/Amsterdam
 # Libraries
 gfont: https://fonts.googleapis.com
 mdl: https://storage.googleapis.com/code.getmdl.io/1.2.1
-mdlcolor: teal-red
+mdlcolor: brown-red
 pushbullet: https://www.pushbullet.com/channel-popup?tag=
 ads: //pagead2.googlesyndication.com/pagead/js/adsbygoogle.js
 
@@ -18,7 +18,7 @@ org: OpenGApps.org
 img: /images/
 apimg: /images/apple-icon-
 animg: \/images\/android-icon-
-color: '#009688'
+color: '#7d5a4e'
 
 # Blog
 blogurl: /blog
