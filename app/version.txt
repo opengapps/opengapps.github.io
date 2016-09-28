@@ -1,0 +1,3 @@
+version=1
+checkAgain=0
+minVersion=0
