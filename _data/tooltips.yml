@@ -23,6 +23,8 @@ common:
     info: Open GApps on Twitter
   - tag: youtubelink
     info: Open GApps on YouTube
+  - tag: playstorelink
+    info: Open GApps App
 
 home:
   - tag: tplatform

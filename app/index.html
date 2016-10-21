@@ -1,0 +1,92 @@
+---
+layout: app
+title: "Open GApps App"
+---
+<div class="app-info">
+  <dialog class="mdl-dialog">
+    <h2 class="mdl-dialog__title">Verification Details</h2>
+    <div class="mdl-dialog__content">
+      <ul class="mdl-list">
+        <li class="mdl-list__item mdl-list__item--two-line">
+          <span class="mdl-list__item-primary-content">
+            <span>SHA1 Checksum</span>
+            <span class="mdl-list__item-sub-title mdl-typography--text-uppercase"><tt>{{site.app.sha1sum}}</tt></span>
+          </span>
+        </li>
+        <li class="mdl-list__item mdl-list__item--two-line">
+          <span class="mdl-list__item-primary-content">
+            <span>MD5 Checksum</span>
+            <span class="mdl-list__item-sub-title mdl-typography--text-uppercase"><tt>{{site.app.md5sum}}</tt></span>
+          </span>
+        </li>
+        <li class="mdl-list__item mdl-list__item--two-line">
+          <span class="mdl-list__item-primary-content">
+            <span>SHA1 Certificate fingerprint</span>
+            <span class="mdl-list__item-sub-title mdl-typography--text-uppercase"><tt>{{site.app.sha1cert}}</tt></span>
+          </span>
+        </li>
+        <li class="mdl-list__item mdl-list__item--two-line">
+          <span class="mdl-list__item-primary-content">
+            <span>SHA256 Certificate fingerprint</span>
+            <span class="mdl-list__item-sub-title mdl-typography--text-uppercase"><tt>{{site.app.sha256cert}}</tt></span>
+          </span>
+        </li>
+      </ul>
+    </div>
+    <div class="mdl-dialog__actions">
+      <a type="button" class="mdl-button mdl-button--accent close">Close</a>
+    </div>
+  </dialog>
+  <div class="mdl-grid">
+    <div class="mdl-cell mdl-card mdl-shadow--2dp" style="max-width:202px">
+      <div class="mdl-card__title mdl-card--border">
+        <h2 class="mdl-card__title-text">Download</h2>
+      </div>
+      <div class="mdl-card__supporting-text mdl-card--border" style="max-width:202px">
+        <img id="opengapps-app-img" src="{{site.img|append:'app_logo.png'}}" alt="Open GApps App logo">
+      </div>
+      <div class="mdl-card__actions mdl-card--border mdl-typography--text-left">
+        <a class="mdl-button mdl-button--accent mdl-js-button mdl-js-ripple-effect" href="https://play.google.com/store/apps/details?id={{site.app.packagename}}&hl=en&referrer=utm_source%3Dopengapps%26utm_medium%3Dapplink">Play Store</a>
+        <br/>
+        <a class="mdl-button mdl-button--accent mdl-js-button mdl-js-ripple-effect" href="{{site.app.downloadurl}}">Download APK</a>
+        <br/>
+        <a id="show-dialog" class="mdl-button mdl-button--accent mdl-js-button mdl-js-ripple-effect">Verification Details</a>
+      </div>
+    </div>
+    <div class="mdl-cell mdl-card mdl-shadow--2dp" style="max-width:566px">
+      <div class="mdl-card__title mdl-card--border">
+        <h2 class="mdl-card__title-text">About</h2>
+      </div>
+      <div class="mdl-card__supporting-text mdl-card--border">
+        {% capture appinfo %}{% include appinfo.md %}{% endcapture %}{{appinfo | markdownify}}
+      </div>
+    </div>
+    <div class="mdl-cell mdl-card mdl-shadow--2dp">
+      <a href="{{site.img|append:'apphome.png'}}"><img id="opengapps-app-home" src="{{site.img|append:'apphome_thumb.png'}}" alt="Open GApps App Screenshot Home"></a>
+    </div>
+    <div class="mdl-cell mdl-card mdl-shadow--2dp mdl-cell--middle" style="min-width:300px;max-height:280px">
+      <ins class="adsbygoogle" style="display:inline-block;max-height:280px" data-ad-client="ca-pub-9489060368971640" data-ad-slot="6646806677" data-ad-format="rectangle"></ins>
+    </div>
+    <div class="mdl-cell mdl-card mdl-shadow--2dp">
+      <a href="{{site.img|append:'appwizard.png'}}"><img id="opengapps-app-wizard" src="{{site.img|append:'appwizard_thumb.png'}}" alt="Open GApps App Screenshot Wizard"></a>
+    </div>
+    <div class="mdl-cell mdl-card mdl-shadow--2dp">
+      <a href="{{site.img|append:'appsettings.png'}}"><img id="opengapps-app-settings" src="{{site.img|append:'appsettings_thumb.png'}}" alt="Open GApps App Screenshot Settings"></a>
+    </div>
+    <div class="mdl-cell mdl-card mdl-shadow--2dp mdl-cell--middle" style="min-width:300px;max-height:280px">
+      <ins class="adsbygoogle" style="display:inline-block;max-height:280px" data-ad-client="ca-pub-9489060368971640" data-ad-slot="2525609473" data-ad-format="rectangle"></ins>
+    </div>
+    <div class="mdl-cell mdl-card mdl-shadow--2dp">
+      <a href="{{site.img|append:'appsupport.png'}}"><img id="opengapps-app-support" src="{{site.img|append:'appsupport_thumb.png'}}" alt="Open GApps App Screenshot Support"></a>
+    </div>
+    <div class="mdl-cell mdl-card mdl-shadow--2dp" style="max-width:800px">
+      <div class="mdl-card__title mdl-card--border">
+        <h2 class="mdl-card__title-text">Frequently Asked Questions</h2>
+      </div>
+      <div class="mdl-card__supporting-text mdl-card--border">
+        {% capture appfaq %}{% include appfaq.md %}{% endcapture %}{{appfaq | markdownify}}
+      </div>
+    </div>
+  </div>
+</div>
+{% for tooltip in site.data.tooltips.common %}<span class="mdl-tooltip mdl-tooltip--large" for="{{tooltip.tag}}">{{tooltip.info}}</span>{% endfor %}

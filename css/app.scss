@@ -1,0 +1,120 @@
+---
+---
+@charset "utf-8";
+@import "syntax";
+body{font-family:"Roboto";}
+img{max-width:100%}
+#content{display:block;padding-bottom:130px}
+.mdl-mini-footer{position:absolute;bottom:0;right:0;left:0;white-space:nowrap;max-height:96px}
+@media screen and (max-width:532px){.mdl-mini-footer{padding:16px}}
+#logolink{position:absolute;padding:15px;top:0}
+.is-small-screen #logolink{padding:5px}
+.mdl-layout__content{flex-shrink:0;}
+.mdl-menu .mdl-menu__item{text-align:right}
+.mdl-layout__obfuscator.is-visible, .mdl-layout__drawer{position:fixed}
+.mdl-layout:not(.is-small-screen) .onlysmallscreen .mdl-layout__header-row,.mdl-layout:not(.is-small-screen) .mdl-layout__drawer-button{display:none}
+a{text-decoration:none;}
+.mdl-layout__content a, footer a{
+color:{{site.color}};
+text-align:center;
+}
+i{vertical-align:middle;}
+.link{opacity:.8}
+.link:hover{opacity:1}
+.mdl-mini-footer__social-btn{background-color:initial;color:{{site.color}}}
+.mdl-mini-footer__right-section i{font-size:13.3333px}
+.app-info{
+  align-items: center;
+  justify-content: center;
+}
+.mdl-grid{
+width:auto;
+max-width:800px;
+}
+.mdl-card{
+width: initial;
+}
+.mdl-dialog {
+width: initial;
+max-width: 400px;
+}
+.mdl-list__item-primary-content {
+max-width: 320px;
+}
+.mdl-list__item-sub-title {
+  word-wrap: break-word;
+}
+code, tt {
+padding: 1px 3px;
+font-family: Inconsolata, monospace, sans-serif;
+font-size: 0.85em;
+white-space: pre-wrap;
+border: #E3EDF3 1px solid;
+background: #F7FAFB;
+border-radius: 2px;
+}
+pre {
+-moz-box-sizing: border-box;
+box-sizing: border-box;
+margin: 0 0 1.75em 0;
+border: #E3EDF3 1px solid;
+width: 100%;
+padding: 10px;
+font-family: Inconsolata, monospace, sans-serif;
+font-size: 0.9em;
+white-space: pre;
+overflow: auto;
+background: #F7FAFB;
+border-radius: 3px;
+}
+pre code, tt {
+font-size: inherit;
+white-space: -moz-pre-wrap;
+white-space: pre-wrap;
+background: transparent;
+border: none;
+padding: 0;
+}
+{% for buttoncolor in site.data.nav.footerlinks %}#{{buttoncolor.id}} button:hover{background-color:{{buttoncolor.color}}}{% endfor %}
+/*Dialog Polyfill*/
+dialog {
+  position: absolute;
+  left: 0; right: 0;
+  width: -moz-fit-content;
+  width: -webkit-fit-content;
+  width: fit-content;
+  height: -moz-fit-content;
+  height: -webkit-fit-content;
+  height: fit-content;
+  margin: auto;
+  border: solid;
+  padding: 1em;
+  background: white;
+  color: black;
+  display: none;
+}
+
+dialog[open] {
+  display: block;
+}
+
+dialog + .backdrop {
+  position: fixed;
+  top: 0; right: 0; bottom: 0; left: 0;
+  background: rgba(0,0,0,0.1);
+}
+
+/* for small devices, modal dialogs go full-screen */
+@media screen and (max-width: 540px) {
+  dialog[_polyfill_modal] {  /* TODO: implement */
+    top: 0;
+    width: auto;
+    margin: 1em;
+  }
+}
+
+dialog.fixed {
+  position: fixed;
+  top: 50%;
+  transform: translate(0, -50%);
+}

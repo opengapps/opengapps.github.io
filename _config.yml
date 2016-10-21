@@ -5,6 +5,18 @@ description: OpenGApps.org offers information and pre-built packages of The Open
 keywords: open gapps, opengapps, gapps, android, daily, arm, arm64, x86, x86_64, 4.4, 5.0, 5.1, 6.0, 7.0, 7.1, kitkat, lollipop, marshmallow, nougat, aroma, super, stock, full, mini, micro, nano, pico, tvstock
 timezone: Europe/Amsterdam
 
+# App settings
+app:
+  packagename: org.opengapps.app
+  downloadurl: "#"
+  versioncode: 4
+  md5sum: 3956b6bc9a99a2836f953f2877e67d29
+  sha1sum: eb75be07bbf3ad2bc382a6e28b6ea6e4d1c83e69
+  sha1cert: "E8:4C:C1:A4:DC:E7:EF:CA:9F:11:F2:6A:5A:46:38:31:ED:11:DE:B8"
+  sha256cert: "21:20:4C:ED:33:63:DA:1D:3D:9A:D9:81:7F:D0:52:EA:E0:AA:78:0E:18:24:F9:A1:01:DB:8F:A8:06:CD:F6:7B"
+  checkagain: 0
+  minversion: 0
+
 # Libraries
 gfont: https://fonts.googleapis.com
 mdl: https://storage.googleapis.com/code.getmdl.io/1.2.1
