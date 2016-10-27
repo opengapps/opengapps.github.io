@@ -1,5 +1,11 @@
 <style>
-body{font-family:Roboto}
+.mdl-layout__header{background-color:black}
+.mdl-color--primary-dark{background-color:rgb(40,40,40)!important}
+.mdl-card,.mdl-data-table{background-color:dimgrey}
+.mdl-data-table tbody tr:hover{background-color:grey}
+body{font-family:Roboto;
+background-color:rgb(60,60,60)!important;
+color:#e0841a}
 a{color:{{site.color}};text-decoration:none}
 img{max-width:100%}
 .dt{border:0px;float:left;width:110px}
@@ -25,13 +31,13 @@ a.wikilink i.material-icons{font-size:12px;vertical-align:middle}
 #content{display:block;padding-bottom:130px}
 #downloadsection{padding:30px}
 .is-small-screen #downloadsection{padding:10px 0 30px 0}
-.dform{background-color:white}
+.dform{background-color:dimgrey}
 .downloadbuttons{text-align:left;width:100%;max-width:400px}
 #github-latest{display:inline-block;padding-left:16px}
 #github-progressbar{width:200px}
 #bdownload{vertical-align:top;float:right;transform:translate(-24px,4px);-webkit-transform:translate(-24px,4px);-ms-transform:translate(-24px,4px)}
 #likeus{float:right;position:absolute;transform:translate(252px,588px);-webkit-transform:translate(252px,588px);-ms-transform:translate(252px,588px)}
-#bdownload:hover{background:rgba(255,82,82,0.8)}
+#bdownload:hover{background:rgba(255,152,0,0.8)}
 .mdsection{max-width:800px;margin:0 auto;padding:30px}
 .mdl-mini-footer{position:absolute;bottom:0;right:0;left:0;white-space:nowrap;max-height:96px}
 @media screen and (max-width:532px){.mdl-mini-footer{padding:16px}}

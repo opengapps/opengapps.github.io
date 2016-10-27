@@ -2,7 +2,11 @@
 ---
 @charset "utf-8";
 @import "syntax";
-body{font-family:"Roboto";}
+.mdl-layout__header{background-color:black}
+.mdl-color--primary-dark{background-color:rgb(40,40,40)!important}
+body{font-family:Roboto;
+background-color:rgb(60,60,60)!important;
+color:#e0841a}
 img{max-width:100%}
 #content{display:block;padding-bottom:130px}
 .mdl-mini-footer{position:absolute;bottom:0;right:0;left:0;white-space:nowrap;max-height:96px}
