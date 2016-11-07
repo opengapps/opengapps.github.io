@@ -13,10 +13,10 @@ nav1:
     link: https://github.com/opengapps/opengapps
     icon: code
 nav2:
-  - name: Changelog
-    long_name: <strong>Changelog</strong> on Twitter
-    link: https://twitter.com/opengapps
-    icon: whatshot
+  - name: Get App
+    long_name: Download our <strong>App</strong>
+    link: /app
+    icon: get_app
   - name: Blog
     long_name: Open GApps <strong>Blog</strong>
     link: /blog

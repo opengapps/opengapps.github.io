@@ -11,8 +11,8 @@ common:
     info: Manual on Wiki
   - tag: pushbulletlink
     info: Follow via Pushbullet
-  - tag: changeloglink
-    info: Changelog on Twitter
+  - tag: applink
+    info: Download Open GApps App
   - tag: bloglink
     info: Open GApps Blog
   - tag: facebooklink
