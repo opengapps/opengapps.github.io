@@ -1,6 +1,7 @@
 - name: '7.1'
+  url: '/Notes-for-Android-7.x'
 - name: '7.0'
-  url: '/Notes-for-Android-7.0'
+  url: '/Notes-for-Android-7.x'
 - name: '6.0'
   url: '/Notes-for-Android-6.0'
   checked: true
