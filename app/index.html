@@ -9,14 +9,26 @@ title: "Open GApps App"
       <ul class="mdl-list">
         <li class="mdl-list__item mdl-list__item--two-line">
           <span class="mdl-list__item-primary-content">
-            <span>SHA1 Checksum</span>
+            <span>Stable v{{site.app.versioncode}} SHA1 Checksum</span>
             <span class="mdl-list__item-sub-title mdl-typography--text-uppercase"><tt>{{site.app.sha1sum}}</tt></span>
           </span>
         </li>
         <li class="mdl-list__item mdl-list__item--two-line">
           <span class="mdl-list__item-primary-content">
-            <span>MD5 Checksum</span>
+            <span>Stable v{{site.app.versioncode}} MD5 Checksum</span>
             <span class="mdl-list__item-sub-title mdl-typography--text-uppercase"><tt>{{site.app.md5sum}}</tt></span>
+          </span>
+        </li>
+        <li class="mdl-list__item mdl-list__item--two-line">
+          <span class="mdl-list__item-primary-content">
+            <span>Beta v{{site.betaapp.versioncode}} SHA1 Checksum</span>
+            <span class="mdl-list__item-sub-title mdl-typography--text-uppercase"><tt>{{site.betaapp.sha1sum}}</tt></span>
+          </span>
+        </li>
+        <li class="mdl-list__item mdl-list__item--two-line">
+          <span class="mdl-list__item-primary-content">
+            <span>Beta v{{site.betaapp.versioncode}} MD5 Checksum</span>
+            <span class="mdl-list__item-sub-title mdl-typography--text-uppercase"><tt>{{site.betaapp.md5sum}}</tt></span>
           </span>
         </li>
         <li class="mdl-list__item mdl-list__item--two-line">
@@ -46,9 +58,11 @@ title: "Open GApps App"
         <img id="opengapps-app-img" src="{{site.img|append:'app_logo.png'}}" alt="Open GApps App logo">
       </div>
       <div class="mdl-card__actions mdl-card--border mdl-typography--text-left">
-        <a class="mdl-button mdl-button--accent mdl-js-button mdl-js-ripple-effect" href="https://play.google.com/store/apps/details?id={{site.app.packagename}}&hl=en&referrer=utm_source%3Dopengapps%26utm_medium%3Dapplink">Play Store</a>
+        <a class="mdl-button mdl-button--accent mdl-js-button mdl-js-ripple-effect" href="/app/opengapps-app-v{{site.app.versioncode}}.apk">Download</a>
         <br/>
-        <a class="mdl-button mdl-button--accent mdl-js-button mdl-js-ripple-effect" href="/app/opengapps-app-v{{site.app.versioncode}}.apk">Download APK</a>
+        <a class="mdl-button mdl-button--accent mdl-js-button mdl-js-ripple-effect" href="/app/opengapps-app-v{{site.betaapp.versioncode}}.apk">Download Beta</a>
+        <br/>
+        <a class="mdl-button mdl-button--accent mdl-js-button mdl-js-ripple-effect" href="https://play.google.com/store/apps/details?id={{site.app.packagename}}&hl=en&referrer=utm_source%3Dopengapps%26utm_medium%3Dapplink">Visit Play Store</a>
         <br/>
         <a id="show-dialog" class="mdl-button mdl-button--accent mdl-js-button mdl-js-ripple-effect">Verification Details</a>
       </div>

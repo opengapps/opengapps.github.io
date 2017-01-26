@@ -15,6 +15,10 @@ app:
   sha256cert: "21:20:4C:ED:33:63:DA:1D:3D:9A:D9:81:7F:D0:52:EA:E0:AA:78:0E:18:24:F9:A1:01:DB:8F:A8:06:CD:F6:7B"
   checkagain: 86400  # every 24hrs
   minversion: 0
+betaapp:
+  versioncode: 13
+  md5sum: 49305c46264fd6ad67a7083b6d06eac9
+  sha1sum: f1e26a6300507eed6fe23e94136f2af632bed951
 
 # Libraries
 gfont: https://fonts.googleapis.com
