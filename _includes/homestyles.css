@@ -9,11 +9,11 @@ img{max-width:100%}
 a.wikilink i.material-icons{font-size:12px;vertical-align:middle}
 :not(.is-small-screen) .container{text-align:center;max-width:800px;margin:0 auto}
 :not(.is-small-screen) .advertisement{width:336px;max-width:100%;float:right;margin:10px 0}
-:not(.is-small-screen) .dform{width:330px;float:left}
+:not(.is-small-screen) .dform, :not(.is-small-screen) .femto{width:330px;float:left}
 .footer-container{float:right;display:flex;flex-direction:column}
 .is-small-screen .container,.is-small-screen .footer-container{max-width:1024px;width:100%;float:left}
 .is-small-screen .advertisement{float:none;margin:10px auto;width:inherit}
-.is-small-screen .dform{display:inline-block;float:none;width:330px;margin:0 auto}
+.is-small-screen .dform, .is-small-screen .femto{display:inline-block;float:none;width:330px;margin:0 auto}
 .mdl-layout__content{flex-shrink:0}
 .mdl-menu .mdl-menu__item{text-align:right}
 .link{opacity:.8}
