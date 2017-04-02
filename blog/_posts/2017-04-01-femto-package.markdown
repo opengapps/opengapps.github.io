@@ -4,6 +4,8 @@ title:  "Femto package"
 date: 2017-04-01
 author: mfonville
 ---
+_**For any readers visiting this post on or after April 2, check the post date before continuing :)**_
+
 <div markdown='1'>
 ![Femto package]({{ site.blogimg }}illumigapps.png)
 </div>
