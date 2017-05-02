@@ -8,12 +8,12 @@ timezone: Europe/Amsterdam
 # App settings
 app:
   packagename: org.opengapps.app
-  versioncode: 15
-  md5sum: d3590dfc5f87af3ff77a2504d4044b6f
-  sha1sum: b3129f6d9d6663de74e0024a54f8da3b64b79d8d
+  versioncode: 16
+  md5sum: 773b5031f945b2009af16d7a442c714a
+  sha1sum: 9f570801f37b46668f2d0fd535a0cccaabb937ce
   sha1cert: "E8:4C:C1:A4:DC:E7:EF:CA:9F:11:F2:6A:5A:46:38:31:ED:11:DE:B8"
   sha256cert: "21:20:4C:ED:33:63:DA:1D:3D:9A:D9:81:7F:D0:52:EA:E0:AA:78:0E:18:24:F9:A1:01:DB:8F:A8:06:CD:F6:7B"
-  checkagain: 86400  # every 24hrs
+  checkagain: 259200 # every 72hrs
   minversion: 0
 #betaapp:
 #  versioncode:
