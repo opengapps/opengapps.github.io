@@ -43,8 +43,8 @@ paginate_path: /blog/page/:num
 permalink: /blog/post/:year/:month/:day/:title/
 disqus: opengapps.disqus.com
 
-# Gems
-gems: [jekyll-paginate]
+# Plugins (gems have been renamed to plugins)
+plugins: [jekyll-paginate]
 
 # Support
 support:
