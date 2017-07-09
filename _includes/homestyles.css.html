@@ -52,43 +52,4 @@ a.wikilink i.material-icons{font-size:12px;vertical-align:middle}
 .mdl-radio.is-disabled .mdl-radio__label a,fieldset[disabled] .mdl-radio .mdl-radio__label a{color:inherit;cursor:default}
 @media screen and (min-width:480px){.mdl-snackbar{width:100%;max-width:800px}}
 {% for buttoncolor in site.data.nav.footerlinks %}#{{buttoncolor.id}} button:hover{background-color:{{buttoncolor.color}}}{% endfor %}
-.configurator .mdl-card {width:100%;text-align:initial;}
-.radio-container {padding-top: 16px; padding-bottom:8px;}
-.mdl-layout:not(.is-small-screen) .radio-container .mdl-radio {width:24.5%; box-sizing: border-box;}
-.is-small-screen .radio-container .mdl-radio {width: 100%;}
-.config-step {
-  position: relative;
-  padding-bottom: 16px;
-}
-.config-step:not(:first-of-type) {
-  padding-top: 16px;
-}
-.config-step:not(:last-of-type) {
-  border-bottom: 1px solid rgba(0, 0, 0, 0.12);
-}
-
-.mdl-layout:not(.is-small-screen) .config-step {
-  margin-left: 72px;
-}
-.config-step::before {
-  content:attr(data-step);
-  width: 24px;
-  height: 24px;
-  border-radius: 100%;
-  text-align: center;
-  line-height: 24px;
-  background-color: rgb(0,150,136);
-  color: white;
-  font-size: 12px;
-  font-weight: 500;
-  position: absolute;
-}
-.mdl-layout:not(.is-small-screen) .config-step::before {
-  left: -48px;
-}
-
-.is-small-screen .config-step::before {
-  top: 0;
-  right: 16px;
-}
 </style>
