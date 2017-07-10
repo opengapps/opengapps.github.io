@@ -25,6 +25,12 @@ common:
     info: Open GApps on YouTube
   - tag: playstorelink
     info: Open GApps App
+  - tag: adlabelheader
+    info: Ads help us keep Open GApps free
+  - tag: adlabelfooter
+    info: Ads help us keep Open GApps free
+  - tag: adlabel
+    info: Ads help us keep Open GApps free
 
 home:
   - tag: tplatform
