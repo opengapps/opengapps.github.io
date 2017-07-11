@@ -26,11 +26,11 @@ common:
   - tag: playstorelink
     info: Open GApps App
   - tag: adlabelheader
-    info: Ads help us keep Open GApps free
+    info: Ads help us to keep OpenGApps.org packages free
   - tag: adlabelfooter
-    info: Ads help us keep Open GApps free
+    info: Ads help us to keep OpenGApps.org packages free
   - tag: adlabel
-    info: Ads help us keep Open GApps free
+    info: Ads help us to keep OpenGApps.org packages free
 
 home:
   - tag: tplatform
