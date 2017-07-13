@@ -1,0 +1,55 @@
+{
+  "version": "1.0",
+  "2.9": {
+    "4.4": {
+      "md5sum": "5e2b146ba3d8f7b8963355a663808dc0",
+      "url": "https://github.com/opengapps/x86/releases/download/20170627/open_gapps-x86-4.4-pico-20170627.zip"
+    },
+    "5.0": {
+      "md5sum": "039229e595eddf1e2ad38b24accef4d4",
+      "url": "https://github.com/opengapps/x86/releases/download/20170627/open_gapps-x86-5.0-pico-20170627.zip"
+    },
+    "5.1": {
+      "md5sum": "8dae2fe8a398e6ff455f2699d17bee6d",
+      "url": "https://github.com/opengapps/x86/releases/download/20170627/open_gapps-x86-5.1-pico-20170627.zip"
+    },
+    "6.0": {
+      "md5sum": "97223377e303d8048df40c846757ffd8",
+      "url": "https://github.com/opengapps/x86/releases/download/20170627/open_gapps-x86-6.0-pico-20170627.zip"
+    },
+    "7.0": {
+      "md5sum": "330c56394ec39b6ed19d710eb231acbd",
+      "url": "https://github.com/opengapps/x86/releases/download/20170627/open_gapps-x86-7.0-pico-20170627.zip"
+    },
+    "7.1": {
+      "md5sum": "ce88f364d7f96b820c5425a4bec0020b",
+      "url": "https://github.com/opengapps/x86/releases/download/20170627/open_gapps-x86-7.1-pico-20170627.zip"
+    }
+  },
+  "2.10": {
+    "4.4": {
+      "md5sum": "5e2b146ba3d8f7b8963355a663808dc0",
+      "url": "https://github.com/opengapps/x86/releases/download/20170627/open_gapps-x86-4.4-pico-20170627.zip"
+    },
+    "5.0": {
+      "md5sum": "039229e595eddf1e2ad38b24accef4d4",
+      "url": "https://github.com/opengapps/x86/releases/download/20170627/open_gapps-x86-5.0-pico-20170627.zip"
+    },
+    "5.1": {
+      "md5sum": "8dae2fe8a398e6ff455f2699d17bee6d",
+      "url": "https://github.com/opengapps/x86/releases/download/20170627/open_gapps-x86-5.1-pico-20170627.zip"
+    },
+    "6.0": {
+      "md5sum": "97223377e303d8048df40c846757ffd8",
+      "url": "https://github.com/opengapps/x86/releases/download/20170627/open_gapps-x86-6.0-pico-20170627.zip"
+    },
+    "7.0": {
+      "md5sum": "330c56394ec39b6ed19d710eb231acbd",
+      "url": "https://github.com/opengapps/x86/releases/download/20170627/open_gapps-x86-7.0-pico-20170627.zip"
+    },
+    "7.1": {
+      "md5sum": "ce88f364d7f96b820c5425a4bec0020b",
+      "url": "https://github.com/opengapps/x86/releases/download/20170627/open_gapps-x86-7.1-pico-20170627.zip"
+    }
+  }
+}
