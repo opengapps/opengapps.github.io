@@ -8,7 +8,7 @@ Some highlights about the characteristics of the Open GApps packages:
 - Strong compression, allowing for relatively small downloads of even the most complete packages
 - Automatic backup: It is not necessary to re-flash {{site.ga}} when you flash a ROM update. Most ROMs support this (addon.d) function
 - The installer checks your device's capabilities, like the system partition size. It will notify you, before making any changes, if it finds any problems
-- Several package variations, from a Google Super Package (includes all applications that ever shipped on a Google device), to a Stock package that equals the set of applications found on the most current and complete Nexus, to smaller, minimalist packages and an AROMA package that allows graphically selection of what to install
+- Several package variations, from a Google Super Package (includes all applications that ever shipped on a Google device), to a Stock package that equals the set of applications found on the most current and complete Nexus, to smaller, minimalist packages and an AROMA package that allows graphical selection of what to install
 - A special 'for Stock ROM' installation mode that allows to update the {{site.ga}} on Stock ROMs that conform to the original Google Nexus filesystem structure
 - All package installations can be customized to your individual preferences using our [exclusive Advanced Features and Options](https://github.com/opengapps/opengapps/wiki/Advanced-Features-and-Options)
 
