@@ -7,7 +7,7 @@ A list of the various support channels available for the {{site.org}} packages:
 * [Open GApps Gitter Chat]({{site.support.gitter}})
 
 #### Download Speed
-The releases are all hosted using [GitHub's releases functionality](https://help.github.com/articles/about-releases/). GitHub's releases are hosted on Amazon's S3 US-East servers. If you experience slow downloads it is caused by limited connectivity from your ISP to US East. If your downloads are interrupted you can try to us a download manager until your ISP or GitHub/Amazon finds a solution to improve connectivity to your region. Add the github.com/opengapps/ URL to your download-manager, not the Amazon S3 URL, to support continuable downloads.
+The releases are all hosted using [GitHub's releases functionality](https://help.github.com/articles/about-releases/). GitHub's releases are hosted on Amazon's S3 US-East servers. If you experience slow downloads it is caused by limited connectivity from your ISP to US East. If your downloads are interrupted you can try to use a download manager until your ISP or GitHub/Amazon finds a solution to improve connectivity to your region. Add the github.com/opengapps/ URL to your download-manager, not the Amazon S3 URL, to support continuable downloads.
 
 #### Changelog
 The Open GApps changelog is aggregated on the [Open GApps Twitter feed](https://twitter.com/opengapps/).
