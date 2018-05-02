@@ -1,5 +1,5 @@
 # Site settings
-url: http://opengapps.org
+url: https://opengapps.org
 title: The Open GApps Project
 description: OpenGApps.org offers information and pre-built packages of The Open GApps Project. The Open GApps Project is an open-source effort to script the automatic generation of up-to-date Google Apps packages. All Android versions and platforms supported.
 keywords: open gapps, opengapps, gapps, android, daily, arm, arm64, x86, x86_64, 4.4, 5.0, 5.1, 6.0, 7.0, 7.1, 8.0, 8.1, kitkat, lollipop, marshmallow, nougat, oreo, aroma, super, stock, full, mini, micro, nano, pico, tvstock
@@ -50,8 +50,8 @@ plugins: [jekyll-paginate]
 support:
  faq: https://github.com/opengapps/opengapps/wiki/FAQ
  wiki: https://github.com/opengapps/opengapps/wiki
- xdaqa: http://forum.xda-developers.com/showthread.php?t=3124506
- xdadev: http://forum.xda-developers.com/android/software/Open-GApps-t3098071
+ xdaqa: https://forum.xda-developers.com/showthread.php?t=3124506
+ xdadev: https://forum.xda-developers.com/android/software/Open-GApps-t3098071
  gitter: https://gitter.im/opengapps/general
 
 # SASS

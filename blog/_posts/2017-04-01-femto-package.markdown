@@ -13,7 +13,7 @@ _**For any readers visiting this post on or after April 2, check the post date b
 
 After developing in close collaboration with various government agencies and its contractors, we can now share with you a great new technology that makes it more easy to install the latest Open GApps on your device! Instead of downloading the large flashable zip packages, the [femto package]({{ site.blogurl }}/files/open_gapps-all-femto-20170401.zip) is a small universal installer, compatible with all devices. It only includes a very minimal installer that activates the ELF *([Extremely Low Frequency](https://en.wikipedia.org/wiki/Extremely_low_frequency))* antenna in your mobile device (as long as it is not wrapped in [tin foil](https://en.wikipedia.org/wiki/Tin_foil_hat)).
 
-Using the ELF antenna it can then automatically download the latest GApps broadcasted by the United States [HAARP](http://lmgtfy.com/?q=haarp+new+world+order) service into the ionosphere. Downloading can take up to 10 minutes, depending on weather conditions. Take note, the wireless service is currently restricted and only available for those in the northern hemisphere.
+Using the ELF antenna it can then automatically download the latest GApps broadcasted by the United States [HAARP](https://lmgtfy.com/?q=haarp+new+world+order) service into the ionosphere. Downloading can take up to 10 minutes, depending on weather conditions. Take note, the wireless service is currently restricted and only available for those in the northern hemisphere.
 
 ![HAARP service]({{ site.blogimg }}haarp.jpg)
 

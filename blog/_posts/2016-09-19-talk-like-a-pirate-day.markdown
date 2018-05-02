@@ -11,4 +11,4 @@ Arrr! Sea dogs an' land lubbers, th' Open GApps Team wishes ye a grog-filled tal
 
 To celebrate it in gentleman o' fortune style we tuned our colors fer 'tis special tide, we woe ye like it! Success flashin' yer GAarpphs!
 
-Hearty thanks t’ [Yeti](http://www.yeti-designs.com/) fer th' beautiful artwork.
+Hearty thanks t’ [Yeti](https://www.yeti-designs.com/) fer th' beautiful artwork.

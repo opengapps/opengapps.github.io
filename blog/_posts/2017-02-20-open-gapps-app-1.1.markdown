@@ -7,7 +7,7 @@ author: codekidX
 Hello everybody, I’m [Ashish Shekar a.k.a. CodekidX](https://github.com/codekidX/) and I’m the new member of the Open GApps App developers team. I’ll be listing all the things that I did for this 1.1 update and also who I am and what inspired me to join the team.
 
 ### Changes in version 1.1
-[Version 1.1 of the Open GApps App](http://opengapps.org/app/) brings many new changes, listed here below.
+[Version 1.1 of the Open GApps App](https://opengapps.org/app/) brings many new changes, listed here below.
 
 #### Storage Chooser
 One of the new feature that you’ll note right off-the-bat (if you were waiting for ExtSD support) is the new Storage & Download Directory Chooser, it’s open source and if you are a developer you can include it in your app [here](https://github.com/codekidX/storage-chooser/).

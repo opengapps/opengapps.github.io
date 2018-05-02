@@ -7,7 +7,7 @@ author: nick
 <div markdown='1'>
 ![Python Crawler]({{ site.blogimg }}pythoncrawler.jpg)
 </div>
-Today a blog article with an interview with [Nick Buse](https://github.com/NicholasBuse), long term contributor to [Open GApps](http://opengapps.org) and the originator of the [APKCrawler](https://github.com/opengapps/apkcrawler) project.
+Today a blog article with an interview with [Nick Buse](https://github.com/NicholasBuse), long term contributor to [Open GApps](https://opengapps.org) and the originator of the [APKCrawler](https://github.com/opengapps/apkcrawler) project.
 
 #### *When did you start the APKCrawler project?*
 First commit was on August 5, 2015, but some prototyping began in July 2015
@@ -18,7 +18,7 @@ Between the start of the Open GApps project in March 2015 and August 2015 [mfonv
 ![mfonville’s keyboard]({{ site.blogimg }}f5button.jpg)
 
 #### *What was the first crawler you have written?*
-The obvious choice then (and still is now) is [APKMirror.com](http://www.apkmirror.com/). The have the most complete and accessible list of variants (cpu, dpi, sdk) for all APKs.  This is probably due to their crowd sourced upload functionality.
+The obvious choice then (and still is now) is [APKMirror.com](https://www.apkmirror.com/). The have the most complete and accessible list of variants (cpu, dpi, sdk) for all APKs.  This is probably due to their crowd sourced upload functionality.
 
 #### *What is the most useful crawler?*
 The AptoideCrawler. It is the \#1 source of APKs that we find and then re-contribute to APKMirror!  A close second is the new PlayStoreCrawler that mfonville and [therealssj](https://github.com/therealssj) have been working on. There is no more reliable source of APKs than the Google Play Store!

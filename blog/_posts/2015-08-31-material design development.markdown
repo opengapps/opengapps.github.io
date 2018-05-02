@@ -4,7 +4,7 @@ title:  "Material Design Development"
 date:   2015-08-31
 author: mfonville
 ---
-[OpenGApps.org](http://opengapps.org) currently enjoys a nice Material Design Lite layout. But it did take some effort to get there...
+[OpenGApps.org](https://opengapps.org) currently enjoys a nice Material Design Lite layout. But it did take some effort to get there...
 
 #### The beginning
 The intial website of Open Gapps was made from a GitHub template, with some little changes to the colors and mostly some javascript hacking for the download widget. The website did suffice for the most basic needs, one could easily download a GApps package easily on desktop and mobile. But the website itself was very ugly.

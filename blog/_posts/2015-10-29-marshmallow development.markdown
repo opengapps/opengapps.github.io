@@ -30,4 +30,4 @@ We will highlight a few:
 The very nice thing about these problems though, is that it gives more unity to the GApps devs community and most of us are working together and sharing our knowledge and progress. So kudos to dankoman, benzo and others for their efforts.
 
 #### Track progress
-For further information, please keep an eye on our [XDA thread](http://forum.xda-developers.com/android/software/Open-GApps-t3098071) and our [GitHub](https://github.com/opengapps/opengapps). If you are Android ROM dev and want to help on the ROM-related tweaks, please drop a note on the GitHub issue.﻿
+For further information, please keep an eye on our [XDA thread](https://forum.xda-developers.com/android/software/Open-GApps-t3098071) and our [GitHub](https://github.com/opengapps/opengapps). If you are Android ROM dev and want to help on the ROM-related tweaks, please drop a note on the GitHub issue.﻿

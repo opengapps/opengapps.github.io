@@ -4,10 +4,10 @@ title:  "OpenGApps App Release"
 date: 2016-11-08
 author: beatbrot
 ---
-Hi everyone, my name is Christoph Loy aka [beatbrot](https://github.com/beatbrot) and today I’ll show you what I’ve been working on the last four months: [**the Open GApps App**](http://opengapps.org/app)!
+Hi everyone, my name is Christoph Loy aka [beatbrot](https://github.com/beatbrot) and today I’ll show you what I’ve been working on the last four months: [**the Open GApps App**](https://opengapps.org/app)!
 
 ### The App
-Open GApps packages are downloaded via the [OpenGApps.org](http://opengapps.org) website. The user has to select the architecture, the Android-version as well as the variant. Afterwards, the user has to enter recovery and flash the file. Our goal was to simplify these steps even more with our new [Open GApps App](http://opengapps.org/app).
+Open GApps packages are downloaded via the [OpenGApps.org](https://opengapps.org) website. The user has to select the architecture, the Android-version as well as the variant. Afterwards, the user has to enter recovery and flash the file. Our goal was to simplify these steps even more with our new [Open GApps App](https://opengapps.org/app).
 While the app still allows to select every possible GApps package, we tried to simplify this process even more, using a wizard.
 
 ![App CPU selection]({{ site.blogimg }}app-launch-00.png)

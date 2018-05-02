@@ -1,6 +1,6 @@
 * **If I have a problem with flashing the Open GApps package, where can I get help?**
 
-   Check the [OpenGApps.org support page](http://opengapps.org/#supportsection) for help with the packages and installation.
+   Check the [OpenGApps.org support page](https://opengapps.org/#supportsection) for help with the packages and installation.
 
 * **Why does flashing Open GApps result in losing the permissions granted to the app?**
 
@@ -8,7 +8,7 @@
 
 * **Why is there an advertisement in the app when I download a package?**
 
-   The Open GApps project is supported through [donations](http://opengapps.org/donate) and advertisements. The app shows only a pre-loaded advertisement *after* starting the download, it does not block or slow the download process. We will never impair functionality and thank you for supporting the project!
+   The Open GApps project is supported through [donations](https://opengapps.org/donate) and advertisements. The app shows only a pre-loaded advertisement *after* starting the download, it does not block or slow the download process. We will never impair functionality and thank you for supporting the project!
 
 * **Can I help to translate and localize the application?**
 
@@ -20,4 +20,4 @@
 
 * **Can I support this project through donation?**
 
-   Yes, you can [support the Open GApps Project](http://opengapps.org/donate), it writes the software that provides the Open GApps packages.
+   Yes, you can [support the Open GApps Project](https://opengapps.org/donate), it writes the software that provides the Open GApps packages.

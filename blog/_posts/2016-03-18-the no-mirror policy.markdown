@@ -7,14 +7,14 @@ author: mfonville
 <div markdown='1'>
 ![Question Mirror]({{ site.blogimg }}questionmirror.jpg)
 </div>
-We sometimes get questions asking about mirrors or people uploading the [OpenGApps.org](http://opengapps.org) pre-built packages to mirrors, which violates our license terms. In this post we will try to give some insight behind the rationale of the no-mirror policy of the OpenGApps.org pre-built packages:
+We sometimes get questions asking about mirrors or people uploading the [OpenGApps.org](https://opengapps.org) pre-built packages to mirrors, which violates our license terms. In this post we will try to give some insight behind the rationale of the no-mirror policy of the OpenGApps.org pre-built packages:
 
 #### Technical merit
 The very first reason it technical: we want users to use the latest, greatest and most up-to-date version. The rationale behind the project was to be able to do automated builds to achieve this goal and it would be weird to forfeit this. To make this easy, we made it possible to [hotlink](https://github.com/opengapps/opengapps/wiki/Hotlinking-to-OpenGApps.org) and automatically download the latest versions for e.g. ROM devs their OPs on XDA.
 This eliminates the need for mirrors which would be outdated within one day.
 
 #### Support and educate users
-The second reason is support and documentation. If just uploading the package to a filehost it isn't accompanied by any documentation or access to a support forum. If offered via OpenGApps.org there are direct links to the [Wiki](https://github.com/opengapps/opengapps/wiki), [XDA Forum](http://forum.xda-developers.com/android/software/Open-GApps-t3098071), the [source code](https://github.com/opengapps/opengapps) and existing bug reports. This helps users find their way and to benefit most from the various features offered by the package.
+The second reason is support and documentation. If just uploading the package to a filehost it isn't accompanied by any documentation or access to a support forum. If offered via OpenGApps.org there are direct links to the [Wiki](https://github.com/opengapps/opengapps/wiki), [XDA Forum](https://forum.xda-developers.com/android/software/Open-GApps-t3098071), the [source code](https://github.com/opengapps/opengapps) and existing bug reports. This helps users find their way and to benefit most from the various features offered by the package.
 
 #### Fostering community
 Another very import reason is fostering a community. Open source does not mean “just download and ignore where it comes from”. For open source projects it is critical that people are aware of where their software originates from, the rationale behind it, how to contribute and how to get involved. If users of the software can't get acquainted with the project, the project won't be able to attract new potential volunteers and would have a large chance to die. OpenGApps.org is a HUB for the users of Open GApps, that enables them to get acquainted with the project and support it.
