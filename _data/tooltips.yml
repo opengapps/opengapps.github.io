@@ -52,9 +52,11 @@ home:
   - tag: l7.1
     info: <em>7.1</em> requires a patched ROM for proper WebView support
   - tag: l8.0
-    info: Oreo is still beta quality; <em>8.0</em> requires a patched ROM for proper WebView support
+    info: <em>8.0</em> requires a patched ROM for proper WebView support
   - tag: l8.1
-    info: Oreo is still beta quality; <em>8.1</em> requires a patched ROM for proper WebView support
+    info: <em>8.1</em> requires a patched ROM for proper WebView support
+  - tag: l9.0
+    info: <em>9.0</em> will be coming soon!
   - tag: tvariant
     info: Package Variant; The set of applications differs per variant, <em>click for a comparison-table</em>
   - tag: laroma
