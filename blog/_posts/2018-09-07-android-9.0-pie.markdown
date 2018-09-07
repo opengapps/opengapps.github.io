@@ -1,0 +1,22 @@
+---
+layout: post
+title:  "Android 9.0 Pie"
+date:   2018-09-07
+author: nicholasbuse
+---
+<div markdown='1'>
+![Pie]({{ site.blogimg }}pie_logo.png)
+</div>
+A new Android release *Pie* was released in August. Two Open GApps supporters ([SpasilliumNexus](https://github.com/SpasilliumNexus) and [nezorflame](https://github.com/nezorflame)) quickly got to work creating pull requests ([1](https://github.com/opengapps/opengapps/pull/657), [2](https://github.com/opengapps/all/pull/24), [3](https://github.com/opengapps/arm/pull/9), and [4](https://github.com/opengapps/arm64/pull/5)) and hosting unoffical builds. But were happy to launch on September 7th our first *9.0* packages.
+
+#### Beta Quality
+Even though we did do as much as we could, the current builds are beta-quality at best. Users can experience some glitches that were not caught yet.
+
+#### New Applications
+Android *9.0* brought us some new applications and keywords. *Action Services* and *Better Together* are in the super package.
+
+#### Webview and Chrome
+Another important change, and giving still some headaches, is the new *Google Webview* behavior. In *7.0* *Google Chrome* and its variants (*Beta, Dev, Canary*) gained the ability to replace the standard *Google Webview* package as Webview provider. Our developers are currently busy figuring out what patches should be applied to ROMs to allow Webview provider selection on feature-parity with Google’s stock ROMs. When sorted out and patches provided to ROM developers this will probably imply some changes the package selection and logic for *9.0*. i.e. when *Google Chrome* is installed it would be unnecessary to install *Google Webview* too.
+
+#### Support and Questions
+As usual, if you experience any issues with these packages, please report them in our [XDA thread](https://forum.xda-developers.com/android/software/Open-GApps-t3098071) and **don’t forget to attach debug logs and a logcat**!
