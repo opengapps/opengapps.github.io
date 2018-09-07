@@ -36,11 +36,11 @@ home:
   - tag: tplatform
     info: CPU Architecture; If you don't know your platform, choose <em>ARM</em>
   - tag: larm
-    info: <em>ARM</em> is the most popular 32-bit platform for mobile devices
+    info: <em>ARM</em> used to be the most popular 32-bit platform
   - tag: larm64
-    info: <em>ARM64</em> is a new 64-bit platform, used on newer devices e.g. Nexus 5X, 6P and Pixel
+    info: <em>ARM64</em> is supported by most devices released since 2016 and the most popular 64-bit platform
   - tag: lx86
-    info: <em>x86</em> is a less common mobile platform, but used on e.g. the Zenfone
+    info: <em>x86</em> is less common, but used on e.g. the Zenfone
   - tag: lx86_64
     info: <em>x86_64</em> is very uncommon, but used on e.g. some Android emulators
   - tag: tandroid

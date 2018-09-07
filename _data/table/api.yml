@@ -2,6 +2,7 @@
   url: '/Notes-for-Android-9.x'
 - name: '8.1'
   url: '/Notes-for-Android-8.x'
+  checked: true
 - name: '8.0'
   url: '/Notes-for-Android-8.x'
 - name: '7.1'
@@ -10,7 +11,6 @@
   url: '/Notes-for-Android-7.x'
 - name: '6.0'
   url: '/Notes-for-Android-6.0'
-  checked: true
 - name: '5.1'
 - name: '5.0'
   url: '/Notes-for-Android-5.0'
