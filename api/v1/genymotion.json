@@ -106,6 +106,10 @@
     "8.0": {
       "md5sum": "a0bff6aadb2d494d4be101cf8fc0fb95",
       "url": "https://github.com/opengapps/x86/releases/download/20180218/open_gapps-x86-8.0-pico-20180218.zip"
+    },
+    "9.0": {
+      "md5sum": "ac94a965ea3ecb414a999d4dbf46565f",
+      "url": "https://github.com/opengapps/x86/releases/download/20181024/open_gapps-x86-9.0-pico-20181024.zip"
     }
   }
 }
