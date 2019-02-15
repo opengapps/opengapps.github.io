@@ -2,24 +2,24 @@
   "version": "1.0",
   "2.9": {
     "4.4": {
-      "md5sum": "688f4748ccc17cb32212674cc5fc0d57",
-      "url": "https://github.com/opengapps/x86/releases/download/20170829/open_gapps-x86-4.4-pico-20170829.zip"
+      "md5sum": "6994a8cfd250f432ac3982ec5d4fa9c8",
+      "url": "https://github.com/opengapps/x86/releases/download/20190209/open_gapps-x86-4.4-pico-20190209.zip"
     },
     "5.0": {
-      "md5sum": "005a26a0c2e7628ac6ae054a038fe6b1",
-      "url": "https://github.com/opengapps/x86/releases/download/20170829/open_gapps-x86-5.0-pico-20170829.zip"
+      "md5sum": "d2a5228f1a6d9ed5f230c18b02c4ad5b",
+      "url": "https://github.com/opengapps/x86/releases/download/20190209/open_gapps-x86-5.0-pico-20190209.zip"
     },
     "5.1": {
-      "md5sum": "5c47a2f24a68438ed801b78dfde19fe9",
-      "url": "https://github.com/opengapps/x86/releases/download/20170829/open_gapps-x86-5.1-pico-20170829.zip"
+      "md5sum": "0d16b284ef23d8c76f8055c537a1a120",
+      "url": "https://github.com/opengapps/x86/releases/download/20190209/open_gapps-x86-5.1-pico-20190209.zip"
     },
     "6.0": {
-      "md5sum": "5ba545bfb4ab71014c02cc844fffec7c",
-      "url": "https://github.com/opengapps/x86/releases/download/20170829/open_gapps-x86-6.0-pico-20170829.zip"
+      "md5sum": "994f3a82eb98b45cc9f689111205947f",
+      "url": "https://github.com/opengapps/x86/releases/download/20190209/open_gapps-x86-6.0-pico-20190209.zip"
     },
     "7.0": {
-      "md5sum": "7358bc8959689fb12b827bf0b008878a",
-      "url": "https://github.com/opengapps/x86/releases/download/20170829/open_gapps-x86-7.0-pico-20170829.zip"
+      "md5sum": "5384159ba783ba9c5fffd1befeb25957",
+      "url": "https://github.com/opengapps/x86/releases/download/20190209/open_gapps-x86-7.0-pico-20190209.zip"
     },
     "7.1": {
       "md5sum": "e18becfbffb012f1fbb5e018c05d7248",
@@ -28,122 +28,122 @@
   },
   "2.10": {
     "4.4": {
-      "md5sum": "688f4748ccc17cb32212674cc5fc0d57",
-      "url": "https://github.com/opengapps/x86/releases/download/20170829/open_gapps-x86-4.4-pico-20170829.zip"
+      "md5sum": "6994a8cfd250f432ac3982ec5d4fa9c8",
+      "url": "https://github.com/opengapps/x86/releases/download/20190209/open_gapps-x86-4.4-pico-20190209.zip"
     },
     "5.0": {
-      "md5sum": "005a26a0c2e7628ac6ae054a038fe6b1",
-      "url": "https://github.com/opengapps/x86/releases/download/20170829/open_gapps-x86-5.0-pico-20170829.zip"
+      "md5sum": "d2a5228f1a6d9ed5f230c18b02c4ad5b",
+      "url": "https://github.com/opengapps/x86/releases/download/20190209/open_gapps-x86-5.0-pico-20190209.zip"
     },
     "5.1": {
-      "md5sum": "5c47a2f24a68438ed801b78dfde19fe9",
-      "url": "https://github.com/opengapps/x86/releases/download/20170829/open_gapps-x86-5.1-pico-20170829.zip"
+      "md5sum": "0d16b284ef23d8c76f8055c537a1a120",
+      "url": "https://github.com/opengapps/x86/releases/download/20190209/open_gapps-x86-5.1-pico-20190209.zip"
     },
     "6.0": {
-      "md5sum": "5ba545bfb4ab71014c02cc844fffec7c",
-      "url": "https://github.com/opengapps/x86/releases/download/20170829/open_gapps-x86-6.0-pico-20170829.zip"
+      "md5sum": "994f3a82eb98b45cc9f689111205947f",
+      "url": "https://github.com/opengapps/x86/releases/download/20190209/open_gapps-x86-6.0-pico-20190209.zip"
     },
     "7.0": {
-      "md5sum": "7358bc8959689fb12b827bf0b008878a",
-      "url": "https://github.com/opengapps/x86/releases/download/20170829/open_gapps-x86-7.0-pico-20170829.zip"
+      "md5sum": "5384159ba783ba9c5fffd1befeb25957",
+      "url": "https://github.com/opengapps/x86/releases/download/20190209/open_gapps-x86-7.0-pico-20190209.zip"
     },
     "7.1": {
-      "md5sum": "e18becfbffb012f1fbb5e018c05d7248",
-      "url": "https://github.com/opengapps/x86/releases/download/20170829/open_gapps-x86-7.1-pico-20170829.zip"
+      "md5sum": "c1b51adc82272a2d31eadf7bd2660471",
+      "url": "https://github.com/opengapps/x86/releases/download/20190209/open_gapps-x86-7.1-pico-20190209.zip"
     }
   },
   "2.11": {
     "4.4": {
-      "md5sum": "688f4748ccc17cb32212674cc5fc0d57",
-      "url": "https://github.com/opengapps/x86/releases/download/20170829/open_gapps-x86-4.4-pico-20170829.zip"
+      "md5sum": "6994a8cfd250f432ac3982ec5d4fa9c8",
+      "url": "https://github.com/opengapps/x86/releases/download/20190209/open_gapps-x86-4.4-pico-20190209.zip"
     },
     "5.0": {
-      "md5sum": "005a26a0c2e7628ac6ae054a038fe6b1",
-      "url": "https://github.com/opengapps/x86/releases/download/20170829/open_gapps-x86-5.0-pico-20170829.zip"
+      "md5sum": "d2a5228f1a6d9ed5f230c18b02c4ad5b",
+      "url": "https://github.com/opengapps/x86/releases/download/20190209/open_gapps-x86-5.0-pico-20190209.zip"
     },
     "5.1": {
-      "md5sum": "5c47a2f24a68438ed801b78dfde19fe9",
-      "url": "https://github.com/opengapps/x86/releases/download/20170829/open_gapps-x86-5.1-pico-20170829.zip"
+      "md5sum": "0d16b284ef23d8c76f8055c537a1a120",
+      "url": "https://github.com/opengapps/x86/releases/download/20190209/open_gapps-x86-5.1-pico-20190209.zip"
     },
     "6.0": {
-      "md5sum": "5ba545bfb4ab71014c02cc844fffec7c",
-      "url": "https://github.com/opengapps/x86/releases/download/20170829/open_gapps-x86-6.0-pico-20170829.zip"
+      "md5sum": "994f3a82eb98b45cc9f689111205947f",
+      "url": "https://github.com/opengapps/x86/releases/download/20190209/open_gapps-x86-6.0-pico-20190209.zip"
     },
     "7.0": {
-      "md5sum": "7358bc8959689fb12b827bf0b008878a",
-      "url": "https://github.com/opengapps/x86/releases/download/20170829/open_gapps-x86-7.0-pico-20170829.zip"
+      "md5sum": "5384159ba783ba9c5fffd1befeb25957",
+      "url": "https://github.com/opengapps/x86/releases/download/20190209/open_gapps-x86-7.0-pico-20190209.zip"
     },
     "7.1": {
-      "md5sum": "e18becfbffb012f1fbb5e018c05d7248",
-      "url": "https://github.com/opengapps/x86/releases/download/20170829/open_gapps-x86-7.1-pico-20170829.zip"
+      "md5sum": "c1b51adc82272a2d31eadf7bd2660471",
+      "url": "https://github.com/opengapps/x86/releases/download/20190209/open_gapps-x86-7.1-pico-20190209.zip"
     }
   },
   "2.12": {
     "4.4": {
-      "md5sum": "688f4748ccc17cb32212674cc5fc0d57",
-      "url": "https://github.com/opengapps/x86/releases/download/20170829/open_gapps-x86-4.4-pico-20170829.zip"
+      "md5sum": "6994a8cfd250f432ac3982ec5d4fa9c8",
+      "url": "https://github.com/opengapps/x86/releases/download/20190209/open_gapps-x86-4.4-pico-20190209.zip"
     },
     "5.0": {
-      "md5sum": "005a26a0c2e7628ac6ae054a038fe6b1",
-      "url": "https://github.com/opengapps/x86/releases/download/20170829/open_gapps-x86-5.0-pico-20170829.zip"
+      "md5sum": "d2a5228f1a6d9ed5f230c18b02c4ad5b",
+      "url": "https://github.com/opengapps/x86/releases/download/20190209/open_gapps-x86-5.0-pico-20190209.zip"
     },
     "5.1": {
-      "md5sum": "5c47a2f24a68438ed801b78dfde19fe9",
-      "url": "https://github.com/opengapps/x86/releases/download/20170829/open_gapps-x86-5.1-pico-20170829.zip"
+      "md5sum": "0d16b284ef23d8c76f8055c537a1a120",
+      "url": "https://github.com/opengapps/x86/releases/download/20190209/open_gapps-x86-5.1-pico-20190209.zip"
     },
     "6.0": {
-      "md5sum": "5ba545bfb4ab71014c02cc844fffec7c",
-      "url": "https://github.com/opengapps/x86/releases/download/20170829/open_gapps-x86-6.0-pico-20170829.zip"
+      "md5sum": "994f3a82eb98b45cc9f689111205947f",
+      "url": "https://github.com/opengapps/x86/releases/download/20190209/open_gapps-x86-6.0-pico-20190209.zip"
     },
     "7.0": {
-      "md5sum": "7358bc8959689fb12b827bf0b008878a",
-      "url": "https://github.com/opengapps/x86/releases/download/20170829/open_gapps-x86-7.0-pico-20170829.zip"
+      "md5sum": "5384159ba783ba9c5fffd1befeb25957",
+      "url": "https://github.com/opengapps/x86/releases/download/20190209/open_gapps-x86-7.0-pico-20190209.zip"
     },
     "7.1": {
-      "md5sum": "e18becfbffb012f1fbb5e018c05d7248",
-      "url": "https://github.com/opengapps/x86/releases/download/20170829/open_gapps-x86-7.1-pico-20170829.zip"
+      "md5sum": "c1b51adc82272a2d31eadf7bd2660471",
+      "url": "https://github.com/opengapps/x86/releases/download/20190209/open_gapps-x86-7.1-pico-20190209.zip"
     },
     "8.0": {
-      "md5sum": "a0bff6aadb2d494d4be101cf8fc0fb95",
-      "url": "https://github.com/opengapps/x86/releases/download/20180218/open_gapps-x86-8.0-pico-20180218.zip"
+      "md5sum": "a751f47368bb56071fd32851c1376459",
+      "url": "https://github.com/opengapps/x86/releases/download/20190209/open_gapps-x86-8.0-pico-20190209.zip"
     },
     "9.0": {
-      "md5sum": "ac94a965ea3ecb414a999d4dbf46565f",
-      "url": "https://github.com/opengapps/x86/releases/download/20181024/open_gapps-x86-9.0-pico-20181024.zip"
+      "md5sum": "a0dfb54568642bfe703cfcf98f449812",
+      "url": "https://github.com/opengapps/x86/releases/download/20190209/open_gapps-x86-9.0-pico-20190209.zip"
     }
   },
   "2.13": {
     "4.4": {
-      "md5sum": "688f4748ccc17cb32212674cc5fc0d57",
-      "url": "https://github.com/opengapps/x86/releases/download/20170829/open_gapps-x86-4.4-pico-20170829.zip"
+      "md5sum": "6994a8cfd250f432ac3982ec5d4fa9c8",
+      "url": "https://github.com/opengapps/x86/releases/download/20190209/open_gapps-x86-4.4-pico-20190209.zip"
     },
     "5.0": {
-      "md5sum": "005a26a0c2e7628ac6ae054a038fe6b1",
-      "url": "https://github.com/opengapps/x86/releases/download/20170829/open_gapps-x86-5.0-pico-20170829.zip"
+      "md5sum": "d2a5228f1a6d9ed5f230c18b02c4ad5b",
+      "url": "https://github.com/opengapps/x86/releases/download/20190209/open_gapps-x86-5.0-pico-20190209.zip"
     },
     "5.1": {
-      "md5sum": "5c47a2f24a68438ed801b78dfde19fe9",
-      "url": "https://github.com/opengapps/x86/releases/download/20170829/open_gapps-x86-5.1-pico-20170829.zip"
+      "md5sum": "0d16b284ef23d8c76f8055c537a1a120",
+      "url": "https://github.com/opengapps/x86/releases/download/20190209/open_gapps-x86-5.1-pico-20190209.zip"
     },
     "6.0": {
-      "md5sum": "5ba545bfb4ab71014c02cc844fffec7c",
-      "url": "https://github.com/opengapps/x86/releases/download/20170829/open_gapps-x86-6.0-pico-20170829.zip"
+      "md5sum": "994f3a82eb98b45cc9f689111205947f",
+      "url": "https://github.com/opengapps/x86/releases/download/20190209/open_gapps-x86-6.0-pico-20190209.zip"
     },
     "7.0": {
-      "md5sum": "7358bc8959689fb12b827bf0b008878a",
-      "url": "https://github.com/opengapps/x86/releases/download/20170829/open_gapps-x86-7.0-pico-20170829.zip"
+      "md5sum": "5384159ba783ba9c5fffd1befeb25957",
+      "url": "https://github.com/opengapps/x86/releases/download/20190209/open_gapps-x86-7.0-pico-20190209.zip"
     },
     "7.1": {
-      "md5sum": "e18becfbffb012f1fbb5e018c05d7248",
-      "url": "https://github.com/opengapps/x86/releases/download/20170829/open_gapps-x86-7.1-pico-20170829.zip"
+      "md5sum": "c1b51adc82272a2d31eadf7bd2660471",
+      "url": "https://github.com/opengapps/x86/releases/download/20190209/open_gapps-x86-7.1-pico-20190209.zip"
     },
     "8.0": {
-      "md5sum": "a0bff6aadb2d494d4be101cf8fc0fb95",
-      "url": "https://github.com/opengapps/x86/releases/download/20180218/open_gapps-x86-8.0-pico-20180218.zip"
+      "md5sum": "a751f47368bb56071fd32851c1376459",
+      "url": "https://github.com/opengapps/x86/releases/download/20190209/open_gapps-x86-8.0-pico-20190209.zip"
     },
     "9.0": {
-      "md5sum": "ac94a965ea3ecb414a999d4dbf46565f",
-      "url": "https://github.com/opengapps/x86/releases/download/20181024/open_gapps-x86-9.0-pico-20181024.zip"
+      "md5sum": "a0dfb54568642bfe703cfcf98f449812",
+      "url": "https://github.com/opengapps/x86/releases/download/20190209/open_gapps-x86-9.0-pico-20190209.zip"
     }
   }
 }
