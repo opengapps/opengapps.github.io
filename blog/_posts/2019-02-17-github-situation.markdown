@@ -5,7 +5,7 @@ date:   2019-02-17
 author: nezorflame
 ---
 <div markdown='1'>
-![Pie]({{ site.blogimg }}pie_logo.png)
+![Github]({{ site.blogimg }}github.png)
 </div>
 Hello everyone!
 
