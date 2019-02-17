@@ -8,43 +8,42 @@ author: nezorflame
 ![Github]({{ site.blogimg }}github.png)
 </div>
 Hello everyone!
-
 My name is Ilya Danilkin aka [@nezorflame]. You may know me from my work on the unofficial Oreo/Pie OpenGApps builds at XDA and the support group in Telegram.
 
 On the behalf of the OpenGApps team I'd like to explain the recent problems with our website being unable to serve downloads and the takedown of our application repos at Github.
 
-## The project structure
+### The project structure
 
 To understand the problem, first we should take a look at how the OpenGApps are structured and built.
 We have multiple repos hosted on Github at <https://github.com/opengapps> which are being used by the buildserver to automatically produce the builds.
 
 The current structure consists of two parts: script repository and the APK repositories.
 
-### Script repository ([/opengapps])
+#### Script repository ([/opengapps])
 
 This is the main repo with all the scripts needed to compile an OpenGApps flashable package.
 At the [/sources](https://github.com/opengapps/opengapps/tree/master/sources) folder we have 5 subrepos which are being pulled before the build, thus downloading the necessary APKs for the preferred architecture (let's call those subrepos as **APK repos**).
 E.g. to build an ARM64 package, we'd need [/all], [/arm] and [/arm64] repos as some of the apps don't have 64-bit version yet.
 
-### APK repositories ([/all], [/arm], [/arm64], [/x86] and [/x86_64])
+#### APK repositories ([/all], [/arm], [/arm64], [/x86] and [/x86_64])
 
 These are the repositories which are holding all the required APKs. They are being automatically extracted from the Google Pixel [factory images](https://developers.google.com/android/ota) every time they get updated.
 
 These repos are huge in size:
 
-- **all**   :   4.99 GB
-- **arm**   : 147.47 GB
-- **arm64** :  93.81 GB
-- **x86**   :  67.17 GB
-- **x86_64**:  26.61 GB
+- **all**: 4.99 GB
+- **arm**: 147.47 GB
+- **arm64**: 93.81 GB
+- **x86**: 67.17 GB
+- **x86_64**: 26.61 GB
 
-## The problem
+### The problem
 
 Last week (starting February 10th) Github has closed all our APK repos on the account of breaking the [ToS](https://help.github.com/articles/github-terms-of-service/). Namely, the paragraph *C. Acceptable Use* at *4. Services Usage Limits* part. Turns out, they weren't happy with us storing all these big APK files inside of the repositories.
 
 To put it simply:
 
-- it's OK to have a lot of big files at the [Releases] section so that you can host stuff;
+- it's OK to have a lot of big files at the **Releases** section so that you can host stuff;
 - but it's not OK to have big files stored at the repository itself, since Git has poor performance and other issues when the repo gets big.
 
 After [@mfonville] and [@nicholasbuse] had some discussion with the Github support, the result was as follows:
@@ -63,7 +62,7 @@ We had multiple options to choose from, including, but not limited to:
 - hosting the Git repos ourselves (saves us from the ToS nonsense, but leaves us with the hosting problem and the increased costs);
 - restructuring the whole APK repository system, like extracting all the APKs to their own subrepos (this may still happen in the future, but it requires a lot of work which we currently don't have the time for).
 
-## The solution
+### The solution
 
 For now we've decided to pick the second option, as in to self-host our APK repos with [GitLab Community Edition](https://about.gitlab.com/is-it-any-good/).
 
@@ -84,7 +83,7 @@ Here's the current situation:
 - Our main [/opengapps] repo will still be hosted at Github since we've confirmed that it's not a problem to have it there, and we'll update it very soon to use the new addresses for our APK repos.
 - All OpenGApps releases will still be hosted at Github [Releases] page, at least until [@mfonville] will be able to upgrade the buildserver and the website to use something else for the filestorage (and we have an actual filestorage to begin with). We know that it's slow and sometimes problematic, but we ask you to bear with us for now.
 
-## Epilogue
+### Epilogue
 
 So, this concludes the story of how Github decided to close our repositories.
 I'd like to mention that even though our main project maintainers have a very little time to contribute to it right now, we're still positive on the future of the OpenGApps.
