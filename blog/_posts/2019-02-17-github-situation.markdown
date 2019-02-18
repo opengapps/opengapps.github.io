@@ -46,7 +46,7 @@ To put it simply:
 - it's OK to have a lot of big files at the **Releases** section so that you can host stuff;
 - but it's not OK to have big files stored at the repository itself, since Git has poor performance and other issues when the repo gets big.
 
-After [@mfonville] and [@nicholasbuse] had some discussion with the Github support, the result was as follows:
+We are thankful to Github for hosting us for so long, and even though the repositories were big for a long time already, support representatives were still constructively looking into our problem for possible solutions. After the discussion with [@mfonville] and [@nicholasbuse], they've agreed to the next conditions:
 
 - we shouldn't use these repos to store the APKs the way we did anymore;
 - we should shrink the size of the repos, including the commit history;
@@ -54,7 +54,7 @@ After [@mfonville] and [@nicholasbuse] had some discussion with the Github suppo
 - we still can store the OpenGApps builds in the [Releases] section of our repos (not in the APK repos though since it's not yet clear whether they'll be removed or not);
 - the access will be restored for a week to enable us to do maintenance and to solve the problem once and for all.
 
-It was pretty clear that we had to act in order to solve the problem and to restore out infrastructure to continue the builds.
+It was clear that we had to act in order to solve the problem and to restore our infrastructure to continue the builds.
 
 We had multiple options to choose from, including, but not limited to:
 
@@ -70,9 +70,9 @@ This gives us three main benefits:
 
 1. It allows to use the same infrastructure for the buildserver, which will only require to redirect the scripts in the [/opengapps] repo to the new Git remotes, hence saving the time;
 2. We can have better control over the content overall;
-3. We can restructure the project later on our terms, with possibly moving away from Github completely and using some filestorage solution to host the releases (e.g. [Amazon AWS S3](https://aws.amazon.com/s3/) / [DigitalOcean Spaces](https://www.digitalocean.com/products/spaces/) to speed up the traffic and ease the load).
+3. We can still restructure the project later, in a manner that doesn't overload the git-architecture and stays within the ToS of GitHub or using some filestorage solution to host the releases (e.g. [Amazon AWS S3](https://aws.amazon.com/s3/) / [DigitalOcean Spaces](https://www.digitalocean.com/products/spaces/)) to speed up the traffic and ease the server load.
 
-Thanks to the hosting which we're now using (btw, big shoutout for [Hetzner](https://www.hetzner.com/), they have really good servers with decent pricing and support), we were able us to accomplish this task without any serious issues.
+Thanks to the hosting which we're now using (BTW, big shoutout for [Hetzner](https://www.hetzner.com/), they have really good servers with decent pricing and support), we were able us to accomplish this task without any serious issues.
 
 Here's the current situation:
 
