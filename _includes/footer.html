@@ -1,12 +1,17 @@
- <footer class="mdl-mini-footer">
+<footer class="mdl-mini-footer">
   <div class="mdl-mini-footer__left-section">
-  <div class="mdl-logo">Copyright © 2015-{{site.time|date: '%Y'}} <a href="https://github.com/orgs/opengapps/people">The Open GApps Team</a>
-  <div class="mdl-typography--caption-color-contrast" style="white-space: nowrap">Android is a trademark of Google Inc</div></div></div>
+    <div class="mdl-logo">Copyright © 2015-{{site.time|date: '%Y'}} <a
+        href="https://github.com/orgs/opengapps/people">The Open GApps Team</a>
+      <div class="mdl-typography--caption-color-contrast" style="white-space: nowrap">Android is a trademark of Google
+        Inc</div>
+    </div>
+  </div>
   <div class="mdl-mini-footer__right-section">
-  {% for navitem in site.data.nav.footerlinks %}
-  <a id="{{navitem.id}}" href="{{navitem.link}}"><button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored">
-  <i>{{navitem.customicon}}</i>
-  </button></a>
-  {% endfor %}
+    {% for navitem in site.data.nav.footerlinks %}
+    <a id="{{navitem.id}}" href="{{navitem.link}}"><button
+        class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored">
+        <i>{{navitem.customicon}}</i>
+      </button></a>
+    {% endfor %}
   </div>
 </footer>

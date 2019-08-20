@@ -12,11 +12,11 @@ nav1:
     long_name: Source on <strong>GitHub</strong>
     link: https://github.com/opengapps/opengapps
     icon: code
+  - name: SourceForge
+    long_name: Hosted on <strong>SourceForge</strong>
+    link: https://sourceforge.net/projects/opengapps/files/
+    icon: folder
 nav2:
-  - name: Get App
-    long_name: Download our <strong>App</strong>
-    link: /app
-    icon: get_app
   - name: Blog
     long_name: Open GApps <strong>Blog</strong>
     link: /blog
@@ -55,8 +55,3 @@ footerlinks:
     link: https://www.youtube.com/c/OpengappsOrg
     customicon: '<svg style="width:24px;height:24px" viewBox="0 0 24 24"><path fill="currentColor" d="M10,16.5V7.5L16,12M20,4.4C19.4,4.2 15.7,4 12,4C8.3,4 4.6,4.19 4,4.38C2.44,4.9 2,8.4 2,12C2,15.59 2.44,19.1 4,19.61C4.6,19.81 8.3,20 12,20C15.7,20 19.4,19.81 20,19.61C21.56,19.1 22,15.59 22,12C22,8.4 21.56,4.91 20,4.4Z" /></svg>'
     color: "#bb0000"
-  - name: PlayStore
-    id: playstorelink
-    link: https://play.google.com/store/apps/details?id=org.opengapps.app&hl=en&referrer=utm_source%3Dopengapps%26utm_medium%3Dfooterlink
-    customicon: '<svg style="width:24px;height:24px" viewBox="0 0 24 24"><path fill="currentColor" d="M3,20.5V3.5C3,2.91 3.34,2.39 3.84,2.15L13.69,12L3.84,21.85C3.34,21.6 3,21.09 3,20.5M16.81,15.12L6.05,21.34L14.54,12.85L16.81,15.12M20.16,10.81C20.5,11.08 20.75,11.5 20.75,12C20.75,12.5 20.53,12.9 20.18,13.18L17.89,14.5L15.39,12L17.89,9.5L20.16,10.81M6.05,2.66L16.81,8.88L14.54,11.15L6.05,2.66Z" /></svg>'
-    color: "#0f9d58"
