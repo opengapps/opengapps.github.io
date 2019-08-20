@@ -17,8 +17,6 @@ common:
     info: Open GApps Blog
   - tag: facebooklink
     info: Open GApps on Facebook
-  - tag: googlepluslink
-    info: Open GApps on Google+
   - tag: twitterlink
     info: Open GApps on Twitter
   - tag: youtubelink
