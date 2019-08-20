@@ -2,10 +2,14 @@
 layout: home
 ---
 <main id="content" class="mdl-layout__content">
-<section class="mdl-layout__tab-panel is-active" id="downloadsection">{% include download.html %}</section>
-<section class="mdl-layout__tab-panel mdsection" id="supportsection">{% capture support %}{% include support.md %}{% endcapture %}{{support | markdownify}}</section>
-<section class="mdl-layout__tab-panel mdsection" id="aboutsection">{% capture about %}{% include about.md %}{% endcapture %}{{about | markdownify}}</section>
-{% include footer.html %}
+    <section class="mdl-layout__tab-panel is-active" id="downloadsection">{% include download.html %}</section>
+    <section class="mdl-layout__tab-panel mdsection" id="supportsection">
+        {% capture support %}{% include support.md %}{% endcapture %}{{support | markdownify}}</section>
+    <section class="mdl-layout__tab-panel mdsection" id="aboutsection">
+        {% capture about %}{% include about.md %}{% endcapture %}{{about | markdownify}}</section>
+    {% include footer.html %}
 </main>
-{% for tooltip in site.data.tooltips.common %}<span class="mdl-tooltip mdl-tooltip--large" for="{{tooltip.tag}}">{{tooltip.info}}</span>{% endfor %}
-{% for tooltip in site.data.tooltips.home %}<span class="mdl-tooltip mdl-tooltip--large" for="{{tooltip.tag}}">{{tooltip.info}}</span>{% endfor %}
+{% for tooltip in site.data.tooltips.common %}<span class="mdl-tooltip mdl-tooltip--large"
+    for="{{tooltip.tag}}">{{tooltip.info}}</span>{% endfor %}
+{% for tooltip in site.data.tooltips.home %}<span class="mdl-tooltip mdl-tooltip--large"
+    for="{{tooltip.tag}}">{{tooltip.info}}</span>{% endfor %}

@@ -5,14 +5,14 @@ common:
     info: Support by Donation
   - tag: githublink
     info: Source on GitHub
+  - tag: sourceforgelink
+    info: Hosted on SourceForge
   - tag: xdalink
     info: Community on XDA Forum
   - tag: wikilink
     info: Manual on Wiki
   - tag: pushbulletlink
     info: Follow via Pushbullet
-  - tag: applink
-    info: Download Open GApps App
   - tag: bloglink
     info: Open GApps Blog
   - tag: facebooklink
@@ -21,8 +21,6 @@ common:
     info: Open GApps on Twitter
   - tag: youtubelink
     info: Open GApps on YouTube
-  - tag: playstorelink
-    info: Open GApps App
   - tag: adlabelheader
     info: Ads help us to keep OpenGApps.org packages free
   - tag: adlabelfooter
@@ -66,19 +64,21 @@ home:
   - tag: lfull
     info: Very similar to <em>stock</em>, but does not replace non-Google stock-applications
   - tag: lmini
-    info: 'Smaller set of Google Apps: the most popular applications plus extra functionality that is not available from the Play Store'
+    info: "Smaller set of Google Apps: the most popular applications plus extra functionality that is not available from the Play Store"
   - tag: lmicro
-    info: 'Limited set of Google Apps: Gmail, Calendar, Google Now plus extra functionality that is not available from the Play Store'
+    info: "Limited set of Google Apps: Gmail, Calendar, Google Now plus extra functionality that is not available from the Play Store"
   - tag: lnano
     info: Minimal installation, but including the extra functionality that is not available from the Play Store
   - tag: lpico
     info: The bare minimum to get Google Play functionality
   - tag: ltvstock
     info: Package for Android TV devices, includes all Google Apps that come standard on the latest Nexus Player
-  - tag: github-latest
-    info: Date and size of the latest release of the selected package
+  - tag: package-latest
+    info: Date of the latest release of the selected package
   - tag: bdownload
     info: Download selected Open GApps package
+  - tag: bmirrors
+    info: SourceForge mirrors for the selected package
   - tag: bversion
     info: Buildlog with version information of the applications and libraries used during the creation of the selected package
   - tag: bmd5
