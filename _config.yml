@@ -57,7 +57,3 @@ support:
 # SASS
 sass:
   style: compressed
-
-webrick:
-  headers:
-    Access-Control-Allow-Origin: "*"

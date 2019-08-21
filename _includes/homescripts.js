@@ -115,14 +115,34 @@ function setCookie(key, value, days) {
             d.toUTCString();
 }
 var isApp = getUrlParam('app') === 'true';
-function redirectToFile(eventCategory, eventLabel, filename) {
+function redirectToFile(eventCategory, eventLabel) {
     gaEvent(eventCategory, 'download', eventLabel, function () {
-        location.assign('https://github.com/opengapps/' +
-                arch +
-                '/releases/download/' +
-                packages[arch].dateTag +
-                '/' +
-                filename);
+        var fileLink = ''
+        switch (eventCategory) {
+            case 'GApps':
+                fileLink = packages[arch]
+                    .apis[api][variant]
+                    .zip;
+                break;
+            case 'MD5':
+                fileLink = packages[arch]
+                    .apis[api][variant]
+                    .zip_md5;
+                break;
+            case 'Version':
+                fileLink = packages[arch]
+                    .apis[api][variant]
+                    .version_info;
+                break;
+            case 'Report':
+                fileLink = packages[arch]
+                    .apis[api][variant]
+                    .source_report;
+                break;
+            default:
+                return;
+        }
+        location.assign(fileLink);
     }, 1000);
 }
 function redirectToUrl(targetUrl) {
@@ -143,15 +163,7 @@ function downloadSubmit() {
                 '-' +
                 api +
                 '-' +
-                variant, 'open_gapps-' +
-                arch +
-                '-' +
-                api +
-                '-' +
-                variant +
-                '-' +
-                packages[arch].dateTag +
-                '.zip');
+                variant);
     }
 }
 function mirrorsSubmit() {
@@ -180,15 +192,7 @@ function versionSubmit() {
                 '-' +
                 api +
                 '-' +
-                variant, 'open_gapps-' +
-                arch +
-                '-' +
-                api +
-                '-' +
-                variant +
-                '-' +
-                packages[arch].dateTag +
-                '.versionlog.txt');
+                variant);
     }
 }
 function md5Submit() {
@@ -198,15 +202,7 @@ function md5Submit() {
                 '-' +
                 api +
                 '-' +
-                variant, 'open_gapps-' +
-                arch +
-                '-' +
-                api +
-                '-' +
-                variant +
-                '-' +
-                packages[arch].dateTag +
-                '.zip.md5');
+                variant);
     }
 }
 function reportSubmit() {
@@ -214,13 +210,7 @@ function reportSubmit() {
     if (v === 'variant' || v === 'ok') {
         redirectToFile('Report', arch +
                 '-' +
-                api, 'sources_report-' +
-                arch +
-                '-' +
-                api +
-                '-' +
-                packages[arch].dateTag +
-                '.txt');
+                api);
     }
 }
 function olderSubmit() {
@@ -451,8 +441,12 @@ function queryRelease() {
                         .apis[pkgApi]
                         .variants[iVariant];
                     packages[arch].apis[pkgApi][pkgVariant.name] = {
-                        'size': Math.round(pkgVariant.size / 1024 / 1024 * 100) / 100 +
-                                ' MiB'
+                        'zip': pkgVariant.zip,
+                        'zip_size': Math.round(pkgVariant.zip_size / 1024 / 1024 * 100) / 100 +
+                                ' MiB',
+                        'md5': pkgVariant.md5,
+                        'version_info': pkgVariant.version_info,
+                        'source_report': pkgVariant.source_report
                     };
                 }
             }
@@ -636,7 +630,6 @@ document.addEventListener('DOMContentLoaded', function () {
             case 'api':
             case 'variant':
                 input.addEventListener('change', updateButtons);
-                // input.addEventListener('change', queryPackage);
                 break;
         }
     }
