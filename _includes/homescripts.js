@@ -387,11 +387,7 @@ function updateButtons() {
         info.innerHTML = '<span class="mdl-typography--subhead-color-contrast">Select a variant</span>';
     } else {
         info.innerHTML = '<span class="mdl-typography--headline">' +
-                packages[arch].day +
-                ' ' +
-                packages[arch].month +
-                ' ' +
-                packages[arch].year;
+                packages[arch].dateHuman;
     }
     ch.upgradeDom();
     var hasApi = function (a) {
@@ -427,35 +423,37 @@ function queryRelease() {
             arch = el.value;
         });
     storage.setItem('arch', arch);
-    delete packages[arch];
+    delete packages;
     updateButtons();
     var httpRequest = new XMLHttpRequest();
     httpRequest.onreadystatechange = function () {
         if (httpRequest.readyState === XMLHttpRequest.DONE && httpRequest.status === 200) {
             var data = JSON.parse(httpRequest.responseText);
-            for (var api in data.archs.arch.apis) {
-                console.log(api)
-            }
-            var releaseName = data
-                .name
-                .split(' ');
-            packages[releaseName.shift()] = {
+            packages[arch] = {
                 'apis': {},
-                'dateTag': data.tag_name,
-                'year': releaseName.pop(),
-                'month': releaseName.pop(),
-                'day': releaseName.pop()
+                'dateTag': data
+                    .archs[arch]
+                    .date,
+                'dateHuman': data
+                    .archs[arch]
+                    .human_date
             };
-            for (var i = 0; i < data.assets.length; i++) {
-                var asset = data.assets[i];
-                if (asset.name.substr(asset.name.length - 4, 4) !== '.zip') {
-                    continue;
+            for (var pkgApi in data.archs[arch].apis) {
+                if (pkgApi === 'each') {
+                    continue
                 }
-                var assetName = asset
-                    .name
-                    .split('-');
-                if (packages[assetName[1]].apis[assetName[2]] === undefined) {
-                    packages[assetName[1]].apis[assetName[2]] = {};
+                if (packages[arch].apis[pkgApi] === undefined) {
+                    packages[arch].apis[pkgApi] = {};
+                }
+                for (var iVariant = 0; iVariant < data.archs[arch].apis[pkgApi].variants.length; iVariant++) {
+                    var pkgVariant = data
+                        .archs[arch]
+                        .apis[pkgApi]
+                        .variants[iVariant];
+                    packages[arch].apis[pkgApi][pkgVariant.name] = {
+                        'size': Math.round(pkgVariant.size / 1024 / 1024 * 100) / 100 +
+                                ' MiB'
+                    };
                 }
             }
             updateButtons();
@@ -465,8 +463,7 @@ function queryRelease() {
             }
         }
     };
-    httpRequest.open('GET', 'https://api.opengapps.org/list');
-    httpRequest.setRequestHeader('Access-Control-Allow-Origin', '*');
+    httpRequest.open('GET', 'http://127.0.0.1:8080/list');
     try {
         httpRequest.send();
     } catch (e) {}
@@ -639,7 +636,7 @@ document.addEventListener('DOMContentLoaded', function () {
             case 'api':
             case 'variant':
                 input.addEventListener('change', updateButtons);
-                input.addEventListener('change', queryPackage);
+                // input.addEventListener('change', queryPackage);
                 break;
         }
     }
