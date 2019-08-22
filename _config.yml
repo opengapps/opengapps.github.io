@@ -57,3 +57,7 @@ support:
 # SASS
 sass:
   style: compressed
+
+webrick:
+  headers:
+    Referrer-Policy: "no-referrer"
