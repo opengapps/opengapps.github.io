@@ -457,7 +457,7 @@ function queryRelease() {
             }
         }
     };
-    httpRequest.open('GET', 'http://127.0.0.1:8080/list');
+    httpRequest.open('GET', 'https://api.opengapps.org/list');
     try {
         httpRequest.send();
     } catch (e) {}
