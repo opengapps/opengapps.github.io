@@ -8,3 +8,5 @@ _site/
 *.bak
 *~
 *.c9/
+.DS_Store
+.vscode
