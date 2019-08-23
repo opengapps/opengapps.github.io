@@ -127,7 +127,7 @@ function redirectToFile(eventCategory, eventLabel) {
             case 'MD5':
                 fileLink = packages[arch]
                     .apis[api][variant]
-                    .zip_md5;
+                    .md5;
                 break;
             case 'Version':
                 fileLink = packages[arch]
