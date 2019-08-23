@@ -117,33 +117,40 @@ function setCookie(key, value, days) {
 var isApp = getUrlParam('app') === 'true';
 function redirectToFile(eventCategory, eventLabel) {
     gaEvent(eventCategory, 'download', eventLabel, function () {
-        var fileLink = ''
+        var baselink = ''
         switch (eventCategory) {
             case 'GApps':
-                fileLink = packages[arch]
+                baselink = packages[arch]
                     .apis[api][variant]
                     .zip;
                 break;
             case 'MD5':
-                fileLink = packages[arch]
+                baselink = packages[arch]
                     .apis[api][variant]
                     .md5;
                 break;
             case 'Version':
-                fileLink = packages[arch]
+                baselink = packages[arch]
                     .apis[api][variant]
                     .version_info;
                 break;
             case 'Report':
-                fileLink = packages[arch]
+                baselink = packages[arch]
                     .apis[api][variant]
                     .source_report;
                 break;
             default:
                 return;
         }
-        location.assign(fileLink);
+        location.assign(getDownloadLink(baselink));
     }, 1000);
+}
+const getDownloadLink = (baselink) => {
+    return `${baselink}?r=&ts=${getTimestamp()}&use_mirror=autoselect`
+}
+function getTimestamp() {
+    var d = new Date();
+    return Math.floor(d.getTime() / 1000)
 }
 function redirectToUrl(targetUrl) {
     gaEventOutbound(targetUrl, function () {
@@ -605,7 +612,9 @@ document.addEventListener('DOMContentLoaded', function () {
     var meta = document.createElement('meta');
     meta.name = "referrer";
     meta.content = "no-referrer";
-    document.getElementsByTagName('head')[0].appendChild(meta);
+    document
+        .getElementsByTagName('head')[0]
+        .appendChild(meta);
     document
         .getElementById('bdownload')
         .addEventListener('click', downloadSubmit);
