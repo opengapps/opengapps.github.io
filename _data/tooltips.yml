@@ -53,6 +53,8 @@ home:
     info: <em>8.1</em> requires a patched ROM for proper WebView support
   - tag: l9.0
     info: <em>9.0</em> requires a patched ROM for proper WebView support
+  - tag: l10.0
+    info: <em>10.0</em> requires a patched ROM for proper WebView support
   - tag: tvariant
     info: Package Variant; The set of applications differs per variant, <em>click for a comparison-table</em>
   - tag: laroma
