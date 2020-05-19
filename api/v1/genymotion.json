@@ -189,6 +189,10 @@
       "md5sum": "4de19f3dd70750b43e05bd4054331f67",
       "url": "https://master.dl.sourceforge.net/project/opengapps/x86/20200325/open_gapps-x86-8.1-pico-20200325.zip"
     },
+    "9.0": {
+      "md5sum": "eac4b6b7dec751970a4f6e9d0d3894c6",
+      "url": "https://master.dl.sourceforge.net/project/opengapps/x86/20200519/open_gapps-x86-9.0-pico-20200519.zip"
+    },
     "10.0": {
       "md5sum": "99dcd4078ddc1af2f0b530a7f045d2a6",
       "url": "https://master.dl.sourceforge.net/project/opengapps/x86/20200325/open_gapps-x86-10.0-pico-20200325.zip"
