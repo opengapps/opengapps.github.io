@@ -197,5 +197,47 @@
       "md5sum": "99dcd4078ddc1af2f0b530a7f045d2a6",
       "url": "https://master.dl.sourceforge.net/project/opengapps/x86/20200325/open_gapps-x86-10.0-pico-20200325.zip"
     }
+  },
+  "2.16": {
+    "4.4": {
+      "md5sum": "cc7437ae3448ecccd41105666df1f087",
+      "url": "https://master.dl.sourceforge.net/project/opengapps/x86/20200605/open_gapps-x86-4.4-pico-20200605.zip"
+    },
+    "5.0": {
+      "md5sum": "d33e12142de8b42c9273b1541907f904",
+      "url": "https://master.dl.sourceforge.net/project/opengapps/x86/20200605/open_gapps-x86-5.0-pico-20200605.zip"
+    },
+    "5.1": {
+      "md5sum": "07cd8bca7981855a53a773e1dc01a9b5",
+      "url": "https://master.dl.sourceforge.net/project/opengapps/x86/20200605/open_gapps-x86-5.1-pico-20200605.zip"
+    },
+    "6.0": {
+      "md5sum": "ae70914245b4614e16fb4eab95604363",
+      "url": "https://master.dl.sourceforge.net/project/opengapps/x86/20200605/open_gapps-x86-6.0-pico-20200605.zip"
+    },
+    "7.0": {
+      "md5sum": "d1e76fd5f4e85b1299fe272082226d94",
+      "url": "https://master.dl.sourceforge.net/project/opengapps/x86/20200605/open_gapps-x86-7.0-pico-20200605.zip"
+    },
+    "7.1": {
+      "md5sum": "d47e8cedd6568717dbad137799c6c60d",
+      "url": "https://master.dl.sourceforge.net/project/opengapps/x86/20200605/open_gapps-x86-7.1-pico-20200605.zip"
+    },
+    "8.0": {
+      "md5sum": "00e7b3ebaf276151858215a61af33122",
+      "url": "https://master.dl.sourceforge.net/project/opengapps/x86/20200605/open_gapps-x86-8.0-pico-20200605.zip"
+    },
+    "8.1": {
+      "md5sum": "edd1a72a4c3711bf056459a948c259be",
+      "url": "https://master.dl.sourceforge.net/project/opengapps/x86/20200605/open_gapps-x86-8.1-pico-20200605.zip"
+    },
+    "9.0": {
+      "md5sum": "8d001238b1da5011714280cf52eafd67",
+      "url": "https://master.dl.sourceforge.net/project/opengapps/x86/20200605/open_gapps-x86-9.0-pico-20200605.zip"
+    },
+    "10.0": {
+      "md5sum": "4559aa6f33be6c45cb235ffd3af4891c",
+      "url": "https://master.dl.sourceforge.net/project/opengapps/x86/20200605/open_gapps-x86-10.0-pico-20200605.zip"
+    }
   }
 }
