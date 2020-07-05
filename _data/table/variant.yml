@@ -17,3 +17,5 @@
   url: /Pico-Package
 - name: tvstock
   url: /TVStock-Package
+- name: tvmini
+  url: /TVMini-Package

@@ -1,8 +1,8 @@
 - name: "10.0"
   url: "/Notes-for-Android-10.x"
+  checked: true
 - name: "9.0"
   url: "/Notes-for-Android-9.x"
-  checked: true
 - name: "8.1"
   url: "/Notes-for-Android-8.x"
 - name: "8.0"
