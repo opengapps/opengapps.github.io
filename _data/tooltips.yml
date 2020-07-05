@@ -75,6 +75,8 @@ home:
     info: The bare minimum to get Google Play functionality
   - tag: ltvstock
     info: Package for Android TV devices, includes all Google Apps that come standard on the latest Nexus Player
+  - tag: ltvmini
+    info: Smaller set of Google Apps for Android TV devices, similar to what <em>mini</em> has compared to the <em>stock</em> variant
   - tag: package-latest
     info: Date of the latest release of the selected package
   - tag: bdownload

@@ -2,7 +2,7 @@
 url: https://opengapps.org
 title: The Open GApps Project
 description: OpenGApps.org offers information and pre-built packages of The Open GApps Project. The Open GApps Project is an open-source effort to script the automatic generation of up-to-date Google Apps packages. All Android versions and platforms supported.
-keywords: open gapps, opengapps, gapps, android, daily, arm, arm64, x86, x86_64, 4.4, 5.0, 5.1, 6.0, 7.0, 7.1, 8.0, 8.1, 9.0, 10.0, kitkat, lollipop, marshmallow, nougat, oreo, pie, q, ten, aroma, super, stock, full, mini, micro, nano, pico, tvstock
+keywords: open gapps, opengapps, gapps, android, daily, arm, arm64, x86, x86_64, 4.4, 5.0, 5.1, 6.0, 7.0, 7.1, 8.0, 8.1, 9.0, 10.0, kitkat, lollipop, marshmallow, nougat, oreo, pie, q, ten, aroma, super, stock, full, mini, micro, nano, pico, tvstock, tvmini
 timezone: Europe/Amsterdam
 
 # App settings
