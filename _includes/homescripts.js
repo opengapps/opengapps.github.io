@@ -142,16 +142,26 @@ function redirectToFile(eventCategory, eventLabel) {
             default:
                 return;
         }
-        location.assign(getDownloadLink(baselink));
+        backgroundDownloader(getDownloadLink(baselink));
     }, 1000);
 }
-const getDownloadLink = (baselink) => {
-    return `${baselink}?r=&ts=${getTimestamp()}&use_mirror=autoselect`
+function getDownloadLink(baselink) {
+    return baselink + "?r=&ts=" + getTimestamp() + "&use_mirror=autoselect";
 }
 function getTimestamp() {
     var d = new Date();
     return Math.floor(d.getTime() / 1000)
 }
+
+function backgroundDownloader(url) {
+    const frame = document.createElement("frame");
+    const body = document.querySelector("body");
+    frame.src = url
+    frame.style.display = "none";
+
+    body.appendChild(frame)
+}
+
 function redirectToUrl(targetUrl) {
     gaEventOutbound(targetUrl, function () {
         var d = true;
