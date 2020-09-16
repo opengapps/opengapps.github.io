@@ -1,0 +1,9 @@
+{
+  "version": "1.0",
+  "2.16": {
+    "8.0": {
+      "md5sum": "41de5947d53c824edeec2dfc49a30b75",
+      "url": "https://master.dl.sourceforge.net/project/opengapps/arm64/20200705/open_gapps-arm64-8.0-pico-20200705.zip"
+    }
+  }
+}
