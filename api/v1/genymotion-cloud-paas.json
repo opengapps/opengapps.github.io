@@ -28,32 +28,32 @@
   },
   "2.15": {
     "5.1": {
-      "md5sum": "1bbff18881145da8e3c86cd2b2043cfa",
-      "url": "https://master.dl.sourceforge.net/project/opengapps/x86_64/20200507/open_gapps-x86_64-5.1-pico-20200507.zip"
+      "md5sum": "ca8193d22d52532bffa223dab12b30a9",
+      "url": "https://master.dl.sourceforge.net/project/opengapps/x86_64/20201008/open_gapps-x86_64-5.1-pico-20201008.zip"
     },
     "6.0": {
-      "md5sum": "d9fafde27654e2bba49d89a64177fbdd",
-      "url": "https://master.dl.sourceforge.net/project/opengapps/x86_64/20200507/open_gapps-x86_64-6.0-pico-20200507.zip"
+      "md5sum": "53aaed7421071679ffd95b34c897a7be",
+      "url": "https://master.dl.sourceforge.net/project/opengapps/x86_64/20201008/open_gapps-x86_64-6.0-pico-20201008.zip"
     },
     "7.0": {
-      "md5sum": "6ab72064c944fa0643600d2c71857850",
-      "url": "https://master.dl.sourceforge.net/project/opengapps/x86_64/20200507/open_gapps-x86_64-7.0-pico-20200507.zip"
+      "md5sum": "d4ff26ef16230dd0bcb890c0bb72090b",
+      "url": "https://master.dl.sourceforge.net/project/opengapps/x86_64/20201008/open_gapps-x86_64-7.0-pico-20201008.zip"
     },
     "8.0": {
-      "md5sum": "57abe2d016e452259eb4f35421a97c49",
-      "url": "https://master.dl.sourceforge.net/project/opengapps/x86_64/20200507/open_gapps-x86_64-8.0-pico-20200507.zip"
+      "md5sum": "7153119dbd4a90cb7931bfedf72368be",
+      "url": "https://master.dl.sourceforge.net/project/opengapps/x86_64/20200630/open_gapps-x86_64-8.0-pico-20200630.zip"
     },
     "8.1": {
-      "md5sum": "54b7bb00a576bd21d587cd848e32bcd4",
-      "url": "https://master.dl.sourceforge.net/project/opengapps/x86_64/20200507/open_gapps-x86_64-8.1-pico-20200507.zip"
+      "md5sum": "5c985d7515c95c6a7c86460fe819e6dc",
+      "url": "https://master.dl.sourceforge.net/project/opengapps/x86_64/20200630/open_gapps-x86_64-8.1-pico-20200630.zip"
     },
     "9.0": {
-      "md5sum": "37953e32bf791c988d2efdba2e6b4658",
-      "url": "https://master.dl.sourceforge.net/project/opengapps/x86_64/20200507/open_gapps-x86_64-9.0-pico-20200507.zip"
+      "md5sum": "5994796ea89bd699212e745f469517cf",
+      "url": "https://master.dl.sourceforge.net/project/opengapps/x86_64/20201008/open_gapps-x86_64-9.0-pico-20201008.zip"
     },
     "10.0": {
-      "md5sum": "59992e54d09e65bcef99dd67fb4e3921",
-      "url": "https://master.dl.sourceforge.net/project/opengapps/x86_64/20200507/open_gapps-x86_64-10.0-pico-20200507.zip"
+      "md5sum": "9723bd3cb5b67beff93ba08698fd35e7",
+      "url": "https://master.dl.sourceforge.net/project/opengapps/x86_64/20201008/open_gapps-x86_64-10.0-pico-20201008.zip"
     }
   }
 }
