@@ -5,5 +5,11 @@
       "md5sum": "41de5947d53c824edeec2dfc49a30b75",
       "url": "https://master.dl.sourceforge.net/project/opengapps/arm64/20200705/open_gapps-arm64-8.0-pico-20200705.zip"
     }
+  },
+  "2.17": {
+    "8.0": {
+      "md5sum": "1beda51881db6a377485e0304f28752e",
+      "url": "https://master.dl.sourceforge.net/project/opengapps/arm64/20201218/open_gapps-arm64-8.0-pico-20201218.zip"
+    }
   }
 }
