@@ -2,7 +2,7 @@ The Open GApps Project is an open-source effort to script the automatic generati
 
 Some highlights about the characteristics of the Open GApps packages:
 
-- All platforms and and all Android versions are supported
+- All platforms and all Android versions are supported
 - DPI-optimized support for **all** Google packages (unlike other GApps)
 - Frequently updated {{site.ga}}: The pre-built {{site.org}} packages are updated every (European) night (if there are any updated {{site.ga}} available)
 - Strong compression, allowing for relatively small downloads of even the most complete packages
