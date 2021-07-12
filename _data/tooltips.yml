@@ -55,6 +55,8 @@ home:
     info: <em>9.0</em> requires a patched ROM for proper WebView support
   - tag: l10.0
     info: <em>10.0</em> has still some minor issues
+  - tag: l11.0
+    info: <em>11.0</em> only has pico and nano
   - tag: tvariant
     info: Package Variant; The set of applications differs per variant, <em>click for a comparison-table</em>
   - tag: laroma
