@@ -57,3 +57,7 @@ window.paypal = function paypal() {
         .submit();
     return false;
 };
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-HFHRSW028R');
