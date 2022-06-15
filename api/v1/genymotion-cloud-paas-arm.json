@@ -49,5 +49,27 @@
       "md5sum": "f7f799902e1bf938d49902e18789002c",
       "url": "https://master.dl.sourceforge.net/project/opengapps/arm64/20210924/open_gapps-arm64-11.0-pico-20210924.zip"
     }
+  },
+  "3.0": {
+    "7.0": {
+      "md5sum": "f1f4a9a55e775b6995f25f4d78f000f4",
+      "url": "https://master.dl.sourceforge.net/project/opengapps/arm64/20220215/open_gapps-arm64-7.0-pico-20220215.zip"
+    },
+    "8.0": {
+      "md5sum": "4b8023befcbd7eec9ea1d21c63e40263",
+      "url": "https://master.dl.sourceforge.net/project/opengapps/arm64/20220215/open_gapps-arm64-8.0-pico-20220215.zip"
+    },
+    "9.0": {
+      "md5sum": "441df1beae32a860313864f262cd58cb",
+      "url": "https://master.dl.sourceforge.net/project/opengapps/arm64/20220215/open_gapps-arm64-9.0-pico-20220215.zip"
+    },
+    "10.0": {
+      "md5sum": "5dbca3963eb8abe753ef10fb058ab0fd",
+      "url": "https://master.dl.sourceforge.net/project/opengapps/arm64/20220215/open_gapps-arm64-10.0-pico-20220215.zip"
+    },
+    "11.0": {
+      "md5sum": "7790055d34bbfc6fe610b0cd263a7add",
+      "url": "https://master.dl.sourceforge.net/project/opengapps/arm64/20220215/open_gapps-arm64-11.0-pico-20220215.zip"
+    }
   }
 }
