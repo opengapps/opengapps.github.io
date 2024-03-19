@@ -79,6 +79,31 @@
                     {% endfor %}
                 </tbody>
             </table>
+            <table id="tph" class="dt mdl-data-table mdl-js-data-table">
+                <thead>
+                    <tr>
+                        <th class="mdl-data-table__cell--non-numeric"><span id="tphenotype"><a
+                                    href="{{site.support.wiki|append:'/Phenotype-Comparison'}}"><strong>Phenotype</strong></a>:</span>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for table in site.data.table.phenotype %}
+                    <tr>
+                        <td class="mdl-data-table__cell--non-numeric"><label
+                                class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="{{table.name}}"
+                                id="{{table.name|prepend:'l'}}">
+                                <input {% if table.checked == true %}{{ 'checked' }}{% endif %}
+                                    {% if table.disabled == true %}{{ 'disabled' }}{% endif %} id="{{table.name}}"
+                                    name="phenotype" type="radio" value="{{table.name}}" class="mdl-radio__button" />
+                                <span class="mdl-radio__label">{% if table.url %}{{table.humanname}}<a class="wikilink"
+                                        href="{{site.support.wiki|append:{{table.url}}"><i
+                                            class="material-icons">&#xE895;</i></a>{% else %}{{table.humanname}}{% endif %}</span>
+                            </label></td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
         </form>
         <div class="downloadbuttons">
             <button id="bdownload"
